@@ -215,8 +215,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "xxxx",
+      "dimensions" : [ 2, 2 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -1716,8 +1716,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "x",
+      "dimensions" : [ 1, 1 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -1990,9 +1990,9 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
-      "offset" : [ 0, 0 ]
+      "data" : "xxxxxxxxx",
+      "dimensions" : [ 3, 3 ],
+      "offset" : [ -1, -1 ]
     },
     "invulnerable" : false,
     "lifeArmor" : 1,
@@ -6573,8 +6573,8 @@
     "food" : -2,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "xxxx",
+      "dimensions" : [ 2, 2 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -6616,8 +6616,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "xxxx",
+      "dimensions" : [ 2, 2 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -12520,8 +12520,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "x",
+      "dimensions" : [ 1, 1 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -13341,8 +13341,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "xxxx",
+      "dimensions" : [ 2, 2 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
@@ -13640,8 +13640,8 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "",
-      "dimensions" : [ 0, 0 ],
+      "data" : "xxxx",
+      "dimensions" : [ 2, 2 ],
       "offset" : [ 0, 0 ]
     },
     "invulnerable" : false,
