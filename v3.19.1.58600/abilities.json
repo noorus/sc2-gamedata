@@ -311,6 +311,12 @@
     "name" : "AiurTempleBridgeNW8Out",
     "type" : "morph"
   },
+  "ArchonWarp" : 
+  {
+    "commands" : {},
+    "name" : "ArchonWarp",
+    "type" : ""
+  },
   "AssaultMode" : 
   {
     "commands" : 
@@ -4229,6 +4235,95 @@
     },
     "name" : "VoidMPImmortalReviveRebuild",
     "type" : "morph"
+  },
+  "WarpGateTrain" : 
+  {
+    "commands" : 
+    {
+      "Train1" : 
+      {
+        "index" : 1413,
+        "time" : 16.0,
+        "units" : [ "Zealot" ]
+      },
+      "Train2" : 
+      {
+        "index" : 1414,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 72 ],
+            "unitName" : [ "CyberneticsCore" ]
+          }
+        ],
+        "time" : 16.0,
+        "units" : [ "Stalker" ]
+      },
+      "Train4" : 
+      {
+        "index" : 1416,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 68 ],
+            "unitName" : [ "TemplarArchive" ]
+          }
+        ],
+        "time" : 16.0,
+        "units" : [ "HighTemplar" ]
+      },
+      "Train5" : 
+      {
+        "index" : 1417,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 69 ],
+            "unitName" : [ "DarkShrine" ]
+          }
+        ],
+        "time" : 16.0,
+        "units" : [ "DarkTemplar" ]
+      },
+      "Train6" : 
+      {
+        "index" : 1418,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 72 ],
+            "unitName" : [ "CyberneticsCore" ]
+          }
+        ],
+        "time" : 16.0,
+        "units" : [ "Sentry" ]
+      },
+      "Train7" : 
+      {
+        "index" : 1419,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 72 ],
+            "unitName" : [ "CyberneticsCore" ]
+          }
+        ],
+        "time" : 16.0,
+        "units" : [ "Adept" ]
+      }
+    },
+    "name" : "WarpGateTrain",
+    "type" : "train"
   },
   "WidowMineBurrow" : 
   {

@@ -1,6 +1,110 @@
 {
   "protoss" : 
   {
+    "133" : 
+    {
+      "builds" : 
+      [
+        {
+          "ability" : 1413,
+          "abilityName" : "WarpGateTrain,Train1",
+          "time" : 16.0,
+          "unit" : 73,
+          "unitName" : "Zealot"
+        },
+        {
+          "ability" : 1414,
+          "abilityName" : "WarpGateTrain,Train2",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 72 ],
+              "unitName" : [ "CyberneticsCore" ]
+            }
+          ],
+          "time" : 16.0,
+          "unit" : 74,
+          "unitName" : "Stalker"
+        },
+        {
+          "ability" : 1416,
+          "abilityName" : "WarpGateTrain,Train4",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 68 ],
+              "unitName" : [ "TemplarArchive" ]
+            }
+          ],
+          "time" : 16.0,
+          "unit" : 75,
+          "unitName" : "HighTemplar"
+        },
+        {
+          "ability" : 1417,
+          "abilityName" : "WarpGateTrain,Train5",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 69 ],
+              "unitName" : [ "DarkShrine" ]
+            }
+          ],
+          "time" : 16.0,
+          "unit" : 76,
+          "unitName" : "DarkTemplar"
+        },
+        {
+          "ability" : 1418,
+          "abilityName" : "WarpGateTrain,Train6",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 72 ],
+              "unitName" : [ "CyberneticsCore" ]
+            }
+          ],
+          "time" : 16.0,
+          "unit" : 77,
+          "unitName" : "Sentry"
+        },
+        {
+          "ability" : 1419,
+          "abilityName" : "WarpGateTrain,Train7",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 72 ],
+              "unitName" : [ "CyberneticsCore" ]
+            }
+          ],
+          "time" : 16.0,
+          "unit" : 311,
+          "unitName" : "Adept"
+        }
+      ],
+      "morphs" : 
+      [
+        {
+          "ability" : 1520,
+          "abilityName" : "MorphBackToGateway,Execute",
+          "time" : 0.0,
+          "unit" : 62,
+          "unitName" : "Gateway"
+        }
+      ],
+      "name" : "WarpGate"
+    },
     "495" : 
     {
       "builds" : 
