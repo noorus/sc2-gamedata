@@ -105,6 +105,65 @@
       ],
       "name" : "WarpGate"
     },
+    "136" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1530,
+          "abilityName" : "TransportMode,Execute",
+          "time" : 0.0,
+          "unit" : 81,
+          "unitName" : "WarpPrism"
+        }
+      ],
+      "name" : "WarpPrismPhasing"
+    },
+    "488" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1847,
+          "abilityName" : "MorphToMothership,Execute",
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 64 ],
+                  "unitName" : [ "FleetBeacon" ]
+                },
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "unitCount",
+                      "unit" : [ 10 ],
+                      "unitName" : [ "Mothership" ]
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 100.0,
+          "unit" : 10,
+          "unitName" : "Mothership"
+        }
+      ],
+      "name" : "MothershipCore"
+    },
     "495" : 
     {
       "builds" : 
@@ -458,6 +517,34 @@
       ],
       "name" : "RoboticsFacility"
     },
+    "725" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2469,
+          "abilityName" : "VoidMPImmortalReviveRebuild,Execute",
+          "time" : 30.0,
+          "unit" : 83,
+          "unitName" : "Immortal"
+        }
+      ],
+      "name" : "VoidMPImmortalReviveCorpse"
+    },
+    "81" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1528,
+          "abilityName" : "PhasingMode,Execute",
+          "time" : 0.0,
+          "unit" : 136,
+          "unitName" : "WarpPrismPhasing"
+        }
+      ],
+      "name" : "WarpPrism"
+    },
     "84" : 
     {
       "builds" : 
@@ -742,6 +829,20 @@
       ],
       "name" : "CommandCenter"
     },
+    "19" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 556,
+          "abilityName" : "SupplyDepotLower,Execute",
+          "time" : 0.0,
+          "unit" : 47,
+          "unitName" : "SupplyDepotLowered"
+        }
+      ],
+      "name" : "SupplyDepot"
+    },
     "21" : 
     {
       "builds" : 
@@ -1025,6 +1126,69 @@
       ],
       "name" : "Starport"
     },
+    "32" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 390,
+          "abilityName" : "Unsiege,Execute",
+          "time" : 0.0,
+          "unit" : 33,
+          "unitName" : "SiegeTank"
+        }
+      ],
+      "name" : "SiegeTankSieged"
+    },
+    "33" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 388,
+          "abilityName" : "SiegeMode,Execute",
+          "time" : 0.5,
+          "unit" : 32,
+          "unitName" : "SiegeTankSieged"
+        }
+      ],
+      "name" : "SiegeTank"
+    },
+    "34" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 405,
+          "abilityName" : "FighterMode,Execute",
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 35,
+          "unitName" : "VikingFighter"
+        }
+      ],
+      "name" : "VikingAssault"
+    },
+    "35" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 403,
+          "abilityName" : "AssaultMode,Execute",
+          "time" : 0.0,
+          "unit" : 34,
+          "unitName" : "VikingAssault"
+        }
+      ],
+      "name" : "VikingFighter"
+    },
     "43" : 
     {
       "builds" : 
@@ -1282,6 +1446,122 @@
         }
       ],
       "name" : "BarracksFlying"
+    },
+    "47" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 558,
+          "abilityName" : "SupplyDepotRaise,Execute",
+          "time" : 0.0,
+          "unit" : 19,
+          "unitName" : "SupplyDepot"
+        }
+      ],
+      "name" : "SupplyDepotLowered"
+    },
+    "484" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1978,
+          "abilityName" : "MorphToHellion,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 29 ],
+              "unitName" : [ "Armory" ]
+            }
+          ],
+          "time" : 0.33000000000000002,
+          "unit" : 53,
+          "unitName" : "Hellion"
+        }
+      ],
+      "name" : "HellionTank"
+    },
+    "498" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2095,
+          "abilityName" : "WidowMineBurrow,Execute",
+          "time" : 0.0,
+          "unit" : 500,
+          "unitName" : "WidowMineBurrowed"
+        }
+      ],
+      "name" : "WidowMine"
+    },
+    "500" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2097,
+          "abilityName" : "WidowMineUnburrow,Execute",
+          "time" : 0.0,
+          "unit" : 498,
+          "unitName" : "WidowMine"
+        }
+      ],
+      "name" : "WidowMineBurrowed"
+    },
+    "52" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2362,
+          "abilityName" : "ThorAPMode,Execute",
+          "time" : 0.0,
+          "unit" : 691,
+          "unitName" : "ThorAP"
+        }
+      ],
+      "name" : "Thor"
+    },
+    "53" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1998,
+          "abilityName" : "MorphToHellionTank,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 29 ],
+              "unitName" : [ "Armory" ]
+            }
+          ],
+          "time" : 0.33000000000000002,
+          "unit" : 484,
+          "unitName" : "HellionTank"
+        }
+      ],
+      "name" : "Hellion"
+    },
+    "691" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2364,
+          "abilityName" : "ThorNormalMode,Execute",
+          "time" : 0.0,
+          "unit" : 52,
+          "unitName" : "Thor"
+        }
+      ],
+      "name" : "ThorAP"
     }
   },
   "zerg" : 
@@ -1609,6 +1889,274 @@
       ],
       "name" : "Zergling"
     },
+    "106" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1448,
+          "abilityName" : "MorphToOverseer,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101, 100 ],
+              "unitName" : [ "Hive", "Lair" ]
+            }
+          ],
+          "time" : 16.666499999999999,
+          "unit" : 129,
+          "unitName" : "Overseer"
+        }
+      ],
+      "name" : "Overlord"
+    },
+    "107" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1382,
+          "abilityName" : "BurrowHydraliskDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 117,
+          "unitName" : "HydraliskBurrowed"
+        },
+        {
+          "ability" : 2332,
+          "abilityName" : "MorphToLurker,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 504 ],
+              "unitName" : [ "LurkerDenMP" ]
+            }
+          ],
+          "time" : 25.0,
+          "unit" : 502,
+          "unitName" : "LurkerMP"
+        }
+      ],
+      "name" : "Hydralisk"
+    },
+    "109" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1512,
+          "abilityName" : "BurrowUltraliskDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 131,
+          "unitName" : "UltraliskBurrowed"
+        }
+      ],
+      "name" : "Ultralisk"
+    },
+    "110" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1386,
+          "abilityName" : "BurrowRoachDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 118,
+          "unitName" : "RoachBurrowed"
+        },
+        {
+          "ability" : 2330,
+          "abilityName" : "MorphToRavager,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 97 ],
+              "unitName" : [ "RoachWarren" ]
+            }
+          ],
+          "time" : 12.0,
+          "unit" : 688,
+          "unitName" : "Ravager"
+        }
+      ],
+      "name" : "Roach"
+    },
+    "111" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1444,
+          "abilityName" : "BurrowInfestorDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 127,
+          "unitName" : "InfestorBurrowed"
+        }
+      ],
+      "name" : "Infestor"
+    },
+    "112" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1372,
+          "abilityName" : "MorphToBroodLord,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 102 ],
+              "unitName" : [ "GreaterSpire" ]
+            }
+          ],
+          "time" : 33.833199999999998,
+          "unit" : 114,
+          "unitName" : "BroodLord"
+        }
+      ],
+      "name" : "Corruptor"
+    },
+    "115" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1376,
+          "abilityName" : "BurrowBanelingUp,Execute",
+          "time" : 0.0,
+          "unit" : 9,
+          "unitName" : "Baneling"
+        }
+      ],
+      "name" : "BanelingBurrowed"
+    },
+    "116" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1380,
+          "abilityName" : "BurrowDroneUp,Execute",
+          "time" : 0.0,
+          "unit" : 104,
+          "unitName" : "Drone"
+        }
+      ],
+      "name" : "DroneBurrowed"
+    },
+    "117" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1384,
+          "abilityName" : "BurrowHydraliskUp,Execute",
+          "time" : 0.0,
+          "unit" : 107,
+          "unitName" : "Hydralisk"
+        }
+      ],
+      "name" : "HydraliskBurrowed"
+    },
+    "118" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1388,
+          "abilityName" : "BurrowRoachUp,Execute",
+          "time" : 0.0,
+          "unit" : 110,
+          "unitName" : "Roach"
+        }
+      ],
+      "name" : "RoachBurrowed"
+    },
+    "119" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1392,
+          "abilityName" : "BurrowZerglingUp,Execute",
+          "time" : 0.0,
+          "unit" : 105,
+          "unitName" : "Zergling"
+        }
+      ],
+      "name" : "ZerglingBurrowed"
+    },
+    "120" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1396,
+          "abilityName" : "BurrowInfestorTerranUp,Execute",
+          "time" : 0.0,
+          "unit" : 7,
+          "unitName" : "InfestorTerran"
+        }
+      ],
+      "name" : "InfestorTerranBurrowed"
+    },
+    "125" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1435,
+          "abilityName" : "BurrowQueenUp,Execute",
+          "time" : 0.0,
+          "unit" : 126,
+          "unitName" : "Queen"
+        }
+      ],
+      "name" : "QueenBurrowed"
+    },
     "126" : 
     {
       "builds" : 
@@ -1641,6 +2189,34 @@
         }
       ],
       "name" : "Queen"
+    },
+    "127" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1446,
+          "abilityName" : "BurrowInfestorUp,Execute",
+          "time" : 0.0,
+          "unit" : 111,
+          "unitName" : "Infestor"
+        }
+      ],
+      "name" : "InfestorBurrowed"
+    },
+    "131" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1514,
+          "abilityName" : "BurrowUltraliskUp,Execute",
+          "time" : 0.0,
+          "unit" : 109,
+          "unitName" : "Ultralisk"
+        }
+      ],
+      "name" : "UltraliskBurrowed"
     },
     "137" : 
     {
@@ -1821,6 +2397,168 @@
       ],
       "name" : "Larva"
     },
+    "493" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2016,
+          "abilityName" : "MorphToSwarmHostMP,Execute",
+          "time" : 0.5,
+          "unit" : 494,
+          "unitName" : "SwarmHostMP"
+        }
+      ],
+      "name" : "SwarmHostBurrowedMP"
+    },
+    "494" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2014,
+          "abilityName" : "MorphToSwarmHostBurrowedMP,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 493,
+          "unitName" : "SwarmHostBurrowedMP"
+        }
+      ],
+      "name" : "SwarmHostMP"
+    },
+    "502" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2108,
+          "abilityName" : "BurrowLurkerMPDown,Execute",
+          "time" : 0.0,
+          "unit" : 503,
+          "unitName" : "LurkerMPBurrowed"
+        }
+      ],
+      "name" : "LurkerMP"
+    },
+    "503" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2110,
+          "abilityName" : "BurrowLurkerMPUp,Execute",
+          "time" : 0.0,
+          "unit" : 502,
+          "unitName" : "LurkerMP"
+        }
+      ],
+      "name" : "LurkerMPBurrowed"
+    },
+    "688" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2340,
+          "abilityName" : "BurrowRavagerDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 690,
+          "unitName" : "RavagerBurrowed"
+        }
+      ],
+      "name" : "Ravager"
+    },
+    "690" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2342,
+          "abilityName" : "BurrowRavagerUp,Execute",
+          "time" : 0.0,
+          "unit" : 688,
+          "unitName" : "Ravager"
+        }
+      ],
+      "name" : "RavagerBurrowed"
+    },
+    "7" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1394,
+          "abilityName" : "BurrowInfestorTerranDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 120,
+          "unitName" : "InfestorTerranBurrowed"
+        }
+      ],
+      "name" : "InfestorTerran"
+    },
+    "730" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2491,
+          "abilityName" : "DefilerMPUnburrow,Execute",
+          "time" : 0.0,
+          "unit" : 731,
+          "unitName" : "DefilerMP"
+        }
+      ],
+      "name" : "DefilerMPBurrowed"
+    },
+    "731" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2489,
+          "abilityName" : "DefilerMPBurrow,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 730,
+          "unitName" : "DefilerMPBurrowed"
+        }
+      ],
+      "name" : "DefilerMP"
+    },
     "86" : 
     {
       "builds" : 
@@ -1863,6 +2601,98 @@
       ],
       "name" : "Hatchery"
     },
+    "893" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1448,
+          "abilityName" : "MorphToOverseer,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101, 100 ],
+              "unitName" : [ "Hive", "Lair" ]
+            }
+          ],
+          "time" : 16.666499999999999,
+          "unit" : 129,
+          "unitName" : "Overseer"
+        }
+      ],
+      "name" : "OverlordTransport"
+    },
+    "9" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1374,
+          "abilityName" : "BurrowBanelingDown,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "upgradeCount",
+              "upgrade" : 64,
+              "upgradeName" : "Burrow"
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 115,
+          "unitName" : "BanelingBurrowed"
+        }
+      ],
+      "name" : "Baneling"
+    },
+    "91" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 2112,
+          "abilityName" : "UpgradeToLurkerDenMP,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101, 100 ],
+              "unitName" : [ "Hive", "Lair" ]
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 504,
+          "unitName" : "LurkerDenMP"
+        }
+      ],
+      "name" : "HydraliskDen"
+    },
+    "92" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1220,
+          "abilityName" : "UpgradeToGreaterSpire,Execute",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101 ],
+              "unitName" : [ "Hive" ]
+            }
+          ],
+          "time" : 0.0,
+          "unit" : 102,
+          "unitName" : "GreaterSpire"
+        }
+      ],
+      "name" : "Spire"
+    },
     "95" : 
     {
       "builds" : 
@@ -1899,6 +2729,34 @@
         }
       ],
       "name" : "NydusNetwork"
+    },
+    "98" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1725,
+          "abilityName" : "SpineCrawlerUproot,Execute",
+          "time" : 0.0,
+          "unit" : 139,
+          "unitName" : "SpineCrawlerUprooted"
+        }
+      ],
+      "name" : "SpineCrawler"
+    },
+    "99" : 
+    {
+      "morphs" : 
+      [
+        {
+          "ability" : 1727,
+          "abilityName" : "SporeCrawlerUproot,Execute",
+          "time" : 0.0,
+          "unit" : 140,
+          "unitName" : "SporeCrawlerUprooted"
+        }
+      ],
+      "name" : "SporeCrawler"
     }
   }
 }
