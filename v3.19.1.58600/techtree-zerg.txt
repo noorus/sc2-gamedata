@@ -24,7 +24,11 @@ BroodLordCocoon
 
 BroodLordWeapon
 
+Broodling
+
 BroodlingDefault
+
+BroodlingEscort
 
 CausticSprayMissile
 
@@ -35,6 +39,10 @@ ChangelingMarine
 ChangelingMarineShield
 
 ChangelingZealot
+
+ChangelingZergling
+
+ChangelingZerglingWings
 
 ContaminateWeapon
 
@@ -113,6 +121,12 @@ EyeStalkWeapon
 FrenzyWeapon
 
 FungalGrowthMissile
+
+GlaiveWurmBounceWeapon
+
+GlaiveWurmM2Weapon
+
+GlaiveWurmM3Weapon
 
 GlaiveWurmWeapon
 

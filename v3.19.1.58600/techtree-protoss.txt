@@ -137,6 +137,8 @@ ProtossCrates
 
 Pylon
 
+PylonOvercharged
+
 ReleaseInterceptorsBeacon
 
 Replicant
@@ -174,6 +176,7 @@ StalkerWeapon
 Stargate
   builds
     Phoenix
+    Carrier
     VoidRay
     Oracle
     Tempest

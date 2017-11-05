@@ -321,6 +321,98 @@
   {
     "commands" : 
     {
+      "Research10" : 
+      {
+        "index" : 859,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 33,
+                    "upgradeName" : "TerranShipArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 34,
+                "upgradeName" : "TerranShipArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research11" : 
+      {
+        "index" : 860,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 34,
+                    "upgradeName" : "TerranShipArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 35,
+                "upgradeName" : "TerranShipArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
       "Research12" : 
       {
         "index" : 861,
@@ -553,6 +645,122 @@
         ],
         "time" : 220.0
       },
+      "Research3" : 
+      {
+        "index" : 852,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 27,
+                "upgradeName" : "TerranVehicleArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research4" : 
+      {
+        "index" : 853,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 27,
+                    "upgradeName" : "TerranVehicleArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 28,
+                "upgradeName" : "TerranVehicleArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research5" : 
+      {
+        "index" : 854,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 28,
+                    "upgradeName" : "TerranVehicleArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 29,
+                "upgradeName" : "TerranVehicleArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
       "Research6" : 
       {
         "index" : 855,
@@ -668,6 +876,30 @@
           }
         ],
         "time" : 220.0
+      },
+      "Research9" : 
+      {
+        "index" : 858,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 33,
+                "upgradeName" : "TerranShipArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
       }
     },
     "name" : "ArmoryResearch",
@@ -2711,6 +2943,22 @@
             "type" : "unitCount",
             "unit" : [ 29 ],
             "unitName" : [ "Armory" ]
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 98,
+                "upgradeName" : "TransformationServos"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
           }
         ],
         "time" : 110.0
@@ -2891,7 +3139,7 @@
             "type" : "not"
           }
         ],
-        "time" : 0.0
+        "time" : 80.0
       },
       "Research2" : 
       {
@@ -3896,7 +4144,7 @@
       {
         "index" : 2383,
         "time" : 0.0,
-        "units" : [ "LocustMP", "LocustMP" ]
+        "units" : [ "LocustMP" ]
       }
     },
     "name" : "LocustMPFlyingMorphToGround",
@@ -3910,7 +4158,7 @@
       {
         "index" : 2385,
         "time" : 0.0,
-        "units" : [ "LocustMPFlying", "LocustMPFlying" ]
+        "units" : [ "LocustMPFlying" ]
       }
     },
     "name" : "LocustMPMorphToAir",
@@ -6199,9 +6447,9 @@
         "time" : 60.0,
         "units" : [ "Tempest" ]
       },
-      "Train2" : 
+      "Train3" : 
       {
-        "index" : 947,
+        "index" : 948,
         "requires" : 
         [
           {
@@ -6471,6 +6719,26 @@
                 "type" : "upgradeCount",
                 "upgrade" : 22,
                 "upgradeName" : "RavenCorvidReactor"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research7" : 
+      {
+        "index" : 796,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 23,
+                "upgradeName" : "HunterSeeker"
               }
             ],
             "type" : "not"
@@ -7024,7 +7292,7 @@
       {
         "index" : 2362,
         "time" : 0.0,
-        "units" : [ "ThorAP", "ThorAP", "ThorAP" ]
+        "units" : [ "ThorAP", "ThorAP" ]
       }
     },
     "name" : "ThorAPMode",
@@ -7038,7 +7306,7 @@
       {
         "index" : 2364,
         "time" : 0.0,
-        "units" : [ "Thor", "Thor", "Thor" ]
+        "units" : [ "Thor", "Thor" ]
       }
     },
     "name" : "ThorNormalMode",

@@ -4,13 +4,12 @@ ATSLaserBatteryLMWeapon
 
 Armory
   upgrades
-    TerranVehicleAndShipArmorsLevel1
-    TerranVehicleAndShipArmorsLevel2
-    TerranVehicleAndShipArmorsLevel3
+    TerranVehicleWeaponsLevel1
+    TerranVehicleWeaponsLevel2
+    TerranVehicleWeaponsLevel3
     TerranShipWeaponsLevel1
     TerranShipWeaponsLevel2
     TerranShipWeaponsLevel3
-    TerranVehicleAndShipWeaponsLevel3
     TerranVehicleAndShipArmorsLevel1
     TerranVehicleAndShipArmorsLevel2
     TerranVehicleAndShipArmorsLevel3
@@ -32,11 +31,11 @@ Banshee
 Barracks
   builds
     Marine
-    Reaper
     Marauder
     Ghost
     BarracksReactor
     BarracksTechLab
+    Reaper
 
 BarracksFlying
   builds
@@ -44,6 +43,13 @@ BarracksFlying
     BarracksTechLab
 
 BarracksReactor
+
+BarracksTechLab
+  upgrades
+    ShieldWall
+    Stimpack
+    PunisherGrenades
+    ReaperSpeed
 
 Battlecruiser
 
@@ -86,8 +92,6 @@ EngineeringBay
     TerranInfantryArmorsLevel2
     TerranInfantryArmorsLevel3
 
-ExtendingBridge
-
 Factory
   builds
     Hellion
@@ -106,6 +110,11 @@ FactoryFlying
 
 FactoryReactor
 
+FactoryTechLab
+  upgrades
+    HighCapacityBarrels
+    DrillClaws
+
 FusionCore
   upgrades
     BattlecruiserEnableSpecializations
@@ -116,6 +125,10 @@ GhostAcademy
   upgrades
     PersonalCloaking
     GhostMoebiusReactor
+
+GhostAlternate
+
+GhostNova
 
 GrappleWeapon
 
@@ -223,6 +236,14 @@ SiegeTankSieged
 
 SiegeTankSkinPreview
 
+SnowRefinery_Terran_ExtendingBridgeNEShort8
+
+SnowRefinery_Terran_ExtendingBridgeNEShort8Out
+
+SnowRefinery_Terran_ExtendingBridgeNWShort8
+
+SnowRefinery_Terran_ExtendingBridgeNWShort8Out
+
 Starport
   builds
     VikingFighter
@@ -240,6 +261,16 @@ StarportFlying
     StarportTechLab
 
 StarportReactor
+
+StarportTechLab
+  upgrades
+    MedivacCaduceusReactor
+    BansheeCloak
+    RavenCorvidReactor
+    DurableMaterials
+    HunterSeeker
+    LiberatorMorph
+    LiberatorAGRangeUpgrade
 
 SupplyDepot
   morphs

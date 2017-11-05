@@ -811,7 +811,7 @@
         {
           "ability" : 44,
           "abilityName" : "FleetBeaconResearch,Research1",
-          "minerals" : 0,
+          "minerals" : 150,
           "requires" : 
           [
             {
@@ -827,10 +827,10 @@
               "type" : "not"
             }
           ],
-          "time" : 0.0,
+          "time" : 80.0,
           "upgrade" : 1,
           "upgradeName" : "CarrierLaunchSpeedUpgrade",
-          "vespene" : 0
+          "vespene" : 150
         }
       ]
     },
@@ -909,6 +909,22 @@
           "time" : 35.0,
           "unit" : 78,
           "unitName" : "Phoenix"
+        },
+        {
+          "ability" : 948,
+          "abilityName" : "StargateTrain,Train3",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 64 ],
+              "unitName" : [ "FleetBeacon" ]
+            }
+          ],
+          "time" : 120.0,
+          "unit" : 79,
+          "unitName" : "Carrier"
         },
         {
           "ability" : 950,
@@ -1841,13 +1857,6 @@
           "unitName" : "Marine"
         },
         {
-          "ability" : 561,
-          "abilityName" : "BarracksTrain,Train2",
-          "time" : 45.0,
-          "unit" : 49,
-          "unitName" : "Reaper"
-        },
-        {
           "ability" : 563,
           "abilityName" : "BarracksTrain,Train4",
           "requires" : 
@@ -1904,6 +1913,13 @@
           "time" : 25.0,
           "unit" : 37,
           "unitName" : "BarracksTechLab"
+        },
+        {
+          "ability" : 561,
+          "abilityName" : "BarracksTrain,Train2",
+          "time" : 45.0,
+          "unit" : 49,
+          "unitName" : "Reaper"
         }
       ],
       "name" : "Barracks"
@@ -2540,8 +2556,8 @@
       "researches" : 
       [
         {
-          "ability" : 2297,
-          "abilityName" : "ArmoryResearchSwarm,Research4",
+          "ability" : 855,
+          "abilityName" : "ArmoryResearch,Research6",
           "minerals" : 100,
           "requires" : 
           [
@@ -2551,8 +2567,8 @@
                 {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
-                  "upgrade" : 116,
-                  "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                  "upgrade" : 30,
+                  "upgradeName" : "TerranVehicleWeaponsLevel1"
                 },
                 {
                   "type" : "value",
@@ -2563,13 +2579,13 @@
             }
           ],
           "time" : 160.0,
-          "upgrade" : 116,
-          "upgradeName" : "TerranVehicleAndShipArmorsLevel1",
+          "upgrade" : 30,
+          "upgradeName" : "TerranVehicleWeaponsLevel1",
           "vespene" : 100
         },
         {
-          "ability" : 2298,
-          "abilityName" : "ArmoryResearchSwarm,Research5",
+          "ability" : 856,
+          "abilityName" : "ArmoryResearch,Research7",
           "minerals" : 175,
           "requires" : 
           [
@@ -2582,8 +2598,8 @@
                     {
                       "state" : "CompleteOnly",
                       "type" : "upgradeCount",
-                      "upgrade" : 116,
-                      "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                      "upgrade" : 30,
+                      "upgradeName" : "TerranVehicleWeaponsLevel1"
                     },
                     {
                       "type" : "value",
@@ -2601,8 +2617,8 @@
                 {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
-                  "upgrade" : 117,
-                  "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                  "upgrade" : 31,
+                  "upgradeName" : "TerranVehicleWeaponsLevel2"
                 },
                 {
                   "type" : "value",
@@ -2613,13 +2629,13 @@
             }
           ],
           "time" : 190.0,
-          "upgrade" : 117,
-          "upgradeName" : "TerranVehicleAndShipArmorsLevel2",
+          "upgrade" : 31,
+          "upgradeName" : "TerranVehicleWeaponsLevel2",
           "vespene" : 175
         },
         {
-          "ability" : 2299,
-          "abilityName" : "ArmoryResearchSwarm,Research6",
+          "ability" : 857,
+          "abilityName" : "ArmoryResearch,Research8",
           "minerals" : 250,
           "requires" : 
           [
@@ -2632,8 +2648,8 @@
                     {
                       "state" : "CompleteOnly",
                       "type" : "upgradeCount",
-                      "upgrade" : 117,
-                      "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                      "upgrade" : 31,
+                      "upgradeName" : "TerranVehicleWeaponsLevel2"
                     },
                     {
                       "type" : "value",
@@ -2651,8 +2667,8 @@
                 {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
-                  "upgrade" : 118,
-                  "upgradeName" : "TerranVehicleAndShipArmorsLevel3"
+                  "upgrade" : 32,
+                  "upgradeName" : "TerranVehicleWeaponsLevel3"
                 },
                 {
                   "type" : "value",
@@ -2663,8 +2679,8 @@
             }
           ],
           "time" : 220.0,
-          "upgrade" : 118,
-          "upgradeName" : "TerranVehicleAndShipArmorsLevel3",
+          "upgrade" : 32,
+          "upgradeName" : "TerranVehicleWeaponsLevel3",
           "vespene" : 250
         },
         {
@@ -2793,56 +2809,6 @@
           "time" : 220.0,
           "upgrade" : 38,
           "upgradeName" : "TerranShipWeaponsLevel3",
-          "vespene" : 250
-        },
-        {
-          "ability" : 2296,
-          "abilityName" : "ArmoryResearchSwarm,Research3",
-          "minerals" : 250,
-          "requires" : 
-          [
-            {
-              "operands" : 
-              [
-                {
-                  "operands" : 
-                  [
-                    {
-                      "state" : "CompleteOnly",
-                      "type" : "upgradeCount",
-                      "upgrade" : 114,
-                      "upgradeName" : "TerranVehicleAndShipWeaponsLevel2"
-                    },
-                    {
-                      "type" : "value",
-                      "value" : 1
-                    }
-                  ],
-                  "type" : "eq"
-                }
-              ],
-              "type" : "and"
-            },
-            {
-              "operands" : 
-              [
-                {
-                  "state" : "QueuedOrBetter",
-                  "type" : "upgradeCount",
-                  "upgrade" : 115,
-                  "upgradeName" : "TerranVehicleAndShipWeaponsLevel3"
-                },
-                {
-                  "type" : "value",
-                  "value" : 0
-                }
-              ],
-              "type" : "eq"
-            }
-          ],
-          "time" : 220.0,
-          "upgrade" : 115,
-          "upgradeName" : "TerranVehicleAndShipWeaponsLevel3",
           "vespene" : 250
         },
         {
@@ -3062,6 +3028,349 @@
         }
       ],
       "name" : "VikingFighter"
+    },
+    "37" : 
+    {
+      "name" : "BarracksTechLab",
+      "researches" : 
+      [
+        {
+          "ability" : 731,
+          "abilityName" : "BarracksTechLabResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 16,
+                  "upgradeName" : "ShieldWall"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 16,
+          "upgradeName" : "ShieldWall",
+          "vespene" : 150
+        },
+        {
+          "ability" : 730,
+          "abilityName" : "BarracksTechLabResearch,Research1",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 15,
+                      "upgradeName" : "Stimpack"
+                    }
+                  ],
+                  "type" : "not"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 140.0,
+          "upgrade" : 15,
+          "upgradeName" : "Stimpack",
+          "vespene" : 150
+        },
+        {
+          "ability" : 732,
+          "abilityName" : "BarracksTechLabResearch,Research3",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 17,
+                  "upgradeName" : "PunisherGrenades"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 17,
+          "upgradeName" : "PunisherGrenades",
+          "vespene" : 100
+        },
+        {
+          "ability" : 683,
+          "abilityName" : "MercCompoundResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 27, 43 ],
+              "unitName" : [ "Factory", "FactoryFlying" ]
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 14,
+                  "upgradeName" : "ReaperSpeed"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 14,
+          "upgradeName" : "ReaperSpeed",
+          "vespene" : 100
+        }
+      ]
+    },
+    "39" : 
+    {
+      "name" : "FactoryTechLab",
+      "researches" : 
+      [
+        {
+          "ability" : 761,
+          "abilityName" : "FactoryTechLabResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 19,
+                  "upgradeName" : "HighCapacityBarrels"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 19,
+          "upgradeName" : "HighCapacityBarrels",
+          "vespene" : 150
+        },
+        {
+          "ability" : 764,
+          "abilityName" : "FactoryTechLabResearch,Research5",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 29 ],
+              "unitName" : [ "Armory" ]
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 122,
+                  "upgradeName" : "DrillClaws"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 122,
+          "upgradeName" : "DrillClaws",
+          "vespene" : 150
+        }
+      ]
+    },
+    "41" : 
+    {
+      "name" : "StarportTechLab",
+      "researches" : 
+      [
+        {
+          "ability" : 792,
+          "abilityName" : "StarportTechLabResearch,Research3",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 21,
+                  "upgradeName" : "MedivacCaduceusReactor"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 21,
+          "upgradeName" : "MedivacCaduceusReactor",
+          "vespene" : 100
+        },
+        {
+          "ability" : 790,
+          "abilityName" : "StarportTechLabResearch,Research1",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 20,
+                  "upgradeName" : "BansheeCloak"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 20,
+          "upgradeName" : "BansheeCloak",
+          "vespene" : 200
+        },
+        {
+          "ability" : 793,
+          "abilityName" : "StarportTechLabResearch,Research4",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 22,
+                  "upgradeName" : "RavenCorvidReactor"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 22,
+          "upgradeName" : "RavenCorvidReactor",
+          "vespene" : 150
+        },
+        {
+          "ability" : 797,
+          "abilityName" : "StarportTechLabResearch,Research8",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 24,
+                  "upgradeName" : "DurableMaterials"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 24,
+          "upgradeName" : "DurableMaterials",
+          "vespene" : 150
+        },
+        {
+          "ability" : 796,
+          "abilityName" : "StarportTechLabResearch,Research7",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 23,
+                  "upgradeName" : "HunterSeeker"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 23,
+          "upgradeName" : "HunterSeeker",
+          "vespene" : 150
+        },
+        {
+          "ability" : 800,
+          "abilityName" : "StarportTechLabResearch,Research11",
+          "minerals" : 200,
+          "requires" : [],
+          "time" : 120.0,
+          "upgrade" : 125,
+          "upgradeName" : "LiberatorMorph",
+          "vespene" : 200
+        },
+        {
+          "ability" : 805,
+          "abilityName" : "StarportTechLabResearch,Research16",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 30 ],
+              "unitName" : [ "FusionCore" ]
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 140,
+                  "upgradeName" : "LiberatorAGRangeUpgrade"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 140,
+          "upgradeName" : "LiberatorAGRangeUpgrade",
+          "vespene" : 150
+        }
+      ]
     },
     "43" : 
     {
