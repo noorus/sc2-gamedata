@@ -41,16 +41,14 @@
   {
     "abilityCommands" : 
     [
-      "MassRecall,Execute",
-      "MothershipCorePurifyNexus,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
+      "attack,Execute",
       "MothershipMassRecall,Execute",
       "TemporalField,Execute",
-      "Vortex,Execute",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "MothershipCorePurifyNexus,Execute"
     ],
     "acceleration" : 1.375,
     "armored" : true,
@@ -92,15 +90,14 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "LairResearch,Research2",
-      "LairResearch,Research3",
-      "LairResearch,Research4",
-      "RallyHatchery,Rally1",
-      "RallyHatchery,Rally2",
-      "TrainQueen,Train1",
+      "que5CancelToSelection,CancelLast",
       "UpgradeToHive,Cancel",
       "UpgradeToHive,Execute",
-      "que5CancelToSelection,CancelLast"
+      "RallyHatchery,Rally2",
+      "RallyHatchery,Rally1",
+      "TrainQueen,Train1",
+      "LairResearch,Research2",
+      "LairResearch,Research4"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -147,13 +144,12 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "LairResearch,Research2",
-      "LairResearch,Research3",
-      "LairResearch,Research4",
-      "RallyHatchery,Rally1",
+      "que5CancelToSelection,CancelLast",
       "RallyHatchery,Rally2",
+      "RallyHatchery,Rally1",
       "TrainQueen,Train1",
-      "que5CancelToSelection,CancelLast"
+      "LairResearch,Research2",
+      "LairResearch,Research4"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -199,14 +195,14 @@
   {
     "abilityCommands" : 
     [
+      "que5CancelToSelection,CancelLast",
       "BuildInProgress,Cancel",
       "SpireResearch,Research1",
       "SpireResearch,Research2",
       "SpireResearch,Research3",
       "SpireResearch,Research4",
       "SpireResearch,Research5",
-      "SpireResearch,Research6",
-      "que5CancelToSelection,CancelLast"
+      "SpireResearch,Research6"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -250,7 +246,7 @@
   },
   "103" : 
   {
-    "abilityCommands" : [ "Rally,Rally1", "move,AcquireMove", "que1,CancelLast" ],
+    "abilityCommands" : [ "Rally,Rally1", "que1,CancelLast", "move,AcquireMove" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -290,28 +286,27 @@
   {
     "abilityCommands" : 
     [
-      "BurrowDroneDown,Execute",
-      "DroneHarvest,Gather",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol",
       "DroneHarvest,Return",
       "SprayZerg,Execute",
+      "DroneHarvest,Gather",
       "ZergBuild,Build1",
-      "ZergBuild,Build10",
+      "ZergBuild,Build3",
+      "ZergBuild,Build4",
+      "ZergBuild,Build5",
       "ZergBuild,Build11",
       "ZergBuild,Build14",
       "ZergBuild,Build15",
       "ZergBuild,Build16",
-      "ZergBuild,Build3",
-      "ZergBuild,Build4",
-      "ZergBuild,Build5",
-      "ZergBuild,Build6",
       "ZergBuild,Build7",
       "ZergBuild,Build8",
+      "ZergBuild,Build10",
       "ZergBuild,Build9",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "ZergBuild,Build6"
     ],
     "acceleration" : 2.5,
     "armored" : false,
@@ -352,13 +347,13 @@
   {
     "abilityCommands" : 
     [
-      "BurrowZerglingDown,Execute",
-      "MorphZerglingToBaneling,Train1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphZerglingToBaneling,Train1",
+      "BurrowZerglingDown,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -399,18 +394,17 @@
   {
     "abilityCommands" : 
     [
-      "GenerateCreep,Off",
-      "GenerateCreep,On",
-      "MorphToOverseer,Cancel",
-      "MorphToOverseer,Execute",
-      "OverlordTransport,Load",
-      "OverlordTransport,UnloadAt",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToOverseer,Execute",
+      "MorphToOverseer,Cancel",
+      "GenerateCreep,On",
+      "OverlordTransport,Load",
+      "OverlordTransport,UnloadAt"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -451,13 +445,13 @@
   {
     "abilityCommands" : 
     [
-      "BurrowHydraliskDown,Execute",
-      "MorphToLurker,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "BurrowHydraliskDown,Execute",
+      "MorphToLurker,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -498,11 +492,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 3.5,
     "armored" : false,
@@ -543,12 +537,12 @@
   {
     "abilityCommands" : 
     [
-      "BurrowUltraliskDown,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "BurrowUltraliskDown,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -627,13 +621,12 @@
   {
     "abilityCommands" : 
     [
-      "BurrowRoachDown,Execute",
-      "MorphToRavager,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToRavager,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -674,17 +667,16 @@
   {
     "abilityCommands" : 
     [
-      "BurrowInfestorDown,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "FungalGrowth,Execute",
       "InfestedTerrans,Execute",
-      "NeuralParasite,Cancel",
-      "NeuralParasite,Execute",
-      "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "BurrowInfestorDown,Execute",
+      "NeuralParasite,Cancel"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -725,15 +717,14 @@
   {
     "abilityCommands" : 
     [
-      "CausticSpray,Execute",
-      "Corruption,Cancel",
-      "Corruption,Execute",
-      "MorphToBroodLord,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToBroodLord,Execute",
+      "CausticSpray,Execute",
+      "Corruption,Cancel"
     ],
     "acceleration" : 3.0,
     "armored" : true,
@@ -774,12 +765,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToBroodLord,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "MorphToBroodLord,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -820,11 +811,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -863,7 +854,7 @@
   },
   "115" : 
   {
-    "abilityCommands" : [ "BurrowBanelingUp,Execute", "Explode,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowBanelingUp,Execute", "Explode,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -901,7 +892,7 @@
   },
   "116" : 
   {
-    "abilityCommands" : [ "BurrowDroneUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowDroneUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -939,7 +930,7 @@
   },
   "117" : 
   {
-    "abilityCommands" : [ "BurrowHydraliskUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowHydraliskUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -979,11 +970,10 @@
   {
     "abilityCommands" : 
     [
-      "BurrowRoachUp,Execute",
       "attack,Execute",
-      "move,AcquireMove",
-      "move,HoldPos",
+      "BurrowRoachUp,Execute",
       "move,Move",
+      "move,AcquireMove",
       "move,Patrol"
     ],
     "acceleration" : 0.0,
@@ -1023,7 +1013,7 @@
   },
   "119" : 
   {
-    "abilityCommands" : [ "BurrowZerglingUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowZerglingUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -1063,12 +1053,12 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,AcquireMove",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "move,AcquireMove"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -1107,7 +1097,7 @@
   },
   "120" : 
   {
-    "abilityCommands" : [ "BurrowInfestorTerranUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowInfestorTerranUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -1145,7 +1135,7 @@
   },
   "125" : 
   {
-    "abilityCommands" : [ "BurrowQueenUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowQueenUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -1185,15 +1175,15 @@
   {
     "abilityCommands" : 
     [
-      "BurrowQueenDown,Execute",
-      "QueenBuild,Build1",
-      "SpawnLarva,Execute",
-      "Transfusion,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "SpawnLarva,Execute",
+      "QueenBuild,Build1",
+      "Transfusion,Execute",
+      "BurrowQueenDown,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -1234,17 +1224,17 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "BurrowInfestorUp,Execute",
-      "FungalGrowth,Execute",
-      "InfestedTerrans,Execute",
-      "NeuralParasite,Cancel",
-      "NeuralParasite,Execute",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "InfestedTerrans,Execute",
+      "FungalGrowth,Execute",
+      "NeuralParasite,Execute",
+      "NeuralParasite,Cancel"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -1285,12 +1275,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToOverseer,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToOverseer,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -1331,14 +1321,14 @@
   {
     "abilityCommands" : 
     [
-      "Contaminate,Execute",
-      "SpawnChangeling,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "SpawnChangeling,Execute",
+      "Contaminate,Execute"
     ],
     "acceleration" : 2.125,
     "armored" : true,
@@ -1379,14 +1369,14 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "CommandCenterTrain,Train1",
       "CommandCenterTransport,LoadAll",
       "CommandCenterTransport,UnloadAll",
-      "RallyCommand,Rally1",
+      "stop,Stop",
       "attack,Execute",
       "que5PassiveCancelToSelection,CancelLast",
-      "stop,Stop"
+      "BuildInProgress,Cancel",
+      "CommandCenterTrain,Train1",
+      "RallyCommand,Rally1"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -1430,7 +1420,7 @@
   },
   "131" : 
   {
-    "abilityCommands" : [ "BurrowUltraliskUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowUltraliskUp,Execute" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : true,
@@ -1470,14 +1460,14 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "CalldownMULE,Execute",
       "CommandCenterTrain,Train1",
       "OrbitalLiftOff,Execute",
-      "RallyCommand,Rally1",
+      "BuildInProgress,Cancel",
+      "que5CancelToSelection,CancelLast",
       "ScannerSweep,Execute",
-      "SupplyDrop,Execute",
-      "que5CancelToSelection,CancelLast"
+      "RallyCommand,Rally1",
+      "CalldownMULE,Execute",
+      "SupplyDrop,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -1523,12 +1513,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphBackToGateway,Execute",
-      "Rally,Rally1",
       "WarpGateTrain,Train1",
       "WarpGateTrain,Train2",
       "WarpGateTrain,Train4",
       "WarpGateTrain,Train5",
+      "Rally,Rally1",
+      "MorphBackToGateway,Execute",
       "WarpGateTrain,Train6",
       "WarpGateTrain,Train7"
     ],
@@ -1576,13 +1566,11 @@
   {
     "abilityCommands" : 
     [
-      "CommandCenterTransport,LoadAll",
-      "CommandCenterTransport,UnloadAll",
       "OrbitalCommandLand,Execute",
-      "move,HoldPos",
+      "stop,Stop",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "move,Patrol"
     ],
     "acceleration" : 1.3125,
     "armored" : true,
@@ -1661,15 +1649,15 @@
   {
     "abilityCommands" : 
     [
-      "TransportMode,Execute",
-      "WarpPrismTransport,Load",
-      "WarpPrismTransport,UnloadAt",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "WarpPrismTransport,Load",
+      "WarpPrismTransport,UnloadAt",
+      "TransportMode,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -1708,7 +1696,7 @@
   },
   "137" : 
   {
-    "abilityCommands" : [ "CreepTumorBuild,Build1", "CreepTumorBuild,Halt" ],
+    "abilityCommands" : [ "CreepTumorBuild,Halt", "CreepTumorBuild,Build1" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : true,
@@ -1796,14 +1784,14 @@
   {
     "abilityCommands" : 
     [
-      "SpineCrawlerRoot,Cancel",
-      "SpineCrawlerRoot,Execute",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
       "move,Move",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "SpineCrawlerRoot,Execute",
+      "SpineCrawlerRoot,Cancel"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -1882,14 +1870,14 @@
   {
     "abilityCommands" : 
     [
-      "SporeCrawlerRoot,Cancel",
-      "SporeCrawlerRoot,Execute",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
       "move,Move",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "SporeCrawlerRoot,Execute",
+      "SporeCrawlerRoot,Cancel"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -1930,12 +1918,12 @@
   {
     "abilityCommands" : 
     [
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -1976,12 +1964,10 @@
   {
     "abilityCommands" : 
     [
-      "NydusCanalTransport,Load",
-      "NydusCanalTransport,UnloadAll",
-      "NydusWormTransport,Load",
-      "NydusWormTransport,UnloadAll",
+      "stop,Stop",
       "Rally,Rally1",
-      "stop,Stop"
+      "NydusWormTransport,Load",
+      "NydusWormTransport,UnloadAll"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2156,11 +2142,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -2202,17 +2188,16 @@
     "abilityCommands" : 
     [
       "LarvaTrain,Train1",
-      "LarvaTrain,Train10",
-      "LarvaTrain,Train11",
-      "LarvaTrain,Train12",
-      "LarvaTrain,Train13",
-      "LarvaTrain,Train15",
       "LarvaTrain,Train2",
       "LarvaTrain,Train3",
-      "LarvaTrain,Train4",
+      "LarvaTrain,Train10",
       "LarvaTrain,Train5",
+      "LarvaTrain,Train11",
       "LarvaTrain,Train7",
-      "que1,CancelLast"
+      "LarvaTrain,Train13",
+      "LarvaTrain,Train4",
+      "LarvaTrain,Train15",
+      "LarvaTrain,Train12"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -2253,18 +2238,18 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
-      "CommandCenterLiftOff,Execute",
       "CommandCenterTrain,Train1",
+      "UpgradeToOrbital,Execute",
+      "UpgradeToPlanetaryFortress,Execute",
+      "RallyCommand,Rally1",
       "CommandCenterTransport,LoadAll",
       "CommandCenterTransport,UnloadAll",
-      "RallyCommand,Rally1",
-      "UpgradeToOrbital,Cancel",
-      "UpgradeToOrbital,Execute",
+      "CommandCenterLiftOff,Execute",
+      "BuildInProgress,Halt",
+      "que5CancelToSelection,CancelLast",
       "UpgradeToPlanetaryFortress,Cancel",
-      "UpgradeToPlanetaryFortress,Execute",
-      "que5CancelToSelection,CancelLast"
+      "UpgradeToOrbital,Cancel",
+      "BuildInProgress,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2310,8 +2295,8 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
       "BuildInProgress,Halt",
+      "BuildInProgress,Cancel",
       "SupplyDepotLower,Execute"
     ],
     "acceleration" : 0.0,
@@ -2356,7 +2341,7 @@
   },
   "20" : 
   {
-    "abilityCommands" : [ "BuildInProgress,Cancel", "BuildInProgress,Halt" ],
+    "abilityCommands" : [ "BuildInProgress,Halt", "BuildInProgress,Cancel" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : false,
@@ -2401,18 +2386,18 @@
   {
     "abilityCommands" : 
     [
-      "BarracksAddOns,Build1",
-      "BarracksAddOns,Build2",
-      "BarracksAddOns,Halt",
-      "BarracksLiftOff,Execute",
       "BarracksTrain,Train1",
       "BarracksTrain,Train2",
-      "BarracksTrain,Train3",
       "BarracksTrain,Train4",
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
+      "BarracksTrain,Train3",
       "Rally,Rally1",
-      "que5,CancelLast"
+      "BarracksLiftOff,Execute",
+      "BuildInProgress,Halt",
+      "BarracksAddOns,Build2",
+      "BarracksAddOns,Build1",
+      "que5,CancelLast",
+      "BarracksAddOns,Halt",
+      "BuildInProgress,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2458,18 +2443,18 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
-      "EngineeringBayResearch,Research1",
-      "EngineeringBayResearch,Research2",
       "EngineeringBayResearch,Research3",
       "EngineeringBayResearch,Research4",
       "EngineeringBayResearch,Research5",
+      "que5,CancelLast",
+      "BuildInProgress,Cancel",
+      "BuildInProgress,Halt",
       "EngineeringBayResearch,Research6",
+      "EngineeringBayResearch,Research2",
+      "EngineeringBayResearch,Research1",
       "EngineeringBayResearch,Research7",
       "EngineeringBayResearch,Research8",
-      "EngineeringBayResearch,Research9",
-      "que5,CancelLast"
+      "EngineeringBayResearch,Research9"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2515,10 +2500,10 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
       "BuildInProgress,Halt",
-      "attack,Execute",
-      "stop,Stop"
+      "BuildInProgress,Cancel",
+      "stop,Stop",
+      "attack,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2565,16 +2550,16 @@
     "abilityCommands" : 
     [
       "AttackRedirect,Execute",
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
+      "StopRedirect,Execute",
+      "StimpackRedirect,Execute",
+      "StimpackMarauderRedirect,Execute",
+      "Rally,Rally1",
       "BunkerTransport,Load",
       "BunkerTransport,UnloadAll",
-      "Rally,Rally1",
-      "SalvageShared,Off",
       "SalvageShared,On",
-      "StimpackMarauderRedirect,Execute",
-      "StimpackRedirect,Execute",
-      "StopRedirect,Execute"
+      "BuildInProgress,Halt",
+      "BuildInProgress,Cancel",
+      "SalvageShared,Off"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2618,7 +2603,7 @@
   },
   "25" : 
   {
-    "abilityCommands" : [ "BuildInProgress,Cancel", "BuildInProgress,Halt" ],
+    "abilityCommands" : [ "BuildInProgress,Halt", "BuildInProgress,Cancel" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : false,
@@ -2663,12 +2648,12 @@
   {
     "abilityCommands" : 
     [
-      "ArmSiloWithNuke,Ammo1",
+      "GhostAcademyResearch,Research1",
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
       "BuildInProgress,Halt",
-      "GhostAcademyResearch,Research1",
-      "GhostAcademyResearch,Research2",
-      "que5,CancelLast"
+      "ArmSiloWithNuke,Ammo1",
+      "GhostAcademyResearch,Research2"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2752,16 +2737,16 @@
   {
     "abilityCommands" : 
     [
-      "MULEGather,Gather",
-      "MULEGather,Return",
-      "MULERepair,Execute",
-      "SCVHarvest,Return",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "MULEGather,Gather",
+      "MULERepair,Execute",
+      "MULEGather,Return",
+      "SCVHarvest,Return"
     ],
     "acceleration" : 2.5,
     "armored" : false,
@@ -2802,21 +2787,20 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
-      "FactoryAddOns,Build1",
-      "FactoryAddOns,Build2",
-      "FactoryAddOns,Halt",
-      "FactoryLiftOff,Execute",
-      "FactoryTrain,Train13",
-      "FactoryTrain,Train2",
-      "FactoryTrain,Train25",
-      "FactoryTrain,Train5",
       "FactoryTrain,Train6",
-      "FactoryTrain,Train7",
+      "FactoryTrain,Train2",
+      "FactoryTrain,Train13",
+      "FactoryLiftOff,Execute",
+      "BuildInProgress,Halt",
+      "FactoryAddOns,Build2",
+      "FactoryAddOns,Build1",
+      "que5,CancelLast",
+      "FactoryAddOns,Halt",
+      "BuildInProgress,Cancel",
+      "FactoryTrain,Train25",
       "FactoryTrain,Train8",
-      "Rally,Rally1",
-      "que5,CancelLast"
+      "FactoryTrain,Train5",
+      "FactoryTrain,Train7"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2862,20 +2846,19 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
-      "Rally,Rally1",
+      "StarportTrain,Train5",
+      "StarportTrain,Train1",
+      "StarportTrain,Train3",
+      "StarportTrain,Train2",
+      "StarportTrain,Train4",
+      "StarportTrain,Train7",
       "StarportAddOns,Build1",
       "StarportAddOns,Build2",
-      "StarportAddOns,Halt",
       "StarportLiftOff,Execute",
-      "StarportTrain,Train1",
-      "StarportTrain,Train2",
-      "StarportTrain,Train3",
-      "StarportTrain,Train4",
-      "StarportTrain,Train5",
-      "StarportTrain,Train7",
-      "que5,CancelLast"
+      "BuildInProgress,Halt",
+      "que5,CancelLast",
+      "StarportAddOns,Halt",
+      "BuildInProgress,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2921,30 +2904,19 @@
   {
     "abilityCommands" : 
     [
-      "ArmoryResearch,Research10",
-      "ArmoryResearch,Research11",
-      "ArmoryResearch,Research12",
-      "ArmoryResearch,Research13",
-      "ArmoryResearch,Research14",
-      "ArmoryResearch,Research15",
-      "ArmoryResearch,Research16",
-      "ArmoryResearch,Research17",
-      "ArmoryResearch,Research3",
-      "ArmoryResearch,Research4",
-      "ArmoryResearch,Research5",
-      "ArmoryResearch,Research6",
-      "ArmoryResearch,Research7",
-      "ArmoryResearch,Research8",
-      "ArmoryResearch,Research9",
-      "ArmoryResearchSwarm,Research1",
-      "ArmoryResearchSwarm,Research2",
-      "ArmoryResearchSwarm,Research3",
+      "que5,CancelLast",
+      "BuildInProgress,Cancel",
+      "BuildInProgress,Halt",
       "ArmoryResearchSwarm,Research4",
       "ArmoryResearchSwarm,Research5",
       "ArmoryResearchSwarm,Research6",
-      "BuildInProgress,Cancel",
-      "BuildInProgress,Halt",
-      "que5,CancelLast"
+      "ArmoryResearch,Research12",
+      "ArmoryResearch,Research13",
+      "ArmoryResearch,Research14",
+      "ArmoryResearchSwarm,Research3",
+      "ArmoryResearch,Research15",
+      "ArmoryResearch,Research16",
+      "ArmoryResearch,Research17"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -2990,11 +2962,11 @@
   {
     "abilityCommands" : 
     [
+      "FusionCoreResearch,Research1",
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
       "BuildInProgress,Halt",
-      "FusionCoreResearch,Research1",
-      "FusionCoreResearch,Research2",
-      "que5,CancelLast"
+      "FusionCoreResearch,Research2"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -3038,7 +3010,7 @@
   },
   "31" : 
   {
-    "abilityCommands" : [ "attack,Execute", "stop,Stop" ],
+    "abilityCommands" : [ "stop,Stop", "attack,Execute" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : false,
@@ -3083,14 +3055,14 @@
   {
     "abilityCommands" : 
     [
-      "AdeptPhaseShift,Execute",
-      "AdeptPhaseShiftCancel,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "AdeptPhaseShift,Execute",
+      "ProgressRally,Rally1",
+      "AdeptPhaseShiftCancel,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -3364,12 +3336,12 @@
   {
     "abilityCommands" : 
     [
-      "Unsiege,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "Unsiege,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -3453,12 +3425,12 @@
   {
     "abilityCommands" : 
     [
-      "SiegeMode,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "SiegeMode,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -3499,12 +3471,12 @@
   {
     "abilityCommands" : 
     [
-      "FighterMode,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "stop,Stop",
+      "attack,Execute",
+      "FighterMode,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -3889,12 +3861,12 @@
   {
     "abilityCommands" : 
     [
-      "AssaultMode,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "stop,Stop",
+      "attack,Execute",
+      "AssaultMode,Execute"
     ],
     "acceleration" : 2.625,
     "armored" : true,
@@ -4366,12 +4338,12 @@
     "abilityCommands" : 
     [
       "CommandCenterLand,Execute",
+      "stop,Stop",
+      "move,Move",
       "CommandCenterTransport,LoadAll",
       "CommandCenterTransport,UnloadAll",
       "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,Patrol"
     ],
     "acceleration" : 1.3125,
     "armored" : true,
@@ -5399,7 +5371,7 @@
   },
   "391" : 
   {
-    "abilityCommands" : [ "move,HoldPos", "move,Move", "move,Patrol", "stop,Stop" ],
+    "abilityCommands" : [ "move,Move", "stop,Stop", "move,HoldPos", "move,Patrol" ],
     "acceleration" : 1000.0,
     "armored" : false,
     "biological" : false,
@@ -5437,7 +5409,7 @@
   },
   "392" : 
   {
-    "abilityCommands" : [ "move,HoldPos", "move,Move", "move,Patrol", "stop,Stop" ],
+    "abilityCommands" : [ "move,Move", "stop,Stop", "move,HoldPos", "move,Patrol" ],
     "acceleration" : 2.625,
     "armored" : false,
     "biological" : false,
@@ -5477,11 +5449,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -5522,11 +5494,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -5653,13 +5625,13 @@
   {
     "abilityCommands" : 
     [
-      "FactoryAddOns,Build1",
-      "FactoryAddOns,Build2",
       "FactoryLand,Execute",
-      "move,HoldPos",
+      "FactoryAddOns,Build2",
+      "FactoryAddOns,Build1",
+      "stop,Stop",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "move,Patrol"
     ],
     "acceleration" : 1.3125,
     "armored" : true,
@@ -5700,13 +5672,13 @@
   {
     "abilityCommands" : 
     [
-      "StarportAddOns,Build1",
-      "StarportAddOns,Build2",
       "StarportLand,Execute",
-      "move,HoldPos",
+      "StarportAddOns,Build2",
+      "StarportAddOns,Build1",
+      "stop,Stop",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "move,Patrol"
     ],
     "acceleration" : 1.3125,
     "armored" : true,
@@ -5747,29 +5719,29 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol",
       "Repair,Execute",
       "SCVHarvest,Gather",
       "SCVHarvest,Return",
+      "TerranBuild,Halt",
       "SprayTerran,Execute",
       "TerranBuild,Build1",
-      "TerranBuild,Build10",
-      "TerranBuild,Build11",
-      "TerranBuild,Build12",
-      "TerranBuild,Build14",
-      "TerranBuild,Build16",
-      "TerranBuild,Build2",
       "TerranBuild,Build3",
+      "TerranBuild,Build2",
       "TerranBuild,Build4",
       "TerranBuild,Build5",
-      "TerranBuild,Build6",
       "TerranBuild,Build7",
+      "TerranBuild,Build6",
       "TerranBuild,Build9",
-      "TerranBuild,Halt",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "TerranBuild,Build10",
+      "TerranBuild,Build11",
+      "TerranBuild,Build14",
+      "TerranBuild,Build12",
+      "TerranBuild,Build16"
     ],
     "acceleration" : 2.5,
     "armored" : false,
@@ -5810,13 +5782,13 @@
   {
     "abilityCommands" : 
     [
-      "BarracksAddOns,Build1",
-      "BarracksAddOns,Build2",
       "BarracksLand,Execute",
-      "move,HoldPos",
+      "BarracksAddOns,Build2",
+      "BarracksAddOns,Build1",
+      "stop,Stop",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "move,Patrol"
     ],
     "acceleration" : 1.3125,
     "armored" : true,
@@ -6072,12 +6044,12 @@
   {
     "abilityCommands" : 
     [
-      "Stimpack,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "Stimpack,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6118,11 +6090,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6206,12 +6178,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToHellion,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToHellion,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6381,18 +6353,18 @@
   {
     "abilityCommands" : 
     [
-      "MorphToMothership,Cancel",
-      "MorphToMothership,Execute",
-      "MothershipCoreEnergize,Cancel",
-      "MothershipCoreMassRecall,Execute",
-      "MothershipCorePurifyNexus,Execute",
-      "MothershipCorePurifyNexusCancel,Execute",
-      "TemporalField,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "MothershipCorePurifyNexus,Execute",
+      "MothershipCoreMassRecall,Execute",
+      "MorphToMothership,Cancel",
+      "MothershipCoreEnergize,Cancel",
+      "MorphToMothership,Execute",
+      "MothershipCorePurifyNexusCancel,Execute",
+      "TemporalField,Execute"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -6433,11 +6405,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6478,12 +6450,12 @@
   {
     "abilityCommands" : 
     [
-      "KD8Charge,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "KD8Charge,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6565,7 +6537,7 @@
   },
   "491" : 
   {
-    "abilityCommands" : [ "attack,Execute", "stop,Stop" ],
+    "abilityCommands" : [ "stop,Stop", "attack,Execute" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : true,
@@ -6654,11 +6626,10 @@
     "abilityCommands" : 
     [
       "MorphToSwarmHostMP,Execute",
-      "Rally,Rally1",
-      "SpawnLocustsTargeted,Execute",
-      "SwarmHostSpawnLocusts,Execute",
       "attack,Execute",
-      "move,AcquireMove"
+      "move,AcquireMove",
+      "SpawnLocustsTargeted,Execute",
+      "Rally,Rally1"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -6699,15 +6670,14 @@
   {
     "abilityCommands" : 
     [
-      "MorphToSwarmHostBurrowedMP,Execute",
-      "SpawnLocustsTargeted,Execute",
-      "SwarmHostSpawnLocusts,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToSwarmHostBurrowedMP,Execute",
+      "SpawnLocustsTargeted,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -6748,21 +6718,17 @@
   {
     "abilityCommands" : 
     [
-      "LightofAiur,Execute",
-      "OracleRevelation,Execute",
-      "OracleStasisTrapBuild,Build1",
-      "OracleStasisTrapBuild,Halt",
-      "OracleWeapon,Off",
-      "OracleWeapon,On",
-      "ResourceStun,Execute",
-      "TemporalField,Cancel",
-      "VoidSiphon,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "OracleRevelation,Execute",
+      "OracleStasisTrapBuild,Build1",
+      "OracleWeapon,On",
+      "OracleWeapon,Off",
+      "OracleStasisTrapBuild,Halt"
     ],
     "acceleration" : 3.0,
     "armored" : false,
@@ -6803,13 +6769,12 @@
   {
     "abilityCommands" : 
     [
-      "LightningBomb,Execute",
-      "TempestDisruptionBlast,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "TempestDisruptionBlast,Cancel"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -6850,12 +6815,12 @@
   {
     "abilityCommands" : 
     [
-      "TornadoMissile,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "TornadoMissile,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -6896,14 +6861,14 @@
   {
     "abilityCommands" : 
     [
-      "WidowMineAttack,Execute",
-      "WidowMineBurrow,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "WidowMineBurrow,Execute",
+      "WidowMineAttack,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -6944,16 +6909,16 @@
   {
     "abilityCommands" : 
     [
-      "BlindingCloud,Execute",
-      "ParasiticBomb,Execute",
-      "ViperConsumeStructure,Execute",
-      "Yoink,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "ViperConsumeStructure,Execute",
+      "BlindingCloud,Execute",
+      "Yoink,Execute",
+      "ParasiticBomb,Execute"
     ],
     "acceleration" : 3.0,
     "armored" : true,
@@ -6992,7 +6957,7 @@
   },
   "5" : 
   {
-    "abilityCommands" : [ "BuildInProgress,Cancel", "que5LongBlend,CancelLast" ],
+    "abilityCommands" : [ "que5LongBlend,CancelLast", "BuildInProgress,Cancel" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : false,
@@ -7037,20 +7002,20 @@
   {
     "abilityCommands" : 
     [
-      "ChannelSnipe,Execute",
-      "EMP,Execute",
-      "GhostCloak,Off",
-      "GhostCloak,On",
-      "GhostHoldFire,Execute",
-      "GhostWeaponsFree,Execute",
-      "Snipe,Execute",
-      "TacNukeStrike,Cancel",
-      "TacNukeStrike,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "GhostHoldFire,Execute",
+      "TacNukeStrike,Cancel",
+      "attack,Execute",
+      "Snipe,Execute",
+      "TacNukeStrike,Execute",
+      "GhostCloak,On",
+      "GhostCloak,Off",
+      "EMP,Execute",
+      "GhostWeaponsFree,Execute",
+      "ChannelSnipe,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -7091,8 +7056,8 @@
   {
     "abilityCommands" : 
     [
-      "WidowMineAttack,Execute",
       "WidowMineUnburrow,Execute",
+      "WidowMineAttack,Execute",
       "attack,Execute",
       "move,AcquireMove"
     ],
@@ -7133,18 +7098,7 @@
   },
   "501" : 
   {
-    "abilityCommands" : 
-    [
-      "LurkerAspectMP,Cancel",
-      "LurkerAspectMPFromHydraliskBurrowed,Cancel",
-      "MorphToLurker,Cancel",
-      "Rally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
-    ],
+    "abilityCommands" : [ "MorphToLurker,Cancel", "Rally,Rally1", "attack,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -7184,13 +7138,13 @@
   {
     "abilityCommands" : 
     [
-      "BurrowLurkerMPDown,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "BurrowLurkerMPDown,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -7231,11 +7185,11 @@
   {
     "abilityCommands" : 
     [
+      "stop,Stop",
+      "attack,Execute",
       "BurrowLurkerMPUp,Execute",
       "LurkerHoldFire,Execute",
-      "LurkerRemoveHoldFire,Execute",
-      "attack,Execute",
-      "stop,Stop"
+      "LurkerRemoveHoldFire,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -7277,11 +7231,8 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "HydraliskDenResearch,Research2",
-      "HydraliskDenResearch,Research3",
-      "HydraliskDenResearch,Research4",
-      "HydraliskDenResearch,Research5",
-      "que5,CancelLast"
+      "que5,CancelLast",
+      "HydraliskDenResearch,Research2"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -7327,12 +7278,12 @@
   {
     "abilityCommands" : 
     [
-      "StimpackMarauder,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "StimpackMarauder,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -7459,15 +7410,12 @@
   {
     "abilityCommands" : 
     [
-      "250mmStrikeCannons,Cancel",
-      "250mmStrikeCannons,Execute",
-      "ThorAPMode,Cancel",
-      "ThorAPMode,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ThorAPMode,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -7508,12 +7456,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToHellionTank,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToHellionTank,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -7554,16 +7502,16 @@
   {
     "abilityCommands" : 
     [
-      "MedivacHeal,Execute",
-      "MedivacSpeedBoost,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "MedivacTransport,Load",
-      "MedivacTransport,UnloadAt",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "MedivacHeal,Execute",
+      "MedivacTransport,UnloadAt",
+      "MedivacSpeedBoost,Execute"
     ],
     "acceleration" : 2.25,
     "armored" : true,
@@ -7604,13 +7552,13 @@
   {
     "abilityCommands" : 
     [
-      "BansheeCloak,Off",
-      "BansheeCloak,On",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "BansheeCloak,On",
+      "BansheeCloak,Off"
     ],
     "acceleration" : 3.25,
     "armored" : false,
@@ -7651,15 +7599,14 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "BuildAutoTurret,Execute",
-      "PlacePointDefenseDrone,Execute",
-      "SeekerMissile,Execute",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "SeekerMissile,Execute"
     ],
     "acceleration" : 2.0,
     "armored" : false,
@@ -7738,13 +7685,13 @@
   {
     "abilityCommands" : 
     [
-      "Hyperjump,Execute",
-      "Yamato,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "Yamato,Execute",
+      "Hyperjump,Execute"
     ],
     "acceleration" : 1.0,
     "armored" : true,
@@ -7909,16 +7856,11 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
-      "NexusTrain,Train1",
-      "NexusTrainMothership,Train1",
-      "NexusTrainMothershipCore,Train1",
-      "RallyNexus,Rally1",
-      "TimeWarp,Execute",
-      "attackProtossBuilding,Execute",
-      "que5,CancelLast",
       "que5Passive,CancelLast",
-      "stopProtossBuilding,Stop"
+      "NexusTrainMothershipCore,Train1",
+      "attackProtossBuilding,Execute",
+      "stopProtossBuilding,Stop",
+      "TimeWarp,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -8470,12 +8412,12 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "move,Patrol"
     ],
     "acceleration" : 3.25,
     "armored" : true,
@@ -8706,17 +8648,17 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
+      "UpgradeToWarpGate,Cancel",
       "GatewayTrain,Train1",
       "GatewayTrain,Train2",
       "GatewayTrain,Train4",
       "GatewayTrain,Train5",
-      "GatewayTrain,Train6",
-      "GatewayTrain,Train7",
       "Rally,Rally1",
-      "UpgradeToWarpGate,Cancel",
       "UpgradeToWarpGate,Execute",
-      "que5,CancelLast"
+      "GatewayTrain,Train6",
+      "GatewayTrain,Train7"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9134,6 +9076,7 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
       "ForgeResearch,Research1",
       "ForgeResearch,Research2",
@@ -9143,8 +9086,7 @@
       "ForgeResearch,Research6",
       "ForgeResearch,Research7",
       "ForgeResearch,Research8",
-      "ForgeResearch,Research9",
-      "que5,CancelLast"
+      "ForgeResearch,Research9"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9276,12 +9218,12 @@
   {
     "abilityCommands" : 
     [
-      "TestZerg,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "TestZerg,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -9360,13 +9302,10 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "FleetBeaconResearch,Research1",
-      "FleetBeaconResearch,Research2",
       "FleetBeaconResearch,Research3",
-      "FleetBeaconResearch,Research5",
-      "FleetBeaconResearch,Research6",
-      "que5,CancelLast"
+      "FleetBeaconResearch,Research1"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9412,11 +9351,11 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "TwilightCouncilResearch,Research1",
       "TwilightCouncilResearch,Research2",
-      "TwilightCouncilResearch,Research3",
-      "que5,CancelLast"
+      "TwilightCouncilResearch,Research1",
+      "TwilightCouncilResearch,Research3"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9584,7 +9523,7 @@
   },
   "66" : 
   {
-    "abilityCommands" : [ "BuildInProgress,Cancel", "attack,Execute", "stop,Stop" ],
+    "abilityCommands" : [ "BuildInProgress,Cancel", "stop,Stop", "attack,Execute" ],
     "acceleration" : 0.0,
     "armored" : true,
     "biological" : false,
@@ -9801,15 +9740,14 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "Rally,Rally1",
       "StargateTrain,Train1",
-      "StargateTrain,Train10",
-      "StargateTrain,Train2",
       "StargateTrain,Train3",
+      "Rally,Rally1",
       "StargateTrain,Train5",
       "StargateTrain,Train9",
-      "que5,CancelLast"
+      "StargateTrain,Train10"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9855,10 +9793,9 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "TemplarArchivesResearch,Research1",
-      "TemplarArchivesResearch,Research5",
-      "que5,CancelLast"
+      "TemplarArchivesResearch,Research5"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -9942,13 +9879,13 @@
   {
     "abilityCommands" : 
     [
-      "BurrowRavagerDown,Execute",
-      "RavagerCorrosiveBile,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "BurrowRavagerDown,Execute",
+      "RavagerCorrosiveBile,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -9989,12 +9926,12 @@
   {
     "abilityCommands" : 
     [
-      "LiberatorAGTarget,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "LiberatorAGTarget,Execute"
     ],
     "acceleration" : 3.5,
     "armored" : true,
@@ -10076,7 +10013,7 @@
   },
   "690" : 
   {
-    "abilityCommands" : [ "BurrowRavagerUp,Execute", "attack,Execute" ],
+    "abilityCommands" : [ "attack,Execute", "BurrowRavagerUp,Execute" ],
     "acceleration" : 1000.0,
     "armored" : false,
     "biological" : true,
@@ -10116,13 +10053,13 @@
   {
     "abilityCommands" : 
     [
-      "ThorNormalMode,Cancel",
-      "ThorNormalMode,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ThorNormalMode,Execute",
+      "ThorNormalMode,Cancel"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -10163,13 +10100,13 @@
   {
     "abilityCommands" : 
     [
-      "LockOn,Execute",
-      "LockOnCancel,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "LockOn,Execute",
+      "LockOnCancel,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -10210,12 +10147,12 @@
   {
     "abilityCommands" : 
     [
-      "LocustMPFlyingSwoop,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "LocustMPFlyingSwoop,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -10256,14 +10193,14 @@
   {
     "abilityCommands" : 
     [
-      "ProgressRally,Rally1",
-      "PurificationNovaTargeted,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1",
+      "PurificationNovaTargeted,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -10304,12 +10241,12 @@
   {
     "abilityCommands" : 
     [
-      "BurrowInfestorTerranDown,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "BurrowInfestorTerranDown,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -10350,11 +10287,11 @@
   {
     "abilityCommands" : 
     [
+      "RoboticsBayResearch,Research6",
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
       "RoboticsBayResearch,Research2",
-      "RoboticsBayResearch,Research3",
-      "RoboticsBayResearch,Research6",
-      "que5,CancelLast"
+      "RoboticsBayResearch,Research3"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -10400,14 +10337,14 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
+      "RoboticsFacilityTrain,Train3",
+      "RoboticsFacilityTrain,Train2",
       "Rally,Rally1",
       "RoboticsFacilityTrain,Train1",
-      "RoboticsFacilityTrain,Train19",
-      "RoboticsFacilityTrain,Train2",
-      "RoboticsFacilityTrain,Train3",
       "RoboticsFacilityTrain,Train4",
-      "que5,CancelLast"
+      "RoboticsFacilityTrain,Train19"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -10453,16 +10390,15 @@
   {
     "abilityCommands" : 
     [
-      "BuildInProgress,Cancel",
       "CyberneticsCoreResearch,Research1",
-      "CyberneticsCoreResearch,Research10",
       "CyberneticsCoreResearch,Research2",
       "CyberneticsCoreResearch,Research3",
       "CyberneticsCoreResearch,Research4",
       "CyberneticsCoreResearch,Research5",
       "CyberneticsCoreResearch,Research6",
-      "CyberneticsCoreResearch,Research7",
-      "que5,CancelLast"
+      "que5,CancelLast",
+      "BuildInProgress,Cancel",
+      "CyberneticsCoreResearch,Research7"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -10546,12 +10482,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToGuardianMP,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "MorphToGuardianMP,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -10592,11 +10528,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute"
     ],
     "acceleration" : 1.0,
     "armored" : true,
@@ -10637,12 +10573,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToDevourerMP,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "MorphToDevourerMP,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -10683,11 +10619,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1.875,
     "armored" : true,
@@ -10728,13 +10664,13 @@
   {
     "abilityCommands" : 
     [
-      "Charge,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1",
+      "Charge,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -10773,7 +10709,7 @@
   },
   "730" : 
   {
-    "abilityCommands" : [ "DefilerMPUnburrow,Execute", "attack,Execute", "move,AcquireMove" ],
+    "abilityCommands" : [ "attack,Execute", "move,AcquireMove", "DefilerMPUnburrow,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -10813,16 +10749,16 @@
   {
     "abilityCommands" : 
     [
-      "DefilerMPBurrow,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
+      "attack,Execute",
+      "move,AcquireMove",
       "DefilerMPConsume,Execute",
       "DefilerMPDarkSwarm,Execute",
       "DefilerMPPlague,Execute",
-      "attack,Execute",
-      "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "DefilerMPBurrow,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -10906,14 +10842,13 @@
   {
     "abilityCommands" : 
     [
-      "ProgressRally,Rally1",
-      "PurificationNova,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -10952,7 +10887,7 @@
   },
   "734" : 
   {
-    "abilityCommands" : [ "LiberatorAATarget,Execute", "attack,Execute", "stop,Stop" ],
+    "abilityCommands" : [ "stop,Stop", "LiberatorAATarget,Execute", "attack,Execute" ],
     "acceleration" : 3.5,
     "armored" : true,
     "biological" : false,
@@ -10992,13 +10927,13 @@
   {
     "abilityCommands" : 
     [
-      "Blink,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1",
+      "Blink,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -11082,16 +11017,16 @@
   {
     "abilityCommands" : 
     [
-      "ArchonWarp,SelectedUnits",
-      "Feedback,Execute",
-      "ProgressRally,Rally1",
-      "PsiStorm,Execute",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1",
+      "ArchonWarp,SelectedUnits",
+      "PsiStorm,Execute",
+      "Feedback,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -11132,14 +11067,14 @@
   {
     "abilityCommands" : 
     [
-      "ArchonWarp,SelectedUnits",
-      "DarkTemplarBlink,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1",
+      "ArchonWarp,SelectedUnits",
+      "DarkTemplarBlink,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -11180,27 +11115,25 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
+      "attack,Execute",
+      "ProgressRally,Rally1",
       "ForceField,Execute",
       "GuardianShield,Execute",
-      "HallucinationAdept,Execute",
-      "HallucinationArchon,Execute",
-      "HallucinationColossus,Execute",
-      "HallucinationDisruptor,Execute",
-      "HallucinationHighTemplar,Execute",
-      "HallucinationImmortal,Execute",
-      "HallucinationOracle,Execute",
-      "HallucinationPhoenix,Execute",
       "HallucinationProbe,Execute",
-      "HallucinationStalker,Execute",
-      "HallucinationVoidRay,Execute",
-      "HallucinationWarpPrism,Execute",
       "HallucinationZealot,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "HallucinationStalker,Execute",
+      "HallucinationImmortal,Execute",
+      "HallucinationAdept,Execute",
+      "HallucinationDisruptor,Execute",
+      "HallucinationVoidRay,Execute",
+      "HallucinationPhoenix,Execute",
+      "HallucinationWarpPrism,Execute",
+      "HallucinationColossus,Execute",
+      "HallucinationOracle,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -11241,13 +11174,13 @@
   {
     "abilityCommands" : 
     [
-      "GravitonBeam,Cancel",
-      "GravitonBeam,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "GravitonBeam,Cancel",
+      "GravitonBeam,Execute"
     ],
     "acceleration" : 3.25,
     "armored" : false,
@@ -11288,13 +11221,13 @@
   {
     "abilityCommands" : 
     [
-      "CarrierHangar,Ammo1",
-      "HangarQueue5,CancelLast",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "CarrierHangar,Ammo1",
+      "HangarQueue5,CancelLast"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -11457,7 +11390,7 @@
   },
   "8" : 
   {
-    "abilityCommands" : [ "Rally,Rally1", "attack,Execute", "que1,CancelLast" ],
+    "abilityCommands" : [ "que1,CancelLast", "Rally,Rally1", "attack,Execute" ],
     "acceleration" : 0.0,
     "armored" : false,
     "biological" : true,
@@ -11497,13 +11430,13 @@
   {
     "abilityCommands" : 
     [
-      "VoidRaySwarmDamageBoost,Execute",
-      "VoidRaySwarmDamageBoostCancel,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "VoidRaySwarmDamageBoost,Execute",
+      "VoidRaySwarmDamageBoostCancel,Execute"
     ],
     "acceleration" : 2.0,
     "armored" : true,
@@ -11544,14 +11477,14 @@
   {
     "abilityCommands" : 
     [
-      "AdeptShadePhaseShiftCancel,Execute",
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,AcquireMove",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "move,AcquireMove",
+      "attack,Execute",
+      "ProgressRally,Rally1",
+      "AdeptShadePhaseShiftCancel,Execute"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -11592,15 +11525,15 @@
   {
     "abilityCommands" : 
     [
-      "PhasingMode,Execute",
-      "WarpPrismTransport,Load",
-      "WarpPrismTransport,UnloadAt",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "move,Patrol",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "WarpPrismTransport,Load",
+      "WarpPrismTransport,UnloadAt",
+      "PhasingMode,Execute"
     ],
     "acceleration" : 2.625,
     "armored" : true,
@@ -11641,12 +11574,12 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,AcquireMove",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "move,Patrol",
-      "stop,Stop"
+      "attack,Execute",
+      "move,AcquireMove"
     ],
     "acceleration" : 2.125,
     "armored" : false,
@@ -11687,11 +11620,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -11732,11 +11665,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -11939,11 +11872,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : true,
@@ -11984,12 +11917,12 @@
   {
     "abilityCommands" : 
     [
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -12030,28 +11963,28 @@
   {
     "abilityCommands" : 
     [
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol",
       "ProbeHarvest,Gather",
       "ProbeHarvest,Return",
+      "SprayProtoss,Execute",
       "ProtossBuild,Build1",
-      "ProtossBuild,Build10",
-      "ProtossBuild,Build11",
-      "ProtossBuild,Build12",
-      "ProtossBuild,Build13",
-      "ProtossBuild,Build14",
-      "ProtossBuild,Build15",
-      "ProtossBuild,Build2",
       "ProtossBuild,Build3",
+      "ProtossBuild,Build2",
       "ProtossBuild,Build4",
       "ProtossBuild,Build5",
-      "ProtossBuild,Build6",
-      "ProtossBuild,Build7",
+      "ProtossBuild,Build15",
       "ProtossBuild,Build8",
-      "SprayProtoss,Execute",
-      "attack,Execute",
-      "move,HoldPos",
-      "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "ProtossBuild,Build10",
+      "ProtossBuild,Build11",
+      "ProtossBuild,Build14",
+      "ProtossBuild,Build6",
+      "ProtossBuild,Build12",
+      "ProtossBuild,Build7",
+      "ProtossBuild,Build13"
     ],
     "acceleration" : 2.5,
     "armored" : false,
@@ -12092,12 +12025,12 @@
   {
     "abilityCommands" : 
     [
-      "ProgressRally,Rally1",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ProgressRally,Rally1"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -12138,11 +12071,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -12183,11 +12116,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "move,HoldPos",
+      "stop,Stop",
+      "attack,Execute"
     ],
     "acceleration" : 2.625,
     "armored" : false,
@@ -12228,12 +12161,12 @@
   {
     "abilityCommands" : 
     [
-      "CorsairMPDisruptionWeb,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "CorsairMPDisruptionWeb,Execute"
     ],
     "acceleration" : 3.25,
     "armored" : false,
@@ -12274,11 +12207,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 1.875,
     "armored" : true,
@@ -12319,13 +12252,13 @@
   {
     "abilityCommands" : 
     [
-      "ArbiterMPRecall,Execute",
-      "ArbiterMPStasisField,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "ArbiterMPStasisField,Execute",
+      "ArbiterMPRecall,Execute"
     ],
     "acceleration" : 1.875,
     "armored" : true,
@@ -12366,11 +12299,11 @@
   {
     "abilityCommands" : 
     [
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
-      "move,Patrol",
-      "stop,Stop"
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
+      "move,Patrol"
     ],
     "acceleration" : 3.5,
     "armored" : false,
@@ -12411,16 +12344,15 @@
   {
     "abilityCommands" : 
     [
+      "que5CancelToSelection,CancelLast",
+      "UpgradeToLair,Cancel",
       "BuildInProgress,Cancel",
-      "LairResearch,Research2",
-      "LairResearch,Research3",
-      "LairResearch,Research4",
-      "RallyHatchery,Rally1",
+      "UpgradeToLair,Execute",
       "RallyHatchery,Rally2",
       "TrainQueen,Train1",
-      "UpgradeToLair,Cancel",
-      "UpgradeToLair,Execute",
-      "que5CancelToSelection,CancelLast"
+      "RallyHatchery,Rally1",
+      "LairResearch,Research2",
+      "LairResearch,Research4"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -12466,14 +12398,14 @@
   {
     "abilityCommands" : 
     [
-      "QueenMPEnsnare,Execute",
-      "QueenMPInfestCommandCenter,Execute",
-      "QueenMPSpawnBroodlings,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "QueenMPEnsnare,Execute",
+      "QueenMPSpawnBroodlings,Execute",
+      "QueenMPInfestCommandCenter,Execute"
     ],
     "acceleration" : 3.5,
     "armored" : false,
@@ -12557,12 +12489,12 @@
   {
     "abilityCommands" : 
     [
-      "SlaynElementalGrab,Execute",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "SlaynElementalGrab,Execute"
     ],
     "acceleration" : 10.0,
     "armored" : true,
@@ -12937,10 +12869,10 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "SpawningPoolResearch,Research1",
       "SpawningPoolResearch,Research2",
-      "que5,CancelLast"
+      "SpawningPoolResearch,Research1"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13029,12 +12961,12 @@
   {
     "abilityCommands" : 
     [
-      "MorphToTransportOverlord,Cancel",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToTransportOverlord,Cancel"
     ],
     "acceleration" : 0.0,
     "armored" : false,
@@ -13075,18 +13007,18 @@
   {
     "abilityCommands" : 
     [
-      "GenerateCreep,Off",
-      "GenerateCreep,On",
-      "MorphToOverseer,Cancel",
-      "MorphToOverseer,Execute",
-      "OverlordTransport,Load",
-      "OverlordTransport,UnloadAt",
+      "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
       "attack,Execute",
       "move,AcquireMove",
-      "move,HoldPos",
-      "move,Move",
       "move,Patrol",
-      "stop,Stop"
+      "MorphToOverseer,Execute",
+      "MorphToOverseer,Cancel",
+      "GenerateCreep,On",
+      "OverlordTransport,Load",
+      "OverlordTransport,UnloadAt",
+      "GenerateCreep,Off"
     ],
     "acceleration" : 1.0625,
     "armored" : true,
@@ -13125,7 +13057,7 @@
   },
   "895" : 
   {
-    "abilityCommands" : [ "attack,Execute", "move,Move", "stop,Stop" ],
+    "abilityCommands" : [ "move,Move", "stop,Stop", "attack,Execute" ],
     "acceleration" : 1000.0,
     "armored" : false,
     "biological" : false,
@@ -13165,16 +13097,13 @@
   {
     "abilityCommands" : 
     [
-      "BurrowBanelingDown,Execute",
-      "Explode,Execute",
-      "SapStructure,Execute",
-      "VolatileBurstBuilding,Off",
-      "VolatileBurstBuilding,On",
-      "attack,Execute",
-      "move,HoldPos",
       "move,Move",
+      "stop,Stop",
+      "move,HoldPos",
+      "attack,Execute",
       "move,Patrol",
-      "stop,Stop"
+      "VolatileBurstBuilding,On",
+      "VolatileBurstBuilding,Off"
     ],
     "acceleration" : 1000.0,
     "armored" : false,
@@ -13215,17 +13144,17 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "evolutionchamberresearch,Research1",
-      "evolutionchamberresearch,Research2",
-      "evolutionchamberresearch,Research3",
       "evolutionchamberresearch,Research4",
       "evolutionchamberresearch,Research5",
       "evolutionchamberresearch,Research6",
+      "evolutionchamberresearch,Research1",
+      "evolutionchamberresearch,Research2",
+      "evolutionchamberresearch,Research3",
       "evolutionchamberresearch,Research7",
       "evolutionchamberresearch,Research8",
-      "evolutionchamberresearch,Research9",
-      "que5,CancelLast"
+      "evolutionchamberresearch,Research9"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13271,13 +13200,11 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "HydraliskDenResearch,Research2",
-      "HydraliskDenResearch,Research3",
-      "HydraliskDenResearch,Research4",
       "UpgradeToLurkerDenMP,Cancel",
-      "UpgradeToLurkerDenMP,Execute",
-      "que5,CancelLast"
+      "HydraliskDenResearch,Research2",
+      "UpgradeToLurkerDenMP,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13323,16 +13250,16 @@
   {
     "abilityCommands" : 
     [
+      "UpgradeToGreaterSpire,Cancel",
+      "que5CancelToSelection,CancelLast",
       "BuildInProgress,Cancel",
+      "UpgradeToGreaterSpire,Execute",
       "SpireResearch,Research1",
       "SpireResearch,Research2",
       "SpireResearch,Research3",
       "SpireResearch,Research4",
       "SpireResearch,Research5",
-      "SpireResearch,Research6",
-      "UpgradeToGreaterSpire,Cancel",
-      "UpgradeToGreaterSpire,Execute",
-      "que5CancelToSelection,CancelLast"
+      "SpireResearch,Research6"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13378,10 +13305,9 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "UltraliskCavernResearch,Research2",
-      "UltraliskCavernResearch,Research3",
-      "que5,CancelLast"
+      "UltraliskCavernResearch,Research3"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13427,12 +13353,11 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "InfestationPitResearch,Research2",
       "InfestationPitResearch,Research3",
       "InfestationPitResearch,Research4",
-      "InfestationPitResearch,Research6",
-      "que5,CancelLast"
+      "InfestationPitResearch,Research6"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13479,13 +13404,12 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "BuildNydusCanal,Build1",
-      "BuildNydusCanal,Build2",
-      "BuildNydusCanal,Build3",
       "NydusCanalTransport,Load",
       "NydusCanalTransport,UnloadAll",
       "Rally,Rally1",
-      "stop,Stop"
+      "BuildNydusCanal,Build1",
+      "BuildNydusCanal,Build2",
+      "BuildNydusCanal,Build3"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13531,9 +13455,9 @@
   {
     "abilityCommands" : 
     [
-      "BanelingNestResearch,Research1",
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
-      "que5,CancelLast"
+      "BanelingNestResearch,Research1"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13579,10 +13503,10 @@
   {
     "abilityCommands" : 
     [
+      "que5,CancelLast",
       "BuildInProgress,Cancel",
       "RoachWarrenResearch,Research2",
-      "RoachWarrenResearch,Research3",
-      "que5,CancelLast"
+      "RoachWarrenResearch,Research3"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13629,9 +13553,9 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "SpineCrawlerUproot,Execute",
+      "stop,Stop",
       "attack,Execute",
-      "stop,Stop"
+      "SpineCrawlerUproot,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,
@@ -13678,9 +13602,9 @@
     "abilityCommands" : 
     [
       "BuildInProgress,Cancel",
-      "SporeCrawlerUproot,Execute",
+      "stop,Stop",
       "attack,Execute",
-      "stop,Stop"
+      "SporeCrawlerUproot,Execute"
     ],
     "acceleration" : 0.0,
     "armored" : true,

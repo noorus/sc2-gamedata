@@ -1,0 +1,225 @@
+Adept
+
+AdeptPhaseShift
+
+AdeptPiercingWeapon
+
+AdeptUpgradeWeapon
+
+AdeptWeapon
+
+ArbiterMP
+
+ArbiterMPWeaponMissile
+
+Archon
+
+Assimilator
+
+Carrier
+
+Colossus
+
+CorsairMP
+
+CyberneticsCore
+  upgrades
+    ProtossAirWeaponsLevel1
+    ProtossAirWeaponsLevel2
+    ProtossAirWeaponsLevel3
+    ProtossAirArmorsLevel1
+    ProtossAirArmorsLevel2
+    ProtossAirArmorsLevel3
+    WarpGateResearch
+
+DarkShrine
+  upgrades
+    DarkTemplarBlinkUpgrade
+
+DarkTemplar
+
+DevourerMPWeaponMissile
+
+Disruptor
+
+DisruptorPhased
+
+FleetBeacon
+  upgrades
+    PhoenixRangeUpgrade
+    CarrierLaunchSpeedUpgrade
+
+ForceField
+
+Forge
+  upgrades
+    ProtossGroundWeaponsLevel1
+    ProtossGroundWeaponsLevel2
+    ProtossGroundWeaponsLevel3
+    ProtossGroundArmorsLevel1
+    ProtossGroundArmorsLevel2
+    ProtossGroundArmorsLevel3
+    ProtossShieldsLevel1
+    ProtossShieldsLevel2
+    ProtossShieldsLevel3
+
+Gateway
+  builds
+    Zealot
+    Stalker
+    HighTemplar
+    DarkTemplar
+    Sentry
+    Adept
+  morphs
+    WarpGate
+
+HighTemplar
+
+HighTemplarSkinPreview
+
+IceProtossCrates
+
+Immortal
+
+Interceptor
+
+IonCannonsWeapon
+
+LightningBombWeapon
+
+Mothership
+
+MothershipCore
+  morphs
+    Mothership
+
+MothershipCoreWeaponWeapon
+
+Nexus
+  builds
+    MothershipCore
+
+Observer
+
+Oracle
+  builds
+    OracleStasisTrap
+
+OracleStasisTrap
+
+OracleWeapon
+
+Phoenix
+
+PhotonCannon
+
+PhotonCannonWeapon
+
+Probe
+  builds
+    Nexus
+    Assimilator
+    Pylon
+    Gateway
+    Forge
+    CyberneticsCore
+    PhotonCannon
+    Stargate
+    TemplarArchive
+    RoboticsFacility
+    FleetBeacon
+    DarkShrine
+    TwilightCouncil
+    RoboticsBay
+
+ProtossCrates
+
+Pylon
+
+ReleaseInterceptorsBeacon
+
+Replicant
+
+RepulsorCannonWeapon
+
+ResourceBlocker
+
+RoboticsBay
+  upgrades
+    ExtendedThermalLance
+    ObserverGraviticBooster
+    GraviticDrive
+
+RoboticsFacility
+  builds
+    Colossus
+    Observer
+    WarpPrism
+    Immortal
+    Disruptor
+
+ScoutMP
+
+ScoutMPAirWeaponLeft
+
+ScoutMPAirWeaponRight
+
+Sentry
+
+Stalker
+
+StalkerWeapon
+
+Stargate
+  builds
+    Phoenix
+    VoidRay
+    Oracle
+    Tempest
+
+Tempest
+
+TempestWeapon
+
+TempestWeaponGround
+
+TemplarArchive
+  upgrades
+    PsiStormTech
+
+TwilightCouncil
+  upgrades
+    BlinkTech
+    Charge
+    AdeptPiercingAttack
+
+VoidMPImmortalReviveCorpse
+  morphs
+    Immortal
+
+VoidRay
+
+WarpGate
+  builds
+    Zealot
+    Stalker
+    HighTemplar
+    DarkTemplar
+    Sentry
+    Adept
+  morphs
+    Gateway
+
+WarpPrism
+  morphs
+    WarpPrismPhasing
+
+WarpPrismPhasing
+  morphs
+    WarpPrism
+
+WarpPrismSkinPreview
+
+Zealot
+

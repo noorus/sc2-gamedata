@@ -1,0 +1,301 @@
+ATALaserBatteryLMWeapon
+
+ATSLaserBatteryLMWeapon
+
+Armory
+  upgrades
+    TerranVehicleAndShipArmorsLevel1
+    TerranVehicleAndShipArmorsLevel2
+    TerranVehicleAndShipArmorsLevel3
+    TerranShipWeaponsLevel1
+    TerranShipWeaponsLevel2
+    TerranShipWeaponsLevel3
+    TerranVehicleAndShipWeaponsLevel3
+    TerranVehicleAndShipArmorsLevel1
+    TerranVehicleAndShipArmorsLevel2
+    TerranVehicleAndShipArmorsLevel3
+
+AutoTestAttackTargetAir
+
+AutoTestAttackTargetGround
+
+AutoTestAttacker
+
+AutoTurret
+
+AutoTurretReleaseWeapon
+
+BacklashRocketsLMWeapon
+
+Banshee
+
+Barracks
+  builds
+    Marine
+    Reaper
+    Marauder
+    Ghost
+    BarracksReactor
+    BarracksTechLab
+
+BarracksFlying
+  builds
+    BarracksReactor
+    BarracksTechLab
+
+BarracksReactor
+
+Battlecruiser
+
+Bunker
+
+BypassArmorDrone
+
+CommandCenter
+  builds
+    SCV
+  morphs
+    OrbitalCommand
+    PlanetaryFortress
+
+CommandCenterFlying
+
+Cyclone
+
+CycloneMissile
+
+CycloneMissileLarge
+
+CycloneMissileLargeAir
+
+D8ChargeWeapon
+
+EMP2Weapon
+
+Elsecaro_Colonist_Hut
+
+EngineeringBay
+  upgrades
+    TerranInfantryWeaponsLevel1
+    TerranInfantryWeaponsLevel2
+    TerranInfantryWeaponsLevel3
+    NeosteelFrame
+    TerranBuildingArmor
+    HiSecAutoTracking
+    TerranInfantryArmorsLevel1
+    TerranInfantryArmorsLevel2
+    TerranInfantryArmorsLevel3
+
+ExtendingBridge
+
+Factory
+  builds
+    Hellion
+    SiegeTank
+    FactoryReactor
+    FactoryTechLab
+    WidowMine
+    Cyclone
+    Thor
+    HellionTank
+
+FactoryFlying
+  builds
+    FactoryReactor
+    FactoryTechLab
+
+FactoryReactor
+
+FusionCore
+  upgrades
+    BattlecruiserEnableSpecializations
+
+Ghost
+
+GhostAcademy
+  upgrades
+    PersonalCloaking
+    GhostMoebiusReactor
+
+GrappleWeapon
+
+HERC
+
+HERCPlacement
+
+Hellion
+  morphs
+    HellionTank
+
+HellionTank
+  morphs
+    Hellion
+
+HunterSeekerWeapon
+
+KD8Charge
+
+KD8ChargeWeapon
+
+Liberator
+
+LiberatorAG
+
+LiberatorAGMissile
+
+LiberatorDamageMissile
+
+LiberatorMissile
+
+LiberatorSkinPreview
+
+LongboltMissileWeapon
+
+MULE
+
+Marauder
+
+Marine
+
+Medivac
+
+MissileTurret
+
+Nuke
+
+OrbitalCommand
+  builds
+    SCV
+
+OrbitalCommandFlying
+
+PlanetaryFortress
+  builds
+    SCV
+
+PointDefenseDrone
+
+PointDefenseDroneReleaseWeapon
+
+PunisherGrenadesLMWeapon
+
+Raven
+
+Reactor
+
+Reaper
+
+ReaperPlaceholder
+
+Refinery
+
+SCV
+  builds
+    CommandCenter
+    Refinery
+    SupplyDepot
+    Barracks
+    EngineeringBay
+    Bunker
+    MissileTurret
+    SensorTower
+    GhostAcademy
+    Factory
+    Armory
+    Starport
+    FusionCore
+
+SMSET
+
+ScopeTest
+
+SeekerMissile
+
+SensorTower
+
+SiegeTank
+  morphs
+    SiegeTankSieged
+
+SiegeTankSieged
+  morphs
+    SiegeTank
+
+SiegeTankSkinPreview
+
+Starport
+  builds
+    VikingFighter
+    Medivac
+    Raven
+    Banshee
+    Battlecruiser
+    Liberator
+    StarportTechLab
+    StarportReactor
+
+StarportFlying
+  builds
+    StarportReactor
+    StarportTechLab
+
+StarportReactor
+
+SupplyDepot
+  morphs
+    SupplyDepotLowered
+
+SupplyDepotLowered
+  morphs
+    SupplyDepot
+
+TechLab
+
+Thor
+  morphs
+    ThorAP
+
+ThorAALance
+
+ThorAAWeapon
+
+ThorAP
+  morphs
+    Thor
+
+TornadoMissileDummyWeapon
+
+TornadoMissileWeapon
+
+TowerMine
+
+VikingAssault
+  morphs
+    VikingFighter
+
+VikingFighter
+  morphs
+    VikingAssault
+
+VikingFighterWeapon
+
+VikingSkinPreview
+
+WarHound
+
+WarHoundWeapon
+
+WidowMine
+  morphs
+    WidowMineBurrowed
+
+WidowMineAirWeapon
+
+WidowMineBurrowed
+  morphs
+    WidowMine
+
+WidowMineWeapon
+
+YamatoWeapon
+

@@ -317,6 +317,469 @@
     "name" : "ArchonWarp",
     "type" : ""
   },
+  "ArmoryResearch" : 
+  {
+    "commands" : 
+    {
+      "Research10" : 
+      {
+        "index" : 859,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 34,
+                "upgradeName" : "TerranShipArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research11" : 
+      {
+        "index" : 860,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 35,
+                "upgradeName" : "TerranShipArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research12" : 
+      {
+        "index" : 861,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 36,
+                "upgradeName" : "TerranShipWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research13" : 
+      {
+        "index" : 862,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 37,
+                "upgradeName" : "TerranShipWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research14" : 
+      {
+        "index" : 863,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 38,
+                "upgradeName" : "TerranShipWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research15" : 
+      {
+        "index" : 864,
+        "time" : 160.0
+      },
+      "Research16" : 
+      {
+        "index" : 865,
+        "time" : 190.0
+      },
+      "Research17" : 
+      {
+        "index" : 866,
+        "time" : 220.0
+      },
+      "Research3" : 
+      {
+        "index" : 852,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 27,
+                "upgradeName" : "TerranVehicleArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research4" : 
+      {
+        "index" : 853,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 28,
+                "upgradeName" : "TerranVehicleArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research5" : 
+      {
+        "index" : 854,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 29,
+                "upgradeName" : "TerranVehicleArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research6" : 
+      {
+        "index" : 855,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 30,
+                "upgradeName" : "TerranVehicleWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research7" : 
+      {
+        "index" : 856,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 31,
+                "upgradeName" : "TerranVehicleWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research8" : 
+      {
+        "index" : 857,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 32,
+                "upgradeName" : "TerranVehicleWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research9" : 
+      {
+        "index" : 858,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 33,
+                "upgradeName" : "TerranShipArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
+    "name" : "ArmoryResearch",
+    "type" : "research"
+  },
+  "ArmoryResearchSwarm" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 2294,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 113,
+                "upgradeName" : "TerranVehicleAndShipWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research2" : 
+      {
+        "index" : 2295,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 114,
+                "upgradeName" : "TerranVehicleAndShipWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research3" : 
+      {
+        "index" : 2296,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 115,
+                "upgradeName" : "TerranVehicleAndShipWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research4" : 
+      {
+        "index" : 2297,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 116,
+                "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research5" : 
+      {
+        "index" : 2298,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 117,
+                "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research6" : 
+      {
+        "index" : 2299,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 118,
+                "upgradeName" : "TerranVehicleAndShipArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      }
+    },
+    "name" : "ArmoryResearchSwarm",
+    "type" : "research"
+  },
   "AssaultMode" : 
   {
     "commands" : 
@@ -330,6 +793,39 @@
     },
     "name" : "AssaultMode",
     "type" : "morph"
+  },
+  "BanelingNestResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1482,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 75,
+                "upgradeName" : "CentrificalHooks"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research2" : 
+      {
+        "index" : 1483,
+        "time" : 0.0
+      }
+    },
+    "name" : "BanelingNestResearch",
+    "type" : "research"
   },
   "BarracksAddOns" : 
   {
@@ -367,8 +863,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 21, 46 ],
+            "unitName" : [ "Barracks", "BarracksFlying" ]
           }
         ],
         "time" : 0.0,
@@ -388,8 +886,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 21, 46 ],
+            "unitName" : [ "Barracks", "BarracksFlying" ]
           }
         ],
         "time" : 0.0,
@@ -398,6 +898,85 @@
     },
     "name" : "BarracksTechLabMorph",
     "type" : "morph"
+  },
+  "BarracksTechLabResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 730,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 15,
+                    "upgradeName" : "Stimpack"
+                  }
+                ],
+                "type" : "not"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 140.0
+      },
+      "Research2" : 
+      {
+        "index" : 731,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 16,
+                "upgradeName" : "ShieldWall"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research3" : 
+      {
+        "index" : 732,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 17,
+                "upgradeName" : "PunisherGrenades"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research4" : 
+      {
+        "index" : 733,
+        "time" : 0.0
+      }
+    },
+    "name" : "BarracksTechLabResearch",
+    "type" : "research"
   },
   "BarracksTrain" : 
   {
@@ -1018,6 +1597,247 @@
     "name" : "CreepTumorBuild",
     "type" : "build"
   },
+  "CyberneticsCoreResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1562,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 78,
+                    "upgradeName" : "ProtossAirWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research10" : 
+      {
+        "index" : 1571,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 85,
+                "upgradeName" : "haltech"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research2" : 
+      {
+        "index" : 1563,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 79,
+                    "upgradeName" : "ProtossAirWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research3" : 
+      {
+        "index" : 1564,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 80,
+                    "upgradeName" : "ProtossAirWeaponsLevel3"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research4" : 
+      {
+        "index" : 1565,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 81,
+                    "upgradeName" : "ProtossAirArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research5" : 
+      {
+        "index" : 1566,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 82,
+                    "upgradeName" : "ProtossAirArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research6" : 
+      {
+        "index" : 1567,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 83,
+                    "upgradeName" : "ProtossAirArmorsLevel3"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 0
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research7" : 
+      {
+        "index" : 1568,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 84,
+                "upgradeName" : "WarpGateResearch"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 140.0
+      }
+    },
+    "name" : "CyberneticsCoreResearch",
+    "type" : "research"
+  },
+  "DarkShrineResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 2720,
+        "time" : 170.0
+      }
+    },
+    "name" : "DarkShrineResearch",
+    "type" : "research"
+  },
   "DefilerMPBurrow" : 
   {
     "commands" : 
@@ -1131,6 +1951,226 @@
     "name" : "DisguiseChangeling",
     "type" : "morph"
   },
+  "EngineeringBayResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 650,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 5,
+                "upgradeName" : "HiSecAutoTracking"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research2" : 
+      {
+        "index" : 651,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 6,
+                "upgradeName" : "TerranBuildingArmor"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 140.0
+      },
+      "Research3" : 
+      {
+        "index" : 652,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 7,
+                "upgradeName" : "TerranInfantryWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research4" : 
+      {
+        "index" : 653,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 8,
+                "upgradeName" : "TerranInfantryWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research5" : 
+      {
+        "index" : 654,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 9,
+                "upgradeName" : "TerranInfantryWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research6" : 
+      {
+        "index" : 655,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 10,
+                "upgradeName" : "NeosteelFrame"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research7" : 
+      {
+        "index" : 656,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 11,
+                "upgradeName" : "TerranInfantryArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research8" : 
+      {
+        "index" : 657,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 12,
+                "upgradeName" : "TerranInfantryArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research9" : 
+      {
+        "index" : 658,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 13,
+                "upgradeName" : "TerranInfantryArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      }
+    },
+    "name" : "EngineeringBayResearch",
+    "type" : "research"
+  },
   "ExtendingBridgeNEWide10" : 
   {
     "commands" : {},
@@ -1239,8 +2279,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 27, 43 ],
+            "unitName" : [ "Factory", "FactoryFlying" ]
           }
         ],
         "time" : 0.0,
@@ -1260,8 +2302,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 27, 43 ],
+            "unitName" : [ "Factory", "FactoryFlying" ]
           }
         ],
         "time" : 0.0,
@@ -1270,6 +2314,79 @@
     },
     "name" : "FactoryTechLabMorph",
     "type" : "morph"
+  },
+  "FactoryTechLabResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 760,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 18,
+                "upgradeName" : "SiegeTech"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research2" : 
+      {
+        "index" : 761,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 19,
+                "upgradeName" : "HighCapacityBarrels"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research3" : 
+      {
+        "index" : 762,
+        "time" : 110.0
+      },
+      "Research4" : 
+      {
+        "index" : 763,
+        "time" : 110.0
+      },
+      "Research5" : 
+      {
+        "index" : 764,
+        "time" : 110.0
+      },
+      "Research6" : 
+      {
+        "index" : 765,
+        "time" : 110.0
+      },
+      "Research7" : 
+      {
+        "index" : 766,
+        "time" : 0.0
+      }
+    },
+    "name" : "FactoryTechLabResearch",
+    "type" : "research"
   },
   "FactoryTrain" : 
   {
@@ -1375,6 +2492,336 @@
     "name" : "FighterMode",
     "type" : "morph"
   },
+  "FleetBeaconResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 44,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 288,
+                "upgradeName" : "VoidRaySpeedUpgrade"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research2" : 
+      {
+        "index" : 45,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 1,
+                "upgradeName" : "CarrierLaunchSpeedUpgrade"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research3" : 
+      {
+        "index" : 46,
+        "time" : 90.0
+      },
+      "Research4" : 
+      {
+        "index" : 47,
+        "time" : 110.0
+      }
+    },
+    "name" : "FleetBeaconResearch",
+    "type" : "research"
+  },
+  "ForgeResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1062,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 39,
+                "upgradeName" : "ProtossGroundWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research2" : 
+      {
+        "index" : 1063,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 40,
+                "upgradeName" : "ProtossGroundWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research3" : 
+      {
+        "index" : 1064,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 41,
+                "upgradeName" : "ProtossGroundWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research4" : 
+      {
+        "index" : 1065,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 42,
+                "upgradeName" : "ProtossGroundArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research5" : 
+      {
+        "index" : 1066,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 43,
+                "upgradeName" : "ProtossGroundArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research6" : 
+      {
+        "index" : 1067,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 44,
+                "upgradeName" : "ProtossGroundArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research7" : 
+      {
+        "index" : 1068,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 45,
+                "upgradeName" : "ProtossShieldsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research8" : 
+      {
+        "index" : 1069,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 46,
+                "upgradeName" : "ProtossShieldsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research9" : 
+      {
+        "index" : 1070,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 47,
+                "upgradeName" : "ProtossShieldsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      }
+    },
+    "name" : "ForgeResearch",
+    "type" : "research"
+  },
+  "FusionCoreResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1532,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 76,
+                "upgradeName" : "BattlecruiserEnableSpecializations"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 60.0
+      },
+      "Research2" : 
+      {
+        "index" : 1533,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 77,
+                "upgradeName" : "BattlecruiserBehemothReactor"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
+    "name" : "FusionCoreResearch",
+    "type" : "research"
+  },
   "GatewayTrain" : 
   {
     "commands" : 
@@ -1463,6 +2910,207 @@
     },
     "name" : "GatewayTrain",
     "type" : "train"
+  },
+  "GhostAcademyResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 820,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 25,
+                "upgradeName" : "PersonalCloaking"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 120.0
+      },
+      "Research2" : 
+      {
+        "index" : 821,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 26,
+                "upgradeName" : "GhostMoebiusReactor"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      }
+    },
+    "name" : "GhostAcademyResearch",
+    "type" : "research"
+  },
+  "HydraliskDenResearch" : 
+  {
+    "commands" : 
+    {
+      "Research2" : 
+      {
+        "index" : 1283,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 135,
+                "upgradeName" : "EvolveMuscularAugments"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 100.0
+      },
+      "Research3" : 
+      {
+        "index" : 1284,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 67,
+                "upgradeName" : "hydraliskspeed"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research4" : 
+      {
+        "index" : 1285,
+        "time" : 0.0
+      },
+      "Research5" : 
+      {
+        "index" : 1286,
+        "time" : 110.0
+      }
+    },
+    "name" : "HydraliskDenResearch",
+    "type" : "research"
+  },
+  "InfestationPitResearch" : 
+  {
+    "commands" : 
+    {
+      "Research3" : 
+      {
+        "index" : 1454,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 74,
+                "upgradeName" : "InfestorEnergyUpgrade"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research4" : 
+      {
+        "index" : 1455,
+        "time" : 110.0
+      },
+      "Research5" : 
+      {
+        "index" : 1456,
+        "time" : 120.0
+      },
+      "Research6" : 
+      {
+        "index" : 1457,
+        "time" : 0.0
+      }
+    },
+    "name" : "InfestationPitResearch",
+    "type" : "research"
+  },
+  "LairResearch" : 
+  {
+    "commands" : 
+    {
+      "Research2" : 
+      {
+        "index" : 1223,
+        "requires" : 
+        [
+          {
+            "type" : "value",
+            "value" : 0
+          }
+        ],
+        "time" : 60.0
+      },
+      "Research3" : 
+      {
+        "index" : 1224,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 63,
+                "upgradeName" : "overlordtransport"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 130.0
+      },
+      "Research4" : 
+      {
+        "index" : 1225,
+        "requires" : 
+        [
+          {
+            "type" : "value",
+            "value" : 0
+          }
+        ],
+        "time" : 100.0
+      }
+    },
+    "name" : "LairResearch",
+    "type" : "research"
   },
   "LarvaTrain" : 
   {
@@ -1734,6 +3382,28 @@
     },
     "name" : "LurkerAspectMPFromHydraliskBurrowed",
     "type" : "morph"
+  },
+  "MercCompoundResearch" : 
+  {
+    "commands" : 
+    {
+      "Research4" : 
+      {
+        "index" : 683,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 27, 43 ],
+            "unitName" : [ "Factory", "FactoryFlying" ]
+          }
+        ],
+        "time" : 100.0
+      }
+    },
+    "name" : "MercCompoundResearch",
+    "type" : "research"
   },
   "MetalGateDefaultLower" : 
   {
@@ -3028,8 +4698,34 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 21, 46 ],
+                    "unitName" : [ "Barracks", "BarracksFlying" ]
+                  },
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 27, 43 ],
+                    "unitName" : [ "Factory", "FactoryFlying" ]
+                  },
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 28, 44 ],
+                    "unitName" : [ "Starport", "StarportFlying" ]
+                  }
+                ],
+                "type" : "or"
+              }
+            ],
+            "type" : "not"
           }
         ],
         "time" : 0.0,
@@ -3094,6 +4790,129 @@
     },
     "name" : "RedstoneLavaCritterUnburrow",
     "type" : "morph"
+  },
+  "RoachWarrenResearch" : 
+  {
+    "commands" : 
+    {
+      "Research2" : 
+      {
+        "index" : 216,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 2,
+                "upgradeName" : "GlialReconstitution"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research3" : 
+      {
+        "index" : 217,
+        "time" : 110.0
+      },
+      "Research4" : 
+      {
+        "index" : 218,
+        "time" : 130.0
+      }
+    },
+    "name" : "RoachWarrenResearch",
+    "type" : "research"
+  },
+  "RoboticsBayResearch" : 
+  {
+    "commands" : 
+    {
+      "Research2" : 
+      {
+        "index" : 1093,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 48,
+                    "upgradeName" : "ObserverGraviticBooster"
+                  }
+                ],
+                "type" : "not"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research3" : 
+      {
+        "index" : 1094,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 49,
+                "upgradeName" : "GraviticDrive"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research6" : 
+      {
+        "index" : 1097,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "QueuedOrBetter",
+                    "type" : "upgradeCount",
+                    "upgrade" : 50,
+                    "upgradeName" : "ExtendedThermalLance"
+                  }
+                ],
+                "type" : "not"
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 140.0
+      },
+      "Research8" : 
+      {
+        "index" : 1099,
+        "time" : 80.0
+      }
+    },
+    "name" : "RoboticsBayResearch",
+    "type" : "research"
   },
   "RoboticsFacilityTrain" : 
   {
@@ -3347,6 +5166,54 @@
     "name" : "SpawnInfestedTerran",
     "type" : "train"
   },
+  "SpawningPoolResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1252,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 65,
+                "upgradeName" : "zerglingattackspeed"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 130.0
+      },
+      "Research2" : 
+      {
+        "index" : 1253,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 66,
+                "upgradeName" : "zerglingmovementspeed"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      }
+    },
+    "name" : "SpawningPoolResearch",
+    "type" : "research"
+  },
   "SpineCrawlerUproot" : 
   {
     "commands" : 
@@ -3360,6 +5227,158 @@
     },
     "name" : "SpineCrawlerUproot",
     "type" : "morph"
+  },
+  "SpireResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1312,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 68,
+                "upgradeName" : "ZergFlyerWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research2" : 
+      {
+        "index" : 1313,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 69,
+                "upgradeName" : "ZergFlyerWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research3" : 
+      {
+        "index" : 1314,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 70,
+                "upgradeName" : "ZergFlyerWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research4" : 
+      {
+        "index" : 1315,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 71,
+                "upgradeName" : "ZergFlyerArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research5" : 
+      {
+        "index" : 1316,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 72,
+                "upgradeName" : "ZergFlyerArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research6" : 
+      {
+        "index" : 1317,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 73,
+                "upgradeName" : "ZergFlyerArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      }
+    },
+    "name" : "SpireResearch",
+    "type" : "research"
   },
   "SporeCrawlerUproot" : 
   {
@@ -3467,8 +5486,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 28, 44 ],
+            "unitName" : [ "Starport", "StarportFlying" ]
           }
         ],
         "time" : 0.0,
@@ -3488,8 +5509,10 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 28, 44 ],
+            "unitName" : [ "Starport", "StarportFlying" ]
           }
         ],
         "time" : 0.0,
@@ -3498,6 +5521,136 @@
     },
     "name" : "StarportTechLabMorph",
     "type" : "morph"
+  },
+  "StarportTechLabResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 790,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 20,
+                "upgradeName" : "BansheeCloak"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research10" : 
+      {
+        "index" : 799,
+        "time" : 170.0
+      },
+      "Research11" : 
+      {
+        "index" : 800,
+        "time" : 120.0
+      },
+      "Research13" : 
+      {
+        "index" : 802,
+        "time" : 120.0
+      },
+      "Research14" : 
+      {
+        "index" : 803,
+        "time" : 110.0
+      },
+      "Research15" : 
+      {
+        "index" : 804,
+        "time" : 80.0
+      },
+      "Research16" : 
+      {
+        "index" : 805,
+        "time" : 110.0
+      },
+      "Research3" : 
+      {
+        "index" : 792,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 21,
+                "upgradeName" : "MedivacCaduceusReactor"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 80.0
+      },
+      "Research4" : 
+      {
+        "index" : 793,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 22,
+                "upgradeName" : "RavenCorvidReactor"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research7" : 
+      {
+        "index" : 796,
+        "requires" : 
+        [
+          {
+            "type" : "value",
+            "value" : 0
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research8" : 
+      {
+        "index" : 797,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 24,
+                "upgradeName" : "DurableMaterials"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      }
+    },
+    "name" : "StarportTechLabResearch",
+    "type" : "research"
   },
   "StarportTrain" : 
   {
@@ -3696,8 +5849,34 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 21, 46 ],
+                    "unitName" : [ "Barracks", "BarracksFlying" ]
+                  },
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 27, 43 ],
+                    "unitName" : [ "Factory", "FactoryFlying" ]
+                  },
+                  {
+                    "state" : "CompleteOnlyAtUnit",
+                    "type" : "unitCount",
+                    "unit" : [ 28, 44 ],
+                    "unitName" : [ "Starport", "StarportFlying" ]
+                  }
+                ],
+                "type" : "or"
+              }
+            ],
+            "type" : "not"
           }
         ],
         "time" : 0.0,
@@ -3706,6 +5885,54 @@
     },
     "name" : "TechLabMorph",
     "type" : "morph"
+  },
+  "TemplarArchivesResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1122,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 51,
+                "upgradeName" : "HighTemplarKhaydarinAmulet"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      },
+      "Research5" : 
+      {
+        "index" : 1126,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 52,
+                "upgradeName" : "PsiStormTech"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      }
+    },
+    "name" : "TemplarArchivesResearch",
+    "type" : "research"
   },
   "TerranAddOns" : 
   {
@@ -4023,6 +6250,77 @@
     },
     "name" : "TransportMode",
     "type" : "morph"
+  },
+  "TwilightCouncilResearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1592,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 86,
+                "upgradeName" : "Charge"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 140.0
+      },
+      "Research2" : 
+      {
+        "index" : 1593,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 87,
+                "upgradeName" : "BlinkTech"
+              }
+            ],
+            "type" : "not"
+          }
+        ],
+        "time" : 110.0
+      },
+      "Research3" : 
+      {
+        "index" : 1594,
+        "time" : 140.0
+      }
+    },
+    "name" : "TwilightCouncilResearch",
+    "type" : "research"
+  },
+  "UltraliskCavernResearch" : 
+  {
+    "commands" : 
+    {
+      "Research3" : 
+      {
+        "index" : 265,
+        "time" : 110.0
+      },
+      "Research4" : 
+      {
+        "index" : 266,
+        "time" : 130.0
+      }
+    },
+    "name" : "UltraliskCavernResearch",
+    "type" : "research"
   },
   "Unsiege" : 
   {
@@ -4831,5 +7129,229 @@
     },
     "name" : "ZergBuild",
     "type" : "build"
+  },
+  "evolutionchamberresearch" : 
+  {
+    "commands" : 
+    {
+      "Research1" : 
+      {
+        "index" : 1186,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 53,
+                "upgradeName" : "ZergMeleeWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research2" : 
+      {
+        "index" : 1187,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 54,
+                "upgradeName" : "ZergMeleeWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research3" : 
+      {
+        "index" : 1188,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 55,
+                "upgradeName" : "ZergMeleeWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research4" : 
+      {
+        "index" : 1189,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 56,
+                "upgradeName" : "ZergGroundArmorsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research5" : 
+      {
+        "index" : 1190,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 57,
+                "upgradeName" : "ZergGroundArmorsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research6" : 
+      {
+        "index" : 1191,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 58,
+                "upgradeName" : "ZergGroundArmorsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      },
+      "Research7" : 
+      {
+        "index" : 1192,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 59,
+                "upgradeName" : "ZergMissileWeaponsLevel1"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 160.0
+      },
+      "Research8" : 
+      {
+        "index" : 1193,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 60,
+                "upgradeName" : "ZergMissileWeaponsLevel2"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 190.0
+      },
+      "Research9" : 
+      {
+        "index" : 1194,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 61,
+                "upgradeName" : "ZergMissileWeaponsLevel3"
+              },
+              {
+                "type" : "value",
+                "value" : 0
+              }
+            ],
+            "type" : "eq"
+          }
+        ],
+        "time" : 220.0
+      }
+    },
+    "name" : "evolutionchamberresearch",
+    "type" : "research"
   }
 }

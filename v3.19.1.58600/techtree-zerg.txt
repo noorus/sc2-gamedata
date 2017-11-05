@@ -1,0 +1,409 @@
+AcidSalivaWeapon
+
+AcidSpinesWeapon
+
+Baneling
+
+BanelingBurrowed
+  morphs
+    Baneling
+
+BanelingCocoon
+
+BanelingNest
+  upgrades
+    CentrificalHooks
+
+BroodLord
+
+BroodLordAWeapon
+
+BroodLordBWeapon
+
+BroodLordCocoon
+
+BroodLordWeapon
+
+BroodlingDefault
+
+CausticSprayMissile
+
+Changeling
+
+ChangelingMarine
+
+ChangelingMarineShield
+
+ChangelingZealot
+
+ContaminateWeapon
+
+CorrosiveParasiteWeapon
+
+CorruptionWeapon
+
+Corruptor
+  morphs
+    BroodLord
+
+CreepTumor
+
+CreepTumorBurrowed
+  builds
+    CreepTumor
+
+CreepTumorMissile
+
+CreepTumorQueen
+
+DefilerMP
+  morphs
+    DefilerMPBurrowed
+
+DefilerMPBurrowed
+  morphs
+    DefilerMP
+
+DefilerMPDarkSwarmWeapon
+
+DefilerMPPlagueWeapon
+
+DevourerCocoonMP
+
+DevourerMP
+
+Drone
+  builds
+    Hatchery
+    Extractor
+    SpawningPool
+    EvolutionChamber
+    BanelingNest
+    RoachWarren
+    SpineCrawler
+    SporeCrawler
+    Spire
+    UltraliskCavern
+    NydusNetwork
+    InfestationPit
+    HydraliskDen
+
+DroneBurrowed
+  morphs
+    Drone
+
+Egg
+
+EvolutionChamber
+  upgrades
+    ZergGroundArmorsLevel1
+    ZergGroundArmorsLevel2
+    ZergGroundArmorsLevel3
+    ZergMeleeWeaponsLevel1
+    ZergMeleeWeaponsLevel2
+    ZergMeleeWeaponsLevel3
+    ZergMissileWeaponsLevel1
+    ZergMissileWeaponsLevel2
+    ZergMissileWeaponsLevel3
+
+Extractor
+
+EyeStalkWeapon
+
+FrenzyWeapon
+
+FungalGrowthMissile
+
+GlaiveWurmWeapon
+
+GreaterSpire
+  upgrades
+    ZergFlyerWeaponsLevel1
+    ZergFlyerWeaponsLevel2
+    ZergFlyerWeaponsLevel3
+    ZergFlyerArmorsLevel1
+    ZergFlyerArmorsLevel2
+    ZergFlyerArmorsLevel3
+
+GuardianCocoonMP
+
+GuardianMP
+
+GuardianMPWeapon
+
+Hatchery
+  builds
+    Queen
+  morphs
+    Lair
+  upgrades
+    overlordspeed
+    Burrow
+
+Hive
+  builds
+    Queen
+  upgrades
+    overlordspeed
+    Burrow
+
+Hydralisk
+  morphs
+    HydraliskBurrowed
+    LurkerMP
+
+HydraliskBurrowed
+  morphs
+    Hydralisk
+
+HydraliskDen
+  morphs
+    LurkerDenMP
+  upgrades
+    EvolveMuscularAugments
+
+HydraliskImpaleMissile
+
+InfestationPit
+  upgrades
+    InfestorEnergyUpgrade
+    NeuralParasite
+
+InfestedTerransEgg
+
+InfestedTerransEggPlacement
+
+InfestedTerransWeapon
+
+Infestor
+  morphs
+    InfestorBurrowed
+
+InfestorBurrowed
+  morphs
+    Infestor
+
+InfestorTerran
+  morphs
+    InfestorTerranBurrowed
+
+InfestorTerranBurrowed
+  morphs
+    InfestorTerran
+
+InfestorTerransWeapon
+
+Lair
+  builds
+    Queen
+  morphs
+    Hive
+  upgrades
+    overlordspeed
+    Burrow
+
+Larva
+  builds
+    Drone
+    Zergling
+    Overlord
+    Roach
+    Mutalisk
+    Infestor
+    Ultralisk
+    Viper
+    Hydralisk
+    SwarmHostMP
+    Corruptor
+
+LarvaReleaseMissile
+
+LocustMP
+
+LocustMPEggAMissileWeapon
+
+LocustMPEggBMissileWeapon
+
+LocustMPFlying
+
+LocustMPWeapon
+
+LurkerDenMP
+  upgrades
+    EvolveMuscularAugments
+
+LurkerMP
+  morphs
+    LurkerMPBurrowed
+
+LurkerMPBurrowed
+  morphs
+    LurkerMP
+
+LurkerMPEgg
+
+Mutalisk
+
+NeuralParasiteTentacleMissile
+
+NeuralParasiteWeapon
+
+NydusCanal
+
+NydusCanalAttacker
+
+NydusCanalAttackerWeapon
+
+NydusCanalCreeper
+
+NydusNetwork
+  builds
+    NydusCanal
+    NydusCanalAttacker
+    NydusCanalCreeper
+
+Overlord
+  morphs
+    Overseer
+
+OverlordCocoon
+
+OverlordTransport
+  morphs
+    Overseer
+
+Overseer
+
+ParasiteSporeWeapon
+
+ParasiticBombDummy
+
+ParasiticBombMissile
+
+Queen
+  builds
+    CreepTumorQueen
+  morphs
+    QueenBurrowed
+
+QueenBurrowed
+  morphs
+    Queen
+
+QueenMP
+
+QueenMPEnsnareMissile
+
+QueenMPSpawnBroodlingsMissile
+
+Ravager
+  morphs
+    RavagerBurrowed
+
+RavagerBurrowed
+  morphs
+    Ravager
+
+RavagerCocoon
+
+RavagerCorrosiveBileMissile
+
+RavagerWeaponMissile
+
+Roach
+  morphs
+    Ravager
+
+RoachBurrowed
+  morphs
+    Roach
+
+RoachWarren
+  upgrades
+    GlialReconstitution
+    TunnelingClaws
+
+ScourgeMP
+
+SpawningPool
+  upgrades
+    zerglingmovementspeed
+    zerglingattackspeed
+
+SpineCrawler
+  morphs
+    SpineCrawlerUprooted
+
+SpineCrawlerUprooted
+
+SpineCrawlerWeapon
+
+Spire
+  morphs
+    GreaterSpire
+  upgrades
+    ZergFlyerWeaponsLevel1
+    ZergFlyerWeaponsLevel2
+    ZergFlyerWeaponsLevel3
+    ZergFlyerArmorsLevel1
+    ZergFlyerArmorsLevel2
+    ZergFlyerArmorsLevel3
+
+SporeCrawler
+  morphs
+    SporeCrawlerUprooted
+
+SporeCrawlerUprooted
+
+SporeCrawlerWeapon
+
+SwarmHostBurrowedMP
+  morphs
+    SwarmHostMP
+
+SwarmHostMP
+  morphs
+    SwarmHostBurrowedMP
+
+TalonsMissileWeapon
+
+TestZerg
+
+TransportOverlordCocoon
+
+Ultralisk
+  morphs
+    UltraliskBurrowed
+
+UltraliskBurrowed
+  morphs
+    Ultralisk
+
+UltraliskCavern
+  upgrades
+    ChitinousPlating
+
+Viper
+
+ViperConsumeStructureWeapon
+
+Weapon
+
+YoinkMissile
+
+YoinkSiegeTankMissile
+
+YoinkVikingAirMissile
+
+YoinkVikingGroundMissile
+
+Zergling
+  builds
+    Baneling
+  morphs
+    ZerglingBurrowed
+
+ZerglingBurrowed
+  morphs
+    Zergling
+

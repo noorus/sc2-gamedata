@@ -183,51 +183,6 @@
       "builds" : 
       [
         {
-          "ability" : 1006,
-          "abilityName" : "NexusTrain,Train1",
-          "time" : 17.0,
-          "unit" : 84,
-          "unitName" : "Probe"
-        },
-        {
-          "ability" : 110,
-          "abilityName" : "NexusTrainMothership,Train1",
-          "requires" : 
-          [
-            {
-              "operands" : 
-              [
-                {
-                  "state" : "CompleteOnly",
-                  "type" : "unitCount",
-                  "unit" : [ 64 ],
-                  "unitName" : [ "FleetBeacon" ]
-                },
-                {
-                  "operands" : 
-                  [
-                    {
-                      "state" : "QueuedOrBetter",
-                      "type" : "unitCount",
-                      "unit" : [ 10 ],
-                      "unitName" : [ "Mothership" ]
-                    },
-                    {
-                      "type" : "value",
-                      "value" : 0
-                    }
-                  ],
-                  "type" : "eq"
-                }
-              ],
-              "type" : "and"
-            }
-          ],
-          "time" : 160.0,
-          "unit" : 10,
-          "unitName" : "Mothership"
-        },
-        {
           "ability" : 1853,
           "abilityName" : "NexusTrainMothershipCore,Train1",
           "requires" : 
@@ -397,6 +352,369 @@
       ],
       "name" : "Gateway"
     },
+    "63" : 
+    {
+      "name" : "Forge",
+      "researches" : 
+      [
+        {
+          "ability" : 1062,
+          "abilityName" : "ForgeResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 39,
+                  "upgradeName" : "ProtossGroundWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 39,
+          "upgradeName" : "ProtossGroundWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1063,
+          "abilityName" : "ForgeResearch,Research2",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 40,
+                  "upgradeName" : "ProtossGroundWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 40,
+          "upgradeName" : "ProtossGroundWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 1064,
+          "abilityName" : "ForgeResearch,Research3",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 41,
+                  "upgradeName" : "ProtossGroundWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 41,
+          "upgradeName" : "ProtossGroundWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 1065,
+          "abilityName" : "ForgeResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 42,
+                  "upgradeName" : "ProtossGroundArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 42,
+          "upgradeName" : "ProtossGroundArmorsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1066,
+          "abilityName" : "ForgeResearch,Research5",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 43,
+                  "upgradeName" : "ProtossGroundArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 43,
+          "upgradeName" : "ProtossGroundArmorsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 1067,
+          "abilityName" : "ForgeResearch,Research6",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 44,
+                  "upgradeName" : "ProtossGroundArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 44,
+          "upgradeName" : "ProtossGroundArmorsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 1068,
+          "abilityName" : "ForgeResearch,Research7",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 45,
+                  "upgradeName" : "ProtossShieldsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 45,
+          "upgradeName" : "ProtossShieldsLevel1",
+          "vespene" : 200
+        },
+        {
+          "ability" : 1069,
+          "abilityName" : "ForgeResearch,Research8",
+          "minerals" : 300,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 46,
+                  "upgradeName" : "ProtossShieldsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 46,
+          "upgradeName" : "ProtossShieldsLevel2",
+          "vespene" : 300
+        },
+        {
+          "ability" : 1070,
+          "abilityName" : "ForgeResearch,Research9",
+          "minerals" : 400,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 47,
+                  "upgradeName" : "ProtossShieldsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 47,
+          "upgradeName" : "ProtossShieldsLevel3",
+          "vespene" : 400
+        }
+      ]
+    },
+    "64" : 
+    {
+      "name" : "FleetBeacon",
+      "researches" : 
+      [
+        {
+          "ability" : 46,
+          "abilityName" : "FleetBeaconResearch,Research3",
+          "minerals" : 150,
+          "time" : 90.0,
+          "upgrade" : 99,
+          "upgradeName" : "PhoenixRangeUpgrade",
+          "vespene" : 150
+        },
+        {
+          "ability" : 44,
+          "abilityName" : "FleetBeaconResearch,Research1",
+          "minerals" : 0,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 288,
+                  "upgradeName" : "VoidRaySpeedUpgrade"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 0.0,
+          "upgrade" : 1,
+          "upgradeName" : "CarrierLaunchSpeedUpgrade",
+          "vespene" : 0
+        }
+      ]
+    },
+    "65" : 
+    {
+      "name" : "TwilightCouncil",
+      "researches" : 
+      [
+        {
+          "ability" : 1593,
+          "abilityName" : "TwilightCouncilResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 87,
+                  "upgradeName" : "BlinkTech"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 87,
+          "upgradeName" : "BlinkTech",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1592,
+          "abilityName" : "TwilightCouncilResearch,Research1",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 86,
+                  "upgradeName" : "Charge"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 140.0,
+          "upgrade" : 86,
+          "upgradeName" : "Charge",
+          "vespene" : 200
+        },
+        {
+          "ability" : 1594,
+          "abilityName" : "TwilightCouncilResearch,Research3",
+          "minerals" : 100,
+          "time" : 140.0,
+          "upgrade" : 130,
+          "upgradeName" : "AdeptPiercingAttack",
+          "vespene" : 100
+        }
+      ]
+    },
     "67" : 
     {
       "builds" : 
@@ -407,6 +725,20 @@
           "time" : 35.0,
           "unit" : 78,
           "unitName" : "Phoenix"
+        },
+        {
+          "ability" : 950,
+          "abilityName" : "StargateTrain,Train5",
+          "time" : 60.0,
+          "unit" : 80,
+          "unitName" : "VoidRay"
+        },
+        {
+          "ability" : 954,
+          "abilityName" : "StargateTrain,Train9",
+          "time" : 50.0,
+          "unit" : 495,
+          "unitName" : "Oracle"
         },
         {
           "ability" : 955,
@@ -423,74 +755,152 @@
           "time" : 60.0,
           "unit" : 496,
           "unitName" : "Tempest"
-        },
-        {
-          "ability" : 947,
-          "abilityName" : "StargateTrain,Train2",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 64 ],
-              "unitName" : [ "FleetBeacon" ]
-            }
-          ],
-          "time" : 120.0,
-          "unit" : 79,
-          "unitName" : "Carrier"
-        },
-        {
-          "ability" : 950,
-          "abilityName" : "StargateTrain,Train5",
-          "time" : 60.0,
-          "unit" : 80,
-          "unitName" : "VoidRay"
-        },
-        {
-          "ability" : 954,
-          "abilityName" : "StargateTrain,Train9",
-          "time" : 50.0,
-          "unit" : 495,
-          "unitName" : "Oracle"
         }
       ],
       "name" : "Stargate"
+    },
+    "68" : 
+    {
+      "name" : "TemplarArchive",
+      "researches" : 
+      [
+        {
+          "ability" : 1126,
+          "abilityName" : "TemplarArchivesResearch,Research5",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 52,
+                  "upgradeName" : "PsiStormTech"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 52,
+          "upgradeName" : "PsiStormTech",
+          "vespene" : 200
+        }
+      ]
+    },
+    "69" : 
+    {
+      "name" : "DarkShrine",
+      "researches" : 
+      [
+        {
+          "ability" : 2720,
+          "abilityName" : "DarkShrineResearch,Research1",
+          "minerals" : 100,
+          "time" : 170.0,
+          "upgrade" : 141,
+          "upgradeName" : "DarkTemplarBlinkUpgrade",
+          "vespene" : 100
+        }
+      ]
+    },
+    "70" : 
+    {
+      "name" : "RoboticsBay",
+      "researches" : 
+      [
+        {
+          "ability" : 1097,
+          "abilityName" : "RoboticsBayResearch,Research6",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 50,
+                      "upgradeName" : "ExtendedThermalLance"
+                    }
+                  ],
+                  "type" : "not"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 140.0,
+          "upgrade" : 50,
+          "upgradeName" : "ExtendedThermalLance",
+          "vespene" : 200
+        },
+        {
+          "ability" : 1093,
+          "abilityName" : "RoboticsBayResearch,Research2",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 48,
+                      "upgradeName" : "ObserverGraviticBooster"
+                    }
+                  ],
+                  "type" : "not"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 48,
+          "upgradeName" : "ObserverGraviticBooster",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1094,
+          "abilityName" : "RoboticsBayResearch,Research3",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 49,
+                  "upgradeName" : "GraviticDrive"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 49,
+          "upgradeName" : "GraviticDrive",
+          "vespene" : 100
+        }
+      ]
     },
     "71" : 
     {
       "builds" : 
       [
-        {
-          "ability" : 976,
-          "abilityName" : "RoboticsFacilityTrain,Train1",
-          "time" : 50.0,
-          "unit" : 81,
-          "unitName" : "WarpPrism"
-        },
-        {
-          "ability" : 994,
-          "abilityName" : "RoboticsFacilityTrain,Train19",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 70 ],
-              "unitName" : [ "RoboticsBay" ]
-            }
-          ],
-          "time" : 50.0,
-          "unit" : 694,
-          "unitName" : "Disruptor"
-        },
-        {
-          "ability" : 977,
-          "abilityName" : "RoboticsFacilityTrain,Train2",
-          "time" : 30.0,
-          "unit" : 82,
-          "unitName" : "Observer"
-        },
         {
           "ability" : 978,
           "abilityName" : "RoboticsFacilityTrain,Train3",
@@ -508,14 +918,279 @@
           "unitName" : "Colossus"
         },
         {
+          "ability" : 977,
+          "abilityName" : "RoboticsFacilityTrain,Train2",
+          "time" : 30.0,
+          "unit" : 82,
+          "unitName" : "Observer"
+        },
+        {
+          "ability" : 976,
+          "abilityName" : "RoboticsFacilityTrain,Train1",
+          "time" : 50.0,
+          "unit" : 81,
+          "unitName" : "WarpPrism"
+        },
+        {
           "ability" : 979,
           "abilityName" : "RoboticsFacilityTrain,Train4",
           "time" : 55.0,
           "unit" : 83,
           "unitName" : "Immortal"
+        },
+        {
+          "ability" : 994,
+          "abilityName" : "RoboticsFacilityTrain,Train19",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 70 ],
+              "unitName" : [ "RoboticsBay" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 694,
+          "unitName" : "Disruptor"
         }
       ],
       "name" : "RoboticsFacility"
+    },
+    "72" : 
+    {
+      "name" : "CyberneticsCore",
+      "researches" : 
+      [
+        {
+          "ability" : 1562,
+          "abilityName" : "CyberneticsCoreResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 78,
+                      "upgradeName" : "ProtossAirWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 78,
+          "upgradeName" : "ProtossAirWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1563,
+          "abilityName" : "CyberneticsCoreResearch,Research2",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 79,
+                      "upgradeName" : "ProtossAirWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 79,
+          "upgradeName" : "ProtossAirWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 1564,
+          "abilityName" : "CyberneticsCoreResearch,Research3",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 80,
+                      "upgradeName" : "ProtossAirWeaponsLevel3"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 80,
+          "upgradeName" : "ProtossAirWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 1565,
+          "abilityName" : "CyberneticsCoreResearch,Research4",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 81,
+                      "upgradeName" : "ProtossAirArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 81,
+          "upgradeName" : "ProtossAirArmorsLevel1",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1566,
+          "abilityName" : "CyberneticsCoreResearch,Research5",
+          "minerals" : 225,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 82,
+                      "upgradeName" : "ProtossAirArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 82,
+          "upgradeName" : "ProtossAirArmorsLevel2",
+          "vespene" : 225
+        },
+        {
+          "ability" : 1567,
+          "abilityName" : "CyberneticsCoreResearch,Research6",
+          "minerals" : 300,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "QueuedOrBetter",
+                      "type" : "upgradeCount",
+                      "upgrade" : 83,
+                      "upgradeName" : "ProtossAirArmorsLevel3"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 0
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 83,
+          "upgradeName" : "ProtossAirArmorsLevel3",
+          "vespene" : 300
+        },
+        {
+          "ability" : 1568,
+          "abilityName" : "CyberneticsCoreResearch,Research7",
+          "minerals" : 50,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 84,
+                  "upgradeName" : "WarpGateResearch"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 140.0,
+          "upgrade" : 84,
+          "upgradeName" : "WarpGateResearch",
+          "vespene" : 50
+        }
+      ]
     },
     "725" : 
     {
@@ -557,100 +1232,11 @@
           "unitName" : "Nexus"
         },
         {
-          "ability" : 889,
-          "abilityName" : "ProtossBuild,Build10",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 72 ],
-              "unitName" : [ "CyberneticsCore" ]
-            }
-          ],
-          "time" : 60.0,
-          "unit" : 67,
-          "unitName" : "Stargate"
-        },
-        {
-          "ability" : 890,
-          "abilityName" : "ProtossBuild,Build11",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 65 ],
-              "unitName" : [ "TwilightCouncil" ]
-            }
-          ],
-          "time" : 50.0,
-          "unit" : 68,
-          "unitName" : "TemplarArchive"
-        },
-        {
-          "ability" : 891,
-          "abilityName" : "ProtossBuild,Build12",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 65 ],
-              "unitName" : [ "TwilightCouncil" ]
-            }
-          ],
-          "time" : 100.0,
-          "unit" : 69,
-          "unitName" : "DarkShrine"
-        },
-        {
-          "ability" : 892,
-          "abilityName" : "ProtossBuild,Build13",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 71 ],
-              "unitName" : [ "RoboticsFacility" ]
-            }
-          ],
-          "time" : 65.0,
-          "unit" : 70,
-          "unitName" : "RoboticsBay"
-        },
-        {
-          "ability" : 893,
-          "abilityName" : "ProtossBuild,Build14",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 72 ],
-              "unitName" : [ "CyberneticsCore" ]
-            }
-          ],
-          "time" : 65.0,
-          "unit" : 71,
-          "unitName" : "RoboticsFacility"
-        },
-        {
-          "ability" : 894,
-          "abilityName" : "ProtossBuild,Build15",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 62, 133 ],
-              "unitName" : [ "Gateway", "WarpGate" ]
-            }
-          ],
-          "time" : 50.0,
-          "unit" : 72,
-          "unitName" : "CyberneticsCore"
+          "ability" : 882,
+          "abilityName" : "ProtossBuild,Build3",
+          "time" : 30.0,
+          "unit" : 61,
+          "unitName" : "Assimilator"
         },
         {
           "ability" : 881,
@@ -658,13 +1244,6 @@
           "time" : 25.0,
           "unit" : 60,
           "unitName" : "Pylon"
-        },
-        {
-          "ability" : 882,
-          "abilityName" : "ProtossBuild,Build3",
-          "time" : 30.0,
-          "unit" : 61,
-          "unitName" : "Assimilator"
         },
         {
           "ability" : 883,
@@ -699,6 +1278,86 @@
           "unitName" : "Forge"
         },
         {
+          "ability" : 894,
+          "abilityName" : "ProtossBuild,Build15",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 62, 133 ],
+              "unitName" : [ "Gateway", "WarpGate" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 72,
+          "unitName" : "CyberneticsCore"
+        },
+        {
+          "ability" : 887,
+          "abilityName" : "ProtossBuild,Build8",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 63 ],
+              "unitName" : [ "Forge" ]
+            }
+          ],
+          "time" : 40.0,
+          "unit" : 66,
+          "unitName" : "PhotonCannon"
+        },
+        {
+          "ability" : 889,
+          "abilityName" : "ProtossBuild,Build10",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 72 ],
+              "unitName" : [ "CyberneticsCore" ]
+            }
+          ],
+          "time" : 60.0,
+          "unit" : 67,
+          "unitName" : "Stargate"
+        },
+        {
+          "ability" : 890,
+          "abilityName" : "ProtossBuild,Build11",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 65 ],
+              "unitName" : [ "TwilightCouncil" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 68,
+          "unitName" : "TemplarArchive"
+        },
+        {
+          "ability" : 893,
+          "abilityName" : "ProtossBuild,Build14",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 72 ],
+              "unitName" : [ "CyberneticsCore" ]
+            }
+          ],
+          "time" : 65.0,
+          "unit" : 71,
+          "unitName" : "RoboticsFacility"
+        },
+        {
           "ability" : 885,
           "abilityName" : "ProtossBuild,Build6",
           "requires" : 
@@ -713,6 +1372,22 @@
           "time" : 60.0,
           "unit" : 64,
           "unitName" : "FleetBeacon"
+        },
+        {
+          "ability" : 891,
+          "abilityName" : "ProtossBuild,Build12",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 65 ],
+              "unitName" : [ "TwilightCouncil" ]
+            }
+          ],
+          "time" : 100.0,
+          "unit" : 69,
+          "unitName" : "DarkShrine"
         },
         {
           "ability" : 886,
@@ -731,20 +1406,20 @@
           "unitName" : "TwilightCouncil"
         },
         {
-          "ability" : 887,
-          "abilityName" : "ProtossBuild,Build8",
+          "ability" : 892,
+          "abilityName" : "ProtossBuild,Build13",
           "requires" : 
           [
             {
               "state" : "CompleteOnly",
               "type" : "unitCount",
-              "unit" : [ 63 ],
-              "unitName" : [ "Forge" ]
+              "unit" : [ 71 ],
+              "unitName" : [ "RoboticsFacility" ]
             }
           ],
-          "time" : 40.0,
-          "unit" : 66,
-          "unitName" : "PhotonCannon"
+          "time" : 65.0,
+          "unit" : 70,
+          "unitName" : "RoboticsBay"
         }
       ],
       "name" : "Probe"
@@ -848,20 +1523,6 @@
       "builds" : 
       [
         {
-          "ability" : 421,
-          "abilityName" : "BarracksAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 37,
-          "unitName" : "BarracksTechLab"
-        },
-        {
-          "ability" : 422,
-          "abilityName" : "BarracksAddOns,Build2",
-          "time" : 50.0,
-          "unit" : 38,
-          "unitName" : "BarracksReactor"
-        },
-        {
           "ability" : 560,
           "abilityName" : "BarracksTrain,Train1",
           "time" : 25.0,
@@ -874,6 +1535,22 @@
           "time" : 45.0,
           "unit" : 49,
           "unitName" : "Reaper"
+        },
+        {
+          "ability" : 563,
+          "abilityName" : "BarracksTrain,Train4",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnlyAtUnit",
+              "type" : "unitCount",
+              "unit" : [ 5 ],
+              "unitName" : [ "TechLab" ]
+            }
+          ],
+          "time" : 30.0,
+          "unit" : 51,
+          "unitName" : "Marauder"
         },
         {
           "ability" : 562,
@@ -904,41 +1581,342 @@
           "unitName" : "Ghost"
         },
         {
-          "ability" : 563,
-          "abilityName" : "BarracksTrain,Train4",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnlyAtUnit",
-              "type" : "unitCount",
-              "unit" : [ 5 ],
-              "unitName" : [ "TechLab" ]
-            }
-          ],
-          "time" : 30.0,
-          "unit" : 51,
-          "unitName" : "Marauder"
+          "ability" : 422,
+          "abilityName" : "BarracksAddOns,Build2",
+          "time" : 50.0,
+          "unit" : 38,
+          "unitName" : "BarracksReactor"
+        },
+        {
+          "ability" : 421,
+          "abilityName" : "BarracksAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 37,
+          "unitName" : "BarracksTechLab"
         }
       ],
       "name" : "Barracks"
+    },
+    "22" : 
+    {
+      "name" : "EngineeringBay",
+      "researches" : 
+      [
+        {
+          "ability" : 652,
+          "abilityName" : "EngineeringBayResearch,Research3",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 7,
+                  "upgradeName" : "TerranInfantryWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 7,
+          "upgradeName" : "TerranInfantryWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 653,
+          "abilityName" : "EngineeringBayResearch,Research4",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 8,
+                  "upgradeName" : "TerranInfantryWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 8,
+          "upgradeName" : "TerranInfantryWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 654,
+          "abilityName" : "EngineeringBayResearch,Research5",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 9,
+                  "upgradeName" : "TerranInfantryWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 9,
+          "upgradeName" : "TerranInfantryWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 655,
+          "abilityName" : "EngineeringBayResearch,Research6",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 10,
+                  "upgradeName" : "NeosteelFrame"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 10,
+          "upgradeName" : "NeosteelFrame",
+          "vespene" : 100
+        },
+        {
+          "ability" : 651,
+          "abilityName" : "EngineeringBayResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 6,
+                  "upgradeName" : "TerranBuildingArmor"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 140.0,
+          "upgrade" : 6,
+          "upgradeName" : "TerranBuildingArmor",
+          "vespene" : 150
+        },
+        {
+          "ability" : 650,
+          "abilityName" : "EngineeringBayResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 5,
+                  "upgradeName" : "HiSecAutoTracking"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 5,
+          "upgradeName" : "HiSecAutoTracking",
+          "vespene" : 100
+        },
+        {
+          "ability" : 656,
+          "abilityName" : "EngineeringBayResearch,Research7",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 11,
+                  "upgradeName" : "TerranInfantryArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 11,
+          "upgradeName" : "TerranInfantryArmorsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 657,
+          "abilityName" : "EngineeringBayResearch,Research8",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 12,
+                  "upgradeName" : "TerranInfantryArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 12,
+          "upgradeName" : "TerranInfantryArmorsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 658,
+          "abilityName" : "EngineeringBayResearch,Research9",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 13,
+                  "upgradeName" : "TerranInfantryArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 13,
+          "upgradeName" : "TerranInfantryArmorsLevel3",
+          "vespene" : 250
+        }
+      ]
+    },
+    "26" : 
+    {
+      "name" : "GhostAcademy",
+      "researches" : 
+      [
+        {
+          "ability" : 820,
+          "abilityName" : "GhostAcademyResearch,Research1",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 25,
+                  "upgradeName" : "PersonalCloaking"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 120.0,
+          "upgrade" : 25,
+          "upgradeName" : "PersonalCloaking",
+          "vespene" : 150
+        },
+        {
+          "ability" : 821,
+          "abilityName" : "GhostAcademyResearch,Research2",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 26,
+                  "upgradeName" : "GhostMoebiusReactor"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 26,
+          "upgradeName" : "GhostMoebiusReactor",
+          "vespene" : 100
+        }
+      ]
     },
     "27" : 
     {
       "builds" : 
       [
         {
-          "ability" : 454,
-          "abilityName" : "FactoryAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 39,
-          "unitName" : "FactoryTechLab"
-        },
-        {
-          "ability" : 455,
-          "abilityName" : "FactoryAddOns,Build2",
-          "time" : 50.0,
-          "unit" : 40,
-          "unitName" : "FactoryReactor"
+          "ability" : 595,
+          "abilityName" : "FactoryTrain,Train6",
+          "time" : 30.0,
+          "unit" : 53,
+          "unitName" : "Hellion"
         },
         {
           "ability" : 591,
@@ -957,11 +1935,32 @@
           "unitName" : "SiegeTank"
         },
         {
+          "ability" : 455,
+          "abilityName" : "FactoryAddOns,Build2",
+          "time" : 50.0,
+          "unit" : 40,
+          "unitName" : "FactoryReactor"
+        },
+        {
+          "ability" : 454,
+          "abilityName" : "FactoryAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 39,
+          "unitName" : "FactoryTechLab"
+        },
+        {
           "ability" : 614,
           "abilityName" : "FactoryTrain,Train25",
           "time" : 40.0,
           "unit" : 498,
           "unitName" : "WidowMine"
+        },
+        {
+          "ability" : 597,
+          "abilityName" : "FactoryTrain,Train8",
+          "time" : 45.0,
+          "unit" : 692,
+          "unitName" : "Cyclone"
         },
         {
           "ability" : 594,
@@ -992,13 +1991,6 @@
           "unitName" : "Thor"
         },
         {
-          "ability" : 595,
-          "abilityName" : "FactoryTrain,Train6",
-          "time" : 30.0,
-          "unit" : 53,
-          "unitName" : "Hellion"
-        },
-        {
           "ability" : 596,
           "abilityName" : "FactoryTrain,Train7",
           "requires" : 
@@ -1013,13 +2005,6 @@
           "time" : 30.0,
           "unit" : 484,
           "unitName" : "HellionTank"
-        },
-        {
-          "ability" : 597,
-          "abilityName" : "FactoryTrain,Train8",
-          "time" : 45.0,
-          "unit" : 692,
-          "unitName" : "Cyclone"
         }
       ],
       "name" : "Factory"
@@ -1029,18 +2014,11 @@
       "builds" : 
       [
         {
-          "ability" : 487,
-          "abilityName" : "StarportAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 41,
-          "unitName" : "StarportTechLab"
-        },
-        {
-          "ability" : 488,
-          "abilityName" : "StarportAddOns,Build2",
-          "time" : 50.0,
-          "unit" : 42,
-          "unitName" : "StarportReactor"
+          "ability" : 624,
+          "abilityName" : "StarportTrain,Train5",
+          "time" : 42.0,
+          "unit" : 35,
+          "unitName" : "VikingFighter"
         },
         {
           "ability" : 620,
@@ -1048,22 +2026,6 @@
           "time" : 42.0,
           "unit" : 54,
           "unitName" : "Medivac"
-        },
-        {
-          "ability" : 621,
-          "abilityName" : "StarportTrain,Train2",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnlyAtUnit",
-              "type" : "unitCount",
-              "unit" : [ 5 ],
-              "unitName" : [ "TechLab" ]
-            }
-          ],
-          "time" : 60.0,
-          "unit" : 55,
-          "unitName" : "Banshee"
         },
         {
           "ability" : 622,
@@ -1080,6 +2042,22 @@
           "time" : 60.0,
           "unit" : 56,
           "unitName" : "Raven"
+        },
+        {
+          "ability" : 621,
+          "abilityName" : "StarportTrain,Train2",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnlyAtUnit",
+              "type" : "unitCount",
+              "unit" : [ 5 ],
+              "unitName" : [ "TechLab" ]
+            }
+          ],
+          "time" : 60.0,
+          "unit" : 55,
+          "unitName" : "Banshee"
         },
         {
           "ability" : 623,
@@ -1110,21 +2088,289 @@
           "unitName" : "Battlecruiser"
         },
         {
-          "ability" : 624,
-          "abilityName" : "StarportTrain,Train5",
-          "time" : 42.0,
-          "unit" : 35,
-          "unitName" : "VikingFighter"
-        },
-        {
           "ability" : 626,
           "abilityName" : "StarportTrain,Train7",
           "time" : 60.0,
           "unit" : 689,
           "unitName" : "Liberator"
+        },
+        {
+          "ability" : 487,
+          "abilityName" : "StarportAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 41,
+          "unitName" : "StarportTechLab"
+        },
+        {
+          "ability" : 488,
+          "abilityName" : "StarportAddOns,Build2",
+          "time" : 50.0,
+          "unit" : 42,
+          "unitName" : "StarportReactor"
         }
       ],
       "name" : "Starport"
+    },
+    "29" : 
+    {
+      "name" : "Armory",
+      "researches" : 
+      [
+        {
+          "ability" : 2297,
+          "abilityName" : "ArmoryResearchSwarm,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 116,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 116,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 2298,
+          "abilityName" : "ArmoryResearchSwarm,Research5",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 117,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 117,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 2299,
+          "abilityName" : "ArmoryResearchSwarm,Research6",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 118,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 118,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 861,
+          "abilityName" : "ArmoryResearch,Research12",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 36,
+                  "upgradeName" : "TerranShipWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 36,
+          "upgradeName" : "TerranShipWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 862,
+          "abilityName" : "ArmoryResearch,Research13",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 37,
+                  "upgradeName" : "TerranShipWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 37,
+          "upgradeName" : "TerranShipWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 863,
+          "abilityName" : "ArmoryResearch,Research14",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 38,
+                  "upgradeName" : "TerranShipWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 38,
+          "upgradeName" : "TerranShipWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 2296,
+          "abilityName" : "ArmoryResearchSwarm,Research3",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 115,
+                  "upgradeName" : "TerranVehicleAndShipWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 115,
+          "upgradeName" : "TerranVehicleAndShipWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 864,
+          "abilityName" : "ArmoryResearch,Research15",
+          "minerals" : 100,
+          "time" : 160.0,
+          "upgrade" : 116,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 865,
+          "abilityName" : "ArmoryResearch,Research16",
+          "minerals" : 175,
+          "time" : 190.0,
+          "upgrade" : 117,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 866,
+          "abilityName" : "ArmoryResearch,Research17",
+          "minerals" : 250,
+          "time" : 220.0,
+          "upgrade" : 118,
+          "upgradeName" : "TerranVehicleAndShipArmorsLevel3",
+          "vespene" : 250
+        }
+      ]
+    },
+    "30" : 
+    {
+      "name" : "FusionCore",
+      "researches" : 
+      [
+        {
+          "ability" : 1532,
+          "abilityName" : "FusionCoreResearch,Research1",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 76,
+                  "upgradeName" : "BattlecruiserEnableSpecializations"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 60.0,
+          "upgrade" : 76,
+          "upgradeName" : "BattlecruiserEnableSpecializations",
+          "vespene" : 150
+        }
+      ]
     },
     "32" : 
     {
@@ -1194,18 +2440,18 @@
       "builds" : 
       [
         {
-          "ability" : 454,
-          "abilityName" : "FactoryAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 39,
-          "unitName" : "FactoryTechLab"
-        },
-        {
           "ability" : 455,
           "abilityName" : "FactoryAddOns,Build2",
           "time" : 50.0,
           "unit" : 40,
           "unitName" : "FactoryReactor"
+        },
+        {
+          "ability" : 454,
+          "abilityName" : "FactoryAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 39,
+          "unitName" : "FactoryTechLab"
         }
       ],
       "name" : "FactoryFlying"
@@ -1215,18 +2461,18 @@
       "builds" : 
       [
         {
-          "ability" : 487,
-          "abilityName" : "StarportAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 41,
-          "unitName" : "StarportTechLab"
-        },
-        {
           "ability" : 488,
           "abilityName" : "StarportAddOns,Build2",
           "time" : 50.0,
           "unit" : 42,
           "unitName" : "StarportReactor"
+        },
+        {
+          "ability" : 487,
+          "abilityName" : "StarportAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 41,
+          "unitName" : "StarportTechLab"
         }
       ],
       "name" : "StarportFlying"
@@ -1243,84 +2489,11 @@
           "unitName" : "CommandCenter"
         },
         {
-          "ability" : 327,
-          "abilityName" : "TerranBuild,Build10",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 21, 46 ],
-              "unitName" : [ "Barracks", "BarracksFlying" ]
-            }
-          ],
-          "time" : 40.0,
-          "unit" : 26,
-          "unitName" : "GhostAcademy"
-        },
-        {
-          "ability" : 328,
-          "abilityName" : "TerranBuild,Build11",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 21, 46 ],
-              "unitName" : [ "Barracks", "BarracksFlying" ]
-            }
-          ],
-          "time" : 60.0,
-          "unit" : 27,
-          "unitName" : "Factory"
-        },
-        {
-          "ability" : 329,
-          "abilityName" : "TerranBuild,Build12",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 27, 43 ],
-              "unitName" : [ "Factory", "FactoryFlying" ]
-            }
-          ],
-          "time" : 50.0,
-          "unit" : 28,
-          "unitName" : "Starport"
-        },
-        {
-          "ability" : 331,
-          "abilityName" : "TerranBuild,Build14",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 27, 43 ],
-              "unitName" : [ "Factory", "FactoryFlying" ]
-            }
-          ],
-          "time" : 65.0,
-          "unit" : 29,
-          "unitName" : "Armory"
-        },
-        {
-          "ability" : 333,
-          "abilityName" : "TerranBuild,Build16",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 28, 44 ],
-              "unitName" : [ "Starport", "StarportFlying" ]
-            }
-          ],
-          "time" : 65.0,
-          "unit" : 30,
-          "unitName" : "FusionCore"
+          "ability" : 320,
+          "abilityName" : "TerranBuild,Build3",
+          "time" : 30.0,
+          "unit" : 20,
+          "unitName" : "Refinery"
         },
         {
           "ability" : 319,
@@ -1328,13 +2501,6 @@
           "time" : 30.0,
           "unit" : 19,
           "unitName" : "SupplyDepot"
-        },
-        {
-          "ability" : 320,
-          "abilityName" : "TerranBuild,Build3",
-          "time" : 30.0,
-          "unit" : 20,
-          "unitName" : "Refinery"
         },
         {
           "ability" : 321,
@@ -1376,22 +2542,6 @@
           "unitName" : "EngineeringBay"
         },
         {
-          "ability" : 323,
-          "abilityName" : "TerranBuild,Build6",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 22 ],
-              "unitName" : [ "EngineeringBay" ]
-            }
-          ],
-          "time" : 25.0,
-          "unit" : 23,
-          "unitName" : "MissileTurret"
-        },
-        {
           "ability" : 324,
           "abilityName" : "TerranBuild,Build7",
           "requires" : 
@@ -1408,6 +2558,22 @@
           "unitName" : "Bunker"
         },
         {
+          "ability" : 323,
+          "abilityName" : "TerranBuild,Build6",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 22 ],
+              "unitName" : [ "EngineeringBay" ]
+            }
+          ],
+          "time" : 25.0,
+          "unit" : 23,
+          "unitName" : "MissileTurret"
+        },
+        {
           "ability" : 326,
           "abilityName" : "TerranBuild,Build9",
           "requires" : 
@@ -1422,6 +2588,86 @@
           "time" : 25.0,
           "unit" : 25,
           "unitName" : "SensorTower"
+        },
+        {
+          "ability" : 327,
+          "abilityName" : "TerranBuild,Build10",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 21, 46 ],
+              "unitName" : [ "Barracks", "BarracksFlying" ]
+            }
+          ],
+          "time" : 40.0,
+          "unit" : 26,
+          "unitName" : "GhostAcademy"
+        },
+        {
+          "ability" : 328,
+          "abilityName" : "TerranBuild,Build11",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 21, 46 ],
+              "unitName" : [ "Barracks", "BarracksFlying" ]
+            }
+          ],
+          "time" : 60.0,
+          "unit" : 27,
+          "unitName" : "Factory"
+        },
+        {
+          "ability" : 331,
+          "abilityName" : "TerranBuild,Build14",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 27, 43 ],
+              "unitName" : [ "Factory", "FactoryFlying" ]
+            }
+          ],
+          "time" : 65.0,
+          "unit" : 29,
+          "unitName" : "Armory"
+        },
+        {
+          "ability" : 329,
+          "abilityName" : "TerranBuild,Build12",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 27, 43 ],
+              "unitName" : [ "Factory", "FactoryFlying" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 28,
+          "unitName" : "Starport"
+        },
+        {
+          "ability" : 333,
+          "abilityName" : "TerranBuild,Build16",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 28, 44 ],
+              "unitName" : [ "Starport", "StarportFlying" ]
+            }
+          ],
+          "time" : 65.0,
+          "unit" : 30,
+          "unitName" : "FusionCore"
         }
       ],
       "name" : "SCV"
@@ -1431,18 +2677,18 @@
       "builds" : 
       [
         {
-          "ability" : 421,
-          "abilityName" : "BarracksAddOns,Build1",
-          "time" : 25.0,
-          "unit" : 37,
-          "unitName" : "BarracksTechLab"
-        },
-        {
           "ability" : 422,
           "abilityName" : "BarracksAddOns,Build2",
           "time" : 50.0,
           "unit" : 38,
           "unitName" : "BarracksReactor"
+        },
+        {
+          "ability" : 421,
+          "abilityName" : "BarracksAddOns,Build1",
+          "time" : 25.0,
+          "unit" : 37,
+          "unitName" : "BarracksTechLab"
         }
       ],
       "name" : "BarracksFlying"
@@ -1606,7 +2852,42 @@
           "unitName" : "Hive"
         }
       ],
-      "name" : "Lair"
+      "name" : "Lair",
+      "researches" : 
+      [
+        {
+          "ability" : 1223,
+          "abilityName" : "LairResearch,Research2",
+          "minerals" : 50,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 60.0,
+          "upgrade" : 62,
+          "upgradeName" : "overlordspeed",
+          "vespene" : 50
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
+          "vespene" : 100
+        }
+      ]
     },
     "101" : 
     {
@@ -1629,7 +2910,217 @@
           "unitName" : "Queen"
         }
       ],
-      "name" : "Hive"
+      "name" : "Hive",
+      "researches" : 
+      [
+        {
+          "ability" : 1223,
+          "abilityName" : "LairResearch,Research2",
+          "minerals" : 50,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 60.0,
+          "upgrade" : 62,
+          "upgradeName" : "overlordspeed",
+          "vespene" : 50
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
+          "vespene" : 100
+        }
+      ]
+    },
+    "102" : 
+    {
+      "name" : "GreaterSpire",
+      "researches" : 
+      [
+        {
+          "ability" : 1312,
+          "abilityName" : "SpireResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 68,
+                  "upgradeName" : "ZergFlyerWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 68,
+          "upgradeName" : "ZergFlyerWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1313,
+          "abilityName" : "SpireResearch,Research2",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 69,
+                  "upgradeName" : "ZergFlyerWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 69,
+          "upgradeName" : "ZergFlyerWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 1314,
+          "abilityName" : "SpireResearch,Research3",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 70,
+                  "upgradeName" : "ZergFlyerWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 70,
+          "upgradeName" : "ZergFlyerWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 1315,
+          "abilityName" : "SpireResearch,Research4",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 71,
+                  "upgradeName" : "ZergFlyerArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 71,
+          "upgradeName" : "ZergFlyerArmorsLevel1",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1316,
+          "abilityName" : "SpireResearch,Research5",
+          "minerals" : 225,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 72,
+                  "upgradeName" : "ZergFlyerArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 72,
+          "upgradeName" : "ZergFlyerArmorsLevel2",
+          "vespene" : 225
+        },
+        {
+          "ability" : 1317,
+          "abilityName" : "SpireResearch,Research6",
+          "minerals" : 300,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 73,
+                  "upgradeName" : "ZergFlyerArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 73,
+          "upgradeName" : "ZergFlyerArmorsLevel3",
+          "vespene" : 300
+        }
+      ]
     },
     "104" : 
     {
@@ -1643,20 +3134,43 @@
           "unitName" : "Hatchery"
         },
         {
-          "ability" : 1161,
-          "abilityName" : "ZergBuild,Build10",
+          "ability" : 1154,
+          "abilityName" : "ZergBuild,Build3",
+          "time" : 30.0,
+          "unit" : 88,
+          "unitName" : "Extractor"
+        },
+        {
+          "ability" : 1155,
+          "abilityName" : "ZergBuild,Build4",
           "requires" : 
           [
             {
               "state" : "CompleteOnly",
               "type" : "unitCount",
-              "unit" : [ 101, 100 ],
-              "unitName" : [ "Hive", "Lair" ]
+              "unit" : [ 86, 101, 100 ],
+              "unitName" : [ "Hatchery", "Hive", "Lair" ]
             }
           ],
-          "time" : 50.0,
-          "unit" : 95,
-          "unitName" : "NydusNetwork"
+          "time" : 65.0,
+          "unit" : 89,
+          "unitName" : "SpawningPool"
+        },
+        {
+          "ability" : 1156,
+          "abilityName" : "ZergBuild,Build5",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 86, 101, 100 ],
+              "unitName" : [ "Hatchery", "Hive", "Lair" ]
+            }
+          ],
+          "time" : 35.0,
+          "unit" : 90,
+          "unitName" : "EvolutionChamber"
         },
         {
           "ability" : 1162,
@@ -1723,61 +3237,6 @@
           "unitName" : "SporeCrawler"
         },
         {
-          "ability" : 1154,
-          "abilityName" : "ZergBuild,Build3",
-          "time" : 30.0,
-          "unit" : 88,
-          "unitName" : "Extractor"
-        },
-        {
-          "ability" : 1155,
-          "abilityName" : "ZergBuild,Build4",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 86, 101, 100 ],
-              "unitName" : [ "Hatchery", "Hive", "Lair" ]
-            }
-          ],
-          "time" : 65.0,
-          "unit" : 89,
-          "unitName" : "SpawningPool"
-        },
-        {
-          "ability" : 1156,
-          "abilityName" : "ZergBuild,Build5",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 86, 101, 100 ],
-              "unitName" : [ "Hatchery", "Hive", "Lair" ]
-            }
-          ],
-          "time" : 35.0,
-          "unit" : 90,
-          "unitName" : "EvolutionChamber"
-        },
-        {
-          "ability" : 1157,
-          "abilityName" : "ZergBuild,Build6",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 101, 100 ],
-              "unitName" : [ "Hive", "Lair" ]
-            }
-          ],
-          "time" : 40.0,
-          "unit" : 91,
-          "unitName" : "HydraliskDen"
-        },
-        {
           "ability" : 1158,
           "abilityName" : "ZergBuild,Build7",
           "requires" : 
@@ -1810,6 +3269,22 @@
           "unitName" : "UltraliskCavern"
         },
         {
+          "ability" : 1161,
+          "abilityName" : "ZergBuild,Build10",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101, 100 ],
+              "unitName" : [ "Hive", "Lair" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 95,
+          "unitName" : "NydusNetwork"
+        },
+        {
           "ability" : 1160,
           "abilityName" : "ZergBuild,Build9",
           "requires" : 
@@ -1824,25 +3299,22 @@
           "time" : 50.0,
           "unit" : 94,
           "unitName" : "InfestationPit"
-        }
-      ],
-      "morphs" : 
-      [
+        },
         {
-          "ability" : 1378,
-          "abilityName" : "BurrowDroneDown,Execute",
+          "ability" : 1157,
+          "abilityName" : "ZergBuild,Build6",
           "requires" : 
           [
             {
               "state" : "CompleteOnly",
-              "type" : "upgradeCount",
-              "upgrade" : 64,
-              "upgradeName" : "Burrow"
+              "type" : "unitCount",
+              "unit" : [ 101, 100 ],
+              "unitName" : [ "Hive", "Lair" ]
             }
           ],
-          "time" : 0.0,
-          "unit" : 116,
-          "unitName" : "DroneBurrowed"
+          "time" : 40.0,
+          "unit" : 91,
+          "unitName" : "HydraliskDen"
         }
       ],
       "name" : "Drone"
@@ -1978,22 +3450,6 @@
     {
       "morphs" : 
       [
-        {
-          "ability" : 1386,
-          "abilityName" : "BurrowRoachDown,Execute",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "upgradeCount",
-              "upgrade" : 64,
-              "upgradeName" : "Burrow"
-            }
-          ],
-          "time" : 0.0,
-          "unit" : 118,
-          "unitName" : "RoachBurrowed"
-        },
         {
           "ability" : 2330,
           "abilityName" : "MorphToRavager,Execute",
@@ -2244,86 +3700,6 @@
           "unitName" : "Drone"
         },
         {
-          "ability" : 1351,
-          "abilityName" : "LarvaTrain,Train10",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 97 ],
-              "unitName" : [ "RoachWarren" ]
-            }
-          ],
-          "time" : 27.0,
-          "unit" : 110,
-          "unitName" : "Roach"
-        },
-        {
-          "ability" : 1352,
-          "abilityName" : "LarvaTrain,Train11",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 94 ],
-              "unitName" : [ "InfestationPit" ]
-            }
-          ],
-          "time" : 50.0,
-          "unit" : 111,
-          "unitName" : "Infestor"
-        },
-        {
-          "ability" : 1353,
-          "abilityName" : "LarvaTrain,Train12",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 102, 92 ],
-              "unitName" : [ "GreaterSpire", "Spire" ]
-            }
-          ],
-          "time" : 40.0,
-          "unit" : 112,
-          "unitName" : "Corruptor"
-        },
-        {
-          "ability" : 1354,
-          "abilityName" : "LarvaTrain,Train13",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 101 ],
-              "unitName" : [ "Hive" ]
-            }
-          ],
-          "time" : 40.0,
-          "unit" : 499,
-          "unitName" : "Viper"
-        },
-        {
-          "ability" : 1356,
-          "abilityName" : "LarvaTrain,Train15",
-          "requires" : 
-          [
-            {
-              "state" : "CompleteOnly",
-              "type" : "unitCount",
-              "unit" : [ 94 ],
-              "unitName" : [ "InfestationPit" ]
-            }
-          ],
-          "time" : 40.0,
-          "unit" : 494,
-          "unitName" : "SwarmHostMP"
-        },
-        {
           "ability" : 1343,
           "abilityName" : "LarvaTrain,Train2",
           "requires" : 
@@ -2347,20 +3723,20 @@
           "unitName" : "Overlord"
         },
         {
-          "ability" : 1345,
-          "abilityName" : "LarvaTrain,Train4",
+          "ability" : 1351,
+          "abilityName" : "LarvaTrain,Train10",
           "requires" : 
           [
             {
               "state" : "CompleteOnly",
               "type" : "unitCount",
-              "unit" : [ 91, 504 ],
-              "unitName" : [ "HydraliskDen", "LurkerDenMP" ]
+              "unit" : [ 97 ],
+              "unitName" : [ "RoachWarren" ]
             }
           ],
-          "time" : 33.0,
-          "unit" : 107,
-          "unitName" : "Hydralisk"
+          "time" : 27.0,
+          "unit" : 110,
+          "unitName" : "Roach"
         },
         {
           "ability" : 1346,
@@ -2379,6 +3755,22 @@
           "unitName" : "Mutalisk"
         },
         {
+          "ability" : 1352,
+          "abilityName" : "LarvaTrain,Train11",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 94 ],
+              "unitName" : [ "InfestationPit" ]
+            }
+          ],
+          "time" : 50.0,
+          "unit" : 111,
+          "unitName" : "Infestor"
+        },
+        {
           "ability" : 1348,
           "abilityName" : "LarvaTrain,Train7",
           "requires" : 
@@ -2393,6 +3785,70 @@
           "time" : 55.0,
           "unit" : 109,
           "unitName" : "Ultralisk"
+        },
+        {
+          "ability" : 1354,
+          "abilityName" : "LarvaTrain,Train13",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101 ],
+              "unitName" : [ "Hive" ]
+            }
+          ],
+          "time" : 40.0,
+          "unit" : 499,
+          "unitName" : "Viper"
+        },
+        {
+          "ability" : 1345,
+          "abilityName" : "LarvaTrain,Train4",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 91, 504 ],
+              "unitName" : [ "HydraliskDen", "LurkerDenMP" ]
+            }
+          ],
+          "time" : 33.0,
+          "unit" : 107,
+          "unitName" : "Hydralisk"
+        },
+        {
+          "ability" : 1356,
+          "abilityName" : "LarvaTrain,Train15",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 94 ],
+              "unitName" : [ "InfestationPit" ]
+            }
+          ],
+          "time" : 40.0,
+          "unit" : 494,
+          "unitName" : "SwarmHostMP"
+        },
+        {
+          "ability" : 1353,
+          "abilityName" : "LarvaTrain,Train12",
+          "requires" : 
+          [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 102, 92 ],
+              "unitName" : [ "GreaterSpire", "Spire" ]
+            }
+          ],
+          "time" : 40.0,
+          "unit" : 112,
+          "unitName" : "Corruptor"
         }
       ],
       "name" : "Larva"
@@ -2461,6 +3917,37 @@
         }
       ],
       "name" : "LurkerMPBurrowed"
+    },
+    "504" : 
+    {
+      "name" : "LurkerDenMP",
+      "researches" : 
+      [
+        {
+          "ability" : 1283,
+          "abilityName" : "HydraliskDenResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 135,
+                  "upgradeName" : "EvolveMuscularAugments"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 135,
+          "upgradeName" : "EvolveMuscularAugments",
+          "vespene" : 150
+        }
+      ]
     },
     "688" : 
     {
@@ -2599,7 +4086,97 @@
           "unitName" : "Lair"
         }
       ],
-      "name" : "Hatchery"
+      "name" : "Hatchery",
+      "researches" : 
+      [
+        {
+          "ability" : 1223,
+          "abilityName" : "LairResearch,Research2",
+          "minerals" : 50,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 60.0,
+          "upgrade" : 62,
+          "upgradeName" : "overlordspeed",
+          "vespene" : 50
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "type" : "value",
+              "value" : 0
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
+          "vespene" : 100
+        }
+      ]
+    },
+    "89" : 
+    {
+      "name" : "SpawningPool",
+      "researches" : 
+      [
+        {
+          "ability" : 1253,
+          "abilityName" : "SpawningPoolResearch,Research2",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 66,
+                  "upgradeName" : "zerglingmovementspeed"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 66,
+          "upgradeName" : "zerglingmovementspeed",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1252,
+          "abilityName" : "SpawningPoolResearch,Research1",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 65,
+                  "upgradeName" : "zerglingattackspeed"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 130.0,
+          "upgrade" : 65,
+          "upgradeName" : "zerglingattackspeed",
+          "vespene" : 200
+        }
+      ]
     },
     "893" : 
     {
@@ -2624,28 +4201,264 @@
       ],
       "name" : "OverlordTransport"
     },
-    "9" : 
+    "90" : 
     {
-      "morphs" : 
+      "name" : "EvolutionChamber",
+      "researches" : 
       [
         {
-          "ability" : 1374,
-          "abilityName" : "BurrowBanelingDown,Execute",
+          "ability" : 1189,
+          "abilityName" : "evolutionchamberresearch,Research4",
+          "minerals" : 150,
           "requires" : 
           [
             {
-              "state" : "CompleteOnly",
-              "type" : "upgradeCount",
-              "upgrade" : 64,
-              "upgradeName" : "Burrow"
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 56,
+                  "upgradeName" : "ZergGroundArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
             }
           ],
-          "time" : 0.0,
-          "unit" : 115,
-          "unitName" : "BanelingBurrowed"
+          "time" : 160.0,
+          "upgrade" : 56,
+          "upgradeName" : "ZergGroundArmorsLevel1",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1190,
+          "abilityName" : "evolutionchamberresearch,Research5",
+          "minerals" : 225,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 57,
+                  "upgradeName" : "ZergGroundArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 57,
+          "upgradeName" : "ZergGroundArmorsLevel2",
+          "vespene" : 225
+        },
+        {
+          "ability" : 1191,
+          "abilityName" : "evolutionchamberresearch,Research6",
+          "minerals" : 300,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 58,
+                  "upgradeName" : "ZergGroundArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 58,
+          "upgradeName" : "ZergGroundArmorsLevel3",
+          "vespene" : 300
+        },
+        {
+          "ability" : 1186,
+          "abilityName" : "evolutionchamberresearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 53,
+                  "upgradeName" : "ZergMeleeWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 53,
+          "upgradeName" : "ZergMeleeWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1187,
+          "abilityName" : "evolutionchamberresearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 54,
+                  "upgradeName" : "ZergMeleeWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 54,
+          "upgradeName" : "ZergMeleeWeaponsLevel2",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1188,
+          "abilityName" : "evolutionchamberresearch,Research3",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 55,
+                  "upgradeName" : "ZergMeleeWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 55,
+          "upgradeName" : "ZergMeleeWeaponsLevel3",
+          "vespene" : 200
+        },
+        {
+          "ability" : 1192,
+          "abilityName" : "evolutionchamberresearch,Research7",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 59,
+                  "upgradeName" : "ZergMissileWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 59,
+          "upgradeName" : "ZergMissileWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1193,
+          "abilityName" : "evolutionchamberresearch,Research8",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 60,
+                  "upgradeName" : "ZergMissileWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 60,
+          "upgradeName" : "ZergMissileWeaponsLevel2",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1194,
+          "abilityName" : "evolutionchamberresearch,Research9",
+          "minerals" : 200,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 61,
+                  "upgradeName" : "ZergMissileWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 61,
+          "upgradeName" : "ZergMissileWeaponsLevel3",
+          "vespene" : 200
         }
-      ],
-      "name" : "Baneling"
+      ]
     },
     "91" : 
     {
@@ -2668,7 +4481,34 @@
           "unitName" : "LurkerDenMP"
         }
       ],
-      "name" : "HydraliskDen"
+      "name" : "HydraliskDen",
+      "researches" : 
+      [
+        {
+          "ability" : 1283,
+          "abilityName" : "HydraliskDenResearch,Research2",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 135,
+                  "upgradeName" : "EvolveMuscularAugments"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 135,
+          "upgradeName" : "EvolveMuscularAugments",
+          "vespene" : 150
+        }
+      ]
     },
     "92" : 
     {
@@ -2691,7 +4531,234 @@
           "unitName" : "GreaterSpire"
         }
       ],
-      "name" : "Spire"
+      "name" : "Spire",
+      "researches" : 
+      [
+        {
+          "ability" : 1312,
+          "abilityName" : "SpireResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 68,
+                  "upgradeName" : "ZergFlyerWeaponsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 68,
+          "upgradeName" : "ZergFlyerWeaponsLevel1",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1313,
+          "abilityName" : "SpireResearch,Research2",
+          "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 69,
+                  "upgradeName" : "ZergFlyerWeaponsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 69,
+          "upgradeName" : "ZergFlyerWeaponsLevel2",
+          "vespene" : 175
+        },
+        {
+          "ability" : 1314,
+          "abilityName" : "SpireResearch,Research3",
+          "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 70,
+                  "upgradeName" : "ZergFlyerWeaponsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 70,
+          "upgradeName" : "ZergFlyerWeaponsLevel3",
+          "vespene" : 250
+        },
+        {
+          "ability" : 1315,
+          "abilityName" : "SpireResearch,Research4",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 71,
+                  "upgradeName" : "ZergFlyerArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 160.0,
+          "upgrade" : 71,
+          "upgradeName" : "ZergFlyerArmorsLevel1",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1316,
+          "abilityName" : "SpireResearch,Research5",
+          "minerals" : 225,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 72,
+                  "upgradeName" : "ZergFlyerArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 190.0,
+          "upgrade" : 72,
+          "upgradeName" : "ZergFlyerArmorsLevel2",
+          "vespene" : 225
+        },
+        {
+          "ability" : 1317,
+          "abilityName" : "SpireResearch,Research6",
+          "minerals" : 300,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 73,
+                  "upgradeName" : "ZergFlyerArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
+          "time" : 220.0,
+          "upgrade" : 73,
+          "upgradeName" : "ZergFlyerArmorsLevel3",
+          "vespene" : 300
+        }
+      ]
+    },
+    "93" : 
+    {
+      "name" : "UltraliskCavern",
+      "researches" : 
+      [
+        {
+          "ability" : 265,
+          "abilityName" : "UltraliskCavernResearch,Research3",
+          "minerals" : 150,
+          "time" : 110.0,
+          "upgrade" : 4,
+          "upgradeName" : "ChitinousPlating",
+          "vespene" : 150
+        }
+      ]
+    },
+    "94" : 
+    {
+      "name" : "InfestationPit",
+      "researches" : 
+      [
+        {
+          "ability" : 1454,
+          "abilityName" : "InfestationPitResearch,Research3",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 74,
+                  "upgradeName" : "InfestorEnergyUpgrade"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 80.0,
+          "upgrade" : 74,
+          "upgradeName" : "InfestorEnergyUpgrade",
+          "vespene" : 150
+        },
+        {
+          "ability" : 1455,
+          "abilityName" : "InfestationPitResearch,Research4",
+          "minerals" : 150,
+          "time" : 110.0,
+          "upgrade" : 101,
+          "upgradeName" : "NeuralParasite",
+          "vespene" : 150
+        }
+      ]
     },
     "95" : 
     {
@@ -2729,6 +4796,77 @@
         }
       ],
       "name" : "NydusNetwork"
+    },
+    "96" : 
+    {
+      "name" : "BanelingNest",
+      "researches" : 
+      [
+        {
+          "ability" : 1482,
+          "abilityName" : "BanelingNestResearch,Research1",
+          "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 75,
+                  "upgradeName" : "CentrificalHooks"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 75,
+          "upgradeName" : "CentrificalHooks",
+          "vespene" : 150
+        }
+      ]
+    },
+    "97" : 
+    {
+      "name" : "RoachWarren",
+      "researches" : 
+      [
+        {
+          "ability" : 216,
+          "abilityName" : "RoachWarrenResearch,Research2",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 2,
+                  "upgradeName" : "GlialReconstitution"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 110.0,
+          "upgrade" : 2,
+          "upgradeName" : "GlialReconstitution",
+          "vespene" : 100
+        },
+        {
+          "ability" : 217,
+          "abilityName" : "RoachWarrenResearch,Research3",
+          "minerals" : 150,
+          "time" : 110.0,
+          "upgrade" : 3,
+          "upgradeName" : "TunnelingClaws",
+          "vespene" : 150
+        }
+      ]
     },
     "98" : 
     {
