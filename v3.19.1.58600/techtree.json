@@ -395,6 +395,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 39,
+                      "upgradeName" : "ProtossGroundWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 40,
@@ -419,6 +447,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 40,
+                      "upgradeName" : "ProtossGroundWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -479,6 +535,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 42,
+                      "upgradeName" : "ProtossGroundArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 43,
@@ -503,6 +587,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 43,
+                      "upgradeName" : "ProtossGroundArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -563,6 +675,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 45,
+                      "upgradeName" : "ProtossShieldsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 46,
@@ -587,6 +727,34 @@
           "minerals" : 400,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 46,
+                      "upgradeName" : "ProtossShieldsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 65 ],
+                  "unitName" : [ "TwilightCouncil" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -1009,6 +1177,34 @@
                   "operands" : 
                   [
                     {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 78,
+                      "upgradeName" : "ProtossAirWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 64 ],
+                  "unitName" : [ "FleetBeacon" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
                       "state" : "QueuedOrBetter",
                       "type" : "upgradeCount",
                       "upgrade" : 79,
@@ -1036,6 +1232,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 79,
+                      "upgradeName" : "ProtossAirWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 64 ],
+                  "unitName" : [ "FleetBeacon" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -1111,6 +1335,34 @@
                   "operands" : 
                   [
                     {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 81,
+                      "upgradeName" : "ProtossAirArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 64 ],
+                  "unitName" : [ "FleetBeacon" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
                       "state" : "QueuedOrBetter",
                       "type" : "upgradeCount",
                       "upgrade" : 82,
@@ -1138,6 +1390,34 @@
           "minerals" : 300,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 82,
+                      "upgradeName" : "ProtossAirArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 64 ],
+                  "unitName" : [ "FleetBeacon" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -1640,6 +1920,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 7,
+                      "upgradeName" : "TerranInfantryWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 29 ],
+                  "unitName" : [ "Armory" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 8,
@@ -1664,6 +1972,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 8,
+                      "upgradeName" : "TerranInfantryWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 29 ],
+                  "unitName" : [ "Armory" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -1804,6 +2140,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 11,
+                      "upgradeName" : "TerranInfantryArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 29 ],
+                  "unitName" : [ "Armory" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 12,
@@ -1828,6 +2192,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 12,
+                      "upgradeName" : "TerranInfantryArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 29 ],
+                  "unitName" : [ "Armory" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -2154,6 +2546,28 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 116,
+                      "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 117,
@@ -2178,6 +2592,28 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 117,
+                      "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -2238,6 +2674,28 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 36,
+                      "upgradeName" : "TerranShipWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 37,
@@ -2266,6 +2724,28 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 37,
+                      "upgradeName" : "TerranShipWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 38,
@@ -2290,6 +2770,28 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 114,
+                      "upgradeName" : "TerranVehicleAndShipWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -2407,13 +2909,7 @@
         {
           "ability" : 405,
           "abilityName" : "FighterMode,Execute",
-          "requires" : 
-          [
-            {
-              "type" : "value",
-              "value" : 0
-            }
-          ],
+          "requires" : [],
           "time" : 0.0,
           "unit" : 35,
           "unitName" : "VikingFighter"
@@ -2862,8 +3358,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 62,
+                  "upgradeName" : "overlordspeed"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 60.0,
@@ -2878,8 +3382,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 100.0,
@@ -2920,8 +3432,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 62,
+                  "upgradeName" : "overlordspeed"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 60.0,
@@ -2936,8 +3456,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 100.0,
@@ -2990,6 +3518,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 68,
+                      "upgradeName" : "ZergFlyerWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 69,
@@ -3014,6 +3570,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 69,
+                      "upgradeName" : "ZergFlyerWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -3074,6 +3658,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 71,
+                      "upgradeName" : "ZergFlyerArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 72,
@@ -3098,6 +3710,34 @@
           "minerals" : 300,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 72,
+                      "upgradeName" : "ZergFlyerArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -4096,8 +4736,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 62,
+                  "upgradeName" : "overlordspeed"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 60.0,
@@ -4112,8 +4760,16 @@
           "requires" : 
           [
             {
-              "type" : "value",
-              "value" : 0
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
             }
           ],
           "time" : 100.0,
@@ -4158,6 +4814,12 @@
           "minerals" : 200,
           "requires" : 
           [
+            {
+              "state" : "CompleteOnly",
+              "type" : "unitCount",
+              "unit" : [ 101 ],
+              "unitName" : [ "Hive" ]
+            },
             {
               "operands" : 
               [
@@ -4244,6 +4906,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 56,
+                      "upgradeName" : "ZergGroundArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 57,
@@ -4268,6 +4958,34 @@
           "minerals" : 300,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 57,
+                      "upgradeName" : "ZergGroundArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -4328,6 +5046,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 53,
+                      "upgradeName" : "ZergMeleeWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 54,
@@ -4352,6 +5098,34 @@
           "minerals" : 200,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 54,
+                      "upgradeName" : "ZergMeleeWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -4412,6 +5186,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 59,
+                      "upgradeName" : "ZergMissileWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 60,
@@ -4436,6 +5238,34 @@
           "minerals" : 200,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 60,
+                      "upgradeName" : "ZergMissileWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -4572,6 +5402,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 68,
+                      "upgradeName" : "ZergFlyerWeaponsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 69,
@@ -4596,6 +5454,34 @@
           "minerals" : 250,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 69,
+                      "upgradeName" : "ZergFlyerWeaponsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [
@@ -4656,6 +5542,34 @@
               "operands" : 
               [
                 {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 71,
+                      "upgradeName" : "ZergFlyerArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101, 100 ],
+                  "unitName" : [ "Hive", "Lair" ]
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
                   "upgrade" : 72,
@@ -4680,6 +5594,34 @@
           "minerals" : 300,
           "requires" : 
           [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 72,
+                      "upgradeName" : "ZergFlyerArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                },
+                {
+                  "state" : "CompleteOnly",
+                  "type" : "unitCount",
+                  "unit" : [ 101 ],
+                  "unitName" : [ "Hive" ]
+                }
+              ],
+              "type" : "and"
+            },
             {
               "operands" : 
               [

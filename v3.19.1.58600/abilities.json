@@ -330,6 +330,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 33,
+                    "upgradeName" : "TerranShipArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 34,
@@ -350,6 +372,28 @@
         "index" : 860,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 34,
+                    "upgradeName" : "TerranShipArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -402,6 +446,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 36,
+                    "upgradeName" : "TerranShipWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 37,
@@ -422,6 +488,28 @@
         "index" : 863,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 37,
+                    "upgradeName" : "TerranShipWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -489,6 +577,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 27,
+                    "upgradeName" : "TerranVehicleArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 28,
@@ -509,6 +619,28 @@
         "index" : 854,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 28,
+                    "upgradeName" : "TerranVehicleArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -561,6 +693,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 30,
+                    "upgradeName" : "TerranVehicleWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 31,
@@ -581,6 +735,28 @@
         "index" : 857,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 31,
+                    "upgradeName" : "TerranVehicleWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -665,6 +841,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 113,
+                    "upgradeName" : "TerranVehicleAndShipWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 114,
@@ -685,6 +883,28 @@
         "index" : 2296,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 114,
+                    "upgradeName" : "TerranVehicleAndShipWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -737,6 +957,28 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 116,
+                    "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 117,
@@ -757,6 +999,28 @@
         "index" : 2299,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 117,
+                    "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -1663,6 +1927,34 @@
                 "operands" : 
                 [
                   {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 78,
+                    "upgradeName" : "ProtossAirWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 64 ],
+                "unitName" : [ "FleetBeacon" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
                     "state" : "QueuedOrBetter",
                     "type" : "upgradeCount",
                     "upgrade" : 79,
@@ -1686,6 +1978,34 @@
         "index" : 1564,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 79,
+                    "upgradeName" : "ProtossAirWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 64 ],
+                "unitName" : [ "FleetBeacon" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -1753,6 +2073,34 @@
                 "operands" : 
                 [
                   {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 81,
+                    "upgradeName" : "ProtossAirArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 64 ],
+                "unitName" : [ "FleetBeacon" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
                     "state" : "QueuedOrBetter",
                     "type" : "upgradeCount",
                     "upgrade" : 82,
@@ -1776,6 +2124,34 @@
         "index" : 1567,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 82,
+                    "upgradeName" : "ProtossAirArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 64 ],
+                "unitName" : [ "FleetBeacon" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -2036,6 +2412,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 7,
+                    "upgradeName" : "TerranInfantryWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 29 ],
+                "unitName" : [ "Armory" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 8,
@@ -2056,6 +2460,34 @@
         "index" : 654,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 8,
+                    "upgradeName" : "TerranInfantryWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 29 ],
+                "unitName" : [ "Armory" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -2128,6 +2560,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 11,
+                    "upgradeName" : "TerranInfantryArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 29 ],
+                "unitName" : [ "Armory" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 12,
@@ -2148,6 +2608,34 @@
         "index" : 658,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 12,
+                    "upgradeName" : "TerranInfantryArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 29 ],
+                "unitName" : [ "Armory" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -2367,6 +2855,15 @@
       "Research4" : 
       {
         "index" : 763,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 29 ],
+            "unitName" : [ "Armory" ]
+          }
+        ],
         "time" : 110.0
       },
       "Research5" : 
@@ -2478,13 +2975,7 @@
       "Execute" : 
       {
         "index" : 405,
-        "requires" : 
-        [
-          {
-            "type" : "value",
-            "value" : 0
-          }
-        ],
+        "requires" : [],
         "time" : 0.0,
         "units" : [ "VikingFighter" ]
       }
@@ -2587,6 +3078,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 39,
+                    "upgradeName" : "ProtossGroundWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 40,
@@ -2607,6 +3126,34 @@
         "index" : 1064,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 40,
+                    "upgradeName" : "ProtossGroundWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -2659,6 +3206,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 42,
+                    "upgradeName" : "ProtossGroundArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 43,
@@ -2679,6 +3254,34 @@
         "index" : 1067,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 43,
+                    "upgradeName" : "ProtossGroundArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -2731,6 +3334,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 45,
+                    "upgradeName" : "ProtossShieldsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 46,
@@ -2751,6 +3382,34 @@
         "index" : 1070,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 46,
+                    "upgradeName" : "ProtossShieldsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 65 ],
+                "unitName" : [ "TwilightCouncil" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -3070,8 +3729,16 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 62,
+                "upgradeName" : "overlordspeed"
+              }
+            ],
+            "type" : "not"
           }
         ],
         "time" : 60.0
@@ -3102,8 +3769,16 @@
         "requires" : 
         [
           {
-            "type" : "value",
-            "value" : 0
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 64,
+                "upgradeName" : "Burrow"
+              }
+            ],
+            "type" : "not"
           }
         ],
         "time" : 100.0
@@ -3397,6 +4072,18 @@
             "type" : "unitCount",
             "unit" : [ 27, 43 ],
             "unitName" : [ "Factory", "FactoryFlying" ]
+          },
+          {
+            "operands" : 
+            [
+              {
+                "state" : "QueuedOrBetter",
+                "type" : "upgradeCount",
+                "upgrade" : 14,
+                "upgradeName" : "ReaperSpeed"
+              }
+            ],
+            "type" : "not"
           }
         ],
         "time" : 100.0
@@ -5159,6 +5846,7 @@
       "Train1" : 
       {
         "index" : 2018,
+        "requires" : [],
         "time" : 0.0,
         "units" : [ "LocustMP", "LocustMP" ]
       }
@@ -5175,6 +5863,12 @@
         "index" : 1252,
         "requires" : 
         [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 101 ],
+            "unitName" : [ "Hive" ]
+          },
           {
             "operands" : 
             [
@@ -5265,6 +5959,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 68,
+                    "upgradeName" : "ZergFlyerWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101, 100 ],
+                "unitName" : [ "Hive", "Lair" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 69,
@@ -5285,6 +6007,34 @@
         "index" : 1314,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 69,
+                    "upgradeName" : "ZergFlyerWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101 ],
+                "unitName" : [ "Hive" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -5337,6 +6087,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 71,
+                    "upgradeName" : "ZergFlyerArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101, 100 ],
+                "unitName" : [ "Hive", "Lair" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 72,
@@ -5357,6 +6135,34 @@
         "index" : 1317,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 72,
+                    "upgradeName" : "ZergFlyerArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101 ],
+                "unitName" : [ "Hive" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -5619,13 +6425,7 @@
       "Research7" : 
       {
         "index" : 796,
-        "requires" : 
-        [
-          {
-            "type" : "value",
-            "value" : 0
-          }
-        ],
+        "requires" : [],
         "time" : 110.0
       },
       "Research8" : 
@@ -7167,6 +7967,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 53,
+                    "upgradeName" : "ZergMeleeWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101, 100 ],
+                "unitName" : [ "Hive", "Lair" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 54,
@@ -7187,6 +8015,34 @@
         "index" : 1188,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 54,
+                    "upgradeName" : "ZergMeleeWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101 ],
+                "unitName" : [ "Hive" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -7239,6 +8095,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 56,
+                    "upgradeName" : "ZergGroundArmorsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101, 100 ],
+                "unitName" : [ "Hive", "Lair" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 57,
@@ -7259,6 +8143,34 @@
         "index" : 1191,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 57,
+                    "upgradeName" : "ZergGroundArmorsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101 ],
+                "unitName" : [ "Hive" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
@@ -7311,6 +8223,34 @@
             "operands" : 
             [
               {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 59,
+                    "upgradeName" : "ZergMissileWeaponsLevel1"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101, 100 ],
+                "unitName" : [ "Hive", "Lair" ]
+              }
+            ],
+            "type" : "and"
+          },
+          {
+            "operands" : 
+            [
+              {
                 "state" : "QueuedOrBetter",
                 "type" : "upgradeCount",
                 "upgrade" : 60,
@@ -7331,6 +8271,34 @@
         "index" : 1194,
         "requires" : 
         [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : 
+                [
+                  {
+                    "state" : "CompleteOnly",
+                    "type" : "upgradeCount",
+                    "upgrade" : 60,
+                    "upgradeName" : "ZergMissileWeaponsLevel2"
+                  },
+                  {
+                    "type" : "value",
+                    "value" : 1
+                  }
+                ],
+                "type" : "eq"
+              },
+              {
+                "state" : "CompleteOnly",
+                "type" : "unitCount",
+                "unit" : [ 101 ],
+                "unitName" : [ "Hive" ]
+              }
+            ],
+            "type" : "and"
+          },
           {
             "operands" : 
             [
