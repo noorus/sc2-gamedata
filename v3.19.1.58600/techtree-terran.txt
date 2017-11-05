@@ -236,14 +236,6 @@ SiegeTankSieged
 
 SiegeTankSkinPreview
 
-SnowRefinery_Terran_ExtendingBridgeNEShort8
-
-SnowRefinery_Terran_ExtendingBridgeNEShort8Out
-
-SnowRefinery_Terran_ExtendingBridgeNWShort8
-
-SnowRefinery_Terran_ExtendingBridgeNWShort8Out
-
 Starport
   builds
     VikingFighter
