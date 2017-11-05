@@ -788,6 +788,21 @@
           "ability" : 46,
           "abilityName" : "FleetBeaconResearch,Research3",
           "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 99,
+                  "upgradeName" : "PhoenixRangeUpgrade"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
           "time" : 90.0,
           "upgrade" : 99,
           "upgradeName" : "PhoenixRangeUpgrade",
@@ -805,8 +820,8 @@
                 {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
-                  "upgrade" : 288,
-                  "upgradeName" : "VoidRaySpeedUpgrade"
+                  "upgrade" : 1,
+                  "upgradeName" : "CarrierLaunchSpeedUpgrade"
                 }
               ],
               "type" : "not"
@@ -876,6 +891,7 @@
           "ability" : 1594,
           "abilityName" : "TwilightCouncilResearch,Research3",
           "minerals" : 100,
+          "requires" : [],
           "time" : 140.0,
           "upgrade" : 130,
           "upgradeName" : "AdeptPiercingAttack",
@@ -967,6 +983,21 @@
           "ability" : 2720,
           "abilityName" : "DarkShrineResearch,Research1",
           "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 141,
+                  "upgradeName" : "DarkTemplarBlinkUpgrade"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
           "time" : 170.0,
           "upgrade" : 141,
           "upgradeName" : "DarkTemplarBlinkUpgrade",
@@ -2818,6 +2849,25 @@
           "ability" : 864,
           "abilityName" : "ArmoryResearch,Research15",
           "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 116,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
           "time" : 160.0,
           "upgrade" : 116,
           "upgradeName" : "TerranVehicleAndShipArmorsLevel1",
@@ -2827,6 +2877,47 @@
           "ability" : 865,
           "abilityName" : "ArmoryResearch,Research16",
           "minerals" : 175,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 116,
+                      "upgradeName" : "TerranVehicleAndShipArmorsLevel1"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 117,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
           "time" : 190.0,
           "upgrade" : 117,
           "upgradeName" : "TerranVehicleAndShipArmorsLevel2",
@@ -2836,6 +2927,47 @@
           "ability" : 866,
           "abilityName" : "ArmoryResearch,Research17",
           "minerals" : 250,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "operands" : 
+                  [
+                    {
+                      "state" : "CompleteOnly",
+                      "type" : "upgradeCount",
+                      "upgrade" : 117,
+                      "upgradeName" : "TerranVehicleAndShipArmorsLevel2"
+                    },
+                    {
+                      "type" : "value",
+                      "value" : 1
+                    }
+                  ],
+                  "type" : "eq"
+                }
+              ],
+              "type" : "and"
+            },
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 118,
+                  "upgradeName" : "TerranVehicleAndShipArmorsLevel3"
+                },
+                {
+                  "type" : "value",
+                  "value" : 0
+                }
+              ],
+              "type" : "eq"
+            }
+          ],
           "time" : 220.0,
           "upgrade" : 118,
           "upgradeName" : "TerranVehicleAndShipArmorsLevel3",
@@ -5655,6 +5787,21 @@
           "ability" : 265,
           "abilityName" : "UltraliskCavernResearch,Research3",
           "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 4,
+                  "upgradeName" : "ChitinousPlating"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
           "time" : 110.0,
           "upgrade" : 4,
           "upgradeName" : "ChitinousPlating",
@@ -5695,6 +5842,21 @@
           "ability" : 1455,
           "abilityName" : "InfestationPitResearch,Research4",
           "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 101,
+                  "upgradeName" : "NeuralParasite"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
           "time" : 110.0,
           "upgrade" : 101,
           "upgradeName" : "NeuralParasite",
@@ -5803,6 +5965,21 @@
           "ability" : 217,
           "abilityName" : "RoachWarrenResearch,Research3",
           "minerals" : 150,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 3,
+                  "upgradeName" : "TunnelingClaws"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
           "time" : 110.0,
           "upgrade" : 3,
           "upgradeName" : "TunnelingClaws",
