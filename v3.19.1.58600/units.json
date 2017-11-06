@@ -2403,7 +2403,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -2446,7 +2446,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -3604,7 +3604,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -7266,7 +7266,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -7309,7 +7309,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -7352,7 +7352,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -7395,7 +7395,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -10059,7 +10059,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -14495,7 +14495,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -14538,7 +14538,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -22159,7 +22159,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -25574,7 +25574,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -25617,7 +25617,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -25660,7 +25660,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "..............................xxx......xxx......xxx..............................",
+      "data" : ".nnnnnnn.nnnnnnnnnnnnnnnnnnnnnxxxnnnnnnxxxnnnnnnxxxnnnnnnnnnnnnnnnnnnnnn.nnnnnnn.",
       "dimensions" : [ 9, 9 ],
       "offset" : [ -4, -4 ]
     },
@@ -25703,7 +25703,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
@@ -25746,7 +25746,7 @@
     "food" : 0,
     "footprint" : 
     {
-      "data" : "...........................xx...........................",
+      "data" : ".nnnnnn.nnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnnnnnn.nnnnnn.",
       "dimensions" : [ 8, 7 ],
       "offset" : [ -4, -3 ]
     },
