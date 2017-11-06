@@ -1,0 +1,2952 @@
+{
+  "90mmCannons" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 15.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 10.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "90mmCannons",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 7.5,
+    "name" : "90mmCannons",
+    "period" : 1.04,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "90mmCannonsFake" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 0.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "90mmCannonsDummy",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 7.5,
+    "name" : "90mmCannonsFake",
+    "period" : 1.04,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "ATALaserBattery" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 6.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ATALaserBatteryLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ATALaserBattery",
+    "period" : 0.22500000000000001,
+    "randomDelayMax" : 0.1875,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "ATSLaserBattery" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 8.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ATSLaserBatteryLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ATSLaserBattery",
+    "period" : 0.22500000000000001,
+    "randomDelayMax" : 0.1875,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "AcidSaliva" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 16.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "AcidSalivaLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "AcidSaliva",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 4.0,
+    "rangeSlop" : 1.0
+  },
+  "AcidSpew" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 15.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Biological" : 15.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "SporeCrawler",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "AcidSpew",
+    "period" : 0.86080000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 0.0
+  },
+  "AcidSpines" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 9.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "AcidSpinesLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 8.5,
+    "name" : "AcidSpines",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 8.0,
+    "rangeSlop" : 1.0
+  },
+  "Adept" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Light" : 12.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "AdeptLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "Adept",
+    "period" : 2.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 4.0,
+    "rangeSlop" : 1.0
+  },
+  "ArbiterMPWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ArbiterMPWeaponLaunch",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ArbiterMPWeapon",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "AutoTestAttackerWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "AutoTestAttackerWeapon",
+    "period" : 0.20000000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 1.0
+  },
+  "AutoTurret" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 18.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "AutoTurret",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "AutoTurret",
+    "period" : 0.80000000000000004,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "BacklashRockets" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "BacklashRockets",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.0,
+    "name" : "BacklashRockets",
+    "period" : 1.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "BroodlingEscort" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "BroodlingEscort",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "BroodlingEscort",
+    "period" : 10.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 9.0,
+    "rangeSlop" : 1.0
+  },
+  "BroodlingStrike" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 10.5,
+    "name" : "BroodlingStrike",
+    "period" : 2.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 1.0
+  },
+  "BuildingShield" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.10000000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Light" : 15.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "BuildingShield",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "BuildingShield",
+    "period" : 1.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "BypassArmorDroneWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "BypassArmorCreatePersistent",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 6.0,
+    "name" : "BypassArmorDroneWeapon",
+    "period" : 0.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "C10CanisterRifle" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 1.167,
+    "damagePoint" : 0.083000000000000004,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Light" : 10.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "C10CanisterRifle",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "C10CanisterRifle",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "Claws" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "Claws",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "Claws",
+    "period" : 0.69599999999999995,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "CrucioShockCannon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "CrucioShockCannonSwitch",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "CrucioShockCannon",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 13.0,
+    "rangeSlop" : 1.0
+  },
+  "CycloneFakeWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 0.0,
+      "dmgArmorReduction" : 0.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "",
+      "dmgSplash" : [],
+      "name" : "CycloneFakeWeaponDummyDamage",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 6.0,
+    "name" : "CycloneFakeWeapon",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "CycloneLockOnDummy" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 0.0,
+      "dmgArmorReduction" : 0.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "",
+      "dmgSplash" : [],
+      "name" : "CycloneFakeWeaponDummyDamage",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 7.5,
+    "name" : "CycloneLockOnDummy",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "CycloneMissiles" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "CycloneMissiles",
+    "period" : 2.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "D8Charge" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 30.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "D8ChargeLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "D8Charge",
+    "period" : 1.8,
+    "randomDelayMax" : 0.5,
+    "randomDelayMin" : 0.10000000000000001,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "DevourerMPWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "DevourerMPWeaponLaunch",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "DevourerMPWeapon",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "DigesterCreepSprayWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "DigesterCreepSprayWeaponAttackSet",
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 0.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "",
+          "dmgSplash" : [],
+          "name" : "KillRemove",
+          "type" : "damage"
+        },
+        {
+          "name" : "DigesterCreepSprayPersistCreatePersistent",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 0.0,
+    "name" : "DigesterCreepSprayWeapon",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 500.0,
+    "rangeSlop" : 1.0
+  },
+  "DisruptionBeam" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "DisruptionBeam",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "DisruptionBeam",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "FusionCutter" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "FusionCutter",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "FusionCutter",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "GlaiveWurm" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 45.0,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "GlaiveWurm",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "GlaiveWurm",
+    "period" : 1.5246,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 3.0,
+    "rangeSlop" : 2.0
+  },
+  "GuardianMPWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 20.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "GuardianMPWeaponLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "GuardianMPWeapon",
+    "period" : 1.3,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 9.0,
+    "rangeSlop" : 1.0
+  },
+  "GuassRifle" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.050000000000000003,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 6.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "GuassRifle",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "GuassRifle",
+    "period" : 0.86080000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "HERCWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.20000000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 20.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : 
+      [
+        {
+          "fraction" : 1.0,
+          "radius" : 2.1000000000000001
+        }
+      ],
+      "name" : "HERCWeaponDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "HERCWeapon",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "HellionTank" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "HellionTank",
+      "setEffects" : 
+      [
+        {
+          "name" : "HellionTankApplyBehavior",
+          "type" : "unknown"
+        },
+        {
+          "dmgAmount" : 18.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "HellionTankDamage",
+          "type" : "damage"
+        },
+        {
+          "name" : "HellionTankSearch",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "HellionTank",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 2.0,
+    "rangeSlop" : 1.0
+  },
+  "HydraliskMelee" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.29999999999999999,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 12.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "HydraliskMelee",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "HydraliskMelee",
+    "period" : 0.75,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.5,
+    "rangeSlop" : 1.0
+  },
+  "ImpalerTentacle" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.3332,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 25.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 5.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ImpalerTentacleLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ImpalerTentacle",
+    "period" : 1.8500000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 0.0
+  },
+  "InfernalFlameThrower" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.25,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "InfernalFlameThrowerCP",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "InfernalFlameThrower",
+    "period" : 2.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "InfestedGuassRifle" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.25,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 8.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "InfestedGuassRifle",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "InfestedGuassRifle",
+    "period" : 0.86080000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "InfestedSwarmClaws" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.2666,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 6.0,
+    "name" : "InfestedSwarmClaws",
+    "period" : 1.2,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "InterceptorBeam" : 
+  {
+    "arc" : 19.6875,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "InterceptorBeamPersistent",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "InterceptorBeam",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 2.0,
+    "rangeSlop" : 1.0
+  },
+  "InterceptorLaunch" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.0,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "InterceptorLaunchPersistent",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "InterceptorLaunch",
+    "period" : 0.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 8.0,
+    "rangeSlop" : 1.0
+  },
+  "InterceptorsDummy" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "CarrierInterceptor",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "InterceptorsDummy",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 8.0,
+    "rangeSlop" : 1.0
+  },
+  "IonCannons" : 
+  {
+    "arc" : 4.9987000000000004,
+    "arcSlop" : 0.0,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "IonCannons",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 4.0,
+    "name" : "IonCannons",
+    "period" : 1.1000000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "JavelinMissileLaunchers" : 
+  {
+    "arc" : 5.625,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "JavelinMissileLaunchersPersistent",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 10.5,
+    "name" : "JavelinMissileLaunchers",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 1.0
+  },
+  "KaiserBlades" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.3332,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 35.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Splash",
+      "dmgSplash" : 
+      [
+        {
+          "fraction" : 0.33000000000000002,
+          "radius" : 2.0
+        },
+        {
+          "fraction" : 0.33000000000000002,
+          "radius" : 2.0
+        }
+      ],
+      "name" : "KaiserBladesDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "KaiserBlades",
+    "period" : 0.85999999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 1.0,
+    "rangeSlop" : 1.0
+  },
+  "LanceMissileLaunchers" : 
+  {
+    "arc" : 5.625,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 35.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 15.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "LanceMissileLaunchersDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LanceMissileLaunchers",
+    "period" : 3.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 1.0
+  },
+  "LanzerTorpedoes" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LanzerTorpedoes",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LanzerTorpedoes",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 9.0,
+    "rangeSlop" : 1.0
+  },
+  "LiberatorAGWeapon" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.125,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LiberatorAGMissileLMSet",
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 75.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "LiberatorAGMissileLM",
+          "type" : "missile"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LiberatorAGWeapon",
+    "period" : 1.6000000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 0.0
+  },
+  "LiberatorMissileLaunchers" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LiberatorMissileBurstPersistent",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LiberatorMissileLaunchers",
+    "period" : 1.8,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "LocustMP" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.2666,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "LocustMPLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.0,
+    "name" : "LocustMP",
+    "period" : 0.59999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 3.0,
+    "rangeSlop" : 1.0
+  },
+  "LocustMPFlyingSwoopWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LocustMPFlyingSwoopAttackIssueOrder",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 10.0,
+    "name" : "LocustMPFlyingSwoopWeapon",
+    "period" : 0.80000000000000004,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "LocustMPMelee" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.2666,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "LocustMPMeleeDamage",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 6.0,
+    "name" : "LocustMPMelee",
+    "period" : 0.59999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.5,
+    "rangeSlop" : 1.0
+  },
+  "LongboltMissile" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LongboltMissile",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LongboltMissile",
+    "period" : 0.86080000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 0.0
+  },
+  "LurkerMP" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "LurkerMP",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "LurkerMP",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 9.0,
+    "rangeSlop" : 1.0
+  },
+  "MoopyStick" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 1.0,
+      "dmgArmorReduction" : 0.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "",
+      "dmgSplash" : [],
+      "name" : "MoopyStickDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "MoopyStick",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "MothershipBeam" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "MothershipBeamSet",
+      "setEffects" : 
+      [
+        {
+          "name" : "MothershipBeamPersistent",
+          "type" : "unknown"
+        },
+        {
+          "name" : "MothershipSecondaryBeamPersistent",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "MothershipBeam",
+    "period" : 2.21,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "MothershipCoreWeapon" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 30.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "MothershipCoreWeaponLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 7.0,
+    "name" : "MothershipCoreWeapon",
+    "period" : 1.0,
+    "randomDelayMax" : 0.0,
+    "randomDelayMin" : 0.0,
+    "range" : 7.0,
+    "rangeSlop" : 0.0
+  },
+  "MothershipPurifyWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : true,
+    "effect" : 
+    {
+      "dmgAmount" : 30.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "MothershipCoreWeaponDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "MothershipPurifyWeapon",
+    "period" : 1.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 0.0
+  },
+  "NeedleClaws" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 4.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "NeedleClaws",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 15.0,
+    "name" : "NeedleClaws",
+    "period" : 0.64549999999999996,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "NeedleSpines" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.20799999999999999,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 12.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "NeedleSpinesLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "NeedleSpines",
+    "period" : 0.75,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "NeutronFlare" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Splash",
+      "dmgSplash" : 
+      [
+        {
+          "fraction" : 1.0,
+          "radius" : 0.5
+        }
+      ],
+      "name" : "NeutronFlare",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "NeutronFlare",
+    "period" : 0.47239999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "NydusCanalAttackerWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "NydusCanalAttackerLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "NydusCanalAttackerWeapon",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "Oracle" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : true,
+    "effect" : 
+    {
+      "name" : "OracleWeaponCreatePersistent",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "Oracle",
+    "period" : 0.85999999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 4.0,
+    "rangeSlop" : 0.0
+  },
+  "P38ScytheGuassPistol" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "P38ScytheGuassPistolBurst",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "P38ScytheGuassPistol",
+    "period" : 1.1000000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "ParasiteSpore" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0625,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 14.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Massive" : 6.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ParasiteSporeLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ParasiteSpore",
+    "period" : 1.8999999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "ParticleBeam" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "ParticleBeam",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "ParticleBeam",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "ParticleDisruptors" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 10.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 4.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ParticleDisruptors",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "ParticleDisruptors",
+    "period" : 1.4399999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "PhaseDisruptersAir" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : true,
+    "effect" : 
+    {
+      "dmgAmount" : 20.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 30.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "PhaseDisruptors",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "PhaseDisruptersAir",
+    "period" : 1.45,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "PhaseDisruptors" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 20.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Armored" : 30.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "PhaseDisruptors",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "PhaseDisruptors",
+    "period" : 1.45,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "PhotonCannon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 20.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "PhotonCannonLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "PhotonCannon",
+    "period" : 1.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 0.0
+  },
+  "PointDefenseLaser" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.0,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "PointDefenseLaserInitialSet",
+      "setEffects" : 
+      [
+        {
+          "name" : "PointDefenseSearch",
+          "type" : "unknown"
+        },
+        {
+          "name" : "PointDefenseApplyBehavior",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "PointDefenseLaser",
+    "period" : 0.0,
+    "randomDelayMax" : 0.0,
+    "randomDelayMin" : 0.0,
+    "range" : 8.0,
+    "rangeSlop" : 1.0
+  },
+  "PrismaticBeam" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 39.990200000000002,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "PrismaticBeam",
+      "setEffects" : 
+      [
+        {
+          "name" : "PrismaticBeamChargeChain",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "PrismaticBeam",
+    "period" : 0.59999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 2.0
+  },
+  "PsiBlades" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "PsiBladesBurst",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "PsiBlades",
+    "period" : 1.2,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "PsionicShockwave" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 25.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Biological" : 10.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : 
+      [
+        {
+          "fraction" : 1.0,
+          "radius" : 0.25
+        },
+        {
+          "fraction" : 0.5,
+          "radius" : 0.5
+        },
+        {
+          "fraction" : 0.25,
+          "radius" : 1.0
+        }
+      ],
+      "name" : "PsionicShockwaveDamage",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "PsionicShockwave",
+    "period" : 1.754,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 3.0,
+    "rangeSlop" : 1.0
+  },
+  "PunisherGrenades" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.0,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "PunisherGrenadesLaunchSet",
+      "setEffects" : 
+      [
+        {
+          "name" : "PunisherGrenadesLMLeft",
+          "type" : "missile"
+        },
+        {
+          "name" : "PunisherGrenadesLMRight",
+          "type" : "missile"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "PunisherGrenades",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "Ram" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 1.0,
+    "damagePoint" : 0.66649999999999998,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 75.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "Ram",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "Ram",
+    "period" : 1.6665000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 1.0,
+    "rangeSlop" : 1.0
+  },
+  "RavagerWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.20000000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 16.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "RavagerWeaponLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "RavagerWeapon",
+    "period" : 1.6000000000000001,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "RepulsorCannon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 8.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "MothershipCorePlasmaDisruptorLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "RepulsorCannon",
+    "period" : 0.84999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 0.0
+  },
+  "RipField" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "RipFieldCreatePersistent",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "RipField",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "RoachMelee" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 16.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "RoachUMelee",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "RoachMelee",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.5,
+    "rangeSlop" : 1.0
+  },
+  "ScourgeMPWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "ScourgeMPWeaponSet",
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 110.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "",
+          "dmgSplash" : [],
+          "name" : "ScourgeMPWeaponDamage",
+          "type" : "damage"
+        },
+        {
+          "dmgAmount" : 0.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "",
+          "dmgSplash" : [],
+          "name" : "SuicideRemove",
+          "type" : "damage"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ScourgeMPWeapon",
+    "period" : 0.83320000000000005,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.0,
+    "rangeSlop" : 1.0
+  },
+  "ScoutMPAir" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "ScoutMPAir",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ScoutMPAir",
+    "period" : 1.25,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 4.0,
+    "rangeSlop" : 1.0
+  },
+  "ScoutMPGround" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 8.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "ScoutMPGround",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ScoutMPGround",
+    "period" : 1.694,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 4.0,
+    "rangeSlop" : 1.0
+  },
+  "Sheep" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 1.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "Sheep",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "Sheep",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "SlaynElementalWeapon" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.20799999999999999,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 0.0,
+      "dmgArmorReduction" : 0.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "",
+      "dmgSplash" : [],
+      "name" : "SlaynElementalWeaponDamage",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "SlaynElementalWeapon",
+    "period" : 0.82999999999999996,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "Spines" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 5.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "Spines",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "Spines",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "Talons" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "TalonsBurst",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.5,
+    "name" : "Talons",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 3.0,
+    "rangeSlop" : 1.0
+  },
+  "TalonsDummy" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "TalonsBurst",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "TalonsDummy",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "TalonsMissile" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "TalonsMissileBurst",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "TalonsMissile",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "Tempest" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 30.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Massive" : 22.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "TempestLaunchMissile",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "Tempest",
+    "period" : 3.2999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 15.0,
+    "rangeSlop" : 1.0
+  },
+  "TempestGround" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 40.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "TempestLaunchMissileGround",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 10.5,
+    "name" : "TempestGround",
+    "period" : 3.2999999999999998,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 10.0,
+    "rangeSlop" : 1.0
+  },
+  "ThermalBeam" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "ThermalBeamPersistent",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ThermalBeam",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 9.0,
+    "rangeSlop" : 1.0
+  },
+  "ThermalLanceAir" : 
+  {
+    "arc" : 90.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.083199999999999996,
+    "disabled" : true,
+    "effect" : 
+    {
+      "name" : "ThermalLancesAir",
+      "setEffects" : 
+      [
+        {
+          "name" : "ThermalLancesForwardAir",
+          "type" : "unknown"
+        },
+        {
+          "name" : "ThermalLancesReverseAir",
+          "type" : "unknown"
+        },
+        {
+          "name" : "ThermalLancesFriendlyCPAir",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "ThermalLanceAir",
+    "period" : 1.6499999999999999,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 0.0
+  },
+  "ThermalLances" : 
+  {
+    "arc" : 90.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.083199999999999996,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "ThermalLances",
+      "setEffects" : 
+      [
+        {
+          "name" : "ThermalLancesFriendlyCP",
+          "type" : "unknown"
+        },
+        {
+          "name" : "ThermalLancesReverse",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "ThermalLances",
+    "period" : 1.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 0.0
+  },
+  "ThorsHammer" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.25,
+    "damagePoint" : 0.83099999999999996,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "ThorsHammer",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 7.5,
+    "name" : "ThorsHammer",
+    "period" : 1.28,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "TwinGatlingCannon" : 
+  {
+    "arc" : 5.625,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 12.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : 
+      {
+        "Mechanical" : 8.0
+      },
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "TwinGatlingCannons",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "TwinGatlingCannon",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "TwinIbiksCannon" : 
+  {
+    "arc" : 90.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 40.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : 
+      [
+        {
+          "fraction" : 1.0,
+          "radius" : 0.5
+        },
+        {
+          "fraction" : 0.75,
+          "radius" : 0.80000000000000004
+        },
+        {
+          "fraction" : 0.375,
+          "radius" : 1.25
+        }
+      ],
+      "name" : "TwinIbiksCannon",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "TwinIbiksCannon",
+    "period" : 2.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "TyphoonMissilePod" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "CycloneAttackWeaponLaunchMissileSwitch",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 6.5,
+    "name" : "TyphoonMissilePod",
+    "period" : 0.14000000000000001,
+    "randomDelayMax" : 0.0,
+    "randomDelayMin" : 0.0,
+    "range" : 6.0,
+    "rangeSlop" : 1.0
+  },
+  "VoidRaySwarm" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 39.990200000000002,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "VoidRaySwarm",
+      "type" : "unknown"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "VoidRaySwarm",
+    "period" : 0.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 2.0
+  },
+  "VoidRaySwarmDummy" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 39.990200000000002,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "VoidRaySwarmDummy",
+    "period" : 0.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 2.0
+  },
+  "VoidRaySwarmEnhanced" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 39.990200000000002,
+    "backSwing" : 0.75,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : true,
+    "effect" : 
+    {
+      "name" : "VoidRaySwarmEnhanced",
+      "type" : "unknown"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "VoidRaySwarmEnhanced",
+    "period" : 0.5,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 6.0,
+    "rangeSlop" : 2.0
+  },
+  "VolatileBurst" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "VolatileBurst",
+      "setEffects" : 
+      [
+        {
+          "name" : "BanelingDontExplode",
+          "type" : "unknown"
+        },
+        {
+          "name" : "SuicideTargetFriendlySwitch",
+          "type" : "unknown"
+        },
+        {
+          "dmgAmount" : 80.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Splash",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 2.2000000000000002
+            }
+          ],
+          "name" : "VolatileBurstU2",
+          "type" : "damage"
+        },
+        {
+          "dmgAmount" : 20.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 15.0
+          },
+          "dmgKind" : "Splash",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 2.2000000000000002
+            }
+          ],
+          "name" : "VolatileBurstU",
+          "type" : "damage"
+        },
+        {
+          "dmgAmount" : 0.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "",
+          "dmgSplash" : [],
+          "name" : "Suicide",
+          "type" : "damage"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "VolatileBurst",
+    "period" : 0.83299999999999996,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.25,
+    "rangeSlop" : 1.0
+  },
+  "VolatileBurstBuilding" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : true,
+    "effect" : 
+    {
+      "name" : "VolatileBurst",
+      "setEffects" : 
+      [
+        {
+          "name" : "BanelingDontExplode",
+          "type" : "unknown"
+        },
+        {
+          "name" : "SuicideTargetFriendlySwitch",
+          "type" : "unknown"
+        },
+        {
+          "dmgAmount" : 80.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Splash",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 2.2000000000000002
+            }
+          ],
+          "name" : "VolatileBurstU2",
+          "type" : "damage"
+        },
+        {
+          "dmgAmount" : 20.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 15.0
+          },
+          "dmgKind" : "Splash",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 2.2000000000000002
+            }
+          ],
+          "name" : "VolatileBurstU",
+          "type" : "damage"
+        },
+        {
+          "dmgAmount" : 0.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "",
+          "dmgSplash" : [],
+          "name" : "Suicide",
+          "type" : "damage"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "VolatileBurstBuilding",
+    "period" : 0.83299999999999996,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.25,
+    "rangeSlop" : 1.0
+  },
+  "VolatileBurstDummy" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.0,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "VolatileBurstDummy",
+    "period" : 0.83299999999999996,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.25,
+    "rangeSlop" : 1.0
+  },
+  "WarHound" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 23.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Ranged",
+      "dmgSplash" : [],
+      "name" : "WarHoundLM",
+      "type" : "missile"
+    },
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 10.0,
+    "name" : "WarHound",
+    "period" : 1.3,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 7.0,
+    "rangeSlop" : 1.0
+  },
+  "WarHoundMelee" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 23.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "WarHoundMelee",
+      "type" : "damage"
+    },
+    "hidden" : true,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "WarHoundMelee",
+    "period" : 1.3,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.5,
+    "rangeSlop" : 1.0
+  },
+  "WarpBlades" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 1.333,
+    "damagePoint" : 0.36099999999999999,
+    "disabled" : false,
+    "effect" : 
+    {
+      "dmgAmount" : 45.0,
+      "dmgArmorReduction" : 1.0,
+      "dmgAttributeBonuses" : {},
+      "dmgKind" : "Melee",
+      "dmgSplash" : [],
+      "name" : "WarpBlades",
+      "type" : "damage"
+    },
+    "hidden" : false,
+    "melee" : true,
+    "minScanRange" : 5.0,
+    "name" : "WarpBlades",
+    "period" : 1.694,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 0.10000000000000001,
+    "rangeSlop" : 1.0
+  },
+  "WidowMineDummy" : 
+  {
+    "arc" : 360.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : 
+    {
+      "name" : "WidowMineAttack",
+      "setEffects" : 
+      [
+        {
+          "name" : "WidowMineLMSwitch",
+          "type" : "unknown"
+        },
+        {
+          "name" : "WidowMineApplyAnimation",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "set"
+    },
+    "hidden" : true,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "WidowMineDummy",
+    "period" : 1.0,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  },
+  "WizWeapon" : 
+  {
+    "arc" : 0.0,
+    "arcSlop" : 11.25,
+    "backSwing" : 0.5,
+    "damagePoint" : 0.16700000000000001,
+    "disabled" : false,
+    "effect" : {},
+    "hidden" : false,
+    "melee" : false,
+    "minScanRange" : 5.0,
+    "name" : "WizWeapon",
+    "period" : 0.83320000000000005,
+    "randomDelayMax" : 0.125,
+    "randomDelayMin" : -0.0625,
+    "range" : 5.0,
+    "rangeSlop" : 1.0
+  }
+}
