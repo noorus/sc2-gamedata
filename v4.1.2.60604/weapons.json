@@ -306,7 +306,19 @@
     "effect" : 
     {
       "name" : "BacklashRockets",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 12.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "BacklashRocketsLM",
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -398,7 +410,41 @@
     "effect" : 
     {
       "name" : "BypassArmorCreatePersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "BypassArmorReapplyABSet",
+          "setEffects" : 
+          [
+            {
+              "name" : "BypassArmorDebuffOneRB",
+              "type" : "unknown"
+            },
+            {
+              "name" : "BypassArmorDebuffTwoRB",
+              "type" : "unknown"
+            },
+            {
+              "name" : "BypassArmorDebuffThreeRB",
+              "type" : "unknown"
+            },
+            {
+              "name" : "BypassArmorDebuffOneAB",
+              "type" : "unknown"
+            },
+            {
+              "name" : "BypassArmorDebuffTwoAB",
+              "type" : "unknown"
+            },
+            {
+              "name" : "BypassArmorDebuffThreeAB",
+              "type" : "unknown"
+            }
+          ],
+          "type" : "set"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : true,
     "melee" : false,
@@ -633,7 +679,21 @@
         },
         {
           "name" : "DigesterCreepSprayPersistCreatePersistent",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "name" : "DigesterCreepSpraySecondaryCreatePersistent",
+              "setEffects" : 
+              [
+                {
+                  "name" : "DigesterCreepSecondaryCreateUnit",
+                  "type" : "createUnit"
+                }
+              ],
+              "type" : "persistent"
+            }
+          ],
+          "type" : "persistent"
         }
       ],
       "type" : "set"
@@ -658,7 +718,19 @@
     "effect" : 
     {
       "name" : "DisruptionBeam",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 6.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "DisruptionBeamDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -794,6 +866,8 @@
         }
       ],
       "name" : "HERCWeaponDamage",
+      "searchExcludes" : [ "player", "ally", "stasis" ],
+      "searchRequires" : [ "ground" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -833,7 +907,8 @@
         },
         {
           "name" : "HellionTankSearch",
-          "type" : "unknown"
+          "searchExcludes" : [ "self", "player", "ally" ],
+          "searchRequires" : [ "ground" ]
         }
       ],
       "type" : "set"
@@ -937,7 +1012,15 @@
     "effect" : 
     {
       "name" : "InfernalFlameThrowerCP",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "InfernalFlameThrowerE",
+          "searchExcludes" : [ "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground" ]
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1031,7 +1114,19 @@
     "effect" : 
     {
       "name" : "InterceptorBeamPersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 5.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "InterceptorBeamDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1053,7 +1148,14 @@
     "effect" : 
     {
       "name" : "InterceptorLaunchPersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "CarrierInterceptor",
+          "type" : "unknown"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : true,
     "melee" : false,
@@ -1097,7 +1199,38 @@
     "effect" : 
     {
       "name" : "IonCannons",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 5.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 5.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "IonCannonsLMLeft",
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+          "searchRequires" : [ "air" ],
+          "type" : "missile"
+        },
+        {
+          "dmgAmount" : 5.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 5.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "IonCannonsLMRight",
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+          "searchRequires" : [ "air" ],
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1119,7 +1252,30 @@
     "effect" : 
     {
       "name" : "JavelinMissileLaunchersPersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 6.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 6.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 0.59999999999999998
+            }
+          ],
+          "name" : "JavelinMissileLaunchersLM",
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+          "searchRequires" : [ "air" ],
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1156,6 +1312,8 @@
         }
       ],
       "name" : "KaiserBladesDamage",
+      "searchExcludes" : [ "player", "ally", "stasis" ],
+      "searchRequires" : [ "ground" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -1186,6 +1344,8 @@
       "dmgKind" : "Ranged",
       "dmgSplash" : [],
       "name" : "LanceMissileLaunchersDamage",
+      "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+      "searchRequires" : [ "air" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -1208,7 +1368,22 @@
     "effect" : 
     {
       "name" : "LanzerTorpedoes",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 10.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Armored" : 4.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "LanzerTorpedoesLM",
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1264,7 +1439,27 @@
     "effect" : 
     {
       "name" : "LiberatorMissileBurstPersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 5.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : 
+          [
+            {
+              "fraction" : 1.0,
+              "radius" : 1.5
+            }
+          ],
+          "name" : "LiberatorDamageMissileLM",
+          "searchExcludes" : [ "player", "ally", "stasis" ],
+          "searchRequires" : [ "air" ],
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1362,7 +1557,19 @@
     "effect" : 
     {
       "name" : "LongboltMissile",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 12.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "LongboltMissileLM",
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1384,7 +1591,15 @@
     "effect" : 
     {
       "name" : "LurkerMP",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "LurkerMPSearch",
+          "searchExcludes" : [ "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground" ]
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1437,11 +1652,35 @@
       [
         {
           "name" : "MothershipBeamPersistent",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "dmgAmount" : 6.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "MothershipBeamDamage",
+              "type" : "damage"
+            }
+          ],
+          "type" : "persistent"
         },
         {
           "name" : "MothershipSecondaryBeamPersistent",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "dmgAmount" : 6.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "MothershipBeamDamage",
+              "type" : "damage"
+            }
+          ],
+          "type" : "persistent"
         }
       ],
       "type" : "set"
@@ -1585,6 +1824,8 @@
         }
       ],
       "name" : "NeutronFlare",
+      "searchExcludes" : [ "player", "ally" ],
+      "searchRequires" : [ "air" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -1634,7 +1875,22 @@
     "effect" : 
     {
       "name" : "OracleWeaponCreatePersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 15.0,
+          "dmgArmorReduction" : 0.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Light" : 7.0
+          },
+          "dmgKind" : "Spell",
+          "dmgSplash" : [],
+          "name" : "OracleWeaponDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1656,7 +1912,19 @@
     "effect" : 
     {
       "name" : "P38ScytheGuassPistolBurst",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 4.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "P38ScytheGuassPistol",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -1856,7 +2124,7 @@
       [
         {
           "name" : "PointDefenseSearch",
-          "type" : "unknown"
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ]
         },
         {
           "name" : "PointDefenseApplyBehavior",
@@ -1889,7 +2157,8 @@
       [
         {
           "name" : "PrismaticBeamChargeChain",
-          "type" : "unknown"
+          "setEffects" : [],
+          "type" : "persistent"
         }
       ],
       "type" : "set"
@@ -1914,7 +2183,19 @@
     "effect" : 
     {
       "name" : "PsiBladesBurst",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 8.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Melee",
+          "dmgSplash" : [],
+          "name" : "PsiBlades",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : true,
@@ -1958,6 +2239,7 @@
         }
       ],
       "name" : "PsionicShockwaveDamage",
+      "searchExcludes" : [ "player", "ally", "stasis" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -2094,7 +2376,30 @@
     "effect" : 
     {
       "name" : "RipFieldCreatePersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "RipFieldSet",
+          "setEffects" : 
+          [
+            {
+              "name" : "RipFieldApplyBehavior",
+              "type" : "unknown"
+            },
+            {
+              "dmgAmount" : 25.0,
+              "dmgArmorReduction" : 0.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "RipFieldDamage",
+              "type" : "damage"
+            }
+          ],
+          "type" : "set"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : true,
     "melee" : false,
@@ -2155,13 +2460,8 @@
           "type" : "damage"
         },
         {
-          "dmgAmount" : 0.0,
-          "dmgArmorReduction" : 0.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "",
-          "dmgSplash" : [],
           "name" : "SuicideRemove",
-          "type" : "damage"
+          "type" : "suicide"
         }
       ],
       "type" : "set"
@@ -2186,7 +2486,34 @@
     "effect" : 
     {
       "name" : "ScoutMPAir",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 7.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Armored" : 7.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "ScoutMPAirLMLeft",
+          "type" : "missile"
+        },
+        {
+          "dmgAmount" : 7.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Armored" : 7.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "ScoutMPAirLMRight",
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2267,6 +2594,7 @@
       "dmgKind" : "",
       "dmgSplash" : [],
       "name" : "SlaynElementalWeaponDamage",
+      "searchExcludes" : [ "structure", "player", "ally", "stasis" ],
       "type" : "damage"
     },
     "hidden" : true,
@@ -2316,7 +2644,19 @@
     "effect" : 
     {
       "name" : "TalonsBurst",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 4.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "Talons",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : true,
     "melee" : false,
@@ -2338,7 +2678,19 @@
     "effect" : 
     {
       "name" : "TalonsBurst",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 4.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "Talons",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2360,7 +2712,19 @@
     "effect" : 
     {
       "name" : "TalonsMissileBurst",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 4.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "TalonsLM",
+          "type" : "missile"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2439,7 +2803,35 @@
     "effect" : 
     {
       "name" : "ThermalBeamPersistent",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "name" : "ThermalBeamSet",
+          "setEffects" : 
+          [
+            {
+              "dmgAmount" : 25.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "ThermalBeamDamage",
+              "type" : "damage"
+            },
+            {
+              "dmgAmount" : 25.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "ThermalBeamDamage",
+              "type" : "damage"
+            }
+          ],
+          "type" : "set"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2465,15 +2857,43 @@
       [
         {
           "name" : "ThermalLancesForwardAir",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "name" : "ThermalLancesEAir",
+              "searchExcludes" : [ "player", "ally", "stasis" ],
+              "searchRequires" : [ "air" ]
+            }
+          ],
+          "type" : "persistent"
         },
         {
           "name" : "ThermalLancesReverseAir",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "name" : "ThermalLancesEReverseAir",
+              "searchExcludes" : [ "player", "ally", "stasis" ],
+              "searchRequires" : [ "air" ]
+            }
+          ],
+          "type" : "persistent"
         },
         {
           "name" : "ThermalLancesFriendlyCPAir",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "dmgAmount" : 15.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : {},
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "ThermalLancesFriendlyDamageAir",
+              "type" : "damage"
+            }
+          ],
+          "type" : "persistent"
         }
       ],
       "type" : "set"
@@ -2502,11 +2922,34 @@
       [
         {
           "name" : "ThermalLancesFriendlyCP",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "dmgAmount" : 10.0,
+              "dmgArmorReduction" : 1.0,
+              "dmgAttributeBonuses" : 
+              {
+                "Light" : 5.0
+              },
+              "dmgKind" : "Ranged",
+              "dmgSplash" : [],
+              "name" : "ThermalLancesFriendlyDamage",
+              "type" : "damage"
+            }
+          ],
+          "type" : "persistent"
         },
         {
           "name" : "ThermalLancesReverse",
-          "type" : "unknown"
+          "setEffects" : 
+          [
+            {
+              "name" : "ThermalLancesEReverse",
+              "searchExcludes" : [ "player", "ally", "stasis" ],
+              "searchRequires" : [ "ground" ]
+            }
+          ],
+          "type" : "persistent"
         }
       ],
       "type" : "set"
@@ -2531,7 +2974,19 @@
     "effect" : 
     {
       "name" : "ThorsHammer",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 30.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : {},
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "ThorsHammerDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2602,6 +3057,8 @@
         }
       ],
       "name" : "TwinIbiksCannon",
+      "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+      "searchRequires" : [ "ground" ],
       "type" : "damage"
     },
     "hidden" : false,
@@ -2646,7 +3103,22 @@
     "effect" : 
     {
       "name" : "VoidRaySwarm",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 6.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Armored" : 4.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "VoidRaySwarmDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : false,
     "melee" : false,
@@ -2686,7 +3158,22 @@
     "effect" : 
     {
       "name" : "VoidRaySwarmEnhanced",
-      "type" : "unknown"
+      "setEffects" : 
+      [
+        {
+          "dmgAmount" : 6.0,
+          "dmgArmorReduction" : 1.0,
+          "dmgAttributeBonuses" : 
+          {
+            "Armored" : 4.0
+          },
+          "dmgKind" : "Ranged",
+          "dmgSplash" : [],
+          "name" : "VoidRaySwarmEnhancedDamage",
+          "type" : "damage"
+        }
+      ],
+      "type" : "persistent"
     },
     "hidden" : true,
     "melee" : false,
@@ -2731,6 +3218,8 @@
             }
           ],
           "name" : "VolatileBurstU2",
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground", "structure" ],
           "type" : "damage"
         },
         {
@@ -2749,16 +3238,13 @@
             }
           ],
           "name" : "VolatileBurstU",
+          "searchExcludes" : [ "structure", "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground" ],
           "type" : "damage"
         },
         {
-          "dmgAmount" : 0.0,
-          "dmgArmorReduction" : 0.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "",
-          "dmgSplash" : [],
           "name" : "Suicide",
-          "type" : "damage"
+          "type" : "suicide"
         }
       ],
       "type" : "set"
@@ -2806,6 +3292,8 @@
             }
           ],
           "name" : "VolatileBurstU2",
+          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground", "structure" ],
           "type" : "damage"
         },
         {
@@ -2824,16 +3312,13 @@
             }
           ],
           "name" : "VolatileBurstU",
+          "searchExcludes" : [ "structure", "player", "ally", "stasis" ],
+          "searchRequires" : [ "ground" ],
           "type" : "damage"
         },
         {
-          "dmgAmount" : 0.0,
-          "dmgArmorReduction" : 0.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "",
-          "dmgSplash" : [],
           "name" : "Suicide",
-          "type" : "damage"
+          "type" : "suicide"
         }
       ],
       "type" : "set"
