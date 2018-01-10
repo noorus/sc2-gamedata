@@ -328,6 +328,7 @@
     "effect" : 
     {
       "name" : "BacklashRockets",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -731,6 +732,7 @@
           [
             {
               "name" : "DigesterCreepSpraySecondaryCreatePersistent",
+              "persistentCount" : 9,
               "setEffects" : 
               [
                 {
@@ -1082,6 +1084,7 @@
     "effect" : 
     {
       "name" : "InfernalFlameThrowerCP",
+      "persistentCount" : 25,
       "setEffects" : 
       [
         {
@@ -1192,6 +1195,7 @@
     "effect" : 
     {
       "name" : "InterceptorBeamPersistent",
+      "persistentCount" : 1,
       "setEffects" : 
       [
         {
@@ -1228,6 +1232,7 @@
     "effect" : 
     {
       "name" : "InterceptorLaunchPersistent",
+      "persistentCount" : 8,
       "setEffects" : 
       [
         {
@@ -1283,6 +1288,7 @@
     "effect" : 
     {
       "name" : "IonCannons",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -1338,6 +1344,7 @@
     "effect" : 
     {
       "name" : "JavelinMissileLaunchersPersistent",
+      "persistentCount" : 4,
       "setEffects" : 
       [
         {
@@ -1460,6 +1467,7 @@
     "effect" : 
     {
       "name" : "LanzerTorpedoes",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -1535,6 +1543,7 @@
     "effect" : 
     {
       "name" : "LiberatorMissileBurstPersistent",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -1661,6 +1670,7 @@
     "effect" : 
     {
       "name" : "LongboltMissile",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -1697,6 +1707,7 @@
     "effect" : 
     {
       "name" : "LurkerMP",
+      "persistentCount" : 10,
       "setEffects" : 
       [
         {
@@ -1762,6 +1773,7 @@
       [
         {
           "name" : "MothershipBeamPersistent",
+          "persistentCount" : 3,
           "setEffects" : 
           [
             {
@@ -1778,6 +1790,7 @@
         },
         {
           "name" : "MothershipSecondaryBeamPersistent",
+          "persistentCount" : 3,
           "setEffects" : 
           [
             {
@@ -2038,6 +2051,7 @@
     "effect" : 
     {
       "name" : "P38ScytheGuassPistolBurst",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -2327,6 +2341,7 @@
     "effect" : 
     {
       "name" : "PsiBladesBurst",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -2648,6 +2663,7 @@
     "effect" : 
     {
       "name" : "ScoutMPAir",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -2816,6 +2832,7 @@
     "effect" : 
     {
       "name" : "TalonsBurst",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -2852,6 +2869,7 @@
     "effect" : 
     {
       "name" : "TalonsBurst",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -2888,6 +2906,7 @@
     "effect" : 
     {
       "name" : "TalonsMissileBurst",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
@@ -3041,6 +3060,7 @@
       [
         {
           "name" : "ThermalLancesForwardAir",
+          "persistentCount" : 11,
           "setEffects" : 
           [
             {
@@ -3053,6 +3073,7 @@
         },
         {
           "name" : "ThermalLancesReverseAir",
+          "persistentCount" : 11,
           "setEffects" : 
           [
             {
@@ -3065,6 +3086,7 @@
         },
         {
           "name" : "ThermalLancesFriendlyCPAir",
+          "persistentCount" : 2,
           "setEffects" : 
           [
             {
@@ -3108,6 +3130,7 @@
       [
         {
           "name" : "ThermalLancesFriendlyCP",
+          "persistentCount" : 2,
           "setEffects" : 
           [
             {
@@ -3127,6 +3150,7 @@
         },
         {
           "name" : "ThermalLancesReverse",
+          "persistentCount" : 11,
           "setEffects" : 
           [
             {
@@ -3162,6 +3186,7 @@
     "effect" : 
     {
       "name" : "ThorsHammer",
+      "persistentCount" : 2,
       "setEffects" : 
       [
         {
