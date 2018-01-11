@@ -69,11 +69,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 6.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 6.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ATALaserBatteryU",
+        "type" : "damage"
+      },
       "name" : "ATALaserBatteryLM",
       "type" : "missile"
     },
@@ -98,11 +103,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 8.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 8.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ATSLaserBatteryU",
+        "type" : "damage"
+      },
       "name" : "ATSLaserBatteryLM",
       "type" : "missile"
     },
@@ -127,11 +137,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 16.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 16.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "AcidSalivaU",
+        "type" : "damage"
+      },
       "name" : "AcidSalivaLM",
       "type" : "missile"
     },
@@ -156,14 +171,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 15.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Biological" : 15.0
+        "dmgAmount" : 15.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Biological" : 15.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "SporeCrawlerU",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "SporeCrawler",
       "type" : "missile"
     },
@@ -188,11 +208,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 9.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 9.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "AcidSpines",
+        "type" : "damage"
+      },
       "name" : "AcidSpinesLM",
       "type" : "missile"
     },
@@ -217,14 +242,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 10.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Light" : 12.0
+        "dmgAmount" : 10.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Light" : 12.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "AdeptDamage",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "AdeptLM",
       "type" : "missile"
     },
@@ -249,11 +279,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 10.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 10.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ArbiterMPWeaponDamage",
+        "type" : "damage"
+      },
       "name" : "ArbiterMPWeaponLaunch",
       "type" : "missile"
     },
@@ -332,11 +367,16 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 12.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
+          "impact" : 
+          {
+            "dmgAmount" : 12.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "BacklashRocketsU",
+            "type" : "damage"
+          },
           "name" : "BacklashRocketsLM",
           "type" : "missile"
         }
@@ -661,11 +701,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 30.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 30.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "D8ChargeDamage",
+        "type" : "damage"
+      },
       "name" : "D8ChargeLaunchMissile",
       "type" : "missile"
     },
@@ -690,6 +735,32 @@
     "disabled" : false,
     "effect" : 
     {
+      "impact" : 
+      {
+        "name" : "DevourerMPWeaponSet",
+        "setEffects" : 
+        [
+          {
+            "dmgAmount" : 25.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "DevourerMPWeaponDamage",
+            "type" : "damage"
+          },
+          {
+            "name" : "DevourerMPWeaponApply",
+            "type" : "unknown"
+          },
+          {
+            "name" : "DevourerMPWeaponSearch",
+            "searchExcludes" : [ "structure", "player", "ally", "stasis" ],
+            "searchRequires" : [ "air" ]
+          }
+        ],
+        "type" : "set"
+      },
       "name" : "DevourerMPWeaponLaunch",
       "type" : "missile"
     },
@@ -834,6 +905,27 @@
     "disabled" : false,
     "effect" : 
     {
+      "impact" : 
+      {
+        "name" : "GlaiveWurmS1",
+        "setEffects" : 
+        [
+          {
+            "dmgAmount" : 9.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "GlaiveWurmU1",
+            "type" : "damage"
+          },
+          {
+            "name" : "GlaiveWurmE1",
+            "searchExcludes" : [ "player", "ally", "stasis" ]
+          }
+        ],
+        "type" : "set"
+      },
       "name" : "GlaiveWurm",
       "type" : "missile"
     },
@@ -858,11 +950,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 20.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 20.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "GuardianMPWeaponDamage",
+        "type" : "damage"
+      },
       "name" : "GuardianMPWeaponLM",
       "type" : "missile"
     },
@@ -998,6 +1095,23 @@
     "disabled" : false,
     "effect" : 
     {
+      "impact" : 
+      {
+        "name" : "HighTemplarWeaponSet",
+        "setEffects" : 
+        [
+          {
+            "dmgAmount" : 4.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "HighTemplarWeaponDamage",
+            "type" : "damage"
+          }
+        ],
+        "type" : "set"
+      },
       "name" : "HighTemplarWeaponLM",
       "type" : "missile"
     },
@@ -1051,14 +1165,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 25.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Armored" : 5.0
+        "dmgAmount" : 25.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Armored" : 5.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ImpalerTentacleU",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "ImpalerTentacleLM",
       "type" : "missile"
     },
@@ -1116,11 +1235,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 14.0,
-      "dmgArmorReduction" : 0.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 14.0,
+        "dmgArmorReduction" : 0.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "InfestedAcidSpines",
+        "type" : "damage"
+      },
       "name" : "InfestedAcidSpinesLM",
       "type" : "missile"
     },
@@ -1292,31 +1416,41 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 5.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Light" : 5.0
+            "dmgAmount" : 5.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
+            {
+              "Light" : 5.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "IonCannonsULeft",
+            "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+            "searchRequires" : [ "air" ],
+            "type" : "damage"
           },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
           "name" : "IonCannonsLMLeft",
-          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
-          "searchRequires" : [ "air" ],
           "type" : "missile"
         },
         {
-          "dmgAmount" : 5.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Light" : 5.0
+            "dmgAmount" : 5.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
+            {
+              "Light" : 5.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "IonCannonsURight",
+            "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+            "searchRequires" : [ "air" ],
+            "type" : "damage"
           },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
           "name" : "IonCannonsLMRight",
-          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
-          "searchRequires" : [ "air" ],
           "type" : "missile"
         }
       ],
@@ -1348,23 +1482,28 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 6.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Light" : 6.0
-          },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : 
-          [
+            "dmgAmount" : 6.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
             {
-              "fraction" : 1.0,
-              "radius" : 0.59999999999999998
-            }
-          ],
+              "Light" : 6.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : 
+            [
+              {
+                "fraction" : 1.0,
+                "radius" : 0.59999999999999998
+              }
+            ],
+            "name" : "JavelinMissileLaunchersDamage",
+            "searchExcludes" : [ "self", "player", "ally", "stasis" ],
+            "searchRequires" : [ "air" ],
+            "type" : "damage"
+          },
           "name" : "JavelinMissileLaunchersLM",
-          "searchExcludes" : [ "self", "player", "ally", "stasis" ],
-          "searchRequires" : [ "air" ],
           "type" : "missile"
         }
       ],
@@ -1471,14 +1610,19 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 10.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Armored" : 4.0
+            "dmgAmount" : 10.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
+            {
+              "Armored" : 4.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "LanzerTorpedoesDamage",
+            "type" : "damage"
           },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
           "name" : "LanzerTorpedoesLM",
           "type" : "missile"
         }
@@ -1510,11 +1654,16 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 75.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
+          "impact" : 
+          {
+            "dmgAmount" : 75.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "LiberatorAGDamage",
+            "type" : "damage"
+          },
           "name" : "LiberatorAGMissileLM",
           "type" : "missile"
         }
@@ -1547,20 +1696,25 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 5.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "Ranged",
-          "dmgSplash" : 
-          [
-            {
-              "fraction" : 1.0,
-              "radius" : 1.5
-            }
-          ],
+          "impact" : 
+          {
+            "dmgAmount" : 5.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : 
+            [
+              {
+                "fraction" : 1.0,
+                "radius" : 1.5
+              }
+            ],
+            "name" : "LiberatorMissileDamage",
+            "searchExcludes" : [ "player", "ally", "stasis" ],
+            "searchRequires" : [ "air" ],
+            "type" : "damage"
+          },
           "name" : "LiberatorDamageMissileLM",
-          "searchExcludes" : [ "player", "ally", "stasis" ],
-          "searchRequires" : [ "air" ],
           "type" : "missile"
         }
       ],
@@ -1587,11 +1741,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 10.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 10.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "LocustMPDamage",
+        "type" : "damage"
+      },
       "name" : "LocustMPLM",
       "type" : "missile"
     },
@@ -1674,11 +1833,16 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 12.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
+          "impact" : 
+          {
+            "dmgAmount" : 12.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "LongboltMissileU",
+            "type" : "damage"
+          },
           "name" : "LongboltMissileLM",
           "type" : "missile"
         }
@@ -1829,11 +1993,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 30.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 30.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "MothershipCoreWeaponDamage",
+        "type" : "damage"
+      },
       "name" : "MothershipCoreWeaponLM",
       "type" : "missile"
     },
@@ -1858,13 +2027,18 @@
     "disabled" : true,
     "effect" : 
     {
-      "dmgAmount" : 30.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
-      "name" : "MothershipCoreWeaponDamage",
-      "type" : "damage"
+      "impact" : 
+      {
+        "dmgAmount" : 30.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "MothershipCoreWeaponDamage",
+        "type" : "damage"
+      },
+      "name" : "MothershipCoreWeaponLM",
+      "type" : "missile"
     },
     "filterExcludes" : [ "stasis" ],
     "filterRequires" : [],
@@ -1916,11 +2090,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 12.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 12.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "NeedleSpinesDamage",
+        "type" : "damage"
+      },
       "name" : "NeedleSpinesLaunchMissile",
       "type" : "missile"
     },
@@ -1982,11 +2161,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 10.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 10.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "NydusCanalAttackerDamage",
+        "type" : "damage"
+      },
       "name" : "NydusCanalAttackerLaunchMissile",
       "type" : "missile"
     },
@@ -2087,14 +2271,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 14.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Massive" : 6.0
+        "dmgAmount" : 14.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Massive" : 6.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ParasiteSporeDamage",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "ParasiteSporeLaunchMissile",
       "type" : "missile"
     },
@@ -2148,14 +2337,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 15.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Armored" : 6.0
+        "dmgAmount" : 15.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Armored" : 6.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "ParticleDisruptorsU",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "ParticleDisruptors",
       "type" : "missile"
     },
@@ -2244,11 +2438,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 20.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 20.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "PhotonCannonU",
+        "type" : "damage"
+      },
       "name" : "PhotonCannonLM",
       "type" : "missile"
     },
@@ -2428,10 +2627,58 @@
       "setEffects" : 
       [
         {
+          "impact" : 
+          {
+            "name" : "PunisherGrenadesSet",
+            "setEffects" : 
+            [
+              {
+                "name" : "PunisherGrenadesSlow",
+                "type" : "unknown"
+              },
+              {
+                "dmgAmount" : 5.0,
+                "dmgArmorReduction" : 1.0,
+                "dmgAttributeBonuses" : 
+                {
+                  "Armored" : 5.0
+                },
+                "dmgKind" : "Ranged",
+                "dmgSplash" : [],
+                "name" : "PunisherGrenadesU",
+                "type" : "damage"
+              }
+            ],
+            "type" : "set"
+          },
           "name" : "PunisherGrenadesLMLeft",
           "type" : "missile"
         },
         {
+          "impact" : 
+          {
+            "name" : "PunisherGrenadesSet",
+            "setEffects" : 
+            [
+              {
+                "name" : "PunisherGrenadesSlow",
+                "type" : "unknown"
+              },
+              {
+                "dmgAmount" : 5.0,
+                "dmgArmorReduction" : 1.0,
+                "dmgAttributeBonuses" : 
+                {
+                  "Armored" : 5.0
+                },
+                "dmgKind" : "Ranged",
+                "dmgSplash" : [],
+                "name" : "PunisherGrenadesU",
+                "type" : "damage"
+              }
+            ],
+            "type" : "set"
+          },
           "name" : "PunisherGrenadesLMRight",
           "type" : "missile"
         }
@@ -2488,11 +2735,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 16.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 16.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "RavagerWeaponDamage",
+        "type" : "damage"
+      },
       "name" : "RavagerWeaponLM",
       "type" : "missile"
     },
@@ -2517,11 +2769,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 8.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 8.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "MothershipCoreRepulsorCannonDamage",
+        "type" : "damage"
+      },
       "name" : "MothershipCorePlasmaDisruptorLaunchMissile",
       "type" : "missile"
     },
@@ -2667,26 +2924,36 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 7.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Armored" : 7.0
+            "dmgAmount" : 7.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
+            {
+              "Armored" : 7.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "ScoutMPAirU",
+            "type" : "damage"
           },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
           "name" : "ScoutMPAirLMLeft",
           "type" : "missile"
         },
         {
-          "dmgAmount" : 7.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : 
+          "impact" : 
           {
-            "Armored" : 7.0
+            "dmgAmount" : 7.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : 
+            {
+              "Armored" : 7.0
+            },
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "ScoutMPAirU",
+            "type" : "damage"
           },
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
           "name" : "ScoutMPAirLMRight",
           "type" : "missile"
         }
@@ -2910,11 +3177,16 @@
       "setEffects" : 
       [
         {
-          "dmgAmount" : 4.0,
-          "dmgArmorReduction" : 1.0,
-          "dmgAttributeBonuses" : {},
-          "dmgKind" : "Ranged",
-          "dmgSplash" : [],
+          "impact" : 
+          {
+            "dmgAmount" : 4.0,
+            "dmgArmorReduction" : 1.0,
+            "dmgAttributeBonuses" : {},
+            "dmgKind" : "Ranged",
+            "dmgSplash" : [],
+            "name" : "TalonsMissileDamage",
+            "type" : "damage"
+          },
           "name" : "TalonsLM",
           "type" : "missile"
         }
@@ -2942,14 +3214,19 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 30.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : 
+      "impact" : 
       {
-        "Massive" : 22.0
+        "dmgAmount" : 30.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : 
+        {
+          "Massive" : 22.0
+        },
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "TempestDamage",
+        "type" : "damage"
       },
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
       "name" : "TempestLaunchMissile",
       "type" : "missile"
     },
@@ -2974,11 +3251,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 40.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 40.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "TempestDamageGround",
+        "type" : "damage"
+      },
       "name" : "TempestLaunchMissileGround",
       "type" : "missile"
     },
@@ -3593,11 +3875,16 @@
     "disabled" : false,
     "effect" : 
     {
-      "dmgAmount" : 23.0,
-      "dmgArmorReduction" : 1.0,
-      "dmgAttributeBonuses" : {},
-      "dmgKind" : "Ranged",
-      "dmgSplash" : [],
+      "impact" : 
+      {
+        "dmgAmount" : 23.0,
+        "dmgArmorReduction" : 1.0,
+        "dmgAttributeBonuses" : {},
+        "dmgKind" : "Ranged",
+        "dmgSplash" : [],
+        "name" : "WarHound",
+        "type" : "damage"
+      },
       "name" : "WarHoundLM",
       "type" : "missile"
     },
