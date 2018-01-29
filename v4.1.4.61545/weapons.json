@@ -364,6 +364,7 @@
     {
       "name" : "BacklashRockets",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.14999999999999999 ],
       "setEffects" : 
       [
         {
@@ -481,6 +482,7 @@
     "effect" : 
     {
       "name" : "BypassArmorCreatePersistent",
+      "persistentPeriods" : [ 0.5 ],
       "setEffects" : 
       [
         {
@@ -799,11 +801,13 @@
         },
         {
           "name" : "DigesterCreepSprayPersistCreatePersistent",
+          "persistentPeriods" : [ 6.0 ],
           "setEffects" : 
           [
             {
               "name" : "DigesterCreepSpraySecondaryCreatePersistent",
               "persistentCount" : 9,
+              "persistentPeriods" : [ 0.0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ],
               "setEffects" : 
               [
                 {
@@ -841,6 +845,7 @@
     "effect" : 
     {
       "name" : "DisruptionBeam",
+      "persistentPeriods" : [ 1.0 ],
       "setEffects" : 
       [
         {
@@ -1204,6 +1209,7 @@
     {
       "name" : "InfernalFlameThrowerCP",
       "persistentCount" : 25,
+      "persistentPeriods" : [ 0.0 ],
       "setEffects" : 
       [
         {
@@ -1320,6 +1326,7 @@
     {
       "name" : "InterceptorBeamPersistent",
       "persistentCount" : 1,
+      "persistentPeriods" : [ 0.0, 0.0 ],
       "setEffects" : 
       [
         {
@@ -1357,6 +1364,7 @@
     {
       "name" : "InterceptorLaunchPersistent",
       "persistentCount" : 8,
+      "persistentPeriods" : [ 0.5 ],
       "setEffects" : 
       [
         {
@@ -1413,6 +1421,7 @@
     {
       "name" : "IonCannons",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.0 ],
       "setEffects" : 
       [
         {
@@ -1479,6 +1488,7 @@
     {
       "name" : "JavelinMissileLaunchersPersistent",
       "persistentCount" : 4,
+      "persistentPeriods" : [ 0.0, 0.125, 0.25, 0.125 ],
       "setEffects" : 
       [
         {
@@ -1607,6 +1617,7 @@
     {
       "name" : "LanzerTorpedoes",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.20999999999999999 ],
       "setEffects" : 
       [
         {
@@ -1693,6 +1704,7 @@
     {
       "name" : "LiberatorMissileBurstPersistent",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.050000000000000003 ],
       "setEffects" : 
       [
         {
@@ -1830,6 +1842,7 @@
     {
       "name" : "LongboltMissile",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.10000000000000001 ],
       "setEffects" : 
       [
         {
@@ -1872,6 +1885,29 @@
     {
       "name" : "LurkerMP",
       "persistentCount" : 10,
+      "persistentPeriods" : 
+      [
+        0.125,
+        0.0,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
       "setEffects" : 
       [
         {
@@ -1938,6 +1974,7 @@
         {
           "name" : "MothershipBeamPersistent",
           "persistentCount" : 3,
+          "persistentPeriods" : [ 0.375 ],
           "setEffects" : 
           [
             {
@@ -1955,6 +1992,7 @@
         {
           "name" : "MothershipSecondaryBeamPersistent",
           "persistentCount" : 3,
+          "persistentPeriods" : [ 0.375 ],
           "setEffects" : 
           [
             {
@@ -2196,6 +2234,7 @@
     "effect" : 
     {
       "name" : "OracleWeaponCreatePersistent",
+      "persistentPeriods" : [ 0.85999999999999999 ],
       "setEffects" : 
       [
         {
@@ -2236,6 +2275,7 @@
     {
       "name" : "P38ScytheGuassPistolBurst",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.122 ],
       "setEffects" : 
       [
         {
@@ -2512,6 +2552,7 @@
       [
         {
           "name" : "PrismaticBeamChargeChain",
+          "persistentPeriods" : [ 0.59999999999999998 ],
           "setEffects" : [],
           "type" : "persistent"
         }
@@ -2541,6 +2582,7 @@
     {
       "name" : "PsiBladesBurst",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.28000000000000003 ],
       "setEffects" : 
       [
         {
@@ -2804,6 +2846,7 @@
     "effect" : 
     {
       "name" : "RipFieldCreatePersistent",
+      "persistentPeriods" : [ 1.0 ],
       "setEffects" : 
       [
         {
@@ -2921,6 +2964,7 @@
     {
       "name" : "ScoutMPAir",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.0 ],
       "setEffects" : 
       [
         {
@@ -3100,6 +3144,7 @@
     {
       "name" : "TalonsBurst",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.29999999999999999 ],
       "setEffects" : 
       [
         {
@@ -3137,6 +3182,7 @@
     {
       "name" : "TalonsBurst",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.29999999999999999 ],
       "setEffects" : 
       [
         {
@@ -3174,6 +3220,7 @@
     {
       "name" : "TalonsMissileBurst",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.29999999999999999 ],
       "setEffects" : 
       [
         {
@@ -3286,6 +3333,7 @@
     "effect" : 
     {
       "name" : "ThermalBeamPersistent",
+      "persistentPeriods" : [ 1.0 ],
       "setEffects" : 
       [
         {
@@ -3343,6 +3391,7 @@
         {
           "name" : "ThermalLancesForwardAir",
           "persistentCount" : 11,
+          "persistentPeriods" : [ 0.025000000000000001 ],
           "setEffects" : 
           [
             {
@@ -3356,6 +3405,7 @@
         {
           "name" : "ThermalLancesReverseAir",
           "persistentCount" : 11,
+          "persistentPeriods" : [ 0.025000000000000001 ],
           "setEffects" : 
           [
             {
@@ -3369,6 +3419,7 @@
         {
           "name" : "ThermalLancesFriendlyCPAir",
           "persistentCount" : 2,
+          "persistentPeriods" : [ 0.089999999999999997, 0.089999999999999997 ],
           "setEffects" : 
           [
             {
@@ -3413,6 +3464,7 @@
         {
           "name" : "ThermalLancesFriendlyCP",
           "persistentCount" : 2,
+          "persistentPeriods" : [ 0.089999999999999997, 0.089999999999999997 ],
           "setEffects" : 
           [
             {
@@ -3433,6 +3485,7 @@
         {
           "name" : "ThermalLancesReverse",
           "persistentCount" : 11,
+          "persistentPeriods" : [ 0.031199999999999999, 0.025000000000000001, 0.022700000000000001 ],
           "setEffects" : 
           [
             {
@@ -3469,6 +3522,7 @@
     {
       "name" : "ThorsHammer",
       "persistentCount" : 2,
+      "persistentPeriods" : [ 0.0, 0.375 ],
       "setEffects" : 
       [
         {
@@ -3606,6 +3660,7 @@
     "effect" : 
     {
       "name" : "VoidRaySwarm",
+      "persistentPeriods" : [ 0.5 ],
       "setEffects" : 
       [
         {
@@ -3665,6 +3720,7 @@
     "effect" : 
     {
       "name" : "VoidRaySwarmEnhanced",
+      "persistentPeriods" : [ 0.5 ],
       "setEffects" : 
       [
         {
