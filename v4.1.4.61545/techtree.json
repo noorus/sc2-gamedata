@@ -3425,6 +3425,7 @@
         {
           "ability" : 318,
           "abilityName" : "TerranBuild,Build1",
+          "interruptible" : true,
           "time" : 100.0,
           "unit" : 18,
           "unitName" : "CommandCenter"
@@ -3432,6 +3433,7 @@
         {
           "ability" : 320,
           "abilityName" : "TerranBuild,Build3",
+          "interruptible" : true,
           "time" : 30.0,
           "unit" : 20,
           "unitName" : "Refinery"
@@ -3439,6 +3441,7 @@
         {
           "ability" : 319,
           "abilityName" : "TerranBuild,Build2",
+          "interruptible" : true,
           "time" : 30.0,
           "unit" : 19,
           "unitName" : "SupplyDepot"
@@ -3446,6 +3449,7 @@
         {
           "ability" : 321,
           "abilityName" : "TerranBuild,Build4",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3462,6 +3466,7 @@
         {
           "ability" : 322,
           "abilityName" : "TerranBuild,Build5",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3485,6 +3490,7 @@
         {
           "ability" : 324,
           "abilityName" : "TerranBuild,Build7",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3501,6 +3507,7 @@
         {
           "ability" : 323,
           "abilityName" : "TerranBuild,Build6",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3517,6 +3524,7 @@
         {
           "ability" : 326,
           "abilityName" : "TerranBuild,Build9",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3533,6 +3541,7 @@
         {
           "ability" : 327,
           "abilityName" : "TerranBuild,Build10",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3549,6 +3558,7 @@
         {
           "ability" : 328,
           "abilityName" : "TerranBuild,Build11",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3565,6 +3575,7 @@
         {
           "ability" : 331,
           "abilityName" : "TerranBuild,Build14",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3581,6 +3592,7 @@
         {
           "ability" : 329,
           "abilityName" : "TerranBuild,Build12",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -3597,6 +3609,7 @@
         {
           "ability" : 333,
           "abilityName" : "TerranBuild,Build16",
+          "interruptible" : true,
           "requires" : 
           [
             {
@@ -4224,6 +4237,7 @@
         {
           "ability" : 1152,
           "abilityName" : "ZergBuild,Build1",
+          "finishKillsWorker" : true,
           "time" : 100.0,
           "unit" : 86,
           "unitName" : "Hatchery"
@@ -4231,6 +4245,7 @@
         {
           "ability" : 1154,
           "abilityName" : "ZergBuild,Build3",
+          "finishKillsWorker" : true,
           "time" : 30.0,
           "unit" : 88,
           "unitName" : "Extractor"
@@ -4238,6 +4253,7 @@
         {
           "ability" : 1155,
           "abilityName" : "ZergBuild,Build4",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4254,6 +4270,7 @@
         {
           "ability" : 1156,
           "abilityName" : "ZergBuild,Build5",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4270,6 +4287,7 @@
         {
           "ability" : 1162,
           "abilityName" : "ZergBuild,Build11",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4286,6 +4304,7 @@
         {
           "ability" : 1165,
           "abilityName" : "ZergBuild,Build14",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4302,6 +4321,7 @@
         {
           "ability" : 1166,
           "abilityName" : "ZergBuild,Build15",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4318,6 +4338,7 @@
         {
           "ability" : 1167,
           "abilityName" : "ZergBuild,Build16",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4334,6 +4355,7 @@
         {
           "ability" : 1158,
           "abilityName" : "ZergBuild,Build7",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4350,6 +4372,7 @@
         {
           "ability" : 1159,
           "abilityName" : "ZergBuild,Build8",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4366,6 +4389,7 @@
         {
           "ability" : 1161,
           "abilityName" : "ZergBuild,Build10",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4382,6 +4406,7 @@
         {
           "ability" : 1160,
           "abilityName" : "ZergBuild,Build9",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4398,6 +4423,7 @@
         {
           "ability" : 1157,
           "abilityName" : "ZergBuild,Build6",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
@@ -4414,6 +4440,7 @@
         {
           "ability" : 1163,
           "abilityName" : "ZergBuild,Build12",
+          "finishKillsWorker" : true,
           "requires" : 
           [
             {
