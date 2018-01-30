@@ -132,7 +132,7 @@ Ghost
 
 GhostAcademy
   upgrades
-    GhostMoebiusReactor
+    PersonalCloaking
 
 GhostAlternate
 
@@ -279,7 +279,6 @@ StarportTechLab
     BansheeCloak
     RavenCorvidReactor
     BansheeSpeed
-    RavenEnhancedMunitions
     MedivacIncreaseSpeedBoost
     LiberatorAGRangeUpgrade
 

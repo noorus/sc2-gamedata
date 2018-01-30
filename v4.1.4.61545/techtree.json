@@ -2301,9 +2301,9 @@
       "researches" : 
       [
         {
-          "ability" : 821,
-          "abilityName" : "GhostAcademyResearch,Research2",
-          "minerals" : 100,
+          "ability" : 820,
+          "abilityName" : "GhostAcademyResearch,Research1",
+          "minerals" : 150,
           "requires" : 
           [
             {
@@ -2312,17 +2312,17 @@
                 {
                   "state" : "QueuedOrBetter",
                   "type" : "upgradeCount",
-                  "upgrade" : 26,
-                  "upgradeName" : "GhostMoebiusReactor"
+                  "upgrade" : 25,
+                  "upgradeName" : "PersonalCloaking"
                 }
               ],
               "type" : "not"
             }
           ],
-          "time" : 80.0,
-          "upgrade" : 26,
-          "upgradeName" : "GhostMoebiusReactor",
-          "vespene" : 100
+          "time" : 120.0,
+          "upgrade" : 25,
+          "upgradeName" : "PersonalCloaking",
+          "vespene" : 150
         }
       ]
     },
@@ -3299,30 +3299,6 @@
           "upgrade" : 136,
           "upgradeName" : "BansheeSpeed",
           "vespene" : 200
-        },
-        {
-          "ability" : 806,
-          "abilityName" : "StarportTechLabResearch,Research17",
-          "minerals" : 150,
-          "requires" : 
-          [
-            {
-              "operands" : 
-              [
-                {
-                  "state" : "QueuedOrBetter",
-                  "type" : "upgradeCount",
-                  "upgrade" : 292,
-                  "upgradeName" : "RavenEnhancedMunitions"
-                }
-              ],
-              "type" : "not"
-            }
-          ],
-          "time" : 110.0,
-          "upgrade" : 292,
-          "upgradeName" : "RavenEnhancedMunitions",
-          "vespene" : 150
         },
         {
           "ability" : 804,
@@ -4941,6 +4917,7 @@
           ],
           "time" : 24.0,
           "unit" : 105,
+          "unitCount" : 2,
           "unitName" : "Zergling"
         },
         {
@@ -5929,7 +5906,7 @@
         {
           "ability" : 1283,
           "abilityName" : "HydraliskDenResearch,Research2",
-          "minerals" : 150,
+          "minerals" : 100,
           "requires" : 
           [
             {
@@ -5948,7 +5925,31 @@
           "time" : 100.0,
           "upgrade" : 135,
           "upgradeName" : "EvolveMuscularAugments",
-          "vespene" : 150
+          "vespene" : 100
+        },
+        {
+          "ability" : 1282,
+          "abilityName" : "HydraliskDenResearch,Research1",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 134,
+                  "upgradeName" : "EvolveGroovedSpines"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 134,
+          "upgradeName" : "EvolveGroovedSpines",
+          "vespene" : 100
         }
       ]
     },

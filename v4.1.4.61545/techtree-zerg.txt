@@ -178,6 +178,7 @@ HydraliskBurrowed
 HydraliskDen
   upgrades
     EvolveMuscularAugments
+    EvolveGroovedSpines
 
 HydraliskImpaleMissile
 

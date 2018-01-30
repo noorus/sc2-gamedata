@@ -8911,7 +8911,12 @@
   },
   "1910" : 
   {
-    "abilityCommands" : [ "ShieldBatteryRechargeChanneled,Execute", "BuildInProgress,Cancel" ],
+    "abilityCommands" : 
+    [
+      "ShieldBatteryRechargeChanneled,Execute",
+      "BuildInProgress,Cancel",
+      "stop,Stop"
+    ],
     "acceleration" : 0.0,
     "aiEvalFactor" : 1.0,
     "armored" : true,
@@ -9360,7 +9365,7 @@
     "massive" : false,
     "mechanical" : false,
     "mineralCost" : 0,
-    "mover" : "RavenShredderMissile",
+    "mover" : "RavenShredderMissileDirect",
     "name" : "RavenShredderMissileWeapon",
     "planes" : [ "Air" ],
     "psionic" : false,
@@ -13269,11 +13274,11 @@
   {
     "abilityCommands" : 
     [
-      "GhostAcademyResearch,Research2",
       "que5,CancelLast",
       "BuildInProgress,Cancel",
       "BuildInProgress,Halt",
-      "ArmSiloWithNuke,Ammo1"
+      "ArmSiloWithNuke,Ammo1",
+      "GhostAcademyResearch,Research1"
     ],
     "acceleration" : 0.0,
     "aiEvalFactor" : 1.0,
@@ -21954,7 +21959,6 @@
       "StarportTechLabResearch,Research1",
       "StarportTechLabResearch,Research4",
       "StarportTechLabResearch,Research10",
-      "StarportTechLabResearch,Research17",
       "StarportTechLabResearch,Research15",
       "StarportTechLabResearch,Research16"
     ],
@@ -27084,7 +27088,7 @@
     "collides" : [ "ForceField", "Ground", "Locust" ],
     "energyMax" : 200.0,
     "energyRegenRate" : 0.5625,
-    "energyStart" : 50.0,
+    "energyStart" : 75.0,
     "food" : -2.0,
     "footprint" : {},
     "invulnerable" : false,
@@ -30609,7 +30613,7 @@
       "move,AcquireMove",
       "RavenShredderMissile,Execute",
       "RavenScramblerMissile,Execute",
-      "RavenRepairDrone,Execute"
+      "BuildAutoTurret,Execute"
     ],
     "acceleration" : 2.0,
     "aiEvalFactor" : 1.0,
@@ -50679,7 +50683,8 @@
       "que5,CancelLast",
       "BuildInProgress,Cancel",
       "UpgradeToLurkerDenMP,Cancel",
-      "HydraliskDenResearch,Research2"
+      "HydraliskDenResearch,Research2",
+      "HydraliskDenResearch,Research1"
     ],
     "acceleration" : 0.0,
     "aiEvalFactor" : 1.0,

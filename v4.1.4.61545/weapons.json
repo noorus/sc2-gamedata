@@ -482,7 +482,7 @@
     "effect" : 
     {
       "name" : "BypassArmorCreatePersistent",
-      "persistentPeriods" : [ 0.5 ],
+      "persistentPeriods" : [ 0.5, 0.5 ],
       "setEffects" : 
       [
         {
@@ -1906,6 +1906,15 @@
         0.125,
         0.125,
         0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
         0.125
       ],
       "setEffects" : 
@@ -2379,11 +2388,11 @@
     {
       "impact" : 
       {
-        "dmgAmount" : 15.0,
+        "dmgAmount" : 13.0,
         "dmgArmorReduction" : 1.0,
         "dmgAttributeBonuses" : 
         {
-          "Armored" : 6.0
+          "Armored" : 5.0
         },
         "dmgKind" : "Ranged",
         "dmgSplash" : [],
@@ -2399,7 +2408,7 @@
     "melee" : false,
     "minScanRange" : 6.5,
     "name" : "ParticleDisruptors",
-    "period" : 2.1600000000000001,
+    "period" : 1.8700000000000001,
     "randomDelayMax" : 0.125,
     "randomDelayMin" : -0.0625,
     "range" : 6.0,
@@ -3333,7 +3342,7 @@
     "effect" : 
     {
       "name" : "ThermalBeamPersistent",
-      "persistentPeriods" : [ 1.0 ],
+      "persistentPeriods" : [ 1.0, 1.0 ],
       "setEffects" : 
       [
         {
@@ -3485,7 +3494,13 @@
         {
           "name" : "ThermalLancesReverse",
           "persistentCount" : 11,
-          "persistentPeriods" : [ 0.031199999999999999, 0.025000000000000001, 0.022700000000000001 ],
+          "persistentPeriods" : 
+          [
+            0.031199999999999999,
+            0.025000000000000001,
+            0.022700000000000001,
+            0.022700000000000001
+          ],
           "setEffects" : 
           [
             {
