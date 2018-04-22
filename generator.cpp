@@ -1,3 +1,9 @@
+#ifdef _MSC_VER
+#ifndef WIN32
+#define WIN32
+#endif
+#endif
+
 #include <stdio.h>
 #if defined( WIN32 )
 #include <tchar.h>
