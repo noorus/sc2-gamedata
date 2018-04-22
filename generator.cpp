@@ -1,7 +1,9 @@
 #include <stdio.h>
+#if defined( WIN32 )
 #include <tchar.h>
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+#endif
 
 #include <string>
 #include <map>
@@ -19,16 +21,31 @@
 #include <boost/algorithm/string/join.hpp>
 #include <boost/tokenizer.hpp>
 
+#if defined( WIN32 )
 #pragma warning(push)
 #pragma warning(disable: 4275 4996)
+#endif
 #include <json/json.h>
 #include <tinyxml2.h>
+#if defined( WIN32 )
 #pragma warning(pop)
+#endif
+
+#if defined( WIN32 )
+#define PATHSEP "\\"
+#else
+#define MAX_PATH 1024
+#define PATHSEP "/"
+#define printf_s printf
+#define sprintf_s snprintf
+#define _strcmpi strcasecmp
+#define _stricmp strcasecmp
+#endif
 
 using std::string;
 using std::vector;
 using std::set;
-using std::exception;
+using std::runtime_error;
 using std::ofstream;
 using std::ifstream;
 
@@ -135,9 +152,9 @@ struct Unit {
   Unit(): race( Race_Neutral ), lifeStart( 0.0 ), lifeMax( 0.0 ), speed( 0.0 ), acceleration( 0.0 ), food( 0.0 ),
     light( false ), biological( false ), mechanical( false ), armored( false ), structure( false ), psionic( false ), massive( false ),
     sight( 0.0 ), cargoSize( 0 ), turningRate( 0.0 ), shieldsStart( 0.0 ), shieldsMax( 0.0 ), lifeRegenRate( 0.0 ), radius( 0.0 ), lifeArmor( 0 ),
-    speedMultiplierCreep( 1.0 ), mineralCost( 0 ), vespeneCost( 0 ), shieldRegenDelay( 0 ), shieldRegenRate( 0 ),
-    scoreMake( 0 ), scoreKill( 0 ), resourceType( Resource_None ), invulnerable( false ), resourceHarvestable( false ), campaign( false ),
-    attackTargetPriority( 0.0 ), stationaryTurningRate( 0.0 ), lateralAcceleration( 0.0 ), aiEvalFactor( 0.0 ),
+    speedMultiplierCreep( 1.0 ), mineralCost( 0 ), vespeneCost( 0 ), campaign( false ), shieldRegenDelay( 0 ), shieldRegenRate( 0 ),
+    scoreMake( 0 ), scoreKill( 0 ), resourceType( Resource_None ), aiEvalFactor( 0.0 ), attackTargetPriority( 0.0 ),
+    stationaryTurningRate( 0.0 ), lateralAcceleration( 0.0 ), invulnerable( false ), resourceHarvestable( false ),
     energyStart( 0.0 ), energyMax( 0.0 ), energyRegenRate( 0.0 )
   {
   }
@@ -169,7 +186,7 @@ struct AbilityCommand {
   string upgrade; // upgrade name
   int64_t mineralCost; // for upgrade
   int64_t vespeneCost; // for upgrade
-  AbilityCommand( const string& idx ): index( idx ), time( 0.0 ), mineralCost( 0 ), vespeneCost( 0 ), isUpgrade( false ) {}
+  AbilityCommand( const string& idx ): index( idx ), time( 0.0 ), isUpgrade( false ), mineralCost( 0 ), vespeneCost( 0 ) {}
   AbilityCommand(): time( 0.0 ) {}
 };
 
@@ -296,8 +313,8 @@ struct Weapon {
   std::set<FilterAttribute> targetRequire;
   std::set<FilterAttribute> targetExclude;
   Weapon(): range( 0.0 ), period( 0.0 ), arc( 0.0 ), damagePoint( 0.0 ), backSwing( 0.0 ),
-    rangeSlop( 0.0 ), minScanRange( 0.0 ), melee( false ), hidden( false ), disabled( false ),
-    randomDelayMin( 0.0 ), randomDelayMax( 0.0 ), arcSlop( 0.0 ), suicide( false ) {}
+    rangeSlop( 0.0 ), arcSlop( 0.0 ), minScanRange( 0.0 ), randomDelayMin( 0.0 ), randomDelayMax( 0.0 ),
+    melee( false ), hidden( false ), disabled( false ), suicide( false ) {}
 };
 
 using WeaponMap = std::map<string, Weapon>;
@@ -306,7 +323,7 @@ void parseWeaponData( const string& filename, WeaponMap& weapons, Weapon& defaul
 {
   tinyxml2::XMLDocument doc;
   if ( doc.LoadFile( filename.c_str() ) != tinyxml2::XML_SUCCESS )
-    throw exception( "Could not load XML file" );
+    throw runtime_error( "Could not load XML file " + filename );
 
   auto catalog = doc.FirstChildElement( "Catalog" );
   auto entry = catalog->FirstChildElement();
@@ -421,7 +438,7 @@ struct Effect {
   std::set<string> persistentEffects;
   std::vector<double> persistentPeriods;
   size_t periodCount;
-  Effect(): flagKill( false ), impactLocation( Impact_Undefined ), damageAmount( 0.0 ), damageArmorReduction( 0.0 ), periodCount( 0 ) {}
+  Effect(): damageAmount( 0.0 ), damageArmorReduction( 0.0 ), impactLocation( Impact_Undefined ), flagKill( false ), periodCount( 0 ) {}
 };
 
 using EffectMap = std::map<string, Effect>;
@@ -435,7 +452,7 @@ void parseEffectData( const string& filename, EffectMap& effects, size_t& notFou
   ifstream in;
   in.open( filename, std::ifstream::in );
   if ( !in.is_open() )
-    throw exception( "Could not load XML file" );
+    throw runtime_error( string( "Could not load XML file " ) + filename );
   in.seekg( 0, std::ios::end );
   effstr.reserve( in.tellg() );
   in.seekg( 0, std::ios::beg );
@@ -452,7 +469,7 @@ void parseEffectData( const string& filename, EffectMap& effects, size_t& notFou
   if ( ret != tinyxml2::XML_SUCCESS )
   {
     doc.PrintError();
-    throw exception( "Could not parse XML file" );
+    throw runtime_error( "Could not parse XML file" );
   }
 
   auto catalog = doc.FirstChildElement( "Catalog" );
@@ -595,7 +612,7 @@ void parseUnitData( const string& filename, UnitMap& units, Unit& defaultUnit, s
 
   tinyxml2::XMLDocument doc;
   if ( doc.LoadFile( filename.c_str() ) != tinyxml2::XML_SUCCESS )
-    throw exception( "Could not load XML file" );
+    throw runtime_error( string( "Could not load XML file " ) + filename );
 
   auto catalog = doc.FirstChildElement( "Catalog" );
   auto entry = catalog->FirstChildElement( "CUnit" );
@@ -879,11 +896,11 @@ void parseRequirementData( const string& datafilename, const string& nodedatafil
 {
   tinyxml2::XMLDocument datadoc;
   if ( datadoc.LoadFile( datafilename.c_str() ) != tinyxml2::XML_SUCCESS )
-    throw exception( "Could not load RequirementData XML file" );
+    throw runtime_error( "Could not load RequirementData XML file" );
 
   tinyxml2::XMLDocument nodedatadoc;
   if ( nodedatadoc.LoadFile( nodedatafilename.c_str() ) != tinyxml2::XML_SUCCESS )
-    throw exception( "Could not load RequirementNodeData XML file" );
+    throw runtime_error( "Could not load RequirementNodeData XML file" );
 
   // RequirementData.xml
   auto catalog = datadoc.FirstChildElement( "Catalog" );
@@ -975,7 +992,7 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
 {
   tinyxml2::XMLDocument doc;
   if ( doc.LoadFile( filename.c_str() ) != tinyxml2::XML_SUCCESS )
-    throw exception( "Could not load FootprintData XML file" );
+    throw runtime_error( "Could not load FootprintData XML file" );
 
   // FootprintData.xml
   auto catalog = doc.FirstChildElement( "Catalog" );
@@ -1011,7 +1028,7 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
             vector<string> parts;
             boost::split( parts, area, boost::is_any_of( "," ) );
             if ( parts.size() != 4 )
-              throw exception( "bad Area attribute for CFootprint::Layers" );
+              throw runtime_error( "bad Area attribute for CFootprint::Layers" );
 
             fp.x = atoi( parts[0].c_str() );
             fp.y = atoi( parts[1].c_str() );
@@ -1053,8 +1070,8 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
             while ( ctr )
             {
               size_t val = ( ctr->Attribute( "value" ) ? strlen( ctr->Attribute( "value" ) ) : 0 );
-              if ( val > rowwidth )
-                rowwidth = val;
+              if ( static_cast<int>( val ) > rowwidth )
+                rowwidth = static_cast<int>( val );
               rowcount++;
               ctr = ctr->NextSiblingElement( "Rows" );
             }
@@ -1075,10 +1092,10 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
             while ( row )
             {
               if ( !row->Attribute( "value" ) )
-                throw exception( "CFootprint::Layers::Rows without value attribute" );
+                throw runtime_error( "CFootprint::Layers::Rows without value attribute" );
               string value = row->Attribute( "value" );
-              if ( value.length() > fp.w )
-                fp.w = value.length();
+              if ( static_cast<int>( value.length() ) > fp.w )
+                fp.w = static_cast<int>( value.length() );
               for ( size_t c = 0; c < value.length(); c++ )
                 if ( value[c] == 'x' )
                   fp.placement[index * fp.w + c] = 1;
@@ -1105,7 +1122,7 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
   ifstream in;
   in.open( filename, std::ifstream::in );
   if ( !in.is_open() )
-    throw exception( "Could not load XML file" );
+    throw runtime_error( string( "Could not load XML file " ) + filename );
   in.seekg( 0, std::ios::end );
   abilstr.reserve( in.tellg() );
   in.seekg( 0, std::ios::beg );
@@ -1119,7 +1136,7 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
   if ( ret != tinyxml2::XML_SUCCESS )
   {
     doc.PrintError();
-    throw exception( "Could not parse XML file" );
+    throw runtime_error( "Could not parse XML file" );
   }
 
   auto catalog = doc.FirstChildElement( "Catalog" );
@@ -1367,8 +1384,8 @@ void resolveFootprint( const string& name, FootprintMap& footprints, Json::Value
   out["dimensions"] = dim;
 
   string data;
-  for ( size_t y = 0; y < fp.h; y++ )
-    for ( size_t x = 0; x < fp.w; x++ )
+  for ( int y = 0; y < fp.h; y++ )
+    for ( int x = 0; x < fp.w; x++ )
     {
       auto idx = y * fp.w + x;
       data.append( ( fp.placement[idx] ? "x" : fp.creep[idx] ? "o" : fp.nearResources[idx] ? "n" : "." ) );
@@ -1395,8 +1412,8 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
     uval["race"] = raceStr( unit.second.race );
     uval["food"] = unit.second.food;
 
-    uval["mineralCost"] = unit.second.mineralCost;
-    uval["vespeneCost"] = unit.second.vespeneCost;
+    uval["mineralCost"] = static_cast<Json::UInt64>( unit.second.mineralCost );
+    uval["vespeneCost"] = static_cast<Json::UInt64>( unit.second.vespeneCost );
 
     uval["speed"] = unit.second.speed;
     uval["acceleration"] = unit.second.acceleration;
@@ -1408,7 +1425,7 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
     uval["lifeStart"] = unit.second.lifeStart;
     uval["lifeMax"] = unit.second.lifeMax;
     uval["lifeRegenRate"] = unit.second.lifeRegenRate;
-    uval["lifeArmor"] = unit.second.lifeArmor;
+    uval["lifeArmor"] = static_cast<Json::UInt64>( unit.second.lifeArmor );
     uval["shieldsStart"] = unit.second.shieldsStart;
     uval["shieldsMax"] = unit.second.shieldsMax;
 
@@ -1423,15 +1440,15 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
     uval["structure"] = unit.second.structure;
     uval["psionic"] = unit.second.psionic;
     uval["massive"] = unit.second.massive;
-    uval["cargoSize"] = unit.second.cargoSize;
+    uval["cargoSize"] = static_cast<Json::UInt64>( unit.second.cargoSize );
     uval["turningRate"] = unit.second.turningRate;
 
     uval["shieldRegenDelay"] = unit.second.shieldRegenDelay;
     uval["shieldRegenRate"] = unit.second.shieldRegenRate;
     uval["mover"] = unit.second.mover;
 
-    uval["scoreMake"] = unit.second.scoreMake;
-    uval["scoreKill"] = unit.second.scoreKill;
+    uval["scoreMake"] = static_cast<Json::UInt64>( unit.second.scoreMake );
+    uval["scoreKill"] = static_cast<Json::UInt64>( unit.second.scoreKill );
 
     Json::Value collval( Json::arrayValue );
     for ( auto& c : unit.second.collides )
@@ -1460,7 +1477,7 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
       {
         auto evalid = g_unitMapping[evalAs];
         if ( evalid != 0 && evalid != g_unitMapping[unit.second.name] )
-          uval["aiEvaluateAs"] = evalid;
+          uval["aiEvaluateAs"] = static_cast<Json::UInt64>( evalid );
       }
       if ( !boost::iequals( unit.second.name, evalAs ) )
         uval["aiEvaluateAsName"] = evalAs;
@@ -1474,7 +1491,7 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
       {
         auto glosid = g_unitMapping[glosAl];
         if ( glosid != 0 && glosid != g_unitMapping[unit.second.name] )
-          uval["glossaryAlias"] = glosid;
+          uval["glossaryAlias"] = static_cast<Json::UInt64>( glosid );
       }
       if ( !boost::iequals( unit.second.name, glosAl ) )
         uval["glossaryAliasName"] = glosAl;
@@ -1562,7 +1579,7 @@ bool resolveRequirements( const string& useNodeName, Json::Value& rqtmp, Require
         for ( auto& name : resolveAlias( node.countLink ) )
         {
           namesVal.append( name );
-          idsVal.append( g_unitMapping[name] );
+          idsVal.append( static_cast<Json::UInt64>( g_unitMapping[name] ) );
         }
         rqtmp["unitName"] = namesVal;
         rqtmp["unit"] = idsVal;
@@ -1570,7 +1587,7 @@ bool resolveRequirements( const string& useNodeName, Json::Value& rqtmp, Require
       else if ( node.type == ReqNode_CountUpgrade )
       {
         rqtmp["upgradeName"] = node.countLink;
-        rqtmp["upgrade"] = g_upgradeMapping[node.countLink];
+        rqtmp["upgrade"] = static_cast<Json::UInt64>( g_upgradeMapping[node.countLink] );
       }
       if ( !node.countState.empty() )
         rqtmp["state"] = node.countState;
@@ -1680,7 +1697,7 @@ bool resolveEffect( const string& owner, string name, Json::Value& out, EffectMa
         periods.append( p );
       eval["setEffects"] = subfx;
       if ( fx.periodCount > 0 )
-        eval["persistentCount"] = fx.periodCount;
+        eval["persistentCount"] = static_cast<Json::UInt64>( fx.periodCount );
       if ( !fx.persistentPeriods.empty() )
         eval["persistentPeriods"] = periods;
     }
@@ -1808,7 +1825,7 @@ void dumpAbilities( AbilityMap& abils, RequirementMap& requirements, Requirement
         continue;
 
       Json::Value cval;
-      cval["index"] = resolveAbilityCmd( abil.second.name, cmd.second.index );
+      cval["index"] = static_cast<Json::UInt64>( resolveAbilityCmd( abil.second.name, cmd.second.index ) );
       cval["time"] = cmd.second.time;
       if ( !cmd.second.requirements.empty() )
       {
@@ -2076,14 +2093,14 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
           auto abilityCmdIndex = resolveAbilityCmd( build.ability, build.command );
 
           Json::Value buildnode( Json::objectValue );
-          buildnode["unit"] = g_unitMapping[build.unit];
+          buildnode["unit"] = static_cast<Json::UInt64>( g_unitMapping[build.unit] );
           buildnode["unitName"] = build.unit;
 
           if ( build.unitCount > 1 )
             buildnode["unitCount"] = build.unitCount;
 
           buildnode["abilityName"] = ( build.ability + "," + build.command );
-          buildnode["ability"] = abilityCmdIndex;
+          buildnode["ability"] = static_cast<Json::UInt64>( abilityCmdIndex );
           buildnode["time"] = build.time;
 
           if ( build.buildInterruptible ) // terran scv -> building; CAbilBuild
@@ -2110,14 +2127,14 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
           auto abilityCmdIndex = resolveAbilityCmd( morph.ability, morph.command );
 
           Json::Value morphnode( Json::objectValue );
-          morphnode["unit"] = g_unitMapping[morph.unit];
+          morphnode["unit"] = static_cast<Json::UInt64>( g_unitMapping[morph.unit] );
           morphnode["unitName"] = morph.unit;
 
           if ( morph.unitCount > 1 )
             morphnode["unitCount"] = morph.unitCount;
 
           morphnode["abilityName"] = ( morph.ability + "," + morph.command );
-          morphnode["ability"] = abilityCmdIndex;
+          morphnode["ability"] = static_cast<Json::UInt64>( abilityCmdIndex );
           morphnode["time"] = morph.time;
 
           dumpRequirementsJSON( morph.requirements, requirements, nodes, morphnode );
@@ -2135,14 +2152,14 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
           auto abilityCmdIndex = resolveAbilityCmd( merge.ability, merge.command );
 
           Json::Value mergenode( Json::objectValue );
-          mergenode["unit"] = g_unitMapping[merge.unit];
+          mergenode["unit"] = static_cast<Json::UInt64>( g_unitMapping[merge.unit] );
           mergenode["unitName"] = merge.unit;
 
           if ( merge.unitCount > 1 )
             mergenode["unitCount"] = merge.unitCount;
 
           mergenode["abilityName"] = ( merge.ability + "," + merge.command );
-          mergenode["ability"] = abilityCmdIndex;
+          mergenode["ability"] = static_cast<Json::UInt64>( abilityCmdIndex );
           mergenode["time"] = merge.time;
 
           dumpRequirementsJSON( merge.requirements, requirements, nodes, mergenode );
@@ -2163,13 +2180,13 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
           auto abilityCmdIndex = resolveAbilityCmd( res.ability, res.command );
 
           Json::Value resentry( Json::objectValue );
-          resentry["upgrade"] = g_upgradeMapping[res.upgrade];
+          resentry["upgrade"] = static_cast<Json::UInt64>( g_upgradeMapping[res.upgrade] );
           resentry["upgradeName"] = res.upgrade;
           resentry["abilityName"] = ( res.ability + "," + res.command );
-          resentry["ability"] = abilityCmdIndex;
+          resentry["ability"] = static_cast<Json::UInt64>( abilityCmdIndex );
           resentry["time"] = res.time;
-          resentry["minerals"] = res.minerals;
-          resentry["vespene"] = res.vespene;
+          resentry["minerals"] = static_cast<Json::UInt64>( res.minerals );
+          resentry["vespene"] = static_cast<Json::UInt64>( res.vespene );
 
           dumpRequirementsJSON( res.requirements, requirements, nodes, resentry );
 
@@ -2197,7 +2214,7 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
 
 void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, AbilityMap& abilities, RequirementMap& requirements, RequirementNodeMap& nodes, FootprintMap& footprints, WeaponMap& weapons, Weapon& defaultWeapon, EffectMap& effects )
 {
-  string unitDataPath = path + R"(\UnitData.xml)";
+  string unitDataPath = path + PATHSEP "UnitData.xml";
 
   size_t loops = 0;
   while ( true )
@@ -2208,23 +2225,23 @@ void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, Abilit
     if ( notfound == 0 )
       break;
     if ( loops > 10 )
-      throw exception( "Failed to parse unit data in 10 rounds, wtf?" );
+      throw runtime_error( "Failed to parse unit data in 10 rounds, wtf?" );
   }
 
-  string abilityDataPath = path + R"(\AbilData.xml)";
+  string abilityDataPath = path + PATHSEP "AbilData.xml";
   parseAbilityData( abilityDataPath, abilities );
 
-  string requirementDataPath = path + R"(\RequirementData.xml)";
-  string requirementNodeDataPath = path + R"(\RequirementNodeData.xml)";
+  string requirementDataPath = path + PATHSEP "RequirementData.xml";
+  string requirementNodeDataPath = path + PATHSEP "RequirementNodeData.xml";
   parseRequirementData( requirementDataPath, requirementNodeDataPath, requirements, nodes );
 
-  string footprintDataPath = path + R"(\FootprintData.xml)";
+  string footprintDataPath = path + PATHSEP "FootprintData.xml";
   parseFootprintData( footprintDataPath, footprints );
 
-  string weaponDataPath = path + R"(\WeaponData.xml)";
+  string weaponDataPath = path + PATHSEP "WeaponData.xml";
   parseWeaponData( weaponDataPath, weapons, defaultWeapon );
 
-  string effectDataPath = path + R"(\EffectData.xml)";
+  string effectDataPath = path + PATHSEP "EffectData.xml";
   loops = 0;
   while ( true )
   {
@@ -2234,7 +2251,7 @@ void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, Abilit
     if ( notfound == 0 )
       break;
     if ( loops > 10 )
-      throw exception( "Failed to parse effect data in 10 rounds, wtf?" );
+      throw runtime_error( "Failed to parse effect data in 10 rounds, wtf?" );
   }
 }
 
@@ -2244,7 +2261,7 @@ void readStableID( const string& path, NameToIDMapping& unitMapping, NameToIDMap
   std::ifstream infile;
   infile.open( path, std::ifstream::in );
   if ( !infile.is_open() )
-    throw std::exception( "could not open stableid.json" );
+    throw runtime_error( "could not open stableid.json" );
   infile >> root;
   infile.close();
 
@@ -2333,10 +2350,14 @@ int main()
   string rootPath;
   rootPath.reserve( MAX_PATH );
 
+#if defined( WIN32 )
   GetCurrentDirectoryA( MAX_PATH, &rootPath[0] );
+#else
+  getcwd( &rootPath[0], MAX_PATH );
+#endif
 
   string stableIDPath = rootPath.c_str(); // clone from c_str because internally rootPath is corrupted
-  stableIDPath.append( R"(\stableid.json)" );
+  stableIDPath.append( PATHSEP "stableid.json" );
 
   readStableID( stableIDPath, g_unitMapping, g_abilityMapping, g_upgradeMapping );
 
@@ -2363,11 +2384,11 @@ int main()
   for ( auto mod : mods )
   {
     string modPath = rootPath.c_str(); // clone from c_str because internally rootPath is corrupted
-    modPath.append( R"(\mods\)" + mod );
+    modPath.append( PATHSEP "mods" PATHSEP + mod );
 
     printf_s( "[A] mod: %s\r\n", mod.c_str() );
 
-    string gameDataPath = modPath + R"(\base.sc2data\GameData)";
+    string gameDataPath = modPath + PATHSEP "base.sc2data" PATHSEP "GameData";
     readGameData( gameDataPath, units, defaultUnit, abilities, requirements, nodes, footprints, weapons, defaultWeapon, effects );
   }
 
@@ -2404,9 +2425,9 @@ int main()
     char sdfsd[128];
     sprintf_s( sdfsd, 128, " (%i,%i,%i,%i)", fp.second.x, fp.second.y, fp.second.w, fp.second.h );
     footDump << fp.second.id << sdfsd << std::endl;
-    for ( size_t y = 0; y < fp.second.h; y++ )
+    for ( int y = 0; y < fp.second.h; y++ )
     {
-      for ( size_t x = 0; x < fp.second.w; x++ )
+      for ( int x = 0; x < fp.second.w; x++ )
       {
         auto idx = y * fp.second.w + x;
         footDump << ( fp.second.placement[idx] ? "x" : fp.second.creep[idx] ? "o" : fp.second.nearResources[idx] ? "n" : "." );
@@ -2421,7 +2442,9 @@ int main()
   dumpTechTreeText( "protoss", techMap[Race_Protoss] );
   dumpTechTreeText( "terran", techMap[Race_Terran] );
 
+#if defined( WIN32 )
   system( "pause" );
+#endif
 
   return EXIT_SUCCESS;
 }
