@@ -8,6 +8,8 @@
 #if defined( WIN32 )
 #include <tchar.h>
 #define WIN32_LEAN_AND_MEAN
+#define NOGDI
+#define NOCRYPT
 #include <windows.h>
 #endif
 
@@ -974,6 +976,35 @@ void parseRequirementData( const string& datafilename, const string& nodedatafil
   }
 }
 
+struct OffsetPoint {
+  double x, y;
+  OffsetPoint( double x_, double y_ ): x( x_ ), y( y_ ) {}
+};
+
+struct FootprintShapeBorder {
+  size_t offset1;
+  size_t offset2;
+  int type;
+  FootprintShapeBorder( unsigned long o1, unsigned long o2, int t_ ): offset1( o1 ), offset2( o2 ), type( t_ ) {}
+};
+
+using FootprintShapeBucket = vector<size_t>;
+using FootprintShapeBucketVector = vector<FootprintShapeBucket>;
+
+struct Point2DI {
+  int x, y;
+  Point2DI( int x_, int y_ ): x( x_ ), y( y_ ) {}
+};
+
+using Polygon = vector<Point2DI>;
+using PolygonVector = vector<Polygon>;
+
+struct FootprintShape {
+  double radius;
+  PolygonVector unpathablePolys;
+  PolygonVector buildingPolys;
+};
+
 struct Footprint {
   string id;
   string parent;
@@ -989,10 +1020,104 @@ struct Footprint {
   vector<char> placement;
   vector<char> creep;
   vector<char> nearResources;
+  FootprintShape shape;
   Footprint(): x( 0 ), y( 0 ), w( 0 ), h( 0 ), removed( false ), hasCreep( false ), hasNearResources( false ) {}
 };
 
 using FootprintMap = std::map<string, Footprint>;
+
+void parseFootprintShapes( vector<OffsetPoint>& offsets, vector<FootprintShapeBorder>& borders, int type, PolygonVector& out )
+{
+  FootprintShapeBucketVector buckets;
+  for ( auto& border : borders )
+  {
+    if ( border.type != type ) // 0 = unpathable terrain, 1 = ground, 2 = building, 3 = cliff
+      continue;
+    bool newBucket = true;
+    for ( auto& bucket : buckets )
+    {
+      auto it2 = std::find( bucket.begin(), bucket.end(), border.offset2 );
+      if ( it2 == bucket.begin() && !bucket.empty() )
+      {
+        FootprintShapeBucket prepend;
+        for ( auto& srcBucket : buckets )
+        {
+          auto it1 = std::find( srcBucket.begin(), srcBucket.end(), border.offset1 );
+          if ( it1 != srcBucket.end() && std::next( it1 ) == srcBucket.end() && &srcBucket != &bucket )
+          {
+            prepend.swap( srcBucket );
+            break;
+          }
+        }
+        if ( prepend.empty() )
+        {
+          bucket.insert( it2, border.offset1 );
+        }
+        else
+        {
+          for ( auto& roundRobin : buckets )
+          {
+            if ( !roundRobin.empty() && roundRobin.front() == border.offset2 && roundRobin.back() == prepend.front() )
+            {
+              roundRobin.insert( roundRobin.begin(), std::begin( prepend ), std::end( prepend ) );
+              goto nextloop;
+            }
+          }
+          bucket.insert( it2, std::begin( prepend ), std::end( prepend ) );
+        }
+        goto nextloop;
+      }
+    }
+    if ( newBucket )
+    {
+      FootprintShapeBucket bucket;
+      bucket.push_back( border.offset1 );
+      bucket.push_back( border.offset2 );
+      buckets.push_back( bucket );
+    }
+nextloop:;
+  }
+  FootprintShapeBucketVector outBuckets;
+  while ( !buckets.empty() )
+  {
+    auto it = buckets.begin();
+    while ( it != buckets.end() )
+    {
+      if ( ( *it ).empty() )
+        it = buckets.erase( it );
+      else if ( ( *it ).front() == ( *it ).back() )
+      {
+        outBuckets.push_back( ( *it ) );
+        it = buckets.erase( it );
+      } else
+        it++;
+    }
+    it = buckets.begin();
+    if ( it != buckets.end() )
+    {
+      for ( auto& bucket : buckets )
+      {
+        if ( bucket.size() < 2 )
+          continue;
+        if ( ( *it ).back() == bucket.front() && &( *it ) != &bucket )
+        {
+          ( *it ).insert( ( *it ).end(), std::next( bucket.begin() ), bucket.end() );
+          bucket.clear();
+          break;
+        }
+      }
+    }
+  }
+  for ( auto& bucket : outBuckets )
+  {
+    Polygon poly;
+    for ( auto idx : bucket )
+    {
+      poly.emplace_back( (int)( offsets[idx].x * 1000.0 ), (int)( offsets[idx].y * 1000.0 ) );
+    }
+    out.push_back( poly );
+  }
+}
 
 void parseFootprintData( const string& filename, FootprintMap& footprints )
 {
@@ -1013,6 +1138,56 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
 
       if ( entry->Attribute( "parent" ) )
         fp.parent = entry->Attribute( "parent" );
+
+      vector<OffsetPoint> offsets;
+      vector<FootprintShapeBorder> borders;
+
+      auto shape = entry->FirstChildElement( "Shape" );
+      while ( shape )
+      {
+        auto field = shape->FirstChildElement();
+        while ( field )
+        {
+          if ( _strcmpi( field->Name(), "Radius" ) == 0 && field->Attribute( "value" ) )
+            fp.shape.radius = field->DoubleAttribute( "value" );
+          else if ( _strcmpi( field->Name(), "Offsets" ) == 0 && field->Attribute( "value" ) )
+          {
+            offsets.clear();
+            string data = field->Attribute( "value" );
+            vector<string> offsetstrs;
+            boost::split( offsetstrs, data, boost::is_any_of( ";" ) );
+            for ( auto& offsetstr : offsetstrs )
+            {
+              vector<string> parts;
+              boost::split( parts, offsetstr, boost::is_any_of( "," ) );
+              if ( parts.size() != 2 )
+                throw runtime_error( "CFootprint::Shape::Offsets has a non-pair entry" );
+              offsets.emplace_back( std::stod( parts[0] ), std::stod( parts[1] ) );
+            }
+          }
+          else if ( _strcmpi( field->Name(), "Borders" ) == 0 && field->Attribute( "value" ) )
+          {
+            borders.clear();
+            string data = field->Attribute( "value" );
+            vector<string> borderstrs;
+            boost::split( borderstrs, data, boost::is_any_of( ";" ) );
+            for ( auto& borderstr : borderstrs )
+            {
+              vector<string> parts;
+              boost::split( parts, borderstr, boost::is_any_of( "," ) );
+              if ( parts.size() != 3 )
+                throw runtime_error( "CFootprint::Shape::Borders has an entry with != 3 members" );
+              borders.emplace_back( std::stoul( parts[0] ), std::stoul( parts[1] ), std::stoi( parts[2] ) );
+            }
+          }
+          field = field->NextSiblingElement();
+        }
+        shape = shape->NextSiblingElement( "Shape" );
+      }
+
+      // 0 = unpathable terrain, 1 = ground, 2 = building, 3 = cliff
+      parseFootprintShapes( offsets, borders, 0, fp.shape.unpathablePolys );
+      parseFootprintShapes( offsets, borders, 2, fp.shape.buildingPolys );
 
       auto layer = entry->FirstChildElement( "Layers" );
       while ( layer )
@@ -1366,6 +1541,22 @@ const char* abilTypeStr( AbilType type )
     return "";
 }
 
+void jsonPolyvecWrite( PolygonVector& polyvec, Json::Value& arr )
+{
+  for ( auto& poly : polyvec )
+  {
+    Json::Value jpoly( Json::arrayValue );
+    for ( auto& pt : poly )
+    {
+      Json::Value jpt( Json::arrayValue );
+      jpt.append( pt.x );
+      jpt.append( pt.y );
+      jpoly.append( jpt );
+    }
+    arr.append( jpoly );
+  }
+}
+
 void resolveFootprint( const string& name, FootprintMap& footprints, Json::Value& out )
 {
   if ( name.empty() || footprints.find( name ) == footprints.end() )
@@ -1378,6 +1569,18 @@ void resolveFootprint( const string& name, FootprintMap& footprints, Json::Value
   {
     return resolveFootprint( fp.parent, footprints, out );
   }
+
+  out["name"] = fp.id;
+
+  Json::Value shapes( Json::objectValue );
+  shapes["radius"] = fp.shape.radius;
+  Json::Value polygons( Json::arrayValue );
+  jsonPolyvecWrite( fp.shape.unpathablePolys, polygons );
+  shapes["unpathable"] = polygons;
+  polygons.clear();
+  jsonPolyvecWrite( fp.shape.buildingPolys, polygons );
+  shapes["building"] = polygons;
+  out["shape"] = shapes;
 
   Json::Value offset( Json::arrayValue );
   offset.append( fp.x );
@@ -1962,8 +2165,7 @@ void generateTechTree( UnitMap& units, AbilityMap& abilities, Race race, TechTre
           if ( ability.type == AbilType_Train || ability.type == AbilType_Build || ability.type == AbilType_Morph || ability.type == AbilType_MorphPlacement || ability.type == AbilType_Merge )
           {
             auto& cmd = ability.commands[parts[1]];
-            // for ( auto& cmd : ability.commands )
-            // {
+
             if ( cmd.units.empty() || cmd.isUpgrade )
               continue;
 
@@ -2021,7 +2223,6 @@ void generateTechTree( UnitMap& units, AbilityMap& abilities, Race race, TechTre
               entry.merges.push_back( bentry );
             else
               entry.builds.push_back( bentry );
-            // }
           }
           else if ( ability.type == AbilType_Research )
           {
