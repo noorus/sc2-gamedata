@@ -1003,11 +1003,11 @@ struct FootprintShape {
   double radius;
   PolygonVector unpathablePolys;
   PolygonVector buildingPolys;
+  FootprintShape(): radius( 0.0 ) {}
 };
 
 struct Footprint {
   string id;
-  string parent;
   int x;
   int y;
   int w;
@@ -1028,6 +1028,8 @@ using FootprintMap = std::map<string, Footprint>;
 
 void parseFootprintShapes( vector<OffsetPoint>& offsets, vector<FootprintShapeBorder>& borders, int type, PolygonVector& out )
 {
+  out.clear();
+
   FootprintShapeBucketVector buckets;
   for ( auto& border : borders )
   {
@@ -1119,8 +1121,10 @@ nextloop:;
   }
 }
 
-void parseFootprintData( const string& filename, FootprintMap& footprints )
+void parseFootprintData( const string& filename, FootprintMap& footprints, Footprint& defaultFootprint, size_t& notFoundCount )
 {
+  notFoundCount = 0;
+
   tinyxml2::XMLDocument doc;
   if ( doc.LoadFile( filename.c_str() ) != tinyxml2::XML_SUCCESS )
     throw runtime_error( "Could not load FootprintData XML file" );
@@ -1130,14 +1134,35 @@ void parseFootprintData( const string& filename, FootprintMap& footprints )
   auto entry = catalog->FirstChildElement( "CFootprint" );
   while ( entry )
   {
+    bool isDefault = ( entry->Attribute( "default" ) && entry->Int64Attribute( "default" ) == 1 && !entry->Attribute( "id" ) );
     auto id = entry->Attribute( "id" );
-    if ( id )
+    if ( id || isDefault )
     {
-      Footprint& fp = footprints[id];
-      fp.id = id;
+      if ( entry->Attribute( "parent" ) && strlen( entry->Attribute( "parent" ) ) > 0 )
+      {
+        string parentId = entry->Attribute( "parent" );
+        if ( footprints.find( parentId ) == footprints.end() )
+        {
+          notFoundCount++;
+          entry = entry->NextSiblingElement();
+          continue;
+        }
+        else if ( footprints.find( id ) == footprints.end() )
+        {
+          const Footprint& parent = footprints[parentId];
+          footprints[id] = parent;
+        }
+      }
+      else if ( !isDefault && footprints.find( id ) == footprints.end() )
+        footprints[id] = defaultFootprint;
 
-      if ( entry->Attribute( "parent" ) )
-        fp.parent = entry->Attribute( "parent" );
+      Footprint& fp = ( isDefault ? defaultFootprint : footprints[id] );
+
+      if ( !isDefault )
+      {
+        fp.id = id;
+        printf_s( "[+] footprint: %s\r\n", fp.id.c_str() );
+      }
 
       vector<OffsetPoint> offsets;
       vector<FootprintShapeBorder> borders;
@@ -1563,12 +1588,6 @@ void resolveFootprint( const string& name, FootprintMap& footprints, Json::Value
     return;
 
   auto& fp = footprints[name];
-
-  // naively get parent if override offers nothing, works well enough
-  if ( ( fp.w < 1 || fp.h < 1 ) && !fp.parent.empty() )
-  {
-    return resolveFootprint( fp.parent, footprints, out );
-  }
 
   out["name"] = fp.id;
 
@@ -2419,7 +2438,7 @@ void dumpTechTree( TechMap& techtree, RequirementMap& requirements, RequirementN
   out.close();
 }
 
-void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, AbilityMap& abilities, RequirementMap& requirements, RequirementNodeMap& nodes, FootprintMap& footprints, WeaponMap& weapons, Weapon& defaultWeapon, EffectMap& effects )
+void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, Footprint& defaultFootprint, AbilityMap& abilities, RequirementMap& requirements, RequirementNodeMap& nodes, FootprintMap& footprints, WeaponMap& weapons, Weapon& defaultWeapon, EffectMap& effects )
 {
   string unitDataPath = path + PATHSEP "UnitData.xml";
 
@@ -2443,7 +2462,17 @@ void readGameData( const string& path, UnitMap& units, Unit& defaultUnit, Abilit
   parseRequirementData( requirementDataPath, requirementNodeDataPath, requirements, nodes );
 
   string footprintDataPath = path + PATHSEP "FootprintData.xml";
-  parseFootprintData( footprintDataPath, footprints );
+  loops = 0;
+  while ( true )
+  {
+    loops++;
+    size_t notfound = 0;
+    parseFootprintData( footprintDataPath, footprints, defaultFootprint, notfound );
+    if ( notfound == 0 )
+      break;
+    if ( loops > 10 )
+      throw runtime_error( "Failed to parse footprint data in 10 rounds, wtf?" );
+  }
 
   string weaponDataPath = path + PATHSEP "WeaponData.xml";
   parseWeaponData( weaponDataPath, weapons, defaultWeapon );
@@ -2585,6 +2614,7 @@ int main()
   FootprintMap footprints;
   WeaponMap weapons;
   Weapon defaultWeapon;
+  Footprint defaultFootprint;
   EffectMap effects;
   Unit defaultUnit;
 
@@ -2596,7 +2626,7 @@ int main()
     printf_s( "[A] mod: %s\r\n", mod.c_str() );
 
     string gameDataPath = modPath + PATHSEP "base.sc2data" PATHSEP "GameData";
-    readGameData( gameDataPath, units, defaultUnit, abilities, requirements, nodes, footprints, weapons, defaultWeapon, effects );
+    readGameData( gameDataPath, units, defaultUnit, defaultFootprint, abilities, requirements, nodes, footprints, weapons, defaultWeapon, effects );
   }
 
   cleanupUnitCommandCards( units );
@@ -2621,12 +2651,14 @@ int main()
 
   dumpTechTree( techMap, requirements, nodes );
 
+  printf_s( "[d] dumping text files for humans...\r\n" );
+
   // dump footprints to text file with easy visualisation
   ofstream footDump;
   footDump.open( "footprints.txt" );
   for ( auto& fp : footprints )
   {
-    if ( fp.second.removed )
+    if ( fp.second.removed || fp.second.placement.empty() || fp.second.w == -1 )
       continue;
 
     char sdfsd[128];

@@ -163,11 +163,14 @@ CreepGrowthNydusCreeperStart (-2,-2,4,4)
 ....
 ....
 
-CreepTumor (0,0,0,0)
+CreepTumor (0,0,1,1)
+x
 
-CreepTumorBurrowed (0,0,0,0)
+CreepTumorBurrowed (0,0,1,1)
+x
 
-CreepTumorQueen (0,0,0,0)
+CreepTumorQueen (0,0,1,1)
+x
 
 DefensiveWall45 (-2,-2,5,5)
 ..xx.
@@ -377,7 +380,7 @@ DigesterCreepGrown (-6,-6,13,13)
 .............
 .............
 
-DigesterCreepStart (0,0,2,2)
+DigesterCreepStart (-1,-1,2,2)
 oo
 oo
 
@@ -413,7 +416,7 @@ xxxxxxxxxxxxxxxx
 EnemyPathingBlocker1x1 (0,0,1,1)
 x
 
-EnemyPathingBlocker2x2 (0,0,2,2)
+EnemyPathingBlocker2x2 (-1,-1,2,2)
 xx
 xx
 
@@ -554,7 +557,7 @@ xxxxxxxxxxxx
 Footprint1x1 (0,0,1,1)
 x
 
-Footprint1x145Degrees (0,0,2,2)
+Footprint1x145Degrees (-1,-1,2,2)
 xx
 xx
 
@@ -567,43 +570,50 @@ Footprint1x1BlockLOS (0,0,1,1)
 Footprint1x1Contour (0,0,1,1)
 x
 
-Footprint1x1Creep (0,0,0,0)
+Footprint1x1Creep (0,0,1,1)
+x
 
 Footprint1x1CreepNormal (0,0,1,1)
 x
 
-Footprint1x1PlacementOnly (0,0,0,0)
-
 Footprint1x1Underground (0,0,1,1)
 x
 
-Footprint2x2 (0,0,2,2)
+Footprint2x2 (-1,-1,2,2)
 xx
 xx
 
-Footprint2x2BlockLOS (0,0,2,2)
+Footprint2x2BlockLOS (-1,-1,2,2)
 ..
 ..
 
-Footprint2x2Contour (0,0,2,2)
+Footprint2x2Contour (-1,-1,2,2)
 xx
 xx
 
-Footprint2x2Contour2 (0,0,2,2)
+Footprint2x2Contour2 (-1,-1,2,2)
 xx
 xx
 
-Footprint2x2Creep (0,0,0,0)
+Footprint2x2Creep (-1,-1,2,2)
+xx
+xx
 
-Footprint2x2Creep2 (0,0,0,0)
+Footprint2x2Creep2 (-1,-1,2,2)
+xx
+xx
 
-Footprint2x2CreepContour (0,0,0,0)
+Footprint2x2CreepContour (-1,-1,2,2)
+xx
+xx
 
-Footprint2x2DoodadBlockLOS (0,0,2,2)
+Footprint2x2DoodadBlockLOS (-1,-1,2,2)
 ..
 ..
 
-Footprint2x2IgnoreCreepContour (0,0,0,0)
+Footprint2x2IgnoreCreepContour (-1,-1,2,2)
+xx
+xx
 
 Footprint2x2OverlordCreepSourceGrown (-6,-6,13,13)
 .............
@@ -620,17 +630,17 @@ Footprint2x2OverlordCreepSourceGrown (-6,-6,13,13)
 .............
 .............
 
-Footprint2x2OverlordCreepSourceStart (0,0,2,2)
+Footprint2x2OverlordCreepSourceStart (-1,-1,2,2)
 oo
 oo
 
-Footprint2x2PlacementOnly (0,0,0,0)
-
-Footprint2x2Underground (0,0,2,2)
+Footprint2x2Underground (-1,-1,2,2)
 xx
 xx
 
-Footprint2x2ZergSpineCrawler (0,0,0,0)
+Footprint2x2ZergSpineCrawler (-1,-1,2,2)
+xx
+xx
 
 Footprint2x4DestructibleRockHorizontal (-2,-1,4,2)
 xxxx
@@ -694,7 +704,10 @@ Footprint3x3ForceField (-1,-1,3,3)
 ...
 ...
 
-Footprint3x3IgnoreCreepContour (0,0,0,0)
+Footprint3x3IgnoreCreepContour (-1,-1,3,3)
+xxx
+xxx
+xxx
 
 Footprint4x12DestructibleRockVertical (-2,-6,4,12)
 xxxx
@@ -802,8 +815,9 @@ ooooooooooo
 ..ooooooo..
 ....ooo....
 
-Footprint5x5CreepSourceStart (0,0,1,1)
-o
+Footprint5x5CreepSourceStart (-1,-1,2,2)
+o.
+..
 
 Footprint5x5DropOff (-2,-2,5,5)
 xxxxx
@@ -887,7 +901,7 @@ xxxxxxxx
 xxxxxxxx
 xxxxxxxx
 
-FootprintAutoTurret (0,0,2,2)
+FootprintAutoTurret (-1,-1,2,2)
 xx
 xx
 
@@ -913,7 +927,7 @@ xxxx
 FootprintDebrisDoodad1x1 (0,0,1,1)
 x
 
-FootprintDebrisDoodad2x2 (0,0,2,2)
+FootprintDebrisDoodad2x2 (-1,-1,2,2)
 xx
 xx
 
@@ -942,7 +956,8 @@ x
 FootprintDoodad1x1BlockLOS (0,0,1,1)
 .
 
-FootprintDoodad1x1BlockLOSBoostHeight (0,0,0,0)
+FootprintDoodad1x1BlockLOSBoostHeight (0,0,1,1)
+.
 
 FootprintDoodad1x2 (0,-1,1,2)
 x
@@ -958,7 +973,7 @@ x
 FootprintDoodad2x1 (-1,0,2,1)
 xx
 
-FootprintDoodad2x2 (0,0,2,2)
+FootprintDoodad2x2 (-1,-1,2,2)
 xx
 xx
 
@@ -1095,11 +1110,9 @@ FootprintRock1x2 (0,-1,1,2)
 x
 x
 
-FootprintRock2x2 (0,0,2,2)
+FootprintRock2x2 (-1,-1,2,2)
 xx
 xx
-
-FootprintSieged (0,0,0,0)
 
 GasStation (-3,-3,7,7)
 .......
@@ -1225,7 +1238,7 @@ MilitaryFenceDiagonal (-3,-3,6,6)
 .xx...
 ......
 
-MilitaryFenceDiagonalShort (0,0,2,2)
+MilitaryFenceDiagonalShort (-1,-1,2,2)
 xx
 xx
 
@@ -1233,7 +1246,7 @@ MilitaryFenceStraight (-2,-1,4,2)
 ....
 .xxx
 
-MilitaryFenceStraightShort (0,0,2,2)
+MilitaryFenceStraightShort (-1,-1,2,2)
 xx
 xx
 
@@ -1477,7 +1490,7 @@ xxxxxx
 ShrubFootprint1x1 (0,0,1,1)
 .
 
-ShrubFootprint2x2 (0,0,2,2)
+ShrubFootprint2x2 (-1,-1,2,2)
 ..
 ..
 
@@ -1666,7 +1679,7 @@ xxxxxxx......
 Unbuildable1x1 (0,0,1,1)
 x
 
-Unbuildable2x2 (0,0,2,2)
+Unbuildable2x2 (-1,-1,2,2)
 xx
 xx
 

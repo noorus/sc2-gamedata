@@ -373,21 +373,25 @@
     {
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
-      "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "name" : "Footprint2x2IgnoreCreepContour",
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ -1000, 1000 ],
-            [ 1000, 1000 ],
-            [ 1000, -1000 ],
-            [ -1000, -1000 ],
-            [ -1000, 1000 ]
+            [ -500, 1000 ],
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ]
           ]
         ],
-        "radius" : 1.4142999999999999,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -2603,7 +2607,7 @@
     {
       "data" : "x",
       "dimensions" : [ 1, 1 ],
-      "name" : "Footprint1x1Underground",
+      "name" : "CreepTumorBurrowed",
       "offset" : [ 0, 0 ],
       "shape" : 
       {
@@ -2665,7 +2669,7 @@
     {
       "data" : "x",
       "dimensions" : [ 1, 1 ],
-      "name" : "Footprint1x1",
+      "name" : "CreepTumorQueen",
       "offset" : [ 0, 0 ],
       "shape" : 
       {
@@ -2977,21 +2981,25 @@
     {
       "data" : "xxxxxxxxx",
       "dimensions" : [ 3, 3 ],
-      "name" : "Footprint3x3",
+      "name" : "Footprint3x3IgnoreCreepContour",
       "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ -1500, 1500 ],
-            [ 1500, 1500 ],
-            [ 1500, -1500 ],
-            [ -1500, -1500 ],
-            [ -1500, 1500 ]
+            [ -500, 1000 ],
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ]
           ]
         ],
-        "radius" : 2.1213000000000002,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -3418,7 +3426,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -8621,7 +8629,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -9492,7 +9500,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -12338,7 +12346,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -16968,7 +16976,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "FootprintAutoTurret",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -17147,7 +17155,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "FootprintRock2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -20514,7 +20522,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "FootprintRock2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -21021,7 +21029,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -21809,7 +21817,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -22028,7 +22036,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -22293,7 +22301,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -22353,7 +22361,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -22495,7 +22503,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -22568,7 +22576,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -23141,7 +23149,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -23712,7 +23720,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -24275,7 +24283,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -26998,7 +27006,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Underground",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : [],
@@ -27154,7 +27162,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Underground",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : [],
@@ -27214,7 +27222,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Underground",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : [],
@@ -27274,7 +27282,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Underground",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : [],
@@ -27334,7 +27342,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "FootprintRock2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -27472,7 +27480,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "EnemyPathingBlocker2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -28497,21 +28505,25 @@
     {
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
-      "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "name" : "Footprint2x2IgnoreCreepContour",
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ -1000, 1000 ],
-            [ 1000, 1000 ],
-            [ 1000, -1000 ],
-            [ -1000, -1000 ],
-            [ -1000, 1000 ]
+            [ -500, 1000 ],
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ]
           ]
         ],
-        "radius" : 1.4142999999999999,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -28566,21 +28578,25 @@
     {
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
-      "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "name" : "Footprint2x2IgnoreCreepContour",
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ -1000, 1000 ],
-            [ 1000, 1000 ],
-            [ 1000, -1000 ],
-            [ -1000, -1000 ],
-            [ -1000, 1000 ]
+            [ -500, 1000 ],
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ]
           ]
         ],
-        "radius" : 1.4142999999999999,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -29047,7 +29063,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -36015,7 +36031,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "FootprintRock2x2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -36462,7 +36478,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -36544,7 +36560,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -36669,7 +36685,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -36729,7 +36745,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -36789,7 +36805,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -36849,7 +36865,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -36909,7 +36925,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -38080,7 +38096,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -40650,7 +40666,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -40710,7 +40726,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -40879,7 +40895,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -43117,7 +43133,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -57082,7 +57098,7 @@
     {
       "data" : "x",
       "dimensions" : [ 1, 1 ],
-      "name" : "Footprint1x1",
+      "name" : "CreepTumor",
       "offset" : [ 0, 0 ],
       "shape" : 
       {
@@ -58110,7 +58126,7 @@
       "shape" : 
       {
         "building" : [],
-        "radius" : -6.2774385622041925e+66,
+        "radius" : 0.0,
         "unpathable" : []
       }
     },
@@ -58882,7 +58898,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
@@ -59362,21 +59378,25 @@
     {
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
-      "name" : "Footprint2x2",
-      "offset" : [ 0, 0 ],
+      "name" : "Footprint2x2CreepContour",
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ -1000, 1000 ],
-            [ 1000, 1000 ],
-            [ 1000, -1000 ],
-            [ -1000, -1000 ],
-            [ -1000, 1000 ]
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ],
+            [ 500, 1000 ]
           ]
         ],
-        "radius" : 1.4142999999999999,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -59887,25 +59907,25 @@
     {
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
-      "name" : "Footprint2x2Contour2",
-      "offset" : [ 0, 0 ],
+      "name" : "Footprint2x2ZergSpineCrawler",
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
         [
           [
-            [ 625, -250 ],
-            [ 250, -625 ],
-            [ -250, -625 ],
-            [ -625, -250 ],
-            [ -625, 250 ],
-            [ -250, 625 ],
-            [ 250, 625 ],
-            [ 625, 250 ],
-            [ 625, -250 ]
+            [ 500, 1000 ],
+            [ 1000, 500 ],
+            [ 1000, -500 ],
+            [ 500, -1000 ],
+            [ -500, -1000 ],
+            [ -1000, -500 ],
+            [ -1000, 500 ],
+            [ -500, 1000 ],
+            [ 500, 1000 ]
           ]
         ],
-        "radius" : 0.67330000000000001,
+        "radius" : 1.1181000000000001,
         "unpathable" : []
       }
     },
@@ -59976,7 +59996,7 @@
       "data" : "xxxx",
       "dimensions" : [ 2, 2 ],
       "name" : "Footprint2x2Contour2",
-      "offset" : [ 0, 0 ],
+      "offset" : [ -1, -1 ],
       "shape" : 
       {
         "building" : 
