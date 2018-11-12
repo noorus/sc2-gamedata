@@ -1,0 +1,880 @@
+AcidSalivaWeapon
+
+AcidSpinesWeapon
+
+Baneling
+  morphs
+    BanelingBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+BanelingBurrowed
+  morphs
+    Baneling
+    DroneBurrowed
+    ZerglingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+BanelingCocoon
+
+BanelingNest
+  upgrades
+    CentrificalHooks
+
+BroodLord
+
+BroodLordAWeapon
+
+BroodLordBWeapon
+
+BroodLordCocoon
+
+BroodLordWeapon
+
+Broodling
+
+BroodlingDefault
+
+BroodlingEscort
+
+CausticSprayMissile
+
+Changeling
+
+ChangelingMarine
+
+ChangelingMarineShield
+
+ChangelingZealot
+
+ChangelingZergling
+
+ChangelingZerglingWings
+
+ContaminateWeapon
+
+CorrosiveParasiteWeapon
+
+CorruptionWeapon
+
+Corruptor
+  morphs
+    BroodLord
+
+CreepTumor
+
+CreepTumorBurrowed
+  builds
+    CreepTumor
+
+CreepTumorMissile
+
+CreepTumorQueen
+
+DefilerMP
+  morphs
+    DefilerMPBurrowed
+
+DefilerMPBurrowed
+  morphs
+    DefilerMP
+
+DefilerMPDarkSwarmWeapon
+
+DefilerMPPlagueWeapon
+
+DevourerCocoonMP
+
+DevourerMP
+
+Drone
+  builds
+    Hatchery
+    Extractor
+    SpawningPool
+    EvolutionChamber
+    BanelingNest
+    RoachWarren
+    SpineCrawler
+    SporeCrawler
+    Spire
+    UltraliskCavern
+    NydusNetwork
+    InfestationPit
+    HydraliskDen
+    LurkerDenMP
+  morphs
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+DroneBurrowed
+  morphs
+    Drone
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+Egg
+
+EvolutionChamber
+  upgrades
+    ZergGroundArmorsLevel1
+    ZergGroundArmorsLevel2
+    ZergGroundArmorsLevel3
+    ZergMeleeWeaponsLevel1
+    ZergMeleeWeaponsLevel2
+    ZergMeleeWeaponsLevel3
+    ZergMissileWeaponsLevel1
+    ZergMissileWeaponsLevel2
+    ZergMissileWeaponsLevel3
+
+Extractor
+
+EyeStalkWeapon
+
+FrenzyWeapon
+
+FungalGrowthMissile
+
+GlaiveWurmBounceWeapon
+
+GlaiveWurmM2Weapon
+
+GlaiveWurmM3Weapon
+
+GlaiveWurmWeapon
+
+GreaterSpire
+  upgrades
+    ZergFlyerWeaponsLevel1
+    ZergFlyerWeaponsLevel2
+    ZergFlyerWeaponsLevel3
+    ZergFlyerArmorsLevel1
+    ZergFlyerArmorsLevel2
+    ZergFlyerArmorsLevel3
+
+GuardianCocoonMP
+
+GuardianMP
+
+GuardianMPWeapon
+
+Hatchery
+  builds
+    Queen
+  morphs
+    Lair
+  upgrades
+    overlordspeed
+    Burrow
+
+Hive
+  builds
+    Queen
+  upgrades
+    overlordspeed
+    Burrow
+
+Hydralisk
+  morphs
+    HydraliskBurrowed
+    LurkerMP
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+HydraliskBurrowed
+  morphs
+    Hydralisk
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+HydraliskDen
+  upgrades
+    EvolveGroovedSpines
+    EvolveMuscularAugments
+
+HydraliskImpaleMissile
+
+InfestationPit
+  upgrades
+    InfestorEnergyUpgrade
+    NeuralParasite
+
+InfestedAcidSpinesWeapon
+
+InfestedTerransEgg
+
+InfestedTerransEggPlacement
+
+InfestedTerransWeapon
+
+Infestor
+  morphs
+    InfestorBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Ultralisk
+
+InfestorBurrowed
+  morphs
+    Infestor
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Ultralisk
+
+InfestorTerran
+  morphs
+    InfestorTerranBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    Infestor
+    Ultralisk
+
+InfestorTerranBurrowed
+  morphs
+    InfestorTerran
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    Infestor
+    Ultralisk
+
+InfestorTerransWeapon
+
+Lair
+  builds
+    Queen
+  morphs
+    Hive
+  upgrades
+    overlordspeed
+    Burrow
+
+Larva
+  builds
+    Drone
+    Zergling
+    Overlord
+    Roach
+    Mutalisk
+    Infestor
+    Ultralisk
+    Hydralisk
+    Viper
+    Corruptor
+    SwarmHostMP
+
+LarvaReleaseMissile
+
+LocustMP
+
+LocustMPEggAMissileWeapon
+
+LocustMPEggBMissileWeapon
+
+LocustMPFlying
+
+LocustMPWeapon
+
+LurkerDenMP
+  upgrades
+    DiggingClaws
+
+LurkerMP
+  morphs
+    LurkerMPBurrowed
+
+LurkerMPBurrowed
+  morphs
+    LurkerMP
+
+LurkerMPEgg
+
+Mutalisk
+
+NeuralParasiteTentacleMissile
+
+NeuralParasiteWeapon
+
+NydusCanal
+
+NydusCanalAttacker
+
+NydusCanalAttackerWeapon
+
+NydusCanalCreeper
+
+NydusNetwork
+  builds
+    NydusCanal
+    NydusCanalCreeper
+
+Overlord
+  morphs
+    Overseer
+    OverlordTransport
+
+OverlordCocoon
+
+OverlordTransport
+  morphs
+    Overseer
+
+Overseer
+  morphs
+    OverseerSiegeMode
+
+OverseerSiegeMode
+  morphs
+    Overseer
+
+ParasiteSporeWeapon
+
+ParasiticBombDummy
+
+ParasiticBombMissile
+
+Queen
+  builds
+    CreepTumorQueen
+  morphs
+    QueenBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+QueenBurrowed
+  morphs
+    Queen
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+QueenMP
+
+QueenMPEnsnareMissile
+
+QueenMPSpawnBroodlingsMissile
+
+Ravager
+  morphs
+    RavagerBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+RavagerBurrowed
+  morphs
+    Ravager
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+RavagerCocoon
+
+RavagerCorrosiveBileMissile
+
+RavagerWeaponMissile
+
+Roach
+  morphs
+    RoachBurrowed
+    Ravager
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+RoachBurrowed
+  morphs
+    Roach
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+RoachWarren
+  upgrades
+    GlialReconstitution
+    TunnelingClaws
+
+ScourgeMP
+
+SpawningPool
+  upgrades
+    zerglingmovementspeed
+    zerglingattackspeed
+
+SpineCrawler
+  morphs
+    SpineCrawlerUprooted
+
+SpineCrawlerUprooted
+  morphs
+    SpineCrawler
+
+SpineCrawlerWeapon
+
+Spire
+  morphs
+    GreaterSpire
+  upgrades
+    ZergFlyerWeaponsLevel1
+    ZergFlyerWeaponsLevel2
+    ZergFlyerWeaponsLevel3
+    ZergFlyerArmorsLevel1
+    ZergFlyerArmorsLevel2
+    ZergFlyerArmorsLevel3
+
+SporeCrawler
+  morphs
+    SporeCrawlerUprooted
+
+SporeCrawlerUprooted
+  morphs
+    SporeCrawler
+
+SporeCrawlerWeapon
+
+SwarmHostBurrowedMP
+  morphs
+    SwarmHostMP
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+SwarmHostMP
+  morphs
+    SwarmHostBurrowedMP
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+TalonsMissileWeapon
+
+TestZerg
+
+TransportOverlordCocoon
+
+Ultralisk
+  morphs
+    UltraliskBurrowed
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+
+UltraliskBurrowed
+  morphs
+    Ultralisk
+    DroneBurrowed
+    ZerglingBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    Drone
+    Zergling
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+
+UltraliskCavern
+  upgrades
+    ChitinousPlating
+
+Viper
+
+ViperConsumeStructureWeapon
+
+Weapon
+
+YoinkMissile
+
+YoinkSiegeTankMissile
+
+YoinkVikingAirMissile
+
+YoinkVikingGroundMissile
+
+Zergling
+  builds
+    Baneling
+  morphs
+    ZerglingBurrowed
+    DroneBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
+ZerglingBurrowed
+  morphs
+    Zergling
+    DroneBurrowed
+    BanelingBurrowed
+    RoachBurrowed
+    HydraliskBurrowed
+    RavagerBurrowed
+    SwarmHostBurrowedMP
+    QueenBurrowed
+    InfestorTerranBurrowed
+    InfestorBurrowed
+    UltraliskBurrowed
+    Drone
+    Baneling
+    Roach
+    Hydralisk
+    Ravager
+    SwarmHostMP
+    Queen
+    InfestorTerran
+    Infestor
+    Ultralisk
+
