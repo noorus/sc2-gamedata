@@ -2603,8 +2603,8 @@ int main()
     "liberty.sc2mod",
     "swarm.sc2mod",
     "void.sc2mod",
-    "voidmulti.sc2mod",
-    "balancemulti.sc2mod"
+    "voidmulti.sc2mod"//,
+    //"balancemulti.sc2mod"
   };
 
   UnitMap units;
