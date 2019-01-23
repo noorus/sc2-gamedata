@@ -1451,25 +1451,28 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
               sect = sect->NextSiblingElement( "SectionArray" );
             }
           }
-          else if ( abil.type == AbilType_Research && field->Attribute( "Upgrade" ) ) // for CAbilResearch
+          else if ( abil.type == AbilType_Research && idx ) // for CAbilResearch
           {
-            if ( strlen( field->Attribute( "Upgrade" ) ) < 1 )
+            if ( field->Attribute( "Upgrade" ) && strlen( field->Attribute( "Upgrade" ) ) < 1 ) // Empty "Upgrade" field means resetting
             {
               auto it = abil.commands.find( idx );
               if ( it != abil.commands.end() )
                 abil.commands.erase( it );
             }
-            else
+            else // Must have index attribute
             {
-              if ( abil.commands.find( idx ) == abil.commands.end() )
+              if ( idx && abil.commands.find( idx ) == abil.commands.end() )
                 abil.commands[idx] = AbilityCommand( idx );
 
               AbilityCommand& cmd = abil.commands[idx];
               if ( field->Attribute( "Time" ) )
                 cmd.time = field->DoubleAttribute( "Time" );
 
-              cmd.isUpgrade = true;
-              cmd.upgrade = field->Attribute( "Upgrade" );
+              if ( field->Attribute( "Upgrade" ) )
+              {
+                cmd.isUpgrade = true;
+                cmd.upgrade = field->Attribute( "Upgrade" );
+              }
               auto sub = field->FirstChildElement();
               while ( sub )
               {
