@@ -7690,7 +7690,119 @@
         },
         {
             "id": 1922,
+            "name": "TychusReaperACGluescreenDummy"
+        },
+        {
+            "id": 1923,
+            "name": "TychusFirebatACGluescreenDummy"
+        },
+        {
+            "id": 1924,
+            "name": "TychusSpectreACGluescreenDummy"
+        },
+        {
+            "id": 1925,
+            "name": "TychusMedicACGluescreenDummy"
+        },
+        {
+            "id": 1926,
+            "name": "TychusMarauderACGluescreenDummy"
+        },
+        {
+            "id": 1927,
+            "name": "TychusWarhoundACGluescreenDummy"
+        },
+        {
+            "id": 1928,
+            "name": "TychusHERCACGluescreenDummy"
+        },
+        {
+            "id": 1929,
+            "name": "TychusGhostACGluescreenDummy"
+        },
+        {
+            "id": 1930,
+            "name": "TychusSCVAutoTurretACGluescreenDummy"
+        },
+        {
+            "id": 1931,
+            "name": "ZeratulStalkerACGluescreenDummy"
+        },
+        {
+            "id": 1932,
+            "name": "ZeratulSentryACGluescreenDummy"
+        },
+        {
+            "id": 1933,
+            "name": "ZeratulDarkTemplarACGluescreenDummy"
+        },
+        {
+            "id": 1934,
+            "name": "ZeratulImmortalACGluescreenDummy"
+        },
+        {
+            "id": 1935,
+            "name": "ZeratulObserverACGluescreenDummy"
+        },
+        {
+            "id": 1936,
+            "name": "ZeratulDisruptorACGluescreenDummy"
+        },
+        {
+            "id": 1937,
+            "name": "ZeratulWarpPrismACGluescreenDummy"
+        },
+        {
+            "id": 1938,
+            "name": "ZeratulPhotonCannonACGluescreenDummy"
+        },
+        {
+            "id": 1939,
+            "name": "RenegadeLongboltMissileWeapon"
+        },
+        {
+            "id": 1940,
+            "name": "Viking"
+        },
+        {
+            "id": 1941,
+            "name": "RenegadeMissileTurret"
+        },
+        {
+            "id": 1942,
             "name": "ParasiticBombRelayDummy"
+        },
+        {
+            "id": 1943,
+            "name": "PreviewBunkerUpgraded"
+        },
+        {
+            "id": 1944,
+            "name": "AssimilatorRich"
+        },
+        {
+            "id": 1945,
+            "name": "ExtractorRich"
+        },
+        {
+            "id": 1946,
+            "name": "InhibitorZoneSmall"
+        },
+        {
+            "id": 1947,
+            "name": "InhibitorZoneMedium"
+        },
+        {
+            "id": 1948,
+            "name": "InhibitorZoneLarge"
+        },
+        {
+            "id": 1949,
+            "name": "RefineryRich"
+        },
+        {
+            "id": 1950,
+            "name": "MineralField450"
         }
     ],
     "Abilities": [
@@ -9329,7 +9441,7 @@
         {
             "id": 263,
             "name": "UltraliskCavernResearch",
-            "buttonname": "",
+            "buttonname": "EvolveAnabolicSynthesis2",
             "index": 0
         },
         {
@@ -12459,7 +12571,7 @@
         {
             "id": 769,
             "name": "FactoryTechLabResearch",
-            "buttonname": "",
+            "buttonname": "CycloneResearchLockOnDamageUpgrade",
             "index": 9
         },
         {
@@ -30774,24 +30886,132 @@
         },
         {
             "id": 3771,
+            "name": "BattlecruiserAttack",
+            "buttonname": "Attack",
+            "index": 0
+        },
+        {
+            "id": 3772,
+            "name": "BattlecruiserAttack",
+            "buttonname": "AttackTowards",
+            "index": 1
+        },
+        {
+            "id": 3773,
+            "name": "BattlecruiserAttack",
+            "buttonname": "AttackBarrage",
+            "index": 2
+        },
+        {
+            "id": 3774,
+            "name": "BattlecruiserAttackEvaluator",
+            "buttonname": "MothershipCoreAttack",
+            "index": 0
+        },
+        {
+            "id": 3775,
+            "name": "BattlecruiserAttackEvaluator",
+            "buttonname": "",
+            "index": 1
+        },
+        {
+            "id": 3776,
+            "name": "BattlecruiserMove",
+            "buttonname": "Move",
+            "index": 0
+        },
+        {
+            "id": 3777,
+            "name": "BattlecruiserMove",
+            "buttonname": "MovePatrol",
+            "index": 1
+        },
+        {
+            "id": 3778,
+            "name": "BattlecruiserMove",
+            "buttonname": "MoveHoldPosition",
+            "index": 2
+        },
+        {
+            "id": 3779,
+            "name": "BattlecruiserMove",
+            "buttonname": "AcquireMove",
+            "index": 3
+        },
+        {
+            "id": 3780,
+            "name": "BattlecruiserMove",
+            "buttonname": "Turn",
+            "index": 4
+        },
+        {
+            "id": 3781,
+            "name": "BattlecruiserStopEvaluator",
+            "buttonname": "Stop",
+            "index": 0
+        },
+        {
+            "id": 3782,
+            "name": "BattlecruiserStopEvaluator",
+            "buttonname": "",
+            "index": 1
+        },
+        {
+            "id": 3783,
+            "name": "BattlecruiserStop",
+            "buttonname": "Stop",
+            "index": 0
+        },
+        {
+            "id": 3784,
+            "name": "BattlecruiserStop",
+            "buttonname": "HoldFire",
+            "index": 1
+        },
+        {
+            "id": 3785,
+            "name": "BattlecruiserStop",
+            "buttonname": "Cheer",
+            "index": 2
+        },
+        {
+            "id": 3786,
+            "name": "BattlecruiserStop",
+            "buttonname": "Dance",
+            "index": 3
+        },
+        {
+            "id": 3787,
+            "name": "BattlecruiserStop",
+            "buttonname": "",
+            "index": 4
+        },
+        {
+            "id": 3788,
+            "name": "BattlecruiserStop",
+            "buttonname": "",
+            "index": 5
+        },
+        {
+            "id": 3789,
             "name": "ViperParasiticBombRelay",
             "buttonname": "ParasiticBomb",
             "index": 0
         },
         {
-            "id": 3772,
+            "id": 3790,
             "name": "ViperParasiticBombRelay",
             "buttonname": "",
             "index": 1
         },
         {
-            "id": 3773,
+            "id": 3791,
             "name": "ParasiticBombRelayDodge",
             "buttonname": "ParasiticBomb",
             "index": 0
         },
         {
-            "id": 3774,
+            "id": 3792,
             "name": "ParasiticBombRelayDodge",
             "buttonname": "",
             "index": 1
@@ -31973,6 +32193,14 @@
         {
             "id": 293,
             "name": "DiggingClaws"
+        },
+        {
+            "id": 294,
+            "name": "CarrierCarrierCapacity"
+        },
+        {
+            "id": 295,
+            "name": "CarrierLeashRangeUpgrade"
         }
     ],
     "Buffs": [
@@ -33127,6 +33355,14 @@
         {
             "id": 287,
             "name": "ParasiticBombDelayTimedLife"
+        },
+        {
+            "id": 288,
+            "name": "Transfusion"
+        },
+        {
+            "id": 289,
+            "name": "InhibitorZoneTemporalField"
         }
     ],
     "Effects": [

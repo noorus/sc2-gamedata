@@ -182,6 +182,9 @@ enum AbilType {
   AbilType_Merge, // archon
   AbilType_Research,
   AbilType_MorphPlacement, // spine crawler
+  AbilType_EffectTarget, // inject larva
+  AbilType_EffectInstant, // stimpack
+  AbilType_Behavior, // banshee cloak
   AbilType_Other
 };
 
@@ -206,12 +209,15 @@ struct Ability {
   AbilityCommandMap commands;
   string morphUnit;
   string effect;
+  std::map<string, double> vitalCosts; // only(?) applicable for effects and behaviors (vitals: "Life", "Energy")
+  double range; // only(?) applicable for effects
+  double arc; // only(?) applicable for effects
   bool warp;
   bool buildFinishKillsPeon;
   bool buildInterruptible;
   bool trainFinishKills;
   bool trainCancelKills;
-  Ability(): type( AbilType_Other ), warp( false ), buildFinishKillsPeon( false ), buildInterruptible( false ), trainFinishKills( false ), trainCancelKills( false ) {}
+  Ability(): type( AbilType_Other ), warp( false ), buildFinishKillsPeon( false ), buildInterruptible( false ), trainFinishKills( false ), trainCancelKills( false ), range( 0.0 ), arc( 0.0 ) {}
 };
 
 using AbilityMap = std::map<string, Ability>;
@@ -1371,8 +1377,19 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
         abil.type = AbilType_Merge;
       else if ( _stricmp( entry->Name(), "CAbilResearch" ) == 0 )
         abil.type = AbilType_Research;
+      else if ( _stricmp( entry->Name(), "CAbilEffectTarget" ) == 0 )
+        abil.type = AbilType_EffectTarget;
+      else if ( _stricmp( entry->Name(), "CAbilEffectInstant" ) == 0 )
+        abil.type = AbilType_EffectInstant;
+      else if ( _stricmp( entry->Name(), "CAbilBehavior" ) == 0 )
+        abil.type = AbilType_Behavior;
 
       printf_s( "[+] ability: %s\r\n", abil.name.c_str() );
+
+      /* Todo support for AbilEffect*:
+        <Charge Link = "Abil/HunterSeekerMissile" / >
+        <Cooldown Link = "Abil/HunterSeekerMissile" / >
+      */
 
       auto field = entry->FirstChildElement();
       while ( field )
@@ -1400,6 +1417,26 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
             else if ( _stricmp( field->Attribute( "index" ), "KillOnCancel" ) == 0 )
               abil.trainCancelKills = ( field->IntAttribute( "value" ) > 0 );
           }
+        }
+        else if ( _strcmpi( field->Name(), "Cost" ) == 0 ) // CAbilEffectTarget, CAbilEffectInstant has these
+        {
+          auto sub = field->FirstChildElement();
+          while ( sub )
+          {
+            if ( _strcmpi( sub->Name(), "Vital" ) == 0 && sub->Attribute( "index" ) && sub->Attribute( "value" ) )
+            {
+              abil.vitalCosts[string( sub->Attribute( "index" ) )] = sub->DoubleAttribute( "value" );
+            }
+            sub = sub->NextSiblingElement();
+          }
+        }
+        else if ( _strcmpi( field->Name(), "Range" ) == 0 && field->Attribute( "value" ) ) // CAbilEffectTarget has these
+        {
+          abil.range = field->DoubleAttribute( "value" );
+        }
+        else if ( _strcmpi( field->Name(), "Arc" ) == 0 && field->Attribute( "value" ) ) // CAbilEffectTarget has these
+        {
+          abil.arc = field->DoubleAttribute( "value" );
         }
         else if ( _strcmpi( field->Name(), "InfoArray" ) == 0 )
         {
@@ -1565,6 +1602,12 @@ const char* abilTypeStr( AbilType type )
     return "train";
   else if ( type == AbilType_Research )
     return "research";
+  else if ( type == AbilType_EffectTarget )
+    return "effect_target";
+  else if ( type == AbilType_EffectInstant )
+    return "effect_instant";
+  else if ( type == AbilType_Behavior )
+    return "behavior";
   else
     return "";
 }
@@ -2048,6 +2091,24 @@ void dumpAbilities( AbilityMap& abils, RequirementMap& requirements, Requirement
     uval["type"] = abilTypeStr( abil.second.type );
     if ( !abil.second.morphUnit.empty() )
       uval["morphUnit"] = abil.second.morphUnit;
+
+    if ( abil.second.type == AbilType_EffectTarget )
+    {
+      uval["range"] = abil.second.range;
+      uval["arc"] = abil.second.arc;
+    }
+
+    if ( !abil.second.vitalCosts.empty() )
+    {
+      Json::Value costtmp( Json::objectValue );
+      for ( auto& cost : abil.second.vitalCosts )
+      {
+        string costname = cost.first;
+        std::transform( costname.begin(), costname.end(), costname.begin(), ::tolower );
+        costtmp[costname] = cost.second;
+      }
+      uval["costs"] = costtmp;
+    }
 
     Json::Value cmds( Json::objectValue );
     for ( auto& cmd : abil.second.commands )
