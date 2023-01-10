@@ -158,6 +158,7 @@ struct Unit {
   double energyMax = 0.0;
   double energyRegenRate = 0.0;
   StringSet abilities {};
+  std::map<size_t, string> behaviors {};
 };
 
 struct Upgrade {
@@ -183,6 +184,8 @@ enum AbilType {
 struct AbilityCommand {
   string index;
   double time = 0.0;
+  double energyCost = 0.0;
+  double delay = 0.0;
   StringVector units{};
   string requirements;
   bool isUpgrade = false;
@@ -656,6 +659,7 @@ void parseUnitData( const string& filename, UnitMap& units, Unit& defaultUnit, s
       }
 
       size_t cardctr = 0; // index of current CardLayouts subitem
+      size_t behaviorctr = 0;
       auto field = entry->FirstChildElement();
       while ( field )
       {
@@ -747,6 +751,16 @@ void parseUnitData( const string& filename, UnitMap& units, Unit& defaultUnit, s
           else if ( _stricmp( field->Attribute( "index" ), "Vespene" ) == 0 )
             unit.vespeneCost = field->Int64Attribute( "value" );
         }
+        else if ( _stricmp( field->Name(), "BehaviorArray" ) == 0 )
+        {
+          size_t entidx = ( field->Attribute( "index" ) ? field->UnsignedAttribute( "index" ) : behaviorctr );
+          auto& ent = unit.behaviors[entidx];
+          if ( field->Attribute( "Link" ) )
+            ent = field->Attribute( "Link" );
+          if ( field->Attribute( "removed" ) && field->Int64Attribute( "removed" ) > 0 )
+            ent = "";
+          behaviorctr++;
+        }
         else if ( _stricmp( field->Name(), "CardLayouts" ) == 0 )
         {
           size_t cardidx = ( field->Attribute( "index" ) ? field->UnsignedAttribute( "index" ) : cardctr );
@@ -797,7 +811,7 @@ void parseUnitData( const string& filename, UnitMap& units, Unit& defaultUnit, s
               auto pt2 = (abilface.find("Burrow") == 0);
               auto pt3 = (abilcmd.find(unit.selectAlias.empty() ? unit.aiEvaluateAlias.empty() ? unit.name : unit.aiEvaluateAlias : unit.selectAlias) != string::npos);
               auto pt4 = (abilcmd.find("Terran") == string::npos);
-              if ( pt1 || ( pt2 && pt3 && pt4 ) )
+              if ( _stricmp( abilface.c_str(), "ResearchBurrow" ) == 0 || ( pt1 || ( pt2 && pt3 && pt4 ) ) )
               {
                 card.commands[ctr] = abilcmd;
                 if ( sub->Attribute( "Row" ) && sub->Attribute( "Column" ) )
@@ -1461,6 +1475,9 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
             if ( field->Attribute( "Time" ) )
               cmd.time = field->DoubleAttribute( "Time" );
 
+            if ( field->Attribute( "Delay" ) )
+              cmd.delay = field->DoubleAttribute( "Delay" );
+
             auto unit = field->Attribute( "Unit" );
             if ( unit )
               cmd.units.emplace_back( unit );
@@ -1470,6 +1487,8 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
             auto sub = field->FirstChildElement();
             while ( sub )
             {
+              if ( _strcmpi( sub->Name(), "Vital" ) == 0 && sub->Attribute( "index" ) && _strcmpi( sub->Attribute( "index" ), "Energy" ) == 0 && sub->Attribute( "value" ) )
+                cmd.energyCost = sub->DoubleAttribute( "value" );
               if ( _strcmpi( sub->Name(), "Unit" ) == 0 && sub->Attribute( "value" ) )
                 cmd.units.emplace_back( sub->Attribute( "value" ) );
               else if ( _strcmpi( sub->Name(), "Button" ) == 0 && sub->Attribute( "Requirements" ) )
@@ -1535,11 +1554,21 @@ void parseAbilityData( const string& filename, AbilityMap& abilities )
             }
           }
         }
-        else if ( ( abil.type == AbilType_Morph || abil.type == AbilType_MorphPlacement ) &&  _strcmpi( field->Name(), "CmdButtonArray" ) == 0 && field->Attribute( "index" ) && _stricmp( field->Attribute( "index" ), "Execute" ) == 0 && field->Attribute( "Requirements" ) )
+        else if ( ( abil.type == AbilType_Morph || abil.type == AbilType_MorphPlacement || abil.type == AbilType_EffectTarget || abil.type == AbilType_EffectInstant ) &&  _strcmpi( field->Name(), "CmdButtonArray" ) == 0 && field->Attribute( "index" ) && _stricmp( field->Attribute( "index" ), "Execute" ) == 0 )
         {
           if ( abil.commands.find( "Execute" ) == abil.commands.end() )
             abil.commands["Execute"] = AbilityCommand( "Execute" );
-          abil.commands["Execute"].requirements = field->Attribute( "Requirements" );
+          if ( field->Attribute( "Requirements" ) )
+            abil.commands["Execute"].requirements = field->Attribute( "Requirements" );
+        }
+        else if ( ( abil.type == AbilType_Behavior) && _strcmpi( field->Name(), "CmdButtonArray" ) == 0 && field->Attribute( "index" ) )
+        {
+          if ( _stricmp( field->Attribute( "index" ), "On" ) == 0 || abil.commands.find( "On" ) == abil.commands.end() )
+            abil.commands["On"] = AbilityCommand( "On" );
+          if ( _stricmp( field->Attribute( "index" ), "Off" ) == 0 || abil.commands.find( "Off" ) == abil.commands.end() )
+            abil.commands["Off"] = AbilityCommand( "Off" );
+          if ( field->Attribute( "Requirements" ) )
+            abil.commands[field->Attribute( "index" )].requirements = field->Attribute( "Requirements" );
         }
         else if ( abil.type == AbilType_Merge && _strcmpi( field->Name(), "Info" ) == 0 )
         {
@@ -1816,6 +1845,12 @@ void dumpUnits( UnitMap& units, FootprintMap& footprints )
 
     uval["abilityCommands"] = abils;
 
+    Json::Value behvs( Json::arrayValue );
+    for ( auto& bhv : unit.second.behaviors )
+      if ( !bhv.second.empty() )
+        behvs.append( bhv.second );
+    uval["behaviors"] = behvs;
+
     root[std::to_string( g_unitMapping[unit.second.name] )] = uval;
   }
 
@@ -1903,6 +1938,10 @@ size_t resolveAbilityCmd( const string& ability, const string& command )
     string numpart = command.substr( 8 );
     cmdindex = ( atoi( numpart.c_str() ) - 1 );
   }
+  else if ( boost::iequals( command, "On" ) ) // CAbilBehavior on/off
+    cmdindex = 0;
+  else if ( boost::iequals( command, "Off" ) ) // CAbilBehavior on/off
+    cmdindex = 1;
   string idx = ( ability + "," );
   idx.append( std::to_string( cmdindex ) );
 
@@ -2130,6 +2169,14 @@ void dumpAbilities( AbilityMap& abils, RequirementMap& requirements, Requirement
       Json::Value cval;
       cval["index"] = static_cast<Json::UInt64>( resolveAbilityCmd( abil.second.name, cmd.second.index ) );
       cval["time"] = cmd.second.time;
+      if ( cmd.second.energyCost > 0.0 )
+        cval["energy"] = cmd.second.energyCost;
+      if ( cmd.second.mineralCost > 0.0 )
+        cval["minerals"] = cmd.second.mineralCost;
+      if ( cmd.second.vespeneCost > 0.0 )
+        cval["vespene"] = cmd.second.vespeneCost;
+      if ( cmd.second.delay > 0.0 )
+        cval["delay"] = cmd.second.delay;
       if ( !cmd.second.requirements.empty() )
       {
         Json::Value reqsnode( Json::arrayValue );
