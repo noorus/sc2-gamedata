@@ -3861,6 +3861,30 @@
           "upgrade" : 62,
           "upgradeName" : "overlordspeed",
           "vespene" : 100
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
+          "vespene" : 100
         }
       ]
     },
@@ -3910,6 +3934,30 @@
           "time" : 60.0,
           "upgrade" : 62,
           "upgradeName" : "overlordspeed",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
           "vespene" : 100
         }
       ]
@@ -5299,6 +5347,30 @@
           "time" : 60.0,
           "upgrade" : 62,
           "upgradeName" : "overlordspeed",
+          "vespene" : 100
+        },
+        {
+          "ability" : 1225,
+          "abilityName" : "LairResearch,Research4",
+          "minerals" : 100,
+          "requires" : 
+          [
+            {
+              "operands" : 
+              [
+                {
+                  "state" : "QueuedOrBetter",
+                  "type" : "upgradeCount",
+                  "upgrade" : 64,
+                  "upgradeName" : "Burrow"
+                }
+              ],
+              "type" : "not"
+            }
+          ],
+          "time" : 100.0,
+          "upgrade" : 64,
+          "upgradeName" : "Burrow",
           "vespene" : 100
         }
       ]

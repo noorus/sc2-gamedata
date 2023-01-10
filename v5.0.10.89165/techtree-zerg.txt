@@ -157,12 +157,14 @@ Hatchery
     Lair
   upgrades
     overlordspeed
+    Burrow
 
 Hive
   builds
     Queen
   upgrades
     overlordspeed
+    Burrow
 
 Hydralisk
   morphs
@@ -214,6 +216,7 @@ Lair
     Hive
   upgrades
     overlordspeed
+    Burrow
 
 Larva
   builds

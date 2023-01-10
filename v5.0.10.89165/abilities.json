@@ -2,7 +2,23 @@
   "250mmStrikeCannons" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 257,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 97,
+            "upgradeName" : "StrikeCannons"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 150.0
@@ -14,27 +30,56 @@
   "AdeptPhaseShift" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2544,
+        "time" : 0.0
+      }
+    },
     "name" : "AdeptPhaseShift",
     "range" : 500.0,
     "type" : "effect_target"
   },
   "AdeptPhaseShiftCancel" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2594,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "AdeptPhaseShiftCancel",
     "type" : "effect_instant"
   },
   "AdeptShadePhaseShiftCancel" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2596,
+        "time" : 0.0
+      }
+    },
     "name" : "AdeptShadePhaseShiftCancel",
     "type" : "effect_instant"
   },
   "AggressiveMutation" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2540,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -358,7 +403,14 @@
   "AmorphousArmorcloud" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -370,7 +422,14 @@
   "ArbiterMPRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2475,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -382,7 +441,14 @@
   "ArbiterMPStasisField" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2473,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -413,6 +479,7 @@
       "Research10" : 
       {
         "index" : 859,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -454,11 +521,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research11" : 
       {
         "index" : 860,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -500,11 +569,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research12" : 
       {
         "index" : 861,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -524,11 +595,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research13" : 
       {
         "index" : 862,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -570,11 +643,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research14" : 
       {
         "index" : 863,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -616,11 +691,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research15" : 
       {
         "index" : 864,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -640,11 +717,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research16" : 
       {
         "index" : 865,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -686,11 +765,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research17" : 
       {
         "index" : 866,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -732,11 +813,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research3" : 
       {
         "index" : 852,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -756,11 +839,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 853,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -802,11 +887,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research5" : 
       {
         "index" : 854,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -848,11 +935,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research6" : 
       {
         "index" : 855,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -872,11 +961,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research7" : 
       {
         "index" : 856,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -918,11 +1009,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research8" : 
       {
         "index" : 857,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -964,11 +1057,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research9" : 
       {
         "index" : 858,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -988,7 +1083,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       }
     },
     "name" : "ArmoryResearch",
@@ -1001,6 +1097,7 @@
       "Research1" : 
       {
         "index" : 2294,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -1020,11 +1117,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 2295,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -1066,11 +1165,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research3" : 
       {
         "index" : 2296,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -1112,11 +1213,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research4" : 
       {
         "index" : 2297,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -1136,11 +1239,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research5" : 
       {
         "index" : 2298,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -1182,11 +1287,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research6" : 
       {
         "index" : 2299,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -1228,7 +1335,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       }
     },
     "name" : "ArmoryResearchSwarm",
@@ -1255,6 +1363,7 @@
       "Research1" : 
       {
         "index" : 1482,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -1270,7 +1379,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       }
     },
     "name" : "BanelingNestResearch",
@@ -1278,7 +1388,28 @@
   },
   "BansheeCloak" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 393,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 392,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 20,
+            "upgradeName" : "BansheeCloak"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -1379,6 +1510,7 @@
       "Research1" : 
       {
         "index" : 730,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -1400,11 +1532,13 @@
             "type" : "and"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 731,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -1420,11 +1554,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research3" : 
       {
         "index" : 732,
+        "minerals" : 50,
         "requires" : 
         [
           {
@@ -1440,7 +1576,8 @@
             "type" : "not"
           }
         ],
-        "time" : 60.0
+        "time" : 60.0,
+        "vespene" : 50
       }
     },
     "name" : "BarracksTechLabResearch",
@@ -1511,7 +1648,14 @@
   "BatteryOvercharge" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -1523,21 +1667,42 @@
   "BattlecruiserAttackEvaluator" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3774,
+        "time" : 0.0
+      }
+    },
     "name" : "BattlecruiserAttackEvaluator",
     "range" : 500.0,
     "type" : "effect_target"
   },
   "BattlecruiserStopEvaluator" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3781,
+        "time" : 0.0
+      }
+    },
     "name" : "BattlecruiserStopEvaluator",
     "type" : "effect_instant"
   },
   "BlindingCloud" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2063,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -1549,7 +1714,23 @@
   "Blink" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1442,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 87,
+            "upgradeName" : "BlinkTech"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "Blink",
     "range" : 500.0,
     "type" : "effect_target"
@@ -1585,7 +1766,14 @@
   "BuildAutoTurret" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1764,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -1632,7 +1820,23 @@
   "BuildingShield" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1994,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 62, 133 ],
+            "unitName" : [ "Gateway", "WarpGate" ]
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -1644,7 +1848,14 @@
   "BuildingStasis" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2000,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -1693,7 +1904,14 @@
   "BurrowChargeMP" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2010,
+        "time" : 0.0
+      }
+    },
     "name" : "BurrowChargeMP",
     "range" : 9.0,
     "type" : "effect_target"
@@ -1701,7 +1919,23 @@
   "BurrowChargeRevD" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2012,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 103,
+            "upgradeName" : "UltraliskBurrowChargeUpgrade"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "BurrowChargeRevD",
     "range" : 9.0,
     "type" : "effect_target"
@@ -2092,7 +2326,14 @@
   "BypassArmor" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2710,
+        "time" : 0.0
+      }
+    },
     "name" : "BypassArmor",
     "range" : 6.0,
     "type" : "effect_target"
@@ -2100,7 +2341,14 @@
   "BypassArmorDroneCU" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2712,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -2112,7 +2360,14 @@
   "CalldownMULE" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 171,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -2124,7 +2379,14 @@
   "CausticSpray" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2324,
+        "time" : 0.0
+      }
+    },
     "name" : "CausticSpray",
     "range" : 6.0,
     "type" : "effect_target"
@@ -2132,7 +2394,14 @@
   "ChannelSnipe" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2714,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -2144,7 +2413,14 @@
   "ChronoBoostEnergyCost" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3755,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -2156,7 +2432,14 @@
   "CloakingDrone" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2592,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -2168,7 +2451,14 @@
   "Clone" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1992,
+        "time" : 0.0
+      }
+    },
     "name" : "Clone",
     "range" : 500.0,
     "type" : "effect_target"
@@ -2258,7 +2548,14 @@
   "Contaminate" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1825,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 125.0
@@ -2270,7 +2567,14 @@
   "Corruption" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 34,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 0.0
@@ -2282,7 +2586,14 @@
   "CorruptionBomb" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2356,
+        "time" : 0.0
+      }
+    },
     "name" : "CorruptionBomb",
     "range" : 9.0,
     "type" : "effect_target"
@@ -2290,7 +2601,14 @@
   "CorsairMPDisruptionWeb" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2477,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -2316,7 +2634,14 @@
   "CritterFlee" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2144,
+        "time" : 0.0
+      }
+    },
     "name" : "CritterFlee",
     "range" : 5.0,
     "type" : "effect_target"
@@ -2328,6 +2653,7 @@
       "Research1" : 
       {
         "index" : 1562,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -2353,11 +2679,13 @@
             "type" : "and"
           }
         ],
-        "time" : 180.0
+        "time" : 180.0,
+        "vespene" : 100
       },
       "Research10" : 
       {
         "index" : 1571,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -2373,7 +2701,8 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research11" : 
       {
@@ -2383,6 +2712,7 @@
       "Research2" : 
       {
         "index" : 1563,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -2436,11 +2766,13 @@
             "type" : "and"
           }
         ],
-        "time" : 215.0
+        "time" : 215.0,
+        "vespene" : 175
       },
       "Research3" : 
       {
         "index" : 1564,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -2494,11 +2826,13 @@
             "type" : "and"
           }
         ],
-        "time" : 250.0
+        "time" : 250.0,
+        "vespene" : 250
       },
       "Research4" : 
       {
         "index" : 1565,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -2524,11 +2858,13 @@
             "type" : "and"
           }
         ],
-        "time" : 180.0
+        "time" : 180.0,
+        "vespene" : 150
       },
       "Research5" : 
       {
         "index" : 1566,
+        "minerals" : 225,
         "requires" : 
         [
           {
@@ -2582,11 +2918,13 @@
             "type" : "and"
           }
         ],
-        "time" : 215.0
+        "time" : 215.0,
+        "vespene" : 225
       },
       "Research6" : 
       {
         "index" : 1567,
+        "minerals" : 300,
         "requires" : 
         [
           {
@@ -2640,11 +2978,13 @@
             "type" : "and"
           }
         ],
-        "time" : 250.0
+        "time" : 250.0,
+        "vespene" : 300
       },
       "Research7" : 
       {
         "index" : 1568,
+        "minerals" : 50,
         "requires" : 
         [
           {
@@ -2660,7 +3000,8 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 50
       }
     },
     "name" : "CyberneticsCoreResearch",
@@ -2673,6 +3014,7 @@
       "Research1" : 
       {
         "index" : 2720,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -2688,7 +3030,8 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       }
     },
     "name" : "DarkShrineResearch",
@@ -2697,7 +3040,23 @@
   "DarkTemplarBlink" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2700,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 141,
+            "upgradeName" : "DarkTemplarBlinkUpgrade"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "DarkTemplarBlink",
     "range" : 500.0,
     "type" : "effect_target"
@@ -2728,7 +3087,14 @@
   "DefilerMPConsume" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2483,
+        "time" : 0.0
+      }
+    },
     "name" : "DefilerMPConsume",
     "range" : 0.5,
     "type" : "effect_target"
@@ -2736,7 +3102,14 @@
   "DefilerMPDarkSwarm" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2485,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -2748,7 +3121,14 @@
   "DefilerMPPlague" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2487,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 150.0
@@ -2774,7 +3154,14 @@
   "DigesterCreepSpray" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1839,
+        "time" : 0.0
+      }
+    },
     "name" : "DigesterCreepSpray",
     "range" : 500.0,
     "type" : "effect_target"
@@ -2858,7 +3245,14 @@
   "EMP" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1628,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -2874,6 +3268,7 @@
       "Research1" : 
       {
         "index" : 650,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -2893,11 +3288,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 651,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -2917,11 +3314,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 652,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -2941,11 +3340,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 653,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -2993,11 +3394,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research5" : 
       {
         "index" : 654,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -3045,11 +3448,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research6" : 
       {
         "index" : 655,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3065,11 +3470,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research7" : 
       {
         "index" : 656,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3089,11 +3496,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research8" : 
       {
         "index" : 657,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -3141,11 +3550,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research9" : 
       {
         "index" : 658,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -3193,7 +3604,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       }
     },
     "name" : "EngineeringBayResearch",
@@ -3201,7 +3613,14 @@
   },
   "Explode" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 42,
+        "time" : 0.0
+      }
+    },
     "name" : "Explode",
     "type" : "effect_instant"
   },
@@ -3280,7 +3699,14 @@
   "EyeStalk" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2065,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -3382,6 +3808,7 @@
       "Research10" : 
       {
         "index" : 769,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3397,11 +3824,13 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 761,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3417,11 +3846,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 763,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3447,11 +3878,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research5" : 
       {
         "index" : 764,
+        "minerals" : 75,
         "requires" : 
         [
           {
@@ -3473,11 +3906,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 75
       },
       "Research6" : 
       {
         "index" : 765,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3499,11 +3934,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research7" : 
       {
         "index" : 766,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3525,11 +3962,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research8" : 
       {
         "index" : 767,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3545,11 +3984,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research9" : 
       {
         "index" : 768,
+        "minerals" : 75,
         "requires" : 
         [
           {
@@ -3565,7 +4006,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 75
       }
     },
     "name" : "FactoryTechLabResearch",
@@ -3666,7 +4108,14 @@
   "Feedback" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 140,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -3697,6 +4146,7 @@
       "Research1" : 
       {
         "index" : 44,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3712,11 +4162,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 150
       },
       "Research2" : 
       {
         "index" : 45,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3732,11 +4184,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 46,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3752,11 +4206,13 @@
             "type" : "not"
           }
         ],
-        "time" : 90.0
+        "time" : 90.0,
+        "vespene" : 150
       },
       "Research4" : 
       {
         "index" : 47,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -3772,11 +4228,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 200
       },
       "Research5" : 
       {
         "index" : 48,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3792,11 +4250,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research6" : 
       {
         "index" : 49,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3812,7 +4272,8 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 150
       }
     },
     "name" : "FleetBeaconResearch",
@@ -3821,7 +4282,14 @@
   "FlyerShield" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1942,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -3833,7 +4301,14 @@
   "ForceField" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1526,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -3849,6 +4324,7 @@
       "Research1" : 
       {
         "index" : 1062,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3868,11 +4344,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 180.0
+        "time" : 180.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 1063,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -3920,11 +4398,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 215.0
+        "time" : 215.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 1064,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -3972,11 +4452,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 250.0
+        "time" : 250.0,
+        "vespene" : 200
       },
       "Research4" : 
       {
         "index" : 1065,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -3996,11 +4478,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 180.0
+        "time" : 180.0,
+        "vespene" : 100
       },
       "Research5" : 
       {
         "index" : 1066,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4048,11 +4532,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 215.0
+        "time" : 215.0,
+        "vespene" : 150
       },
       "Research6" : 
       {
         "index" : 1067,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -4100,11 +4586,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 250.0
+        "time" : 250.0,
+        "vespene" : 200
       },
       "Research7" : 
       {
         "index" : 1068,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4124,11 +4612,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 180.0
+        "time" : 180.0,
+        "vespene" : 150
       },
       "Research8" : 
       {
         "index" : 1069,
+        "minerals" : 225,
         "requires" : 
         [
           {
@@ -4176,11 +4666,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 215.0
+        "time" : 215.0,
+        "vespene" : 225
       },
       "Research9" : 
       {
         "index" : 1070,
+        "minerals" : 300,
         "requires" : 
         [
           {
@@ -4228,7 +4720,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 250.0
+        "time" : 250.0,
+        "vespene" : 300
       }
     },
     "name" : "ForgeResearch",
@@ -4237,7 +4730,14 @@
   "Frenzy" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1823,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -4249,7 +4749,14 @@
   "FungalGrowth" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 74,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4265,6 +4772,7 @@
       "Research1" : 
       {
         "index" : 1532,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4280,11 +4788,13 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 150
       },
       "Research2" : 
       {
         "index" : 1533,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4306,11 +4816,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 1534,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4326,7 +4838,8 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       }
     },
     "name" : "FusionCoreResearch",
@@ -4423,7 +4936,28 @@
   },
   "GenerateCreep" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 1693,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 1692,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 101, 100 ],
+            "unitName" : [ "Hive", "Lair" ]
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "GenerateCreep",
     "type" : "behavior"
   },
@@ -4434,6 +4968,7 @@
       "Research1" : 
       {
         "index" : 820,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4449,11 +4984,13 @@
             "type" : "not"
           }
         ],
-        "time" : 120.0
+        "time" : 120.0,
+        "vespene" : 150
       },
       "Research2" : 
       {
         "index" : 821,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4469,11 +5006,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research3" : 
       {
         "index" : 822,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4489,7 +5028,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       }
     },
     "name" : "GhostAcademyResearch",
@@ -4497,7 +5037,28 @@
   },
   "GhostCloak" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 383,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 382,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 25,
+            "upgradeName" : "PersonalCloaking"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -4507,20 +5068,49 @@
   },
   "GhostHoldFire" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 36,
+        "requires" : 
+        [
+          {
+            "operands" : [],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "GhostHoldFire",
     "type" : "effect_instant"
   },
   "GhostWeaponsFree" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 38,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "GhostWeaponsFree",
     "type" : "effect_instant"
   },
   "Grapple" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2501,
+        "time" : 0.0
+      }
+    },
     "name" : "Grapple",
     "range" : 9.0,
     "type" : "effect_target"
@@ -4528,7 +5118,14 @@
   "GravitonBeam" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 173,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -4539,7 +5136,14 @@
   },
   "GuardianShield" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 76,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4549,7 +5153,14 @@
   },
   "HallucinationAdept" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2391,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4559,7 +5170,14 @@
   },
   "HallucinationArchon" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 146,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4569,7 +5187,14 @@
   },
   "HallucinationColossus" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 148,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4579,7 +5204,14 @@
   },
   "HallucinationDisruptor" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2389,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4589,7 +5221,14 @@
   },
   "HallucinationHighTemplar" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 150,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4599,7 +5238,14 @@
   },
   "HallucinationImmortal" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 152,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4609,7 +5255,14 @@
   },
   "HallucinationOracle" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2114,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4619,7 +5272,14 @@
   },
   "HallucinationPhoenix" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 154,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4629,7 +5289,14 @@
   },
   "HallucinationProbe" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 156,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4639,7 +5306,14 @@
   },
   "HallucinationStalker" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 158,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4649,7 +5323,14 @@
   },
   "HallucinationVoidRay" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 160,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4659,7 +5340,14 @@
   },
   "HallucinationWarpPrism" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 162,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4669,7 +5357,14 @@
   },
   "HallucinationZealot" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 164,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4680,7 +5375,14 @@
   "HerdInteract" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1821,
+        "time" : 0.0
+      }
+    },
     "name" : "HerdInteract",
     "range" : 6.0,
     "type" : "effect_target"
@@ -4692,6 +5394,7 @@
       "Research1" : 
       {
         "index" : 1282,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4707,11 +5410,13 @@
             "type" : "not"
           }
         ],
-        "time" : 100.0
+        "time" : 100.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 1283,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4727,11 +5432,13 @@
             "type" : "not"
           }
         ],
-        "time" : 100.0
+        "time" : 100.0,
+        "vespene" : 100
       },
       "Research5" : 
       {
         "index" : 1286,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -4753,7 +5460,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 200
       }
     },
     "name" : "HydraliskDenResearch",
@@ -4762,7 +5470,14 @@
   "Hyperjump" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2358,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 0.0
@@ -4773,14 +5488,28 @@
   },
   "ImmortalOverload" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2328,
+        "time" : 0.0
+      }
+    },
     "name" : "ImmortalOverload",
     "type" : "effect_instant"
   },
   "Impale" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2348,
+        "time" : 0.0
+      }
+    },
     "name" : "Impale",
     "range" : 9.0,
     "type" : "effect_target"
@@ -4792,6 +5521,7 @@
       "Research3" : 
       {
         "index" : 1454,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4807,11 +5537,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 150
       },
       "Research4" : 
       {
         "index" : 1455,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4827,11 +5559,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research5" : 
       {
         "index" : 1456,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -4847,11 +5581,13 @@
             "type" : "not"
           }
         ],
-        "time" : 120.0
+        "time" : 120.0,
+        "vespene" : 200
       },
       "Research6" : 
       {
         "index" : 1457,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -4867,7 +5603,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       }
     },
     "name" : "InfestationPitResearch",
@@ -4876,7 +5613,14 @@
   "InfestedTerrans" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 247,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -4887,7 +5631,14 @@
   },
   "InfestedTerransLayEgg" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1829,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -4898,7 +5649,14 @@
   "InfestorEnsnare" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3763,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -4910,7 +5668,14 @@
   "InvulnerabilityShield" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2142,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -4922,7 +5687,14 @@
   "KD8Charge" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2588,
+        "time" : 0.0
+      }
+    },
     "name" : "KD8Charge",
     "range" : 5.0,
     "type" : "effect_target"
@@ -4939,6 +5711,7 @@
       "Research2" : 
       {
         "index" : 1223,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4954,11 +5727,13 @@
             "type" : "not"
           }
         ],
-        "time" : 60.0
+        "time" : 60.0,
+        "vespene" : 100
       },
       "Research3" : 
       {
         "index" : 1224,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -4974,11 +5749,13 @@
             "type" : "not"
           }
         ],
-        "time" : 130.0
+        "time" : 130.0,
+        "vespene" : 200
       },
       "Research4" : 
       {
         "index" : 1225,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -4994,7 +5771,8 @@
             "type" : "not"
           }
         ],
-        "time" : 100.0
+        "time" : 100.0,
+        "vespene" : 100
       }
     },
     "name" : "LairResearch",
@@ -5159,7 +5937,14 @@
   "LaunchInterceptors" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2702,
+        "time" : 0.0
+      }
+    },
     "name" : "LaunchInterceptors",
     "range" : 9.0,
     "type" : "effect_target"
@@ -5167,7 +5952,14 @@
   "Leech" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 179,
+        "time" : 0.0
+      }
+    },
     "name" : "Leech",
     "range" : 9.0,
     "type" : "effect_target"
@@ -5175,21 +5967,42 @@
   "LeechResources" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1986,
+        "time" : 0.0
+      }
+    },
     "name" : "LeechResources",
     "range" : 2.0,
     "type" : "effect_target"
   },
   "LiberatorAATarget" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2560,
+        "time" : 0.0
+      }
+    },
     "name" : "LiberatorAATarget",
     "type" : "effect_instant"
   },
   "LiberatorAGTarget" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2558,
+        "time" : 0.0
+      }
+    },
     "name" : "LiberatorAGTarget",
     "range" : 5.0,
     "type" : "effect_target"
@@ -5225,14 +6038,28 @@
   "LightningBomb" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2499,
+        "time" : 0.0
+      }
+    },
     "name" : "LightningBomb",
     "range" : 9.0,
     "type" : "effect_target"
   },
   "LightofAiur" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2366,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -5243,7 +6070,21 @@
   "LockOn" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2350,
+        "requires" : 
+        [
+          {
+            "operands" : [],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "LockOn",
     "range" : 7.0,
     "type" : "effect_target"
@@ -5251,14 +6092,36 @@
   "LockOnAir" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2352,
+        "requires" : 
+        [
+          {
+            "operands" : [],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "LockOnAir",
     "range" : 7.0,
     "type" : "effect_target"
   },
   "LockOnCancel" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2354,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "LockOnCancel",
     "type" : "effect_instant"
   },
@@ -5279,7 +6142,14 @@
   "LocustMPFlyingSwoop" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2387,
+        "time" : 0.0
+      }
+    },
     "name" : "LocustMPFlyingSwoop",
     "range" : 6.0,
     "type" : "effect_target"
@@ -5287,7 +6157,14 @@
   "LocustMPFlyingSwoopAttack" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2706,
+        "time" : 0.0
+      }
+    },
     "name" : "LocustMPFlyingSwoopAttack",
     "range" : 6.0,
     "type" : "effect_target"
@@ -5372,6 +6249,7 @@
       "Research1" : 
       {
         "index" : 3709,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -5393,11 +6271,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 150
       },
       "Research2" : 
       {
         "index" : 3710,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -5419,7 +6299,8 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 150
       }
     },
     "name" : "LurkerDenResearch",
@@ -5427,20 +6308,49 @@
   },
   "LurkerHoldFire" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2550,
+        "requires" : 
+        [
+          {
+            "operands" : [],
+            "type" : "not"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "LurkerHoldFire",
     "type" : "effect_instant"
   },
   "LurkerRemoveHoldFire" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2552,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "LurkerRemoveHoldFire",
     "type" : "effect_instant"
   },
   "MULERepair" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 78,
+        "time" : 0.0
+      }
+    },
     "name" : "MULERepair",
     "range" : 0.0,
     "type" : "effect_target"
@@ -5448,7 +6358,14 @@
   "MassRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 142,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -5460,14 +6377,28 @@
   "MassiveKnockover" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2093,
+        "time" : 0.0
+      }
+    },
     "name" : "MassiveKnockover",
     "range" : 1.0,
     "type" : "effect_target"
   },
   "MaxiumThrust" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2006,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -5478,14 +6409,28 @@
   "MedivacHeal" : 
   {
     "arc" : 14.9963,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 386,
+        "time" : 0.0
+      }
+    },
     "name" : "MedivacHeal",
     "range" : 4.0,
     "type" : "effect_target"
   },
   "MedivacSpeedBoost" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2116,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 0.0
@@ -5500,6 +6445,7 @@
       "Research1" : 
       {
         "index" : 680,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -5521,11 +6467,13 @@
             "type" : "and"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 683,
+        "minerals" : 50,
         "requires" : 
         [
           {
@@ -5547,7 +6495,8 @@
             "type" : "not"
           }
         ],
-        "time" : 100.0
+        "time" : 100.0,
+        "vespene" : 50
       }
     },
     "name" : "MercCompoundResearch",
@@ -6079,7 +7028,14 @@
   "MothershipCoreEnergize" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2102,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -6091,7 +7047,14 @@
   "MothershipCoreMassRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1974,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6103,7 +7066,14 @@
   "MothershipCorePurifyNexus" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2162,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6114,14 +7084,41 @@
   },
   "MothershipCorePurifyNexusCancel" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2160,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "type" : "value",
+                "value" : 1
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "MothershipCorePurifyNexusCancel",
     "type" : "effect_instant"
   },
   "MothershipCoreTeleport" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1883,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -6132,7 +7129,14 @@
   },
   "MothershipCoreWeapon" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1851,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -6143,7 +7147,14 @@
   "MothershipMassRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2368,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6154,7 +7165,14 @@
   },
   "MothershipStasis" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1849,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -6165,7 +7183,23 @@
   "NeuralParasite" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 249,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 101,
+            "upgradeName" : "NeuralParasite"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -6177,7 +7211,14 @@
   "NexusInvulnerability" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1930,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -6189,7 +7230,14 @@
   "NexusMassRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3757,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6201,7 +7249,14 @@
   "NexusPhaseShift" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1932,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -6212,20 +7267,71 @@
   },
   "NexusShieldOvercharge" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3767,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "operands" : [],
+                "type" : "not"
+              },
+              {
+                "type" : "value",
+                "value" : 1
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "NexusShieldOvercharge",
     "type" : "effect_instant"
   },
   "NexusShieldOverchargeOff" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3769,
+        "requires" : 
+        [
+          {
+            "operands" : 
+            [
+              {
+                "type" : "value",
+                "value" : 1
+              }
+            ],
+            "type" : "and"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "NexusShieldOverchargeOff",
     "type" : "effect_instant"
   },
   "NexusShieldRecharge" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3759,
+        "time" : 0.0
+      }
+    },
     "name" : "NexusShieldRecharge",
     "range" : 8.0,
     "type" : "effect_target"
@@ -6233,7 +7339,14 @@
   "NexusShieldRechargeOnPylon" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3761,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6392,7 +7505,14 @@
   },
   "OracleCloakField" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1940,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -6403,7 +7523,14 @@
   "OracleCloakingFieldTargeted" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2326,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -6429,7 +7556,14 @@
   "OraclePhaseShift" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2334,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6441,7 +7575,14 @@
   "OracleRevelation" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2146,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -6471,7 +7612,14 @@
   "OracleStasisTrap" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2503,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6482,7 +7630,14 @@
   },
   "OracleStasisTrapActivate" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2536,
+        "time" : 0.0
+      }
+    },
     "name" : "OracleStasisTrapActivate",
     "type" : "effect_instant"
   },
@@ -6492,6 +7647,7 @@
     {
       "Build1" : 
       {
+        "energy" : 50.0,
         "index" : 2505,
         "time" : 5.0,
         "units" : [ "OracleStasisTrap" ]
@@ -6502,7 +7658,19 @@
   },
   "OracleWeapon" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 2376,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 2375,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -6532,7 +7700,14 @@
   },
   "Overcharge" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2360,
+        "time" : 0.0
+      }
+    },
     "name" : "Overcharge",
     "type" : "effect_instant"
   },
@@ -6567,7 +7742,14 @@
   "ParasiticBomb" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2542,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 125.0
@@ -6579,7 +7761,14 @@
   "ParasiticBombRelayDodge" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3791,
+        "time" : 0.0
+      }
+    },
     "name" : "ParasiticBombRelayDodge",
     "range" : 500.0,
     "type" : "effect_target"
@@ -6587,7 +7776,14 @@
   "PenetratingShot" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2590,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -6599,7 +7795,14 @@
   "PhaseShift" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 193,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -6625,7 +7828,14 @@
   "PickupPalletGas" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2089,
+        "time" : 0.0
+      }
+    },
     "name" : "PickupPalletGas",
     "range" : 1.0,
     "type" : "effect_target"
@@ -6633,7 +7843,14 @@
   "PickupPalletMinerals" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2091,
+        "time" : 0.0
+      }
+    },
     "name" : "PickupPalletMinerals",
     "range" : 1.0,
     "type" : "effect_target"
@@ -6641,7 +7858,14 @@
   "PickupScrapLarge" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2087,
+        "time" : 0.0
+      }
+    },
     "name" : "PickupScrapLarge",
     "range" : 1.0,
     "type" : "effect_target"
@@ -6649,7 +7873,14 @@
   "PickupScrapMedium" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2085,
+        "time" : 0.0
+      }
+    },
     "name" : "PickupScrapMedium",
     "range" : 1.0,
     "type" : "effect_target"
@@ -6657,7 +7888,14 @@
   "PickupScrapSmall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2083,
+        "time" : 0.0
+      }
+    },
     "name" : "PickupScrapSmall",
     "range" : 1.0,
     "type" : "effect_target"
@@ -6665,7 +7903,14 @@
   "PlacePointDefenseDrone" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 144,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -7176,7 +8421,23 @@
   "PsiStorm" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1036,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 52,
+            "upgradeName" : "PsiStormTech"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7188,7 +8449,14 @@
   "PulsarBeam" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2377,
+        "time" : 0.0
+      }
+    },
     "name" : "PulsarBeam",
     "range" : 5.0,
     "type" : "effect_target"
@@ -7196,7 +8464,14 @@
   "PulsarCannon" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2379,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -7207,7 +8482,14 @@
   },
   "PurificationNova" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2344,
+        "time" : 0.0
+      }
+    },
     "name" : "PurificationNova",
     "type" : "effect_instant"
   },
@@ -7242,7 +8524,14 @@
   "PurificationNovaTargeted" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2346,
+        "time" : 0.0
+      }
+    },
     "name" : "PurificationNovaTargeted",
     "range" : 500.0,
     "type" : "effect_target"
@@ -7281,6 +8570,8 @@
     {
       "Build1" : 
       {
+        "delay" : 2.0,
+        "energy" : 25.0,
         "index" : 1694,
         "time" : 15.0,
         "units" : [ "CreepTumorQueen" ]
@@ -7330,7 +8621,14 @@
   "QueenMPEnsnare" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2493,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7342,7 +8640,14 @@
   "QueenMPInfestCommandCenter" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2497,
+        "time" : 0.0
+      }
+    },
     "name" : "QueenMPInfestCommandCenter",
     "range" : 1.0,
     "type" : "effect_target"
@@ -7350,7 +8655,14 @@
   "QueenMPSpawnBroodlings" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2495,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 150.0
@@ -7362,7 +8674,14 @@
   "RavagerCorrosiveBile" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2338,
+        "time" : 0.0
+      }
+    },
     "name" : "RavagerCorrosiveBile",
     "range" : 9.0,
     "type" : "effect_target"
@@ -7384,7 +8703,14 @@
   "RavenRepairDrone" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3749,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7396,7 +8722,14 @@
   "RavenRepairDroneHeal" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3751,
+        "time" : 0.0
+      }
+    },
     "name" : "RavenRepairDroneHeal",
     "range" : 6.0,
     "type" : "effect_target"
@@ -7404,7 +8737,14 @@
   "RavenScramblerMissile" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3747,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7416,7 +8756,14 @@
   "RavenShredderMissile" : 
   {
     "arc" : 29.992599999999999,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3753,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7530,14 +8877,37 @@
   },
   "Refund" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "Refund",
     "type" : "effect_instant"
   },
   "ReleaseInterceptors" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2336,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnlyAtUnit",
+            "type" : "unitCount",
+            "unit" : [ 85 ],
+            "unitName" : [ "Interceptor" ]
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "ReleaseInterceptors",
     "range" : 15.0,
     "type" : "effect_target"
@@ -7545,7 +8915,14 @@
   "Repair" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 316,
+        "time" : 0.0
+      }
+    },
     "name" : "Repair",
     "range" : 0.0,
     "type" : "effect_target"
@@ -7571,7 +8948,14 @@
   "RestoreShields" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1980,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -7587,6 +8971,7 @@
       "Research2" : 
       {
         "index" : 216,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -7602,11 +8987,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research3" : 
       {
         "index" : 217,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -7622,11 +9009,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 218,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -7654,7 +9043,8 @@
             "type" : "not"
           }
         ],
-        "time" : 130.0
+        "time" : 130.0,
+        "vespene" : 200
       }
     },
     "name" : "RoachWarrenResearch",
@@ -7672,6 +9062,7 @@
       "Research2" : 
       {
         "index" : 1093,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -7693,11 +9084,13 @@
             "type" : "and"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research3" : 
       {
         "index" : 1094,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -7713,7 +9106,8 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
@@ -7728,6 +9122,7 @@
       "Research6" : 
       {
         "index" : 1097,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -7749,11 +9144,13 @@
             "type" : "and"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 150
       },
       "Research8" : 
       {
         "index" : 1099,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -7769,7 +9166,8 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       }
     },
     "name" : "RoboticsBayResearch",
@@ -7833,13 +9231,32 @@
   },
   "Sacrifice" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2008,
+        "time" : 0.0
+      }
+    },
     "name" : "Sacrifice",
     "type" : "effect_instant"
   },
   "Salvage" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "Salvage",
     "type" : "behavior"
   },
@@ -7929,7 +9346,19 @@
   },
   "SalvageShared" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 33,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 32,
+        "time" : 0.0
+      }
+    },
     "name" : "SalvageShared",
     "type" : "behavior"
   },
@@ -7972,7 +9401,14 @@
   "SapStructure" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 245,
+        "time" : 0.0
+      }
+    },
     "name" : "SapStructure",
     "range" : 0.25,
     "type" : "effect_target"
@@ -7980,7 +9416,14 @@
   "ScannerSweep" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 399,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -7992,7 +9435,14 @@
   "Scryer" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1982,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -8004,7 +9454,14 @@
   "SeekerDummyChannel" : 
   {
     "arc" : 4.9987000000000004,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2395,
+        "time" : 0.0
+      }
+    },
     "name" : "SeekerDummyChannel",
     "range" : 500.0,
     "type" : "effect_target"
@@ -8012,7 +9469,14 @@
   "SeekerMissile" : 
   {
     "arc" : 29.992599999999999,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 169,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 125.0
@@ -8023,7 +9487,14 @@
   },
   "SelfRepair" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2538,
+        "time" : 0.0
+      }
+    },
     "name" : "SelfRepair",
     "type" : "effect_instant"
   },
@@ -8150,7 +9621,14 @@
   "Shatter" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1827,
+        "time" : 0.0
+      }
+    },
     "name" : "Shatter",
     "range" : 0.10000000000000001,
     "type" : "effect_target"
@@ -8158,7 +9636,14 @@
   "ShieldBatteryRechargeChanneled" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3765,
+        "time" : 0.0
+      }
+    },
     "name" : "ShieldBatteryRechargeChanneled",
     "range" : 6.0,
     "type" : "effect_target"
@@ -8166,7 +9651,14 @@
   "ShieldBatteryRechargeEx5" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "ShieldBatteryRechargeEx5",
     "range" : 6.0,
     "type" : "effect_target"
@@ -8188,7 +9680,14 @@
   "SimpleTargetAbil" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "SimpleTargetAbil",
     "range" : 0.0,
     "type" : "effect_target"
@@ -8196,7 +9695,14 @@
   "SingleRecall" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1976,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -8208,7 +9714,14 @@
   "Siphon" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 177,
+        "time" : 0.0
+      }
+    },
     "name" : "Siphon",
     "range" : 9.0,
     "type" : "effect_target"
@@ -8216,7 +9729,14 @@
   "SlaynElementalGrab" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2598,
+        "time" : 0.0
+      }
+    },
     "name" : "SlaynElementalGrab",
     "range" : 10.0,
     "type" : "effect_target"
@@ -8224,7 +9744,14 @@
   "Snipe" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 384,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -8236,7 +9763,14 @@
   "SnipeDoT" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1988,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -8295,7 +9829,14 @@
   },
   "SpawnChangeling" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 181,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -8306,7 +9847,14 @@
   "SpawnChangelingTarget" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1934,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -8333,7 +9881,14 @@
   "SpawnLarva" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 251,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 25.0
@@ -8345,7 +9900,14 @@
   "SpawnLocustsTargeted" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2704,
+        "time" : 0.0
+      }
+    },
     "name" : "SpawnLocustsTargeted",
     "range" : 500.0,
     "type" : "effect_target"
@@ -8357,6 +9919,7 @@
       "Research1" : 
       {
         "index" : 1252,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -8378,11 +9941,13 @@
             "type" : "not"
           }
         ],
-        "time" : 130.0
+        "time" : 130.0,
+        "vespene" : 200
       },
       "Research2" : 
       {
         "index" : 1253,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -8398,7 +9963,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       }
     },
     "name" : "SpawningPoolResearch",
@@ -8407,7 +9973,14 @@
   "SpectreShield" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1926,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -8451,6 +10024,7 @@
       "Research1" : 
       {
         "index" : 1312,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -8470,11 +10044,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 1313,
+        "minerals" : 175,
         "requires" : 
         [
           {
@@ -8522,11 +10098,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 175
       },
       "Research3" : 
       {
         "index" : 1314,
+        "minerals" : 250,
         "requires" : 
         [
           {
@@ -8574,11 +10152,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 250
       },
       "Research4" : 
       {
         "index" : 1315,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -8598,11 +10178,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 150
       },
       "Research5" : 
       {
         "index" : 1316,
+        "minerals" : 225,
         "requires" : 
         [
           {
@@ -8650,11 +10232,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 225
       },
       "Research6" : 
       {
         "index" : 1317,
+        "minerals" : 300,
         "requires" : 
         [
           {
@@ -8702,7 +10286,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 300
       }
     },
     "name" : "SpireResearch",
@@ -8739,7 +10324,14 @@
   "SprayParent" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "SprayParent",
     "range" : 1.0,
     "type" : "effect_target"
@@ -8747,7 +10339,23 @@
   "SprayProtoss" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 30,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 0,
+            "upgradeName" : "SprayProtoss"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "SprayProtoss",
     "range" : 0.0,
     "type" : "effect_target"
@@ -8755,7 +10363,23 @@
   "SprayTerran" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 26,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 0,
+            "upgradeName" : "SprayTerran"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "SprayTerran",
     "range" : 0.0,
     "type" : "effect_target"
@@ -8763,7 +10387,23 @@
   "SprayZerg" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 28,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 0,
+            "upgradeName" : "SprayZerg"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "SprayZerg",
     "range" : 0.0,
     "type" : "effect_target"
@@ -8917,6 +10557,7 @@
       "Research1" : 
       {
         "index" : 790,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -8932,11 +10573,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 100
       },
       "Research10" : 
       {
         "index" : 799,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -8952,17 +10595,21 @@
             "type" : "not"
           }
         ],
-        "time" : 170.0
+        "time" : 170.0,
+        "vespene" : 150
       },
       "Research11" : 
       {
         "index" : 800,
+        "minerals" : 150,
         "requires" : [],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research13" : 
       {
         "index" : 802,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -8978,11 +10625,13 @@
             "type" : "not"
           }
         ],
-        "time" : 120.0
+        "time" : 120.0,
+        "vespene" : 150
       },
       "Research14" : 
       {
         "index" : 803,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -8998,11 +10647,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research15" : 
       {
         "index" : 804,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9018,11 +10669,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research16" : 
       {
         "index" : 805,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9044,11 +10697,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research17" : 
       {
         "index" : 806,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9064,11 +10719,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 792,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9084,11 +10741,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 793,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9104,11 +10763,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research7" : 
       {
         "index" : 796,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9124,11 +10785,13 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       },
       "Research8" : 
       {
         "index" : 797,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9144,7 +10807,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       }
     },
     "name" : "StarportTechLabResearch",
@@ -9235,7 +10899,23 @@
   },
   "Stimpack" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 380,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 15,
+            "upgradeName" : "Stimpack"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "life" : 10.0
@@ -9245,7 +10925,23 @@
   },
   "StimpackMarauder" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 253,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 15,
+            "upgradeName" : "Stimpack"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "life" : 20.0
@@ -9284,7 +10980,14 @@
   "SupplyDrop" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 255,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -9295,14 +10998,38 @@
   },
   "SwarmHostSpawnLocusts" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1990,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "SwarmHostSpawnLocusts",
     "type" : "effect_instant"
   },
   "TacNukeStrike" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1622,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "unitCount",
+            "unit" : [ 58 ],
+            "unitName" : [ "Nuke" ]
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "name" : "TacNukeStrike",
     "range" : 12.0,
     "type" : "effect_target"
@@ -9386,7 +11113,14 @@
   "Taunt" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2,
+        "time" : 0.0
+      }
+    },
     "name" : "Taunt",
     "range" : 10.0,
     "type" : "effect_target"
@@ -9441,7 +11175,14 @@
   "TempestDisruptionBlast" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2698,
+        "time" : 0.0
+      }
+    },
     "name" : "TempestDisruptionBlast",
     "range" : 10.0,
     "type" : "effect_target"
@@ -9453,6 +11194,7 @@
       "Research5" : 
       {
         "index" : 1126,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -9468,7 +11210,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 200
       }
     },
     "name" : "TemplarArchivesResearch",
@@ -9477,7 +11220,14 @@
   "TemporalField" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2244,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -9489,7 +11239,14 @@
   "TemporalRift" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 259,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -9768,7 +11525,14 @@
   "TestZerg" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2079,
+        "time" : 0.0
+      }
+    },
     "name" : "TestZerg",
     "range" : 10.0,
     "type" : "effect_target"
@@ -9804,7 +11568,14 @@
   "TimeStop" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2562,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 150.0
@@ -9816,7 +11587,14 @@
   "TimeWarp" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 261,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 0.0
@@ -9851,7 +11629,15 @@
   "Transfusion" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1664,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -9881,6 +11667,7 @@
       "Research1" : 
       {
         "index" : 1592,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9896,11 +11683,13 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 1593,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -9916,17 +11705,21 @@
             "type" : "not"
           }
         ],
-        "time" : 170.0
+        "time" : 170.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 1594,
+        "minerals" : 100,
         "requires" : [],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research4" : 
       {
         "index" : 1595,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9948,11 +11741,13 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research5" : 
       {
         "index" : 1596,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9968,11 +11763,13 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       },
       "Research6" : 
       {
         "index" : 1597,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -9988,7 +11785,8 @@
             "type" : "not"
           }
         ],
-        "time" : 140.0
+        "time" : 140.0,
+        "vespene" : 100
       }
     },
     "name" : "TwilightCouncilResearch",
@@ -10001,6 +11799,7 @@
       "Research1" : 
       {
         "index" : 263,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -10016,11 +11815,13 @@
             "type" : "not"
           }
         ],
-        "time" : 60.0
+        "time" : 60.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 265,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -10036,7 +11837,8 @@
             "type" : "not"
           }
         ],
-        "time" : 110.0
+        "time" : 110.0,
+        "vespene" : 150
       }
     },
     "name" : "UltraliskCavernResearch",
@@ -10044,7 +11846,14 @@
   },
   "UltraliskWeaponCooldown" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2158,
+        "time" : 0.0
+      }
+    },
     "name" : "UltraliskWeaponCooldown",
     "type" : "effect_instant"
   },
@@ -10226,7 +12035,14 @@
   "ViperConsume" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2069,
+        "time" : 0.0
+      }
+    },
     "name" : "ViperConsume",
     "range" : 7.0,
     "type" : "effect_target"
@@ -10234,7 +12050,14 @@
   "ViperConsumeMinerals" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2071,
+        "time" : 0.0
+      }
+    },
     "name" : "ViperConsumeMinerals",
     "range" : 7.0,
     "type" : "effect_target"
@@ -10242,7 +12065,14 @@
   "ViperConsumeStructure" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2073,
+        "time" : 0.0
+      }
+    },
     "name" : "ViperConsumeStructure",
     "range" : 7.0,
     "type" : "effect_target"
@@ -10250,7 +12080,14 @@
   "ViperParasiticBombRelay" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3789,
+        "time" : 0.0
+      }
+    },
     "name" : "ViperParasiticBombRelay",
     "range" : 500.0,
     "type" : "effect_target"
@@ -10294,20 +12131,42 @@
   },
   "VoidRaySwarmDamageBoost" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2393,
+        "time" : 0.0
+      }
+    },
     "name" : "VoidRaySwarmDamageBoost",
     "type" : "effect_instant"
   },
   "VoidRaySwarmDamageBoostCancel" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 3707,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "VoidRaySwarmDamageBoostCancel",
     "type" : "effect_instant"
   },
   "VoidSiphon" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2156,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 50.0
@@ -10319,21 +12178,47 @@
   "VoidSwarmHostSpawnLocust" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2381,
+        "time" : 0.0
+      }
+    },
     "name" : "VoidSwarmHostSpawnLocust",
     "range" : 13.0,
     "type" : "effect_target"
   },
   "VolatileBurstBuilding" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Off" : 
+      {
+        "index" : 2082,
+        "time" : 0.0
+      },
+      "On" : 
+      {
+        "index" : 2081,
+        "time" : 0.0
+      }
+    },
     "name" : "VolatileBurstBuilding",
     "type" : "behavior"
   },
   "Vortex" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1630,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 100.0
@@ -10434,7 +12319,15 @@
   "WidowMineAttack" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2099,
+        "requires" : [],
+        "time" : 0.0
+      }
+    },
     "name" : "WidowMineAttack",
     "range" : 5.0,
     "type" : "effect_target"
@@ -10470,7 +12363,14 @@
   "WizSimpleChain" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "WizSimpleChain",
     "range" : 5.0,
     "type" : "effect_target"
@@ -10478,7 +12378,14 @@
   "WizSimpleGrenade" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "WizSimpleGrenade",
     "range" : 7.0,
     "type" : "effect_target"
@@ -10486,7 +12393,14 @@
   "WizSimpleSkillshot" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 0,
+        "time" : 0.0
+      }
+    },
     "name" : "WizSimpleSkillshot",
     "range" : 500.0,
     "type" : "effect_target"
@@ -10494,14 +12408,28 @@
   "WormholeTransit" : 
   {
     "arc" : 360.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 293,
+        "time" : 0.0
+      }
+    },
     "name" : "WormholeTransit",
     "range" : 500.0,
     "type" : "effect_target"
   },
   "XelNagaHealingShrine" : 
   {
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 1928,
+        "time" : 0.0
+      }
+    },
     "name" : "XelNagaHealingShrine",
     "type" : "effect_instant"
   },
@@ -10776,7 +12704,23 @@
   "Yamato" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 401,
+        "requires" : 
+        [
+          {
+            "state" : "CompleteOnly",
+            "type" : "upgradeCount",
+            "upgrade" : 76,
+            "upgradeName" : "BattlecruiserEnableSpecializations"
+          }
+        ],
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 0.0
@@ -10788,7 +12732,14 @@
   "Yoink" : 
   {
     "arc" : 0.0,
-    "commands" : {},
+    "commands" : 
+    {
+      "Execute" : 
+      {
+        "index" : 2067,
+        "time" : 0.0
+      }
+    },
     "costs" : 
     {
       "energy" : 75.0
@@ -11030,6 +12981,7 @@
       "Research1" : 
       {
         "index" : 1186,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -11049,11 +13001,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research10" : 
       {
         "index" : 1195,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -11075,11 +13029,13 @@
             "type" : "not"
           }
         ],
-        "time" : 80.0
+        "time" : 80.0,
+        "vespene" : 100
       },
       "Research2" : 
       {
         "index" : 1187,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -11127,11 +13083,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 150
       },
       "Research3" : 
       {
         "index" : 1188,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -11179,11 +13137,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 200
       },
       "Research4" : 
       {
         "index" : 1189,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -11203,11 +13163,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 150
       },
       "Research5" : 
       {
         "index" : 1190,
+        "minerals" : 225,
         "requires" : 
         [
           {
@@ -11255,11 +13217,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 225
       },
       "Research6" : 
       {
         "index" : 1191,
+        "minerals" : 300,
         "requires" : 
         [
           {
@@ -11307,11 +13271,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 300
       },
       "Research7" : 
       {
         "index" : 1192,
+        "minerals" : 100,
         "requires" : 
         [
           {
@@ -11331,11 +13297,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 160.0
+        "time" : 160.0,
+        "vespene" : 100
       },
       "Research8" : 
       {
         "index" : 1193,
+        "minerals" : 150,
         "requires" : 
         [
           {
@@ -11383,11 +13351,13 @@
             "type" : "eq"
           }
         ],
-        "time" : 190.0
+        "time" : 190.0,
+        "vespene" : 150
       },
       "Research9" : 
       {
         "index" : 1194,
+        "minerals" : 200,
         "requires" : 
         [
           {
@@ -11435,7 +13405,8 @@
             "type" : "eq"
           }
         ],
-        "time" : 220.0
+        "time" : 220.0,
+        "vespene" : 200
       }
     },
     "name" : "evolutionchamberresearch",
